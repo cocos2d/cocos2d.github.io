@@ -1,0 +1,7 @@
+var structcocos2d_1_1_font_stroke =
+[
+    [ "FontStroke", "d0/d74/structcocos2d_1_1_font_stroke.html#a9b1ed9cbcb71fca1fc1023d54ba94617", null ],
+    [ "_strokeColor", "d0/d74/structcocos2d_1_1_font_stroke.html#aa4c857716538b0f9ec9c068856099012", null ],
+    [ "_strokeEnabled", "d0/d74/structcocos2d_1_1_font_stroke.html#acffcef4602af2d8adadf738ab26de7fe", null ],
+    [ "_strokeSize", "d0/d74/structcocos2d_1_1_font_stroke.html#a80fe1d57d9668ac971250c5b035b4685", null ]
+];

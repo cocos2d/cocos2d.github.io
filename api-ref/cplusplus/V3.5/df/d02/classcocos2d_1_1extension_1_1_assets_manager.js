@@ -1,0 +1,35 @@
+var classcocos2d_1_1extension_1_1_assets_manager =
+[
+    [ "ErrorCallback", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#a852d0f00ca487fe8da4e5f18ffb259ef", null ],
+    [ "ProgressCallback", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#a2771ca9c79ed76b08e8e730138e1b3ed", null ],
+    [ "SuccessCallback", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#a891bfe62270fcd104c083f3df9b060fb", null ],
+    [ "ErrorCode", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#a59e56af19e754a6aa26a612ebf91d05f", [
+      [ "CREATE_FILE", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#a59e56af19e754a6aa26a612ebf91d05fa745be2e28bd3d4c3e38ee3d2af27d964", null ],
+      [ "NETWORK", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#a59e56af19e754a6aa26a612ebf91d05fa25835188a2355e9530d3a10fcbe4c65b", null ],
+      [ "NO_NEW_VERSION", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#a59e56af19e754a6aa26a612ebf91d05fa07ea76f9bfecb8465b3d2a1126761310", null ],
+      [ "UNCOMPRESS", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#a59e56af19e754a6aa26a612ebf91d05fa125ee7a84dca120371a1d7757d9d4a44", null ]
+    ] ],
+    [ "AssetsManager", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#a05be3903562b8d33a97bf4a39799ef6a", null ],
+    [ "~AssetsManager", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#a0a31d29094804efb89eafa4d0a902d1c", null ],
+    [ "checkStoragePath", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#ac57922d5e49b59e945fa396305e16d79", null ],
+    [ "checkUpdate", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#ae8368bb7511b08c13afac94f19823e7a", null ],
+    [ "createDirectory", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#a90a638858b4875279fe74d1232e7adf2", null ],
+    [ "deleteVersion", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#a6f176bd414c3eb09a4da8262503a5041", null ],
+    [ "downLoad", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#ab9855c8c96e6088ac4bc8ba11bc63b2e", null ],
+    [ "downloadAndUncompress", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#a4fa837023bb4901417e5aae1dd725acc", null ],
+    [ "getConnectionTimeout", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#a5dbf0e2a9c2ff16484086575f5f3c73f", null ],
+    [ "getDelegate", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#a3ad98d1dda11dbe64895b94a464440b0", null ],
+    [ "getPackageUrl", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#ac473d47b5db8e977f63a91ba4c17eeb5", null ],
+    [ "getStoragePath", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#a134d63a06938ae737bde29f0e9a0c238", null ],
+    [ "getVersion", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#aee3bd62c6c84d746802c115f5d4c1519", null ],
+    [ "getVersionFileUrl", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#ad8527b395f7bc07aa41d34561ac9dd78", null ],
+    [ "setConnectionTimeout", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#a8b52073c5fdcc60b175eece8b23ff4f6", null ],
+    [ "setDelegate", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#a850f4b2e7a7185c7de3e2350d3e063b9", null ],
+    [ "setPackageUrl", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#a37f0bff3f831eb8cd30f99d4af1c4e09", null ],
+    [ "setSearchPath", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#a892c9fcf45e27619aef843bb131810b3", null ],
+    [ "setStoragePath", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#a0177ed05f7219475326044e8fe14d1ab", null ],
+    [ "setVersionFileUrl", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#a72eff704df304e1c68c39604cf884b30", null ],
+    [ "uncompress", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#a4f4aaa6e7eea1952652ae245a3293881", null ],
+    [ "update", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#acd36d7881ea8503d5c5824e7a5ad6c7e", null ],
+    [ "assetsManagerProgressFunc", "df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#a3e553c1d5fbf5fc13b16d2c609993693", null ]
+];

@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Cocos Team">
+        <link rel="canonical" href="http://cocos2d-x.org/docs/editors_and_tools/creator-chapters/content-workflow/node-component/index.html">
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+
+	<title>_Node Component - Cocos Documentation</title>
+
+  <link href="../../../../css/bootstrap-custom.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+<link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href="../../../../css/base.css" rel="stylesheet">
+<link href="../../../../css/cinder.css" rel="stylesheet">
+<link href="../../../../css/pg.css" rel="stylesheet">
+<link href="../../../../css/highlight.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-3216502-3', 'Cocos2d-x.org');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a style="padding: 12px 0px;" class="navbar-brand" href="../../../../index.html">Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../../../index.html">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Manual Installations</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../installation/A/index.html">Prerequisites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Android-terminal/index.html">Android Command-line Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Android-VisualStudio/index.html">Android Visual Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Android-Studio/index.html">Android Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Android-Eclipse/index.html">Android Eclipse Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/iOS/index.html">IOS and OSX Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Linux/index.html">Linux Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Tizen/index.html">Tizen Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Windows/index.html">Windows Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Windows-Phone/index.html">Windows Phone Setup</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Programmers Guide</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/about/index.html">About Cocos2d-x</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/basic_concepts/index.html">Basic Concepts</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/sprites/index.html">Sprites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/actions/index.html">Actions</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/scenes/index.html">Scenes</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/ui_components/index.html">UI</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/other_node_types/index.html">Other Node Types</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/event_dispatch/index.html">Event Dispatch</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/3d/index.html">3D</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/scripting/index.html">Scripting</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/physics/index.html">Physics</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/audio/index.html">Audio</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/vr/index.html">VR</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/advanced_topics/index.html">Advanced Topics</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Editors & Tools</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../cocosCLTool/index.html">Command-line tool</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../creator/index.html">Cocos Creator</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+  
+  <li >
+      <a href="../../../cocos/index.html">Cocos Launcher</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Services</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../services/sdkbox/index.html">SDKBOX</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Tutorials</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../tutorials/javascript/javascript/index.html">Parkour Game Tutorials for Cocos2d-JS</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+  <li >
+      <a href="../../../../api-ref/index.html">API Reference</a>
+  </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Deprecated</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../deprecated/studio/index.html">Cocos Studio</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                        </ul>
+                    </li>
+                
+                
+
+                <!-- new add for language button -->
+                <!--<li>
+                    <a href="http://sdkbox-doc.github.io/zh/">中文</a>
+                </li>-->
+
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <!-- 
+                    <li >
+                        <a rel="next" href="../index.html">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../transform/index.html">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                 -->
+                
+                    <li>
+                        <a href="https://github.com/chukong/cocos-docs">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+              
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+      
+        
+          <li class="main active"><a href="#node-and-component">Node and component</a></li>
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#create-node">Create Node</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#component">Component</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#node-color-and-opacity-property">Node Color and Opacity property</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#add-other-components">Add other components</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#brief-summary">Brief Summary</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#reference-reading">Reference reading</a></li>
+              
+
+          
+
+        
+      
+    
+    </ul>
+</div></div>
+              
+                <div class="col-md-9" role="main">
+
+<!-- bread crumb trail -->
+<ol class="breadcrumb">
+<li><a href="../../../../index.html">Docs</a></li>
+
+  
+    
+      <li>Contents</li>
+    
+  
+    
+      <li>Editors & Tools</li>
+    
+  
+
+<li>_Node Component</li>
+</ol>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../transform/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+
+
+<!-- we can put this here if we want it on all content pages, but we don't at this point -->
+<!--<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>-->
+    <!--<li><a href="#" id="tab-lua">Lua</a></li>-->
+  <!--</ul>
+</div>-->
+
+<h1 id="node-and-component">Node and component</h1>
+<p>The core of Cocos Creator's workflow is component-based development. The component-based framework is also known as the <strong>component-entity system</strong> (or <a href="https://en.wikipedia.org/wiki/Entity_component_system">Entity-Component System</a>). Simply put, we construct the entity in combination mode instead of inheriting mode.</p>
+<p>In Cocos Creator, a <strong>Node</strong> is an entity carrying component. We will make nodes that have many kinds of expressions and functions by mounting a <strong>Component</strong> that has many kinds of functions itself on the node. Let’s see how to create a node and add a component to the scene.</p>
+<h2 id="create-node">Create Node</h2>
+<p>To get a node having a specific function fastest, you can use the <strong>create node</strong> button on the left corner of the <strong>Hierarchy</strong>. We can make a very simple Sprite node as an example. Click the <strong>create node</strong> button and then choose ’create rendering node/Sprite’:</p>
+<p><img alt="create" src="../node-component/create.png" /></p>
+<p>Then we can see the new Sprite node in the <strong>scene editor</strong> and <strong>Hierarchy</strong>. The new node is named ‘New Sprite’, meaning this is a node whose function is mainly provided by the Sprite component. You can also try clicking the <strong>create node</strong> button again to choose other node types so that you can find their different names and expressions.</p>
+<h2 id="component">Component</h2>
+<h3 id="sprite-component">Sprite component</h3>
+<p>Now since we have some nodes, let's see what a component is and the connections between the components and nodes. Select the ‘New Sprite’ that we just created and you can see what the <strong>Inspector</strong> says:</p>
+<p><img alt="inspector" src="../node-component/inspector.png" /></p>
+<p>The part starting with ‘Node’ in the <strong>Inspector</strong> is the property of the node. The property of the node includes changeable information about the node like position, rotation, scale and size as well other information such as anchor, color and opacity. We will introduce each in detail in the <a href="node-properties.md">node properties</a> section.</p>
+<p>In the following picture, the part starting with ‘Sprite’ is the property of the Sprite component. In 2D games, the Sprite component is responsible for most of the image rendering. The most important property of the Sprite component is ‘Sprite Frame’ where we can designate the image files that Sprite is going to render in the game. Let's try to drag a picture resource from the <strong>resource manager</strong> to the ‘Sprite Frame’ property in the <strong>Inspector</strong>:</p>
+<p><img alt="drag spriteframe" src="../node-component/drag_spriteframe.png" /></p>
+<p>We see that the previous Sprite default image turns into the image we assigned. This is what the Sprite component does: rendering images.</p>
+<h3 id="the-influence-of-the-node-attribute-on-the-sprite-component">The influence of the node attribute on the Sprite component</h3>
+<p>When a node combines with the Sprite component, the rendering method of an image can be controlled by modifying the node attribute. You can adjust your node according to the settings marked by red lines in the following picture. You can see that the image rotation, scale, color and opacity changes:</p>
+<p><img alt="node property" src="../node-component/change_node_property.png" /></p>
+<p>We mentioned earlier that the component based structure achieves function extensions by combining. The following picture shows how the node and the Sprite component combine.</p>
+<p><img alt="node component relationship" src="../node-component/node_chart.png" /></p>
+<h2 id="node-color-and-opacity-property">Node Color and Opacity property</h2>
+<p>The property of <strong>Color</strong> and <strong>Opacity</strong> in the above picture have direct influence on the Sprite component rendering image. Color and opacity can also influence the display of the rendering component <a href="../../components/label/index.html">Label</a>.</p>
+<p>These two properties will multiply the content of the rendering component itself to determine each pixel's color and opacity during rendering. In addition, the Opacity property will act on a child node and easily achieve the fade in and fade out effect of a set of node contents by altering the ‘Opacity’ of the parent node.</p>
+<h2 id="add-other-components">Add other components</h2>
+<p>We can add multiple components on one node to add more functions to the node. In the example above, we can continue to select the ‘New Sprite’ node, click the <strong>add component</strong> button at the bottom of the <strong>Inspector</strong> panel and select ‘add UI component/Button’ to add a Button component.</p>
+<p>Then set the Button component according to the following picture (the actual color attribute can be set freely according to your own taste):</p>
+<p><img alt="button property" src="../node-component/button_property.png" /></p>
+<p>Next, click the <strong>operation preview</strong> button on the toolbar <img alt="preview" src="../../basics/toolbar/preview.png" /> and hover the mouse over the image in the browser operation window. You can then see the color of the image changes which means the adding of the Button component to the node has taken effect!</p>
+<h2 id="brief-summary">Brief Summary</h2>
+<p>In the above example, we first combined the Sprite component with the node which led us to the scene image that could designate the resource for the rendering image. Then we could display this image in different ways by altering the node attributes like scale and color. Next we could even add a Button component to the node so that it could react according to the different statuses of the button (normal, hover, down, etc.). This is the component based development workflow in Cocos Creator. We can use this method to combine different functions within a node to achieve a series of complicated targets, such as a character's mobile attack controls, auto scrolling of background images, layouts of UI elements, interaction functions and so on.</p>
+<p>It's worth mentioning that a single node can only add one rendering component including <strong>Sprite</strong>, <strong>Label</strong>, <strong>Particle</strong> and so on.</p>
+<h2 id="reference-reading">Reference reading</h2>
+<ul>
+<li><a href="http://blog.csdn.net/i_dovelemon/article/details/25798677">Understand component-entity system - i_dovelemon's blog</a></li>
+</ul>
+<hr>
+
+<p>Continue on to read about <a href="../transform/index.html">Coordinate system and Transform</a>.</p>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../transform/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+</div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <p style="text-align:center">Copyright (c) 2014-2016 Chukong Technologies Inc.</p>
+            
+           <!-- <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>-->
+        </footer>
+
+        <script src="../../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../../js/highlight.pack.js"></script>
+        <script>var base_url = '../../../..';</script>
+
+        <!-- PG languages -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script>
+        $(function() {
+          var key = "Cocos2d-x_pg_lang";
+          var switch_lang = function(l) {
+              $('.langs li a').removeClass('selected');
+              $('#'+l).addClass('selected');
+              $('.tab_content').hide();
+              $('.'+l).show();
+              $.cookie(key, l);
+          }
+          $('.langs li a').click(function() {switch_lang(this.id);return false;});
+          var c = $.cookie(key);
+          if (typeof c == 'undefined') c='tab-cpp';
+          switch_lang(c);
+        });
+        </script>
+
+        <script data-main="../../../../mkdocs/js/search.js" src="../../../../mkdocs/js/require.js"></script>
+        <script src="../../../../js/base.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/Cocos2d-html5-min.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chipmunk.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d-jsb.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/main.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/AnimationLayer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/BackgroundLayer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Coin.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/GameOverLayer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/PlayScene.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Rock.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/SimpleRecognizer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/StatusLayer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/globals.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/myApp.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/resource.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

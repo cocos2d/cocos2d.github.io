@@ -1,0 +1,26 @@
+var classcocos2d_1_1_c_c_node_r_g_b_a =
+[
+    [ "CCNodeRGBA", "d9/d1f/group__base__nodes.html#gafba8c0e85b9eb4750b639c46ac0985ad", null ],
+    [ "~CCNodeRGBA", "d9/d1f/group__base__nodes.html#ga78d1e787b4af8e0d6f60273d1be31a70", null ],
+    [ "getColor", "d9/d1f/group__base__nodes.html#ga51fd293608ac768777f56bfcb2354e4b", null ],
+    [ "getDisplayedColor", "d9/d1f/group__base__nodes.html#ga27e029ef36758d6a9891aba16a2a6be7", null ],
+    [ "getDisplayedOpacity", "d9/d1f/group__base__nodes.html#ga641a624882a236cefc975289d74f638c", null ],
+    [ "getOpacity", "d9/d1f/group__base__nodes.html#ga249b27292ae7aa0a9b0f2412f627079c", null ],
+    [ "init", "d9/d1f/group__base__nodes.html#gac4ae554e242cee73c504038d88855eba", null ],
+    [ "isCascadeColorEnabled", "d9/d1f/group__base__nodes.html#gab519267cca770937be897c89b0aa713b", null ],
+    [ "isCascadeOpacityEnabled", "d9/d1f/group__base__nodes.html#ga641fce7ccd6e53ba4851f832fed22a01", null ],
+    [ "isOpacityModifyRGB", "d9/d1f/group__base__nodes.html#ga3daf4e523662818dd1d48012bea4c036", null ],
+    [ "setCascadeColorEnabled", "d9/d1f/group__base__nodes.html#ga05f5bdbe8da1c4a48753114c9c6bd9ec", null ],
+    [ "setCascadeOpacityEnabled", "d9/d1f/group__base__nodes.html#ga040b0cd067148c0c9c4adf9b528ae6f1", null ],
+    [ "setColor", "d9/d1f/group__base__nodes.html#gad6797e9d96ccfc5736e93e94e09fc74a", null ],
+    [ "setOpacity", "d9/d1f/group__base__nodes.html#ga7f9374d8fd4db565312b125795a877ff", null ],
+    [ "setOpacityModifyRGB", "d9/d1f/group__base__nodes.html#ga9b28e83c9ee125b2cb37bd1d3eb8aabd", null ],
+    [ "updateDisplayedColor", "d9/d1f/group__base__nodes.html#gae3650812bfc04444f20348d9c69244b3", null ],
+    [ "updateDisplayedOpacity", "d9/d1f/group__base__nodes.html#gad9f3c2f40c62cb501798e30dafa213ab", null ],
+    [ "_cascadeColorEnabled", "d9/d1f/group__base__nodes.html#gab2b8ae26a5e77031831191c4285890da", null ],
+    [ "_cascadeOpacityEnabled", "d9/d1f/group__base__nodes.html#ga4177717cc8933ec0fd29ef7b6b2a4c5a", null ],
+    [ "_displayedColor", "d9/d1f/group__base__nodes.html#gaaf39fb1120a4029f252368bb0db121fd", null ],
+    [ "_displayedOpacity", "d9/d1f/group__base__nodes.html#gaa93dfe72d4709f0fdb19c9335025f4b8", null ],
+    [ "_realColor", "d9/d1f/group__base__nodes.html#ga03dd2589e628e4d28296d57c143fd4f3", null ],
+    [ "_realOpacity", "d9/d1f/group__base__nodes.html#gae656cc0977c154c446e5edb55cf734c8", null ]
+];

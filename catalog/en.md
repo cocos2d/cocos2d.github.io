@@ -1,0 +1,200 @@
+- Introduction
+	- About Us
+	- Architecture and Modules
+	- Supported Platforms and Programming Languages
+- Release Notes
+	- [Cocos2d-x v3.0 beta & v2.2, CocoStudio v1.2, Cocos2d-html5 v2.2.2 on 2014-01-07](../release-notes/summary-release-20140107.md)
+- Framework
+	- Getting Started
+		- [How to run cpp-tests on Android](../manual/framework/native/v3/getting-started/how-to-run-cpp-tests-on-android/en.md)
+		- [How to run cpp-tests on Mac OS X](../manual/framework/native/v3/getting-started/how-to-run-cpp-tests-on-mac-osx/en.md)
+		- [How to run cpp-tests on iOS](../manual/framework/native/v3/getting-started/how-to-run-cpp-tests-on-ios/en.md)
+		- [How to run cpp-tests on Linux](../manual/framework/native/v3/getting-started/how-to-run-cpp-tests-on-linux/en.md)
+		- [How to run cpp-tests on Win32](../manual/framework/native/v3/getting-started/how-to-run-cpp-tests-on-win32/en.md)
+		- [How to run cpp-tests on WP8](../manual/framework/native/v3/getting-started/how-to-run-cpp-tests-on-wp8/en.md)
+		- [How to start a new game](../manual/framework/native/v3/getting-started/how-to-start-a-new-game/en.md)
+		- [How to Build and Run Android Project with Eclipse](../manual/framework/native/v3/getting-started/how-to-build-android-project-with-eclipse/en.md)
+	- Graphics & Animation
+		- Cocos2d Coordinate System
+		- Sprite, Layer and Scene
+		- Particle System
+			- [Particle System Comparison of v2.x and v3.x](../manual/framework/native/v3/particle/en.md)
+		- Transitions
+		- Flipbook Animation
+		- Skeletal Animation
+		- Tile Map
+		- Actions
+		- Effects
+		- [Renderer](../manual/framework/native/v3/new-renderer/en.md)
+		- Mechanism to Work on Multiple Resolutions
+	- Audio
+	- GUI
+		- [Overview of GUI system](../manual/framework/native/v2/gui/overview/en.md)
+        - [UI Containers](../manual/framework/native/v2/gui/container/en.md)
+        - [UI Widgets](../manual/framework/native/v2/gui/widget/en.md)
+        - UI Layouts
+		- [Label](../manual/framework/native/v3/label/en.md)
+	- Data Structure
+		- v3.0:
+			- [Vector\<T\>](../manual/framework/native/v3/data-structure/vector/en.md)
+			- [Map\<K,V\>](../manual/framework/native/v3/data-structure/map/en.md)
+			- [Value](../manual/framework/native/v3/data-structure/value/en.md)
+		- v2.x: CCArray, CCDictionary and CCString
+	- [Physics](../manual/framework/native/v3/physics-integration/en.md)
+	- Network
+	- Events System
+	- Scheduler and Timer Callbacks
+	- Inputs
+		- Handling Touch Events
+		- Handling Accelerometer Events
+	- Memory Management
+		- Max Size of Textures on Each Platform
+	- Scripting
+	    - Usage of binding-generator
+		- Lua
+		- JavaScript
+		    - [Remote Debugging on JavaScript Bindings](../manual/framework/native/v3/js-remote-debugger/en.md)
+	- Debugging
+		- CCLog
+		- CCConsole
+	- File Stream
+	- Integrating with 3rd SDK
+		- [use web browser to integrate Alipay on Windows Phone 8](../manual/framework/native/v2/sdk-integration/wp8-webbrowser/en.md)
+		- [integrate third SDK in Windows Phone 8](../manual/framework/native/v2/sdk-integration/wp8-thirdSDK/en.md)
+	- Cocos2d-html5
+        - [Highlighted release note of Cocos2d-JS v3.0](../manual/framework/html5/release-notes/v3.0/release-note/en.md)
+        - [Changelog of Cocos2d-JS v3.0](../manual/framework/html5/release-notes/v3.0/changelog/en.md)
+        - [Upgrade guide to Cocos2d-JS v3.0](../manual/framework/html5/release-notes/v3.0rc0/upgrade-guide/en.md)
+        
+		- Startup
+            - [About Cocos2d-JS](../manual/framework/html5/en.md)
+			- [Why use Cocos2d-JS for Game Development](../manual/framework/html5/v2/cocosh5-advantages/en.md)
+			- [Resolution Policy Design for Cocos2d-JS](../manual/framework/html5/v2/resolution-policy-design/en.md)
+            - [History release notes](../manual/framework/html5/release-notes/en.md)
+            
+        - New features and API changes in version 3.0:
+            - [New workflow with cocos console](../manual/framework/html5/v2/cocos-console/en.md)
+            - [Assets manager](../manual/framework/html5/v3/assets-manager/en.md)
+            - [New event manager](../manual/framework/html5/v3/eventManager/en.md)
+            - [New property API](../manual/framework/html5/v3/getter-setter-api/en.md)
+            - [Game creation](../manual/framework/html5/v3/cc-game/en.md)
+            - [Construction and inheritance](../manual/framework/html5/v3/inheritance/en.md)
+            - [Simplified action APIs](../manual/framework/html5/v3/cc-actions/en.md)
+            - [Object Pool](../manual/framework/html5/v3/cc-pool/en.md)
+            - [Bake Layer](../manual/framework/html5/v3/bake-layer/en.md)
+            - [Reflection from JavaScript to JAVA](../manual/framework/html5/v3/reflection/en.md)
+            - [Reflection from JavaScript to Objective-C](../manual/framework/html5/v3/reflection-oc/en.md)
+            - [Cocos2d-html5 modularization](../manual/framework/html5/v3/moduleconfig-json/en.md)
+            - [Pure configuration file](../manual/framework/html5/v3/project-json/en.md)
+            - [Basic data refactorization](../manual/framework/html5/v3/basic-data/en.md)
+            - [Singleton objects refactorization](../manual/framework/html5/v3/singleton-objs/en.md)
+            - [Unified create functions](../manual/framework/html5/v3/create-api/en.md)
+            - [Loading resource with cc.loader](../manual/framework/html5/v3/cc-loader/en.md)
+            - [System information in cc.sys](../manual/framework/html5/v3/cc-sys/en.md)
+            - [Path management with cc.path](../manual/framework/html5/v3/cc-path/en.md)
+            - [Asynchronised process with cc.async](../manual/framework/html5/v3/cc-async/en.md)
+            - [Modification to cc.saxParser](../manual/framework/html5/v3/cc-saxparser/en.md)
+            - [Modification to cc.spriteFrameCache](../manual/framework/html5/v3/cc-spriteframecache/en.md)
+            - [About cc.FileUtils](../manual/framework/html5/v3/cc-fileutils/en.md)
+            - [About cc.log](../manual/framework/html5/v3/cc-log/en.md)
+            - [Other change from v2.2.2 to v3.0](../manual/framework/html5/v3/more-change-from-v2-to-v3/en.md)
+        
+        - Facebook SDK Beta for Cocos2d-JS
+            - [Facebook SDK Beta API Reference](../manual/framework/html5/facebook-sdk/api-reference/en.md)
+            - [Integrate the Facebook SDK Beta for Cocos2d-JS on Android](../manual/framework/html5/facebook-sdk/facebook-sdk-on-android/en.md)
+            - [Integrate the Facebook SDK Beta for Cocos2d-JS on iOS](../manual/framework/html5/facebook-sdk/facebook-sdk-on-ios/en.md)
+            - [Integrate the Facebook SDK Beta for Cocos2d-JS on Web](../manual/framework/html5/facebook-sdk/facebook-sdk-on-web/en.md)
+    
+        - Advanced topics
+            - [How to use extensions in JSB(Chinese version)](../manual/framework/html5/jsb/jsb-extension/zh.md)
+            - [How to use Plugin-x on Android](../manual/framework/html5/jsb/plugin-x/how-to-use-plugin-x-on-android/en.md)
+            - [Plugin-x architecture](../manual/framework/html5/jsb/plugin-x/plugin-x-architecture/en.md)
+            - [How to write your own Plugin for Android](../manual/framework/html5/jsb/plugin-x/how-to-write-your-own-plugin-for-android/en.md)
+            - [Use iOS IAP Plugin](../manual/framework/html5/jsb/plugin-x/ios-iap/en.md)
+
+- Studio
+    - [Cocos Studio Introduction](../manual/studio/v2/chapter1/fundamentals/en.md)
+    	- [UI Overview](../manual/studio/v2/chapter1/interface/about/en.md)
+    		- [Toolbar](../manual/studio/v2/chapter1/interface/toolbar/en.md)
+    		- [Controls Panel](../manual/studio/v2/chapter1/interface/controls/en.md)
+    		- [Assets Panel](../manual/studio/v2/chapter1/interface/resources/en.md)
+    		- [Canvas](../manual/studio/v2/chapter1/interface/canvas/en.md)
+    		- [Animation Panel](../manual/studio/v2/chapter1/interface/animation/en.md)
+    		- [Property Panel](../manual/studio/v2/chapter1/interface/properties/en.md)
+    	- [Asset Workflow](../manual/studio/v2/chapter1/resources-workflow/en.md)
+    	- [Samples and Tutorial](../manual/studio/v2/chapter1/samples-and-tutorial/en.md)
+    	- [Preferences](../manual/studio/v2/chapter1/preference/en.md)
+    - [Create a game](../manual/studio/v2/chapter2/how-to-create-game/en.md)
+    	- [Step 1:new game project](../manual/studio/v2/chapter2/new-game/en.md)
+    	- [Step 2:Add game assets](../manual/studio/v2/chapter2/add-resources/about/en.md)
+    		- [New File](../manual/studio/v2/chapter2/add-resources/new-file/en.md)
+    		- [Adjust Resolution](../manual/studio/v2/chapter2/add-resources/change-resolution/en.md)
+    		- [Reuse Scene](../manual/studio/v2/chapter2/add-resources/nested-file/en.md)
+    		- [Import](../manual/studio/v2/chapter2/add-resources/import-resources/en.md)
+    		- [SpriteSheet](../manual/studio/v2/chapter2/add-resources/pack-images/en.md)
+    	- [Step 3:Use Controls](../manual/studio/v2/chapter2/use-controls/about/en.md)
+    		- [Scene Graph](../manual/studio/v2/chapter2/use-controls/relationship/en.md)
+    		- [Use Canvas](../manual/studio/v2/chapter2/use-controls/use-canvas/en.md)
+    		- [Position and Layout](../manual/studio/v2/chapter2/use-controls/positions/en.md)
+    	- [Step 4:Property](../manual/studio/v2/chapter2/properties/about/en.md)
+    		- [Edit Property](../manual/studio/v2/chapter2/properties/edit-properties/en.md)
+    		- [Edit Asset](../manual/studio/v2/chapter2/properties/set-resources/en.md)
+    		- [How to use 9-slice](../manual/studio/v2/chapter2/properties/scale-9-slice/en.md)
+    	- [Step 5:Debug Project](../manual/studio/v2/chapter2/debug/en.md)
+    	- [Step 6:Output Assets](../manual/studio/v2/chapter2/publish-game/about/en.md)
+    		- [Publish Assets](../manual/studio/v2/chapter2/publish-game/publish/en.md)
+    - [How to use controls](../manual/studio/v2/chapter3/how-to-use-controls/en.md)
+    	- [Basic Controls](../manual/studio/v2/chapter3/basic-controls/about/en.md)
+    		- [Button](../manual/studio/v2/chapter3/basic-controls/button/en.md)
+    		- [Checkbox](../manual/studio/v2/chapter3/basic-controls/checkbox/en.md)
+    		- [Sprite](../manual/studio/v2/chapter3/basic-controls/sprite/en.md)
+    		- [Image](../manual/studio/v2/chapter3/basic-controls/image/en.md)
+    		- [Atlas Label](../manual/studio/v2/chapter3/basic-controls/atlaslabel/en.md)
+    		- [FNT Font](../manual/studio/v2/chapter3/basic-controls/bitmaplabel/en.md)
+    		- [Progress Bar](../manual/studio/v2/chapter3/basic-controls/progressbar/en.md)
+    		- [Slider](../manual/studio/v2/chapter3/basic-controls/slider/en.md)
+    		- [Label](../manual/studio/v2/chapter3/basic-controls/label/en.md)
+    		- [TextField](../manual/studio/v2/chapter3/basic-controls/textfield/en.md)
+    		- [Particle](../manual/studio/v2/chapter3/basic-controls/particle/en.md)
+    		- [Tile Map](../manual/studio/v2/chapter3/basic-controls/tilemap/en.md)
+    		- [Audio](../manual/studio/v2/chapter3/basic-controls/audio/en.md)
+    		- [Node](../manual/studio/v2/chapter3/basic-controls/node/en.md)
+    	- [Containers](../manual/studio/v2/chapter3/containers/about/en.md)
+    		- [Panel](../manual/studio/v2/chapter3/containers/panel/en.md)
+    		- [ScrollView](../manual/studio/v2/chapter3/containers/scrolledview/en.md)
+    		- [PageView](../manual/studio/v2/chapter3/containers/pageview/en.md)
+    	- Custom
+    		- [Armature](../manual/studio/v2/chapter3/custom/armature/en.md)
+    - [How to edit animation](../manual/studio/v2/chapter4/how-to-edit-animation/en.md)
+    	- [Add Key Frame](../manual/studio/v2/chapter4/add-key-frame/en.md)
+    	- [Animation Property](../manual/studio/v2/chapter4/animation-property/en.md)
+    	- [Use onion skin](../manual/studio/v2/chapter4/onionskin/en.md)
+- Tutorials
+	- Parkour Game with JavaScript (Cocos2d-JS v3.0)
+		- [1. Setup Development Environment](../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter1/en.md)
+		- [2. Hello World Cocos2d-JS](../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter2/en.md)
+		- [3. Make your First Game Scene](../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter3/en.md)
+		- [4. Design and Make Main Game Scene](../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter4/en.md)
+		- [5. Let Player Run Animations](../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter5/en.md)
+		- [6. Add Chipmunk Physics to Our Game](../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter6/en.md)
+		- [7. Explorer with TiledMap and Camera](../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter7/en.md)
+		- [8. Add Coin and Obstacles](../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter8/en.md)
+		- [9. Add Game Over Logic And More](../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter9/en.md)
+        - [10. Add Audio Effect into Parkour Game](../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter10/en.md)
+	- Parkour Game with JavaScript (Cocos2d-html5 v2.2.2)
+		- [1. Setup Development Environment](../tutorial/framework/html5/parkour-game-with-javascript/chapter1/en.md)
+		- [2. Hello World Cocos2d-html5](../tutorial/framework/html5/parkour-game-with-javascript/chapter2/en.md)
+		- [3. Make your First Game Scene](../tutorial/framework/html5/parkour-game-with-javascript/chapter3/en.md)
+		- [4. Design and Make Main Game Scene](../tutorial/framework/html5/parkour-game-with-javascript/chapter4/en.md)
+		- [5. Let Player Run Animations](../tutorial/framework/html5/parkour-game-with-javascript/chapter5/en.md)
+		- [6. Add Chipmunk Physics to Our Game](../tutorial/framework/html5/parkour-game-with-javascript/chapter6/en.md)
+		- [7. Explorer with TiledMap and Camera](../tutorial/framework/html5/parkour-game-with-javascript/chapter7/en.md)
+		- [8. Add Coin and Obstacles](../tutorial/framework/html5/parkour-game-with-javascript/chapter8/en.md)
+		- [9. Add Game Over Logic And More](../tutorial/framework/html5/parkour-game-with-javascript/chapter9/en.md)
+        - [10. Add Audio Effect into Parkour Game](../tutorial/framework/html5/parkour-game-with-javascript/chapter10/en.md)        
+        
+- Cocos Code IDE
+    - Custom runtime
+        - [How to bind a custom class to lua runtime](../manual/code-ide/binding-custom-class-to-lua/en.md)
+        - [How to bind a custom class to js runtime](../manual/code-ide/binding-custom-class-to-js/en.md)
+        

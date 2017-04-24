@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Cocos Team">
+        <link rel="canonical" href="http://cocos2d-x.org/docs/programmers-guide/physics/index.html">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>Physics - Cocos Documentation</title>
+
+  <link href="../../css/bootstrap-custom.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+<link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href="../../css/base.css" rel="stylesheet">
+<link href="../../css/cinder.css" rel="stylesheet">
+<link href="../../css/pg.css" rel="stylesheet">
+<link href="../../css/highlight.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-3216502-3', 'Cocos2d-x.org');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a style="padding: 12px 0px;" class="navbar-brand" href="../../index.html">Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../index.html">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Manual Installations</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../installation/A/index.html">Prerequisites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Android-terminal/index.html">Android Command-line Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Android-VisualStudio/index.html">Android Visual Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Android-Studio/index.html">Android Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Android-Eclipse/index.html">Android Eclipse Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/iOS/index.html">IOS and OSX Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Linux/index.html">Linux Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Tizen/index.html">Tizen Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Windows/index.html">Windows Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Windows-Phone/index.html">Windows Phone Setup</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Programmers Guide</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../about/index.html">About Cocos2d-x</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../basic_concepts/index.html">Basic Concepts</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../sprites/index.html">Sprites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../actions/index.html">Actions</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../scenes/index.html">Scenes</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../ui_components/index.html">UI</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../other_node_types/index.html">Other Node Types</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../event_dispatch/index.html">Event Dispatch</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../3d/index.html">3D</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../scripting/index.html">Scripting</a>
+  </li>
+  
+
+          
+              
+  
+  <li class="active">
+      <a href="index.html">Physics</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../audio/index.html">Audio</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../vr/index.html">VR</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../advanced_topics/index.html">Advanced Topics</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Editors & Tools</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../editors_and_tools/cocosCLTool/index.html">Command-line tool</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../editors_and_tools/creator/index.html">Cocos Creator</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+  
+  <li >
+      <a href="../../editors_and_tools/cocos/index.html">Cocos Launcher</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Services</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../services/sdkbox/index.html">SDKBOX</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Tutorials</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../tutorials/javascript/javascript/index.html">Parkour Game Tutorials for Cocos2d-JS</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+  <li >
+      <a href="../../api-ref/index.html">API Reference</a>
+  </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Deprecated</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../deprecated/studio/index.html">Cocos Studio</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                        </ul>
+                    </li>
+                
+                
+
+                <!-- new add for language button -->
+                <!--<li>
+                    <a href="http://sdkbox-doc.github.io/zh/">中文</a>
+                </li>-->
+
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <!-- 
+                    <li >
+                        <a rel="next" href="../scripting/index.html">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../audio/index.html">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                 -->
+                
+                    <li>
+                        <a href="https://github.com/chukong/cocos-docs">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+              
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+      
+        
+          <li class="main active"><a href="#physics">Physics</a></li>
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#physics-is-scary-do-i-really-need-it-please-tell-me-no">Physics is scary, do I really need it? Please tell me no!</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#physics-terminology-and-concepts">Physics terminology and concepts</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#physics-world-and-physics-body">Physics World and Physics Body</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#collision">Collision</a></li>
+              
+
+          
+
+        
+      
+    
+    </ul>
+</div></div>
+              
+                <div class="col-md-9" role="main">
+
+<!-- bread crumb trail -->
+<ol class="breadcrumb">
+<li><a href="../../index.html">Docs</a></li>
+
+  
+    
+      <li>Contents</li>
+    
+  
+    
+      <li>Programmers Guide</li>
+    
+  
+
+<li>Physics</li>
+</ol>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../scripting/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../audio/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+
+
+<!-- we can put this here if we want it on all content pages, but we don't at this point -->
+<!--<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>-->
+    <!--<li><a href="#" id="tab-lua">Lua</a></li>-->
+  <!--</ul>
+</div>-->
+
+<h1 id="physics">Physics</h1>
+<p>Your game is coming along nicely. You have <code>Sprite</code> objects, gameplay mechanics
+and your coding efforts are paying off. You are starting to feel like your game
+is playable. What do you do when you realize your game needs to simulate real
+world situations? You know, <strong>collision detection</strong>, <strong>gravity</strong>, <strong>elasticity</strong> and
+<strong>friction</strong>. Yes, you guessed it! This chapter is on <strong>physics</strong> and the use of a
+<strong>physics engine</strong>. Let's explore the <em>when</em>, <em>wheres</em> and <em>whys</em> of using a
+<strong>physics engine</strong>.</p>
+<h2 id="physics-is-scary-do-i-really-need-it-please-tell-me-no">Physics is scary, do I really need it? Please tell me no!</h2>
+<p>Please don't run away there are no physics monsters under your bed! Your needs
+might be simple enough to not need to use a <strong>physics engine</strong>. Perhaps a combination
+of using a <code>Node</code> objects <strong>update()</strong> function, <code>Rect</code> objects and a combination
+of the <strong>containsPoint()</strong> or <strong>intersectsRect()</strong> functions might be enough for
+you? Example:</p>
+<pre><code class="cpp">void update(float dt)
+{
+  auto p = touch-&gt;getLocation();
+  auto rect = this-&gt;getBoundingBox();
+
+  if(rect.containsPoint(p))
+  {
+      // do something, intersection
+  }
+}
+</code></pre>
+
+<p>This mechanism works for <strong>very simple</strong> needs, but doesn't scale. What if you had
+100 <code>Sprite</code> objects all continuously updating to check for intersections with
+other objects? It could be done but the the CPU usage and <strong>framerate</strong> would suffer
+severely. Your game would be unplayable. A <strong>physics engine</strong> solves these concerns
+for us in a scalable and CPU friendly way. Even though this might look foreign,
+let's take a look at a simple example and then nut and bolt the example,
+terminology and best practice together.</p>
+<pre><code class="cpp">// create a static PhysicsBody
+auto physicsBody = PhysicsBody::createBox(Size(65.0f , 81.0f ), PhysicsMaterial(0.1f, 1.0f, 0.0f));
+physicsBody-&gt;setDynamic(false);
+
+// create a sprite
+auto sprite = Sprite::create(&quot;whiteSprite.png&quot;);
+sprite-&gt;setPosition(Vec2(400, 400));
+
+// sprite will use physicsBody
+sprite-&gt;addComponent(physicsBody);
+
+//add contact event listener
+auto contactListener = EventListenerPhysicsContact::create();
+contactListener-&gt;onContactBegin = CC_CALLBACK_1(onContactBegin, this);
+_eventDispatcher-&gt;addEventListenerWithSceneGraphPriority(contactListener, this);
+</code></pre>
+
+<p>Even though this example is simple, it looks complicated and scary. It really
+isn't if we look closely. Here are the steps that are happening:
+<em> A <code>PhysicsBody</code> object is created.
+</em> A <code>Sprite</code> object is created.
+<em> The <code>Sprite</code> object applies the properties of the <code>PhysicsBody</code> object.
+</em> A listener is created to respond to an <strong>onContactBegin()</strong> event.</p>
+<p>Once we look step by step the concept starts to make sense. To better understand
+all the details of a <strong>physics engine</strong> you should understand the following terms
+and concepts:</p>
+<h2 id="physics-terminology-and-concepts">Physics terminology and concepts</h2>
+<h3 id="bodies">Bodies</h3>
+<p>A <code>PhysicsBody</code> holds the physical properties of an object. These include <strong>mass</strong>,
+<strong>position</strong>, <strong>rotation</strong>, <strong>velocity</strong> and <strong>damping</strong>. <code>PhysicsBody</code> objects
+are the backbone for shapes. A <code>PhysicsBody</code> does not have a shape until you attach
+a shape to it.</p>
+<h3 id="material">Material</h3>
+<p>Materials describe material attributes：</p>
+<blockquote>
+<p>-density：It is used to compute the mass properties of the parent body.</p>
+<p>-friction：It is used to make objects slide along each other realistically.</p>
+<p>-restitution：It is used to make objects bounce. The restitution value is
+ usually set to be between 0 and 1. 0 means no bouncing while 1 means perfect
+ bouncing.</p>
+</blockquote>
+<h3 id="shapes">Shapes</h3>
+<p>Shapes describe collision geometry. By attaching shapes to bodies, you define a
+body’s shape. You can attach as many shapes to a single body as you need in order
+to define a complex shape. Each shape relates to a <code>PhysicsMaterial</code> object and
+contains the following attributes: <strong>type</strong>, <strong>area</strong>, <strong>mass</strong>, <strong>moment</strong>, <strong>offset</strong> and
+<strong>tag</strong>. Some of these you might not be familiar with:</p>
+<blockquote>
+<p>-<em>type</em>：describes the categories of shapes, such as circle, box, polygon, etc.</p>
+<p>-<em>area</em>: used to compute the mass properties of the body. The density and area
+gives the mass.</p>
+<p>-<em>mass</em>: the quantity of matter that a body contains, as measured by its
+acceleration under a given force or by the force exerted on it by a gravitational
+field.</p>
+<p>-<em>moment</em>: determines the torque needed for a desired angular acceleration.</p>
+<p>-<em>offset</em>: offset from the body’s center of gravity in body local coordinates.</p>
+<p>-<em>tag</em>: used to identify the shape easily for developers.​ You probably remember
+that you can assign all <code>Node</code> objects a tag for identification and easy access.</p>
+</blockquote>
+<p>We describe the various <strong>shapes</strong> as:</p>
+<blockquote>
+<p>-<code>PhysicsShape</code>: Shapes implement the <code>PhysicsShape</code> base class.</p>
+<p>-<code>PhysicsShapeCircle</code>: Circles are solid. You cannot make a hollow circle
+ using the circle shape.</p>
+<p>-<code>PhysicsShapePolygon</code>: Polygon shapes are solid convex polygons.</p>
+<p>-<code>PhysicsShapeBox</code>: Box shape is one kind of convex polygon.</p>
+<p>-<code>PhysicsShapeEdgeSegment</code>: A segment shape.</p>
+<p>-<code>PhysicsShapeEdgePolygon</code>: Hollow polygon shapes. A edge-polygon shape consists
+ of multiple segment shapes.</p>
+<p>-<code>PhysicsShapeEdgeBox</code>：Hollow box shapes. A edge-box shape consists of four
+ segment shapes.</p>
+<p>-<code>PhysicsShapeEdgeChain</code>: The chain shape provides an efficient way to connect
+ many edges together.</p>
+</blockquote>
+<h3 id="contactsjoints">Contacts/Joints</h3>
+<p><strong>Contacts</strong> and <strong>joint</strong> objects describe how bodies are attached to each other.</p>
+<h3 id="world">World</h3>
+<p>A <strong>world</strong> container is what your physics bodies are added to and where they are
+simulated. You add <strong>bodies</strong>, <strong>shapes</strong> and <strong>constraints</strong> to a world and then
+update the world as a whole. The <strong>world</strong> controls how all of these items interact
+together. Much of the interaction with the physics API will be with a <code>PhysicsWorld</code>
+object.</p>
+<p>There is a lot to remember here, keep these terms handy to refer back to them as
+needed.</p>
+<h2 id="physics-world-and-physics-body">Physics World and Physics Body</h2>
+<h3 id="physicsworld">PhysicsWorld</h3>
+<p>A <code>PhysicsWorld</code> object is the core item used when simulating physics. Just like
+the world we live in, a <code>PhysicsWorld</code> has a lot of things happening at once.
+<code>PhysicsWorld</code> integrates deeply at the <code>Scene</code> level because of it's many facets.
+Let's use a simple example that we can all relate to. Does your residence have a
+kitchen? Think of this as your <strong>physics world</strong>! Now your world has <code>PhysicsBody</code>
+objects, like food, knives, appliances! These bodies interact with each other
+inside the world. These objects touch and also react to those touches. Example:
+use a knife to cut food and put it in an appliance. Does the knife cut
+the food? Maybe. Maybe not. Perhaps it isn't the correct type of knife for the
+job.</p>
+<p>You can create a <code>Scene</code> that contains a <code>PhysicsWorld</code> using:</p>
+<pre><code class="cpp">auto scene = Scene::createWithPhysics();
+</code></pre>
+
+<p>Every <code>PhysicsWorld</code> has properties associated with it:</p>
+<blockquote>
+<p>-gravity: Global gravity applied to the world. Defaults to Vec2(0.0f, -98.0f).</p>
+<p>-speed: Set the speed of physics world, speed is the rate at which the simulation
+ executes. Defaults to 1.0.</p>
+<p>-updateRate: set the update rate of physics world, update rate is the value of
+ EngineUpdateTimes/PhysicsWorldUpdateTimes.</p>
+<p>-substeps: set the number of substeps in an update of the physics world.</p>
+</blockquote>
+<p>The process of updating a <code>PhysicsWorld</code> is called <strong>stepping</strong>. By default, the
+<code>PhysicsWorld</code> <strong>updates through time</strong> automatically. This is called <strong>auto stepping</strong>.
+It automatically happens for you, each frame. You can disable <strong>auto steping</strong> of
+the <code>PhysicsWorld</code> by setting <strong>setAutoStep(false)</strong>. If you do this, you would <strong>step</strong>
+the <code>PhysicsWorld</code> manually by setting <strong>step(time)</strong>. <strong>Substeps</strong> are used
+to step the <code>PhysicsWorld</code> forward multiple times using a more precise time
+increment than a single frame. This allows for finer grained control of the
+<strong>stepping</strong> process including more fluid movements.</p>
+<h3 id="physicsbody">PhysicsBody</h3>
+<p><code>PhysicsBody</code> objects have <strong>position</strong> and <strong>velocity</strong>. You can apply <strong>forces</strong>,
+<strong>movement</strong>, <strong>damping</strong> and <strong>impulses</strong> (as well as more) to <code>PhysicsBody</code> objects.
+<code>PhysicsBody</code> can be <strong>static</strong> or <strong>dynamic</strong>. A <strong>static</strong> body does not move under
+simulation and behaves as if it has infinite <strong>mass</strong>. A <strong>dynamic</strong> body is fully
+simulated. They can be moved manually by the user, but normally they move according
+to forces. A dynamic body can collide with all body types. <code>Node</code> provides
+<strong>setPhysicsBody()</strong> to associate a <code>PhysicsBody</code> to a <code>Node</code> object.</p>
+<p>Lets create a static and 5 dynamic <code>PhysicsBody</code> objects that are a box shape:</p>
+<pre><code class="cpp">auto physicsBody = PhysicsBody::createBox(Size(65.0f, 81.0f),
+                        PhysicsMaterial(0.1f, 1.0f, 0.0f));
+physicsBody-&gt;setDynamic(false);
+
+//create a sprite
+auto sprite = Sprite::create(&quot;whiteSprite.png&quot;);
+sprite-&gt;setPosition(s_centre);
+addChild(sprite);
+
+//apply physicsBody to the sprite
+sprite-&gt;addComponent(physicsBody);
+
+//add five dynamic bodies
+for (int i = 0; i &lt; 5; ++i)
+{
+    physicsBody = PhysicsBody::createBox(Size(65.0f, 81.0f),
+                    PhysicsMaterial(0.1f, 1.0f, 0.0f));
+
+    //set the body isn't affected by the physics world's gravitational force
+    physicsBody-&gt;setGravityEnable(false);
+
+    //set initial velocity of physicsBody
+    physicsBody-&gt;setVelocity(Vec2(cocos2d::random(-500,500),
+                cocos2d::random(-500,500)));
+    physicsBody-&gt;setTag(DRAG_BODYS_TAG);
+
+    sprite = Sprite::create(&quot;blueSprite.png&quot;);
+    sprite-&gt;setPosition(Vec2(s_centre.x + cocos2d::random(-300,300),
+                s_centre.y + cocos2d::random(-300,300)));
+    sprite-&gt;addComponent(physicsBody);
+
+    addChild(sprite);
+}
+</code></pre>
+
+<p>The result is a stationary <code>PhysicsBody</code> with 5 additional <code>PhysicsBody</code> objects
+colliding around it.</p>
+<p><img alt="" src="../physics-img/CorrelationSprite.gif" /></p>
+<h2 id="collision">Collision</h2>
+<p>Have you ever been in a car accident? What did you collide with? Just like with
+cars, <code>PhysicBody</code> objects can come in contact. <strong>Collisions</strong> are what happens when
+<code>PhysicBody</code> objects come in contact with each other. When a <strong>collision</strong> takes
+place it can be ignored or it can trigger events to be fired.</p>
+<h3 id="filtering-collisions">Filtering Collisions</h3>
+<p>Collision filtering allows you to enable or prevent collisions between shapes.
+This <strong>physics engine</strong> supports collision filtering using <strong>category and group bitmasks</strong>.</p>
+<p>There are 32 supported collision categories. For each shape you can specify which
+category it belongs to. You can also specify what other categories this shape can
+collide with. This is done with masking bits. For example:</p>
+<pre><code class="cpp">auto sprite1 = addSpriteAtPosition(Vec2(s_centre.x - 150,s_centre.y));
+sprite1-&gt;getPhysicsBody()-&gt;setCategoryBitmask(0x02);    // 0010
+sprite1-&gt;getPhysicsBody()-&gt;setCollisionBitmask(0x01);   // 0001
+
+sprite1 = addSpriteAtPosition(Vec2(s_centre.x - 150,s_centre.y + 100));
+sprite1-&gt;getPhysicsBody()-&gt;setCategoryBitmask(0x02);    // 0010
+sprite1-&gt;getPhysicsBody()-&gt;setCollisionBitmask(0x01);   // 0001
+
+auto sprite2 = addSpriteAtPosition(Vec2(s_centre.x + 150,s_centre.y),1);
+sprite2-&gt;getPhysicsBody()-&gt;setCategoryBitmask(0x01);    // 0001
+sprite2-&gt;getPhysicsBody()-&gt;setCollisionBitmask(0x02);   // 0010
+
+auto sprite3 = addSpriteAtPosition(Vec2(s_centre.x + 150,s_centre.y + 100),2);
+sprite3-&gt;getPhysicsBody()-&gt;setCategoryBitmask(0x03);    // 0011
+sprite3-&gt;getPhysicsBody()-&gt;setCollisionBitmask(0x03);   // 0011
+</code></pre>
+
+<p>You can check for collisions by checking and comparing <em>category</em> and <em>collision</em>
+bitmasks like:</p>
+<pre><code class="cpp">if ((shapeA-&gt;getCategoryBitmask() &amp; shapeB-&gt;getCollisionBitmask()) == 0
+   || (shapeB-&gt;getCategoryBitmask() &amp; shapeA-&gt;getCollisionBitmask()) == 0)
+{
+   // shapes can't collide
+   ret = false;
+}
+</code></pre>
+
+<p><img alt="" src="../physics-img/CollisionFiltering.gif" /></p>
+<p>Collision groups let you specify an integral group index. You can have all shapes
+with the same group index always collide (positive index) or never collide (negative
+index and zero index). Collisions between shapes of different group indices are
+filtered according the category and mask bits. In other words, group filtering has
+higher precedence than category filtering.</p>
+<h3 id="contactsjoints_1">Contacts/Joints</h3>
+<p>Recall from the terminology above that <strong>joints</strong> are how contact points are connected
+to each other. Yes, you can think of it just like <strong>joints</strong> on your own body.
+Each joint type has a definition that derives from <code>PhysicsJoint</code>. All joints are
+connected between two different bodies. One body may be static. You can prevent the
+attached bodies from colliding with each other by <strong>joint-&gt;setCollisionEnable(false)</strong>.
+Many joint definitions require that you provide some geometric data. Often a joint
+will be defined by anchor points. The rest of the joint definition data depends
+on the joint type.</p>
+<blockquote>
+<p>-PhysicsJointFixed: A fixed joint fuses the two bodies together at a reference
+ point. Fixed joints are useful for creating complex shapes that can be broken
+ apart later.</p>
+<p>-PhysicsJointLimit: A limit joint imposes a maximum distance between the two
+ bodies, as if they were connected by a rope.</p>
+<p>-PhysicsJointPin: A pin joint allows the two bodies to independently rotate
+ around the anchor point as if pinned together.</p>
+<p>-PhysicsJointDistance: Set the fixed distance with two bodies</p>
+<p>-PhysicsJointSpring: Connecting two physics bodies together with a spring</p>
+<p>-PhysicsJointGroove: Attach body a to a line, and attach body b to a dot</p>
+<p>-PhysicsJointRotarySpring: Likes a spring joint, but works with rotary</p>
+<p>-PhysicsJointRotaryLimit: Likes a limit joint, but works with rotary</p>
+<p>-PhysicsJointRatchet: Works like a socket wrench</p>
+<p>-PhysicsJointGear: Keeps the angular velocity ratio of a pair of bodies constant</p>
+<p>-PhysicsJointMotor: Keeps the relative angular velocity of a pair of bodies
+ constant</p>
+</blockquote>
+<p><img alt="" src="../physics-img/joints.PNG" /></p>
+<h3 id="collision-detection">Collision detection</h3>
+<p>Contacts are objects created by the <strong>physics engine</strong> to manage the collision
+between two shapes. <strong>Contact</strong> objects are not created by the user, they are
+created automatically. There are a few terms associated with contacts.</p>
+<blockquote>
+<p>-contact point: A contact point is a point where two shapes touch.</p>
+<p>-contact normal: A contact normal is a unit vector that points from one shape
+ to another.</p>
+</blockquote>
+<p>You can get the <code>PhysicsShape</code> from a <strong>contact</strong>. From those you can get the bodies.</p>
+<pre><code class="cpp">bool onContactBegin(PhysicsContact&amp; contact)
+{
+    auto bodyA = contact.getShapeA()-&gt;getBody();
+    auto bodyB = contact.getShapeB()-&gt;getBody();
+    return true;
+}
+</code></pre>
+
+<p>You can get access to <strong>contacts</strong> by implementing a <strong>contact listener</strong>. The <strong>contact
+listener</strong> supports several events: <strong>begin</strong>, <strong>pre-solve</strong>, <strong>post-solve</strong> and <strong>separate</strong>.</p>
+<blockquote>
+<p>-begin: Two shapes just started touching for the first time this step. Return
+true from the callback to process the collision normally or false to cause physics
+engine to ignore the collision entirely. If you return false, the <em>preSolve()</em> and
+<em>postSolve()</em> callbacks will never be run, but you will still receive a separate
+event when the shapes stop overlapping.</p>
+<p>-pre-solve: Two shapes are touching during this step. Return false from the callback
+ to make physics engine ignore the collision this step or true to process it normally.
+ Additionally, you may override collision values using <em>setRestitution()</em>, <em>setFriction()</em>
+ or <em>setSurfaceVelocity()</em> to provide custom restitution, friction, or surface velocity
+ values.</p>
+<p>-post-solve: Two shapes are touching and their collision response has been
+ processed.</p>
+<p>-separate: Two shapes have just stopped touching for the first time this step.</p>
+</blockquote>
+<p>You also can use <code>EventListenerPhysicsContactWithBodies</code>,
+<code>EventListenerPhysicsContactWithShapes</code>, <code>EventListenerPhysicsContactWithGroup</code>
+to listen for the event you're interested with bodies, shapes or groups. Besides this you
+also need to set the physics contact related bitmask value, as the contact event
+won't be received by default, even if you create the relative <strong>EventListener</strong>.</p>
+<p>For example:</p>
+<pre><code class="cpp">bool init()
+{
+    //create a static PhysicsBody
+    auto sprite = addSpriteAtPosition(s_centre,1);
+    sprite-&gt;setTag(10);
+    sprite-&gt;getPhysicsBody()-&gt;setContactTestBitmask(0xFFFFFFFF);
+    sprite-&gt;getPhysicsBody()-&gt;setDynamic(false);
+
+    //adds contact event listener
+    auto contactListener = EventListenerPhysicsContact::create();
+    contactListener-&gt;onContactBegin = CC_CALLBACK_1(PhysicsDemoCollisionProcessing::onContactBegin, this);
+    _eventDispatcher-&gt;addEventListenerWithSceneGraphPriority(contactListener, this);
+
+    schedule(CC_SCHEDULE_SELECTOR(PhysicsDemoCollisionProcessing::tick), 0.3f);
+    return true;
+
+    return false;
+}
+
+void tick(float dt)
+{
+    auto sprite1 = addSpriteAtPosition(Vec2(s_centre.x + cocos2d::random(-300,300),
+      s_centre.y + cocos2d::random(-300,300)));
+    auto physicsBody = sprite1-&gt;getPhysicsBody();
+    physicsBody-&gt;setVelocity(Vec2(cocos2d::random(-500,500),cocos2d::random(-500,500)));
+    physicsBody-&gt;setContactTestBitmask(0xFFFFFFFF);
+}
+
+bool onContactBegin(PhysicsContact&amp; contact)
+{
+    auto nodeA = contact.getShapeA()-&gt;getBody()-&gt;getNode();
+    auto nodeB = contact.getShapeB()-&gt;getBody()-&gt;getNode();
+
+    if (nodeA &amp;&amp; nodeB)
+    {
+        if (nodeA-&gt;getTag() == 10)
+        {
+            nodeB-&gt;removeFromParentAndCleanup(true);
+        }
+        else if (nodeB-&gt;getTag() == 10)
+        {
+            nodeA-&gt;removeFromParentAndCleanup(true);
+        }
+    }
+
+    //bodies can collide
+    return true;
+}
+</code></pre>
+
+<p><img alt="" src="../physics-img/CollisionProcessing.gif" /></p>
+<h3 id="queries">Queries</h3>
+<p>Have you ever stood in one position and looked around? You see things <strong>near</strong> to
+you and <strong>far</strong> from you. You can gauge how close things are to you. <strong>Physics engines</strong>
+provide this same type of <strong>spatial query</strong>. <code>PhysicsWorld</code> objects currently support
+<strong>point queryies</strong>, <strong>ray casts</strong> and <strong>rect queries</strong>.</p>
+<h4 id="point-queries">Point Queries</h4>
+<p>When you touch something, say your desk, you can think of this as a <strong>point query</strong>.
+They allow you to check if there are shapes within a certain distance of a point.
+<strong>Point queries</strong> are useful for things like <strong>mouse picking</strong> and <strong>simple sensors</strong>.
+You can also find the closest point on a shape to a given point or find the closest
+shape to a point.</p>
+<h4 id="ray-cast">Ray Cast</h4>
+<p>If you are looking around, some object within your sight is bound to catch your
+attention. You have essentially performed a <strong>ray cast</strong> here. You scanned until
+you found something interesting to make you stop scanning. You can <strong>ray cast</strong> at
+a shape to get the point of first intersection. For example:</p>
+<pre><code class="cpp">void tick(float dt)
+{
+    Vec2 d(300 * cosf(_angle), 300 * sinf(_angle));
+    Vec2 point2 = s_centre + d;
+    if (_drawNode)
+    {
+        removeChild(_drawNode);
+    }
+    _drawNode = DrawNode::create();
+
+    Vec2 points[5];
+    int num = 0;
+    auto func = [&amp;points, &amp;num](PhysicsWorld&amp; world,
+        const PhysicsRayCastInfo&amp; info, void* data)-&gt;bool
+    {
+        if (num &lt; 5)
+        {
+            points[num++] = info.contact;
+        }
+        return true;
+    };
+
+    s_currScene-&gt;getPhysicsWorld()-&gt;rayCast(func, s_centre, point2, nullptr);
+
+    _drawNode-&gt;drawSegment(s_centre, point2, 1, Color4F::RED);
+    for (int i = 0; i &lt; num; ++i)
+    {
+        _drawNode-&gt;drawDot(points[i], 3, Color4F(1.0f, 1.0f, 1.0f, 1.0f));
+    }
+    addChild(_drawNode);
+
+    _angle += 1.5f * (float)M_PI / 180.0f;
+}
+</code></pre>
+
+<p><img alt="" src="../physics-img/RayTest.gif" /></p>
+<h4 id="rect-queries">Rect Queries</h4>
+<p><strong>Rect queries</strong> provide a fast way to check roughly which shapes are in an area.
+It is pretty easy to implement:</p>
+<pre><code class="cpp">auto func = [](PhysicsWorld&amp; world, PhysicsShape&amp; shape, void* userData)-&gt;bool
+{
+    //Return true from the callback to continue rect queries
+    return true;
+}
+
+scene-&gt;getPhysicsWorld()-&gt;queryRect(func, Rect(0,0,200,200), nullptr);
+</code></pre>
+
+<p>A few examples of using a <strong>rect query</strong> while doing a <em>logo smash</em>:</p>
+<p><img alt="" src="../physics-img/rectQuery1.gif" /></p>
+<p><img alt="" src="../physics-img/rectQuery2.gif" /></p>
+<h4 id="debugging-physics-body-and-shapes">Debugging Physics Body and Shapes</h4>
+<p>If you ever wish to have red boxes drawn around your <strong>physics bodies</strong> to aid
+in debugging, simple add these 2 lines to your core, where it makes sense to you.
+Perhaps <code>AppDelegate</code> is a good place. </p>
+<pre><code class="cpp">Director::getInstance()-&gt;getRunningScene()-&gt;getPhysics3DWorld()-&gt;setDebugDrawEnable(true);
+Director::getInstance()-&gt;getRunningScene()-&gt;setPhysics3DDebugCamera(cameraObjecct);
+</code></pre>
+
+<h4 id="disabling-physics">Disabling Physics</h4>
+<p>Using the built-in <strong>physics engine</strong> is a good idea. It is solid and advanced.
+However, if you wish to use an alternative <strong>physics engine</strong> you can. All you need
+to do is disabling <strong>CC_USE_PHYSICS</strong> in <strong>base/ccConfig.h</strong>.</p>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../scripting/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../audio/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+</div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <p style="text-align:center">Copyright (c) 2014-2016 Chukong Technologies Inc.</p>
+            
+           <!-- <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>-->
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+
+        <!-- PG languages -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script>
+        $(function() {
+          var key = "Cocos2d-x_pg_lang";
+          var switch_lang = function(l) {
+              $('.langs li a').removeClass('selected');
+              $('#'+l).addClass('selected');
+              $('.tab_content').hide();
+              $('.'+l).show();
+              $.cookie(key, l);
+          }
+          $('.langs li a').click(function() {switch_lang(this.id);return false;});
+          var c = $.cookie(key);
+          if (typeof c == 'undefined') c='tab-cpp';
+          switch_lang(c);
+        });
+        </script>
+
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/Cocos2d-html5-min.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chipmunk.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d-jsb.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/main.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/AnimationLayer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/BackgroundLayer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Coin.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/GameOverLayer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/PlayScene.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Rock.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/SimpleRecognizer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/StatusLayer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/globals.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/myApp.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/resource.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

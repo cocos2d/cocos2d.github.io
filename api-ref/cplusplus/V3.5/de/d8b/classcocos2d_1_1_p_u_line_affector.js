@@ -1,0 +1,28 @@
+var classcocos2d_1_1_p_u_line_affector =
+[
+    [ "~PULineAffector", "de/d8b/classcocos2d_1_1_p_u_line_affector.html#a2d5abcc392d2ece7514d0a8419e64501", null ],
+    [ "copyAttributesTo", "de/d8b/classcocos2d_1_1_p_u_line_affector.html#a35ba0f1961ab13126780a6a0a155add2", null ],
+    [ "firstParticleUpdate", "de/d8b/classcocos2d_1_1_p_u_line_affector.html#a1e429f7f804dfe36626c3592b6be1aa1", null ],
+    [ "getDrift", "de/d8b/classcocos2d_1_1_p_u_line_affector.html#ade3c77c64093ca407dac45450751750b", null ],
+    [ "getEnd", "de/d8b/classcocos2d_1_1_p_u_line_affector.html#a9c51d64817ad9617082e000294b54846", null ],
+    [ "getMaxDeviation", "de/d8b/classcocos2d_1_1_p_u_line_affector.html#a2abcc1b2f26e928bf44dc77e58ec1955", null ],
+    [ "getTimeStep", "de/d8b/classcocos2d_1_1_p_u_line_affector.html#a9aa1bf03253fe4a996cd4b24d0514e7d", null ],
+    [ "notifyRescaled", "de/d8b/classcocos2d_1_1_p_u_line_affector.html#a3820c276bf164d55ab410850732fb537", null ],
+    [ "postUpdateAffector", "de/d8b/classcocos2d_1_1_p_u_line_affector.html#a2959af365b842ef4a282a724416fe847", null ],
+    [ "preUpdateAffector", "de/d8b/classcocos2d_1_1_p_u_line_affector.html#ae3a21f52ae10448d7fc16e457579c864", null ],
+    [ "setDrift", "de/d8b/classcocos2d_1_1_p_u_line_affector.html#a03cc7dc373de17083e291aeaf20605ee", null ],
+    [ "setEnd", "de/d8b/classcocos2d_1_1_p_u_line_affector.html#acd3dcafbbd600372559b6b282c62f6c6", null ],
+    [ "setMaxDeviation", "de/d8b/classcocos2d_1_1_p_u_line_affector.html#ac6cb09a789c970e2f1635580cee0dab3", null ],
+    [ "setTimeStep", "de/d8b/classcocos2d_1_1_p_u_line_affector.html#a2ca743f7f6a75729540d4fb7247686b8", null ],
+    [ "updatePUAffector", "de/d8b/classcocos2d_1_1_p_u_line_affector.html#a76e9bfa0d27dfc61e13177d79768ca84", null ],
+    [ "__pad0__", "de/d8b/classcocos2d_1_1_p_u_line_affector.html#a111fce2fb3d1886083559f4b9ecba3b3", null ],
+    [ "_drift", "de/d8b/classcocos2d_1_1_p_u_line_affector.html#a37a4a99b1a939c2d5e4e14f1b202cffb", null ],
+    [ "_end", "de/d8b/classcocos2d_1_1_p_u_line_affector.html#ac5496800c6bbb9cd5ab9114ae7668b37", null ],
+    [ "_first", "de/d8b/classcocos2d_1_1_p_u_line_affector.html#a9cedff0c361c1aa9c4a1e86062660422", null ],
+    [ "_maxDeviation", "de/d8b/classcocos2d_1_1_p_u_line_affector.html#ad08eec2c790f5391b9748d1f4dbd4c06", null ],
+    [ "_oneMinusDrift", "de/d8b/classcocos2d_1_1_p_u_line_affector.html#a7cda128e6ecbf0b3d14062f856e4d894", null ],
+    [ "_scaledMaxDeviation", "de/d8b/classcocos2d_1_1_p_u_line_affector.html#a0c4c2da4c58b50f6725be5552d206d44", null ],
+    [ "_timeSinceLastUpdate", "de/d8b/classcocos2d_1_1_p_u_line_affector.html#ac0a1d2357dfbe9c92aaf0d3b5cf282e7", null ],
+    [ "_timeStep", "de/d8b/classcocos2d_1_1_p_u_line_affector.html#ac309eba14472a7d4c65da456e55f3b47", null ],
+    [ "_update", "de/d8b/classcocos2d_1_1_p_u_line_affector.html#af64f238760f49267f2ae24b908bb5fb1", null ]
+];

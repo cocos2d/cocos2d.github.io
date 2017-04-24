@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Cocos Team">
+        <link rel="canonical" href="http://cocos2d-x.org/docs/deprecated/studio-chapters/chapter3/HowToCode/CustomizeFramework-v3.8/en/index.html">
+        <link rel="shortcut icon" href="../../../../../../img/favicon.ico">
+
+	<title>_13 Customize Framework(v3.8~3.9) - Cocos Documentation</title>
+
+  <link href="../../../../../../css/bootstrap-custom.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+<link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href="../../../../../../css/base.css" rel="stylesheet">
+<link href="../../../../../../css/cinder.css" rel="stylesheet">
+<link href="../../../../../../css/pg.css" rel="stylesheet">
+<link href="../../../../../../css/highlight.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-3216502-3', 'Cocos2d-x.org');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a style="padding: 12px 0px;" class="navbar-brand" href="../../../../../../index.html">Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../../../../../index.html">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Manual Installations</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../../installation/A/index.html">Prerequisites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../installation/Android-terminal/index.html">Android Command-line Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../installation/Android-VisualStudio/index.html">Android Visual Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../installation/Android-Studio/index.html">Android Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../installation/Android-Eclipse/index.html">Android Eclipse Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../installation/iOS/index.html">IOS and OSX Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../installation/Linux/index.html">Linux Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../installation/Tizen/index.html">Tizen Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../installation/Windows/index.html">Windows Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../installation/Windows-Phone/index.html">Windows Phone Setup</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Programmers Guide</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../../programmers-guide/about/index.html">About Cocos2d-x</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../programmers-guide/basic_concepts/index.html">Basic Concepts</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../programmers-guide/sprites/index.html">Sprites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../programmers-guide/actions/index.html">Actions</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../programmers-guide/scenes/index.html">Scenes</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../programmers-guide/ui_components/index.html">UI</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../programmers-guide/other_node_types/index.html">Other Node Types</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../programmers-guide/event_dispatch/index.html">Event Dispatch</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../programmers-guide/3d/index.html">3D</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../programmers-guide/scripting/index.html">Scripting</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../programmers-guide/physics/index.html">Physics</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../programmers-guide/audio/index.html">Audio</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../programmers-guide/vr/index.html">VR</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../programmers-guide/advanced_topics/index.html">Advanced Topics</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Editors & Tools</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../../editors_and_tools/cocosCLTool/index.html">Command-line tool</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../editors_and_tools/creator/index.html">Cocos Creator</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+  
+  <li >
+      <a href="../../../../../../editors_and_tools/cocos/index.html">Cocos Launcher</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Services</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../../services/sdkbox/index.html">SDKBOX</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Tutorials</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../../tutorials/javascript/javascript/index.html">Parkour Game Tutorials for Cocos2d-JS</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+  <li >
+      <a href="../../../../../../api-ref/index.html">API Reference</a>
+  </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Deprecated</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../studio/index.html">Cocos Studio</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                        </ul>
+                    </li>
+                
+                
+
+                <!-- new add for language button -->
+                <!--<li>
+                    <a href="http://sdkbox-doc.github.io/zh/">中文</a>
+                </li>-->
+
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <!-- 
+                    <li >
+                        <a rel="next" href="../../CustomizeFramework/en/index.html">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../CustomizeFramework-v3.10/en/index.html">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                 -->
+                
+                    <li>
+                        <a href="https://github.com/chukong/cocos-docs">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+              
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+      
+        
+          <li class="main active"><a href="#customize-cocos-framework-simulator">Customize Cocos Framework &amp; Simulator</a></li>
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#overview">Overview</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#version-requirement">Version Requirement</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#how-to-customize-cocos-framework">How to customize Cocos Framework</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#how-to-release-the-custom-cocos-framework">How to release the custom Cocos Framework</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#integrate-custom-simulator">Integrate custom simulator</a></li>
+              
+
+          
+
+        
+      
+    
+    </ul>
+</div></div>
+              
+                <div class="col-md-9" role="main">
+
+<!-- bread crumb trail -->
+<ol class="breadcrumb">
+<li><a href="../../../../../../index.html">Docs</a></li>
+
+  
+    
+      <li>Contents</li>
+    
+  
+    
+      <li>Deprecated</li>
+    
+  
+
+<li>_13 Customize Framework(v3.8~3.9)</li>
+</ol>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../../CustomizeFramework/en/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../../CustomizeFramework-v3.10/en/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+
+
+<!-- we can put this here if we want it on all content pages, but we don't at this point -->
+<!--<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>-->
+    <!--<li><a href="#" id="tab-lua">Lua</a></li>-->
+  <!--</ul>
+</div>-->
+
+<h1 id="customize-cocos-framework-simulator">Customize Cocos Framework &amp; Simulator</h1>
+<h3 id="overview">Overview</h3>
+<p>The following section provides guidance on how to create and include custom Cocos Framework &amp; Simulator for your games.</p>
+<h3 id="version-requirement">Version Requirement</h3>
+<p>Customizing Cocos Framework requires Cocos Framework v3.7 or higher. This document is used for version v3.8 or higher.</p>
+<p>The directories below are based on v3.8 and the installation of Cocos Framework.</p>
+<h3 id="how-to-customize-cocos-framework">How to customize Cocos Framework</h3>
+<p>Customizing Cocos Framework is actually modifying its source codes. After the installation of Cocos Framework, you can customize the framework with IDE or code editors.</p>
+<ul>
+<li>On Mac, you can open projects <code>/Applications/Cocos/frameworks/cocos2d-x-v3.8/build/CocosFramework.xcodeproj</code> with XCode. Then you need to modify and debug codes.</li>
+<li>On Windows, you can open projects <code>[installation directory]/frameworks/cocos2d-x-v3.8/build/CocosFramework.sln</code> with Visual Studio. Then you need to modify and debug codes.</li>
+</ul>
+<h3 id="how-to-release-the-custom-cocos-framework">How to release the custom Cocos Framework</h3>
+<h4 id="build-a-new-precompiled-library">Build a new precompiled library</h4>
+<p>There is a scripting tool in Cocos Framework to compile source codes to precompiled library: <code>cocos gen-libs</code>.</p>
+<p>The following is a detailed description of how to use this scripting tool:</p>
+<pre><code>usage: cocos gen-libs [-h] [-c] [-e ENGINE_PATH] [-p {ios,mac,android,win32}]
+                      [-m {debug,release}] [--dis-strip] [--vs VS_VERSION]
+                      [--app-abi APP_ABI]
+
+Generate prebuilt libs of engine. The libs will be placed in 'prebuilt' folder
+of the engine root path.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -c                    Remove the 'prebuilt' folder at first.
+  -e ENGINE_PATH        Specify the engine path. Default is the engine root
+                        path of current tools.
+  -p {ios,mac,android,win32}
+                        Specify the target platform. Can specify multi
+                        platform by using '-p' multi times. Default generate
+                        all available platforms.
+  -m {debug,release}, --mode {debug,release}
+                        Generate cocos libs for debug or release. Default is
+                        release.
+  --dis-strip           Disable the strip of the generated libs.
+
+Windows Options:
+  --vs VS_VERSION       Specify the Visual Studio version, such as 2013.
+                        Default find available version automatically.
+
+Android Options:
+  --app-abi APP_ABI     Set the APP_ABI of ndk-build. Can be multi value
+                        separated with ':'. Sample : --app-aib
+                        armeabi:x86:mips. Default value is 'armeabi'.
+
+</code></pre>
+
+<p>For example:</p>
+<ol>
+<li><code>cocos gen-libs -c</code> : Clear previous precompiled library and compile all platforms.</li>
+<li><code>cocos gen-libs -p win32 --vs 2015</code> : Compile Win32 platform with Visual Studio 2015.</li>
+</ol>
+<p>Precompiled library will be created in the following directory <code>frameworks/cocos2d-x-v3.8/prebuilt</code>. Include the new precompiled library to game projects.</p>
+<p><strong>Note</strong></p>
+<ul>
+<li>To customize Cocos Framework, you need to modify source codes and maintain project files. Any problem in the custom codes or projects will lead to a failure in implementing compiling tools.</li>
+<li>When you're genrating prebuilt libs with <code>-m debug</code>, you should modify the Visual Studio configuration of your game project like this:
+Change the value of <code>C/C++ -&gt; Code Generation -&gt; Runtime Library</code> from <code>/MD</code> to <code>/MDd</code>. Take a look at the image:
+<img alt="image" src="../../../../studio-img/HowToCode/CustomizeFramework-v3.8/vs_config.jpg" /></li>
+</ul>
+<h4 id="create-a-new-simulator">Create a new simulator</h4>
+<p>There is a scripting tool in Cocos Framework to compile source codes to precompiled library: <code>cocos gen-simulator</code>。</p>
+<p>The following is a detailed description of how to use this scripting tool:</p>
+<pre><code>usage: cocos gen-simulator [-h] [-c] [-e ENGINE_PATH] [-m {debug,release}]
+                           [-o OUT_DIR] [-p {ios,mac,android,win32}]
+                           [--vs VS_VERSION]
+
+Generate Cocos Simulator.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -c, --clean           Clean the output directory before generating. Will
+                        remove the output directory at first.
+  -e ENGINE_PATH        Specify the engine path. Default is the engine root
+                        path of current tools.
+  -m {debug,release}, --mode {debug,release}
+                        Generate simulator for debug or release. Default is
+                        debug.
+  -o OUT_DIR, --output OUT_DIR
+                        Where to save Cocos Simulator. Default is the
+                        'simulator' folder in the root path of engine.
+  -p {ios,mac,android,win32}
+                        Specify the target platform. Can specify multi
+                        platform by using '-p' multi times. Default generate
+                        all available platforms.
+  --vs VS_VERSION       Specify the Visual Studio version, such as 2013.
+                        Default find available version automatically.
+</code></pre>
+
+<p>For example:</p>
+<ol>
+<li><code>cocos gen-simulator -c</code> : Clear previous simulators and compile all platforms.</li>
+<li><code>cocos gen-simulator -p win32 --vs 2015</code> : Compile Win32 simulator with Visual Studio 2015.</li>
+</ol>
+<h3 id="integrate-custom-simulator">Integrate custom simulator</h3>
+<p>Copy and replace the files under " <strong>installation directory/Cocos/cocos-simulator-bin</strong> ". Once you have done it, you can use the custom simulator.</p>
+<p><em><strong>Note</strong> Simulator is mainly used to preview projects. If you want to use a new simulator, you need to replace the current used simulator with the new one.</em></p>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../../CustomizeFramework/en/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../../CustomizeFramework-v3.10/en/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+</div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <p style="text-align:center">Copyright (c) 2014-2016 Chukong Technologies Inc.</p>
+            
+           <!-- <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>-->
+        </footer>
+
+        <script src="../../../../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../../../../js/highlight.pack.js"></script>
+        <script>var base_url = '../../../../../..';</script>
+
+        <!-- PG languages -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script>
+        $(function() {
+          var key = "Cocos2d-x_pg_lang";
+          var switch_lang = function(l) {
+              $('.langs li a').removeClass('selected');
+              $('#'+l).addClass('selected');
+              $('.tab_content').hide();
+              $('.'+l).show();
+              $.cookie(key, l);
+          }
+          $('.langs li a').click(function() {switch_lang(this.id);return false;});
+          var c = $.cookie(key);
+          if (typeof c == 'undefined') c='tab-cpp';
+          switch_lang(c);
+        });
+        </script>
+
+        <script data-main="../../../../../../mkdocs/js/search.js" src="../../../../../../mkdocs/js/require.js"></script>
+        <script src="../../../../../../js/base.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/Cocos2d-html5-min.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chipmunk.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d-jsb.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/main.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/AnimationLayer.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/BackgroundLayer.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Coin.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/GameOverLayer.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/PlayScene.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Rock.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/SimpleRecognizer.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/StatusLayer.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/globals.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/myApp.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/resource.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Cocos Team">
+        <link rel="canonical" href="http://cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/action-list/index.html">
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+
+	<title>_Action List - Cocos Documentation</title>
+
+  <link href="../../../../css/bootstrap-custom.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+<link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href="../../../../css/base.css" rel="stylesheet">
+<link href="../../../../css/cinder.css" rel="stylesheet">
+<link href="../../../../css/pg.css" rel="stylesheet">
+<link href="../../../../css/highlight.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-3216502-3', 'Cocos2d-x.org');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a style="padding: 12px 0px;" class="navbar-brand" href="../../../../index.html">Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../../../index.html">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Manual Installations</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../installation/A/index.html">Prerequisites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Android-terminal/index.html">Android Command-line Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Android-VisualStudio/index.html">Android Visual Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Android-Studio/index.html">Android Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Android-Eclipse/index.html">Android Eclipse Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/iOS/index.html">IOS and OSX Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Linux/index.html">Linux Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Tizen/index.html">Tizen Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Windows/index.html">Windows Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Windows-Phone/index.html">Windows Phone Setup</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Programmers Guide</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/about/index.html">About Cocos2d-x</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/basic_concepts/index.html">Basic Concepts</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/sprites/index.html">Sprites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/actions/index.html">Actions</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/scenes/index.html">Scenes</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/ui_components/index.html">UI</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/other_node_types/index.html">Other Node Types</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/event_dispatch/index.html">Event Dispatch</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/3d/index.html">3D</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/scripting/index.html">Scripting</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/physics/index.html">Physics</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/audio/index.html">Audio</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/vr/index.html">VR</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/advanced_topics/index.html">Advanced Topics</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Editors & Tools</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../cocosCLTool/index.html">Command-line tool</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../creator/index.html">Cocos Creator</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+  
+  <li >
+      <a href="../../../cocos/index.html">Cocos Launcher</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Services</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../services/sdkbox/index.html">SDKBOX</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Tutorials</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../tutorials/javascript/javascript/index.html">Parkour Game Tutorials for Cocos2d-JS</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+  <li >
+      <a href="../../../../api-ref/index.html">API Reference</a>
+  </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Deprecated</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../deprecated/studio/index.html">Cocos Studio</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                        </ul>
+                    </li>
+                
+                
+
+                <!-- new add for language button -->
+                <!--<li>
+                    <a href="http://sdkbox-doc.github.io/zh/">中文</a>
+                </li>-->
+
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <!-- 
+                    <li >
+                        <a rel="next" href="../actions/index.html">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../scheduler/index.html">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                 -->
+                
+                    <li>
+                        <a href="https://github.com/chukong/cocos-docs">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+              
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+      
+        
+          <li class="main active"><a href="#action-list">Action list</a></li>
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#basic-action-type">Basic action type</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#container-action">Container action</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#free-action">Free action</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#interval-action">Interval action</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#slow-motion">Slow motion</a></li>
+              
+
+          
+
+        
+      
+    
+    </ul>
+</div></div>
+              
+                <div class="col-md-9" role="main">
+
+<!-- bread crumb trail -->
+<ol class="breadcrumb">
+<li><a href="../../../../index.html">Docs</a></li>
+
+  
+    
+      <li>Contents</li>
+    
+  
+    
+      <li>Editors & Tools</li>
+    
+  
+
+<li>_Action List</li>
+</ol>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../actions/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../scheduler/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+
+
+<!-- we can put this here if we want it on all content pages, but we don't at this point -->
+<!--<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>-->
+    <!--<li><a href="#" id="tab-lua">Lua</a></li>-->
+  <!--</ul>
+</div>-->
+
+<h1 id="action-list">Action list</h1>
+<h2 id="basic-action-type">Basic action type</h2>
+<ul>
+<li><a href="http://fireball-x.com/api/classes/Action.html">Action</a>：base class of all action types</li>
+<li><a href="http://fireball-x.com/api/classes/FiniteTimeAction.html">FiniteTimeAction</a>：finite time action which has the property of <code>duration</code> .</li>
+<li><a href="http://fireball-x.com/api/classes/ActionInstant.html">ActionInstant</a>：free action which will execute immediately, inherited from <code>FiniteTimeAction</code>.</li>
+<li><a href="http://fireball-x.com/api/classes/ActionInterval.html">ActionInterval</a>：interval action which will be completed within a predetermined time period, also inherited from <code>FiniteTimeAction</code>.</li>
+<li><a href="http://fireball-x.com/api/classes/ActionEase.html">ActionEase</a>：all slow motion base classes to modify <code>ActionInterval</code>.</li>
+<li><a href="http://fireball-x.com/api/classes/EaseRateAction.html">EaseRateAction</a>：slow motion base class with rate attribute.</li>
+<li><a href="http://fireball-x.com/api/classes/EaseElastic.html">EaseElastic</a>：elastic slow motion base class.</li>
+<li><a href="http://fireball-x.com/api/classes/EaseBounce.html">EaseBounce</a>：bounce slow motion base class.</li>
+</ul>
+<p>The developer can get to know the basic API for every action type in these action type files.</p>
+<h2 id="container-action">Container action</h2>
+<table>
+<thead>
+<tr>
+<th>Action name</th>
+<th align="center">Introduction</th>
+<th align="center">File link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cc.sequence</td>
+<td align="center">sequential execution action</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_sequence">API description</a></td>
+</tr>
+<tr>
+<td>cc.spawn</td>
+<td align="center">synchronized execution action</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_spawn">API description</a></td>
+</tr>
+<tr>
+<td>cc.repeat</td>
+<td align="center">repetitive execution action</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_repeat">API description</a></td>
+</tr>
+<tr>
+<td>cc.repeatForever</td>
+<td align="center">forever repetitive action</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_repeatForever">API description</a></td>
+</tr>
+<tr>
+<td>cc.speed</td>
+<td align="center">alter action rate</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_speed">API description</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="free-action">Free action</h2>
+<table>
+<thead>
+<tr>
+<th>Action name</th>
+<th align="center">Introduction</th>
+<th align="center">File link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cc.show</td>
+<td align="center">show immediately</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_show">API description</a></td>
+</tr>
+<tr>
+<td>cc.hide</td>
+<td align="center">hide immediately</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_hide">API description</a></td>
+</tr>
+<tr>
+<td>cc.toggleVisibility</td>
+<td align="center">show/hide status switch</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_toggleVisibility">API description</a></td>
+</tr>
+<tr>
+<td>cc.removeSelf</td>
+<td align="center">remove self from parent node</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_removeSelf">API description</a></td>
+</tr>
+<tr>
+<td>cc.flipX</td>
+<td align="center">X-axis flip</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_flipX">API description</a></td>
+</tr>
+<tr>
+<td>cc.flipY</td>
+<td align="center">Y-axis flip</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_flipY">API description</a></td>
+</tr>
+<tr>
+<td>cc.place</td>
+<td align="center">place at the target location</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_place">API description</a></td>
+</tr>
+<tr>
+<td>cc.callFunc</td>
+<td align="center">execute callback function</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_callFunc">API description</a></td>
+</tr>
+<tr>
+<td>cc.targetedAction</td>
+<td align="center">create action with existent action and a new target node</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_targetedAction">API description</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="interval-action">Interval action</h2>
+<table>
+<thead>
+<tr>
+<th>Action name</th>
+<th align="center">Introduction</th>
+<th align="center">File link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cc.moveTo</td>
+<td align="center">move to the target location</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_moveTo">API description</a></td>
+</tr>
+<tr>
+<td>cc.moveBy</td>
+<td align="center">move by assigned distance</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_moveBy">API description</a></td>
+</tr>
+<tr>
+<td>cc.rotateTo</td>
+<td align="center">rotate to the target angle</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_rotateTo">API description</a></td>
+</tr>
+<tr>
+<td>cc.rotateBy</td>
+<td align="center">rotate by assigned angle</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_rotateBy">API description</a></td>
+</tr>
+<tr>
+<td>cc.scaleTo</td>
+<td align="center">scale node to assigned multiple</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_scaleTo">API description</a></td>
+</tr>
+<tr>
+<td>cc.scaleBy</td>
+<td align="center">scale node by assigned multiple</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_scaleBy">API description</a></td>
+</tr>
+<tr>
+<td>cc.skewTo</td>
+<td align="center">skew to the target angle</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_skewTo">API description</a></td>
+</tr>
+<tr>
+<td>cc.skewBy</td>
+<td align="center">skew by assigned angle</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_skewBy">API description</a></td>
+</tr>
+<tr>
+<td>cc.jumpBy</td>
+<td align="center">move assigned distance by jumping</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_jumpBy">API description</a></td>
+</tr>
+<tr>
+<td>cc.jumpTo</td>
+<td align="center">jump to the target location</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_jumpTo">API description</a></td>
+</tr>
+<tr>
+<td>cc.follow</td>
+<td align="center">follow the target node's location</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_follow">API description</a></td>
+</tr>
+<tr>
+<td>cc.bezierTo</td>
+<td align="center">move to the target location by Bezier curve track</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_bezierTo">API description</a></td>
+</tr>
+<tr>
+<td>cc.bezierBy</td>
+<td align="center">move assigned distance by Bezier curve track</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_bezierBy">API description</a></td>
+</tr>
+<tr>
+<td>cc.blink</td>
+<td align="center">blink(based on the transparency)</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_blink">API description</a></td>
+</tr>
+<tr>
+<td>cc.fadeTo</td>
+<td align="center">alter the transparency to assigned value</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_fadeTo">API description</a></td>
+</tr>
+<tr>
+<td>cc.fadeIn</td>
+<td align="center">fade in</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_fadeIn">API description</a></td>
+</tr>
+<tr>
+<td>cc.fadeOut</td>
+<td align="center">fade out</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_fadeOut">API description</a></td>
+</tr>
+<tr>
+<td>cc.tintTo</td>
+<td align="center">alter the color to the assigned value</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_tintTo">API description</a></td>
+</tr>
+<tr>
+<td>cc.tintBy</td>
+<td align="center">alter the color by the assigned increment</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_tintBy">API description</a></td>
+</tr>
+<tr>
+<td>cc.delayTime</td>
+<td align="center">delay the assigned time amount</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_delayTime">API description</a></td>
+</tr>
+<tr>
+<td>cc.reverseTime</td>
+<td align="center">reverse the time axis of the target action</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_reverseTime">API description</a></td>
+</tr>
+<tr>
+<td>cc.cardinalSplineTo</td>
+<td align="center">move to the target location by cardinal spline curve track</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_cardinalSplineTo">API description</a></td>
+</tr>
+<tr>
+<td>cc.cardinalSplineBy</td>
+<td align="center">move assigned distance by cardinal spline curve track</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_cardinalSplineBy">API description</a></td>
+</tr>
+<tr>
+<td>cc.catmullRomTo</td>
+<td align="center">move to the target location by Catmull Rom spline curve track</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_catmullRomTo">API description</a></td>
+</tr>
+<tr>
+<td>cc.catmullRomBy</td>
+<td align="center">move assigned distance by by Catmull Rom spline curve track</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_catmullRomBy">API description</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="slow-motion">Slow motion</h2>
+<table>
+<thead>
+<tr>
+<th>Action name</th>
+<th align="center">File link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cc.easeIn</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeIn">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeOut</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeOut">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeInOut</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeInOut">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeExponentialIn</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeExponentialIn">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeExponentialOut</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeExponentialOut">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeExponentialInOut</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeExponentialInOut">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeSineIn</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeSineIn">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeSineOut</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeSineOut">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeSineInOut</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeSineInOut">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeElasticIn</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeElasticIn">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeElasticOut</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeElasticOut">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeElasticInOut</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeElasticInOut">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeBounceIn</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeBounceIn">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeBounceOut</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeBounceOut">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeBounceInOut</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeBounceInOut">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeBackIn</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeBackIn">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeBackOut</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeBackOut">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeBackInOut</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeBackInOut">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeBezierAction</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeBezierAction">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeQuadraticActionIn</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeQuadraticActionIn">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeQuadraticActionOut</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeQuadraticActionOut">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeQuadraticActionInOut</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeQuadraticActionInOut">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeQuarticActionIn</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeQuarticActionIn">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeQuarticActionOut</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeQuarticActionOut">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeQuarticActionInOut</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeQuarticActionInOut">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeQuinticActionIn</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeQuinticActionIn">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeQuinticActionOut</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeQuinticActionOut">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeQuinticActionInOut</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeQuinticActionInOut">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeCircleActionIn</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeCircleActionIn">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeCircleActionOut</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeCircleActionOut">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeCircleActionInOut</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeCircleActionInOut">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeCubicActionIn</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeCubicActionIn">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeCubicActionOut</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeCubicActionOut">API description</a></td>
+</tr>
+<tr>
+<td>cc.easeCubicActionInOut</td>
+<td align="center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeCubicActionInOut">API description</a></td>
+</tr>
+</tbody>
+</table>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../actions/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../scheduler/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+</div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <p style="text-align:center">Copyright (c) 2014-2016 Chukong Technologies Inc.</p>
+            
+           <!-- <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>-->
+        </footer>
+
+        <script src="../../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../../js/highlight.pack.js"></script>
+        <script>var base_url = '../../../..';</script>
+
+        <!-- PG languages -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script>
+        $(function() {
+          var key = "Cocos2d-x_pg_lang";
+          var switch_lang = function(l) {
+              $('.langs li a').removeClass('selected');
+              $('#'+l).addClass('selected');
+              $('.tab_content').hide();
+              $('.'+l).show();
+              $.cookie(key, l);
+          }
+          $('.langs li a').click(function() {switch_lang(this.id);return false;});
+          var c = $.cookie(key);
+          if (typeof c == 'undefined') c='tab-cpp';
+          switch_lang(c);
+        });
+        </script>
+
+        <script data-main="../../../../mkdocs/js/search.js" src="../../../../mkdocs/js/require.js"></script>
+        <script src="../../../../js/base.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/Cocos2d-html5-min.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chipmunk.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d-jsb.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/main.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/AnimationLayer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/BackgroundLayer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Coin.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/GameOverLayer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/PlayScene.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Rock.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/SimpleRecognizer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/StatusLayer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/globals.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/myApp.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/resource.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

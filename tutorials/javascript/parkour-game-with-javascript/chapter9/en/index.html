@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Cocos Team">
+        <link rel="canonical" href="http://cocos2d-x.org/docs/tutorials/javascript/parkour-game-with-javascript/chapter9/en/index.html">
+        <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+
+	<title>_Chapter9 - Cocos Documentation</title>
+
+  <link href="../../../../../css/bootstrap-custom.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+<link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href="../../../../../css/base.css" rel="stylesheet">
+<link href="../../../../../css/cinder.css" rel="stylesheet">
+<link href="../../../../../css/pg.css" rel="stylesheet">
+<link href="../../../../../css/highlight.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-3216502-3', 'Cocos2d-x.org');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a style="padding: 12px 0px;" class="navbar-brand" href="../../../../../index.html">Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../../../../index.html">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Manual Installations</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/A/index.html">Prerequisites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Android-terminal/index.html">Android Command-line Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Android-VisualStudio/index.html">Android Visual Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Android-Studio/index.html">Android Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Android-Eclipse/index.html">Android Eclipse Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/iOS/index.html">IOS and OSX Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Linux/index.html">Linux Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Tizen/index.html">Tizen Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Windows/index.html">Windows Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Windows-Phone/index.html">Windows Phone Setup</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Programmers Guide</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/about/index.html">About Cocos2d-x</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/basic_concepts/index.html">Basic Concepts</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/sprites/index.html">Sprites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/actions/index.html">Actions</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/scenes/index.html">Scenes</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/ui_components/index.html">UI</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/other_node_types/index.html">Other Node Types</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/event_dispatch/index.html">Event Dispatch</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/3d/index.html">3D</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/scripting/index.html">Scripting</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/physics/index.html">Physics</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/audio/index.html">Audio</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/vr/index.html">VR</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/advanced_topics/index.html">Advanced Topics</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Editors & Tools</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../editors_and_tools/cocosCLTool/index.html">Command-line tool</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../editors_and_tools/creator/index.html">Cocos Creator</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+  
+  <li >
+      <a href="../../../../../editors_and_tools/cocos/index.html">Cocos Launcher</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Services</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../services/sdkbox/index.html">SDKBOX</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Tutorials</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../javascript/index.html">Parkour Game Tutorials for Cocos2d-JS</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+  <li >
+      <a href="../../../../../api-ref/index.html">API Reference</a>
+  </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Deprecated</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../deprecated/studio/index.html">Cocos Studio</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                        </ul>
+                    </li>
+                
+                
+
+                <!-- new add for language button -->
+                <!--<li>
+                    <a href="http://sdkbox-doc.github.io/zh/">中文</a>
+                </li>-->
+
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <!-- 
+                    <li >
+                        <a rel="next" href="../../chapter8/en/index.html">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../chapter10/en/index.html">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                 -->
+                
+                    <li>
+                        <a href="https://github.com/chukong/cocos-docs">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+              
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+      
+        
+          <li class="main active"><a href="#implement-game-over-logic-and-more">Implement Game Over Logic and More</a></li>
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#introduction">Introduction</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#update-game-hud">Update Game HUD</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#add-game-over-logic-into-the-game">Add Game Over Logic into the Game</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#implement-your-own-simple-gesture-recognizer">Implement Your Own Simple Gesture Recognizer</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#handling-touch-event-player-jumping-animation-and-logic">Handling Touch Event, Player Jumping Animation and Logic</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#summary">Summary</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#where-to-go-from-here">Where to go from here?</a></li>
+              
+
+          
+
+        
+      
+    
+    </ul>
+</div></div>
+              
+                <div class="col-md-9" role="main">
+
+<!-- bread crumb trail -->
+<ol class="breadcrumb">
+<li><a href="../../../../../index.html">Docs</a></li>
+
+  
+    
+      <li>Contents</li>
+    
+  
+    
+      <li>Tutorials</li>
+    
+  
+
+<li>_Chapter9</li>
+</ol>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../../chapter8/en/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../../chapter10/en/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+
+
+<!-- we can put this here if we want it on all content pages, but we don't at this point -->
+<!--<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>-->
+    <!--<li><a href="#" id="tab-lua">Lua</a></li>-->
+  <!--</ul>
+</div>-->
+
+<h1 id="implement-game-over-logic-and-more">Implement Game Over Logic and More</h1>
+<h2 id="introduction">Introduction</h2>
+<p>In this tutorial, we'll implement out game over logic, updating HUD and a simple gesture recognizer.
+With out any further ado, let's dive into the tutorial.</p>
+<h2 id="update-game-hud">Update Game HUD</h2>
+<h3 id="update-player-running-meters">Update Player Running Meters</h3>
+<p>At first, let's add a <em>updateMeter</em> method into the StatusLayer Class:</p>
+<pre><code>    updateMeter:function (px) {
+        this.labelMeter.setString(parseInt(px / 10) + &quot;M&quot;);
+    }
+</code></pre>
+
+<p>This method constantly change the value of <em>labelMeter</em>. Here we use <em>parseInt</em> function to convert the result into a integer value.</p>
+<p>The argument <em>px</em> stands for pixel, so every 10 px is one meter.</p>
+<p>Now, we should call this method in each frame.</p>
+<p>Open AnimationLayer.js and add the following code at the beginning of <em>update</em> function:</p>
+<pre><code>        // update meter
+        var statusLayer = this.getParent().getChildByTag(TagOfLayer.Status);
+        statusLayer.updateMeter(this.sprite.getPositionX() - g_runnerStartX);
+</code></pre>
+
+<h3 id="update-coin-count">Update Coin Count</h3>
+<p>When the player collect a coin, we should update the coin indicator.</p>
+<p>At first, let's add a <em>addCoin</em> method in StatusLayer:</p>
+<pre><code>    addCoin:function (num) {
+        this.coins += num;
+        this.labelCoin.setString(&quot;Coins:&quot; + this.coins);
+    },
+</code></pre>
+
+<p>When the player collide with the coin, we should call this method.</p>
+<p>Now it's time to implement it.</p>
+<p>Open <em>PlayScene.js</em> and add the following code at the end of <em>colisionCoinBegin</em> method:</p>
+<pre><code>        var statusLayer = this.getChildByTag(TagOfLayer.Status);
+        statusLayer.addCoin(1);
+</code></pre>
+
+<p>Every time the player collides with the coin, the <em>colisionCoinBegin</em> method will be called and our coin count will be increase by one.</p>
+<p>Save all files and git it a try:)</p>
+<p>Here is the screenshot:</p>
+<p><img alt="updatehud" src="../res/updatehud.png" /></p>
+<h2 id="add-game-over-logic-into-the-game">Add Game Over Logic into the Game</h2>
+<h3 id="design-and-implement-the-game-over-layer">Design and Implement the Game Over Layer</h3>
+<p>In order to keep things simple, we just add a menu item at the center of our game over layer.</p>
+<p>When you click the <em>restart</em> menu, the game will restart again.</p>
+<p>So the design is very trivial, let's implement it.</p>
+<p>Here is the whole implementation of <em>GameOverLayer.js</em>:</p>
+<pre><code>var GameOverLayer = cc.LayerColor.extend({
+    // constructor
+    ctor:function () {
+        this._super();
+        this.init();
+    },
+    init:function () {
+        this._super(cc.c4b(0, 0, 0, 180));
+        var winSize = cc.Director.getInstance().getWinSize();
+
+        var centerPos = cc.p(winSize.width / 2, winSize.height / 2);
+        cc.MenuItemFont.setFontSize(30);
+        var menuItemRestart = cc.MenuItemSprite.create(
+            cc.Sprite.create(s_restart_n),
+            cc.Sprite.create(s_restart_s),
+            this.onRestart, this);
+        var menu = cc.Menu.create(menuItemRestart);
+        menu.setPosition(centerPos);
+        this.addChild(menu);
+    },
+    onRestart:function (sender) {
+        cc.Director.getInstance().resume();
+        cc.Director.getInstance().replaceScene(new PlayScene());
+    }
+});
+</code></pre>
+
+<p>Here we used two sprite named <em>s_restart_n</em> and <em>s_restart_s</em> to create our restart menu item.</p>
+<p>So we should add the resource file into the <em>res</em> directory and define the resources path.</p>
+<p>Open <em>resource.js</em> and add the following code lines:</p>
+<pre><code>var s_restart_n = &quot;restart_n.png&quot;;
+var s_restart_s = &quot;restart_s.png&quot;;
+
+//add the following two lines at the end of g_resources array.
+{src:s_restart_n},
+{src:s_restart_s},
+</code></pre>
+
+<p>The code of <em>init</em> method is self-explanation. But you should pay attention to the callback <em>onRestart</em> method.</p>
+<p>We have called the <em>resume</em> function of cc.Director. Why should be do this? Because we call <em>pause</em> method when the player die.</p>
+<h3 id="game-over-when-the-player-collide-with-a-rock">Game Over When The Player Collide with a Rock</h3>
+<p>Now, let's display the game over layer when the player collide with the rock.</p>
+<p>Open <em>PlayScene</em> and add the following code lines at the end of <em>collisionRockBegin</em> method:</p>
+<pre><code>  collisionRockBegin:function (arbiter, space) {
+        cc.log(&quot;==game over&quot;);
+        cc.Director.getInstance().pause();
+        this.addChild(new GameOverLayer());
+    },
+</code></pre>
+
+<p>Yeah, it's done. Now run the game again.</p>
+<p>Here is the final screenshot:</p>
+<p><img alt="gameover" src="../res/gameover.png" /></p>
+<h2 id="implement-your-own-simple-gesture-recognizer">Implement Your Own Simple Gesture Recognizer</h2>
+<p>At this section, we will design a very simple gesture recognizer.</p>
+<p>When we swipe our finger on the screen from bottom to up, the recognizer will detect it.</p>
+<p>The algorithm for detecting the swipe gesture is very straightforward. When the touch begin event is detected, we store the first
+touch point in the array. When the touch moves event is detected, we append the touch point at the end of point array.</p>
+<p>We can simply compare the difference of x axis or y axis of two adjacent point to determine the swipe direction.</p>
+<p>Here is the code snippets to do the magic:</p>
+<pre><code>function Point(x, y)
+{
+    this.X = x;
+    this.Y = y;
+}
+
+// class define
+function SimpleRecognizer()
+{
+    this.points = [];
+    this.result = &quot;&quot;;
+}
+
+// be called in onTouchBegan
+SimpleRecognizer.prototype.beginPoint = function(x, y) {
+    this.points = [];
+    this.result = &quot;&quot;;
+    this.points.push(new Point(x, y));
+}
+
+// be called in onTouchMoved
+SimpleRecognizer.prototype.movePoint = function(x, y) {
+    this.points.push(new Point(x, y));
+
+    if (this.result == &quot;not support&quot;) {
+        return;
+    }
+
+    var newRtn = &quot;&quot;;
+    var len = this.points.length;
+    var dx = this.points[len - 1].X - this.points[len - 2].X;
+    var dy = this.points[len - 1].Y - this.points[len - 2].Y;
+
+    if (Math.abs(dx) &gt; Math.abs(dy)) {
+        if (dx &gt; 0) {
+            newRtn = &quot;right&quot;;
+        } else {
+            newRtn = &quot;left&quot;;
+        }
+    } else {
+        if (dy &gt; 0) {
+            newRtn = &quot;up&quot;;
+        } else {
+            newRtn = &quot;down&quot;;
+        }
+    }
+
+    // first set result
+    if (this.result == &quot;&quot;) {
+        this.result = newRtn;
+        return;
+    }
+
+    // if directory change, not support Recognizer
+    if (this.result != newRtn) {
+        this.result = &quot;not support&quot;;
+    }
+}
+
+// be called in onTouchEnded
+SimpleRecognizer.prototype.endPoint = function() {
+    if (this.points.length &lt; 3) {
+        return &quot;error&quot;;
+    }
+    return this.result;
+}
+
+SimpleRecognizer.prototype.getPoints = function() {
+    return this.points;
+}
+</code></pre>
+
+<p>After the gesture is detected, we can call <em>endPoint</em> of the SimpleRecognizer to get the final result.</p>
+<p>Currently it supports four simple types: up, down, left and right. You can extend your own more complex one.</p>
+<h2 id="handling-touch-event-player-jumping-animation-and-logic">Handling Touch Event, Player Jumping Animation and Logic</h2>
+<h3 id="add-jumping-animation-of-the-player">Add Jumping Animation of the Player</h3>
+<p>In order to implement the jumping animation, we should prepare our game arts first. Here we have done it for you.</p>
+<p>You can download the whole project from the <em>Summary</em> section and copy&amp;paste the running.plist and running.png file into the <em>res</em> directory.</p>
+<p>When the game starts, the player will be running infinite until him collide with the rock. We want to let the player jump by swiping upwards.</p>
+<p>Thus we can play the game a little bit longer.</p>
+<p>When the player jumps up or jumps up, we need to play corresponding animations.</p>
+<p>So at first, let's add two more animation action member variables into the AnimationLayer:</p>
+<pre><code>jumpUpAction:null,
+jumpDownAction:null,
+</code></pre>
+
+<p>And then let's add a new method named <em>initAction</em>:</p>
+<pre><code>  initAction:function () {
+        // init runningAction
+        var animFrames = [];
+        // num equal to spriteSheet
+        for (var i = 0; i &lt; 8; i++) {
+            var str = &quot;runner&quot; + i + &quot;.png&quot;;
+            var frame = cc.SpriteFrameCache.getInstance().getSpriteFrame(str);
+            animFrames.push(frame);
+        }
+        var animation = cc.Animation.create(animFrames, 0.1);
+        this.runningAction = cc.RepeatForever.create(cc.Animate.create(animation));
+        this.runningAction.retain();
+        // init jumpUpAction
+        animFrames = [];
+        for (var i = 0; i &lt; 4; i++) {
+            var str = &quot;runnerJumpUp&quot; + i + &quot;.png&quot;;
+            var frame = cc.SpriteFrameCache.getInstance().getSpriteFrame(str);
+            animFrames.push(frame);
+        }
+        animation = cc.Animation.create(animFrames, 0.2);
+        this.jumpUpAction = cc.Animate.create(animation);
+        this.jumpUpAction.retain();
+        // init jumpDownAction
+        animFrames = [];
+        for (var i = 0; i &lt; 2; i++) {
+            var str = &quot;runnerJumpDown&quot; + i + &quot;.png&quot;;
+            var frame = cc.SpriteFrameCache.getInstance().getSpriteFrame(str);
+            animFrames.push(frame);
+        }
+        animation = cc.Animation.create(animFrames, 0.3);
+        this.jumpDownAction = cc.Animate.create(animation);
+        this.jumpDownAction.retain();
+    },
+</code></pre>
+
+<p>In this function, we have initialized all the animations of the players.</p>
+<p>At lasts, let's remove the initialize code of runningAction we did before in the <em>init</em> function and call <em>initAction</em> method instead.</p>
+<pre><code>//init  actions
+this.initAction();
+//        // init runningAction
+//        var animFrames = [];
+//        for (var i = 0; i &lt; 8; i++) {
+//            var str = &quot;runner&quot; + i + &quot;.png&quot;;
+//            var frame = cc.SpriteFrameCache.getInstance().getSpriteFrame(str);
+//            animFrames.push(frame);
+//        }
+//        var animation = cc.Animation.create(animFrames, 0.1);
+//        this.runningAction = cc.RepeatForever.create(cc.Animate.create(animation));
+</code></pre>
+
+<h3 id="handling-touch-event">Handling Touch Event</h3>
+<p>Now it's time to handle touch event. At first, we should enable touch handling of the AnimationLayer.</p>
+<p>Add the following code snippets at the end of <em>init</em> method:</p>
+<pre><code>// enable touch
+this.setTouchEnabled(true);
+// set touch mode to kCCTouchesOneByOne
+this.setTouchMode(1);
+</code></pre>
+
+<p>These two code lines can activate the touch dispatching function.</p>
+<p>Now let's add three callbacks we needed to handle our touch event:</p>
+<pre><code> onTouchBegan:function(touch, event) {
+        var pos = touch.getLocation();
+        this.recognizer.beginPoint(pos.x, pos.y);
+        return true;
+    },
+    onTouchMoved:function(touch, event) {
+        var pos = touch.getLocation();
+        this.recognizer.movePoint(pos.x, pos.y);
+    },
+    onTouchEnded:function(touch, event) {
+        var rtn = this.recognizer.endPoint();
+        cc.log(&quot;rnt = &quot; + rtn);
+        switch (rtn) {
+            case &quot;up&quot;:
+                this.jump();
+                break;
+            default:
+                break;
+        }
+    },
+</code></pre>
+
+<p>When you touch the screen the <em>onTouchBegan</em> method will be called. When you hold your finger and move it around, the <em>onTouchMoved</em> method will
+be called. When you release your finger, the <em>onTouchEnded</em> method will be called.</p>
+<p>Here we have used our simple gesture recognizer to detect the "swipe out" gesture.</p>
+<h3 id="wrap-them-all">Wrap them all</h3>
+<p>Now it's time to wrap them all.</p>
+<p>At first, add the following enumerations in the beginning of the AnimationLayer:</p>
+<pre><code>// define enum for runner status
+if(typeof RunnerStat == &quot;undefined&quot;) {
+    var RunnerStat = {};
+    RunnerStat.running = 0;
+    RunnerStat.jumpUp = 1;
+    RunnerStat.jumpDown = 2;
+};
+</code></pre>
+
+<p>We use these enums to represent different state of the player.</p>
+<p>Then we should add another two member variables in the AnimationLayer:</p>
+<pre><code> recognizer:null,
+ stat:RunnerStat.running,// init with running status
+</code></pre>
+
+<p>And init the recognizer at the end of <em>init</em> method:</p>
+<pre><code> this.recognizer = new SimpleRecognizer();
+</code></pre>
+
+<p>At last, we should implement our jump method:</p>
+<pre><code> jump:function () {
+        cc.log(&quot;jump&quot;);
+        if (this.stat == RunnerStat.running) {
+            this.body.applyImpulse(cp.v(0, 250), cp.v(0, 0));
+            this.stat = RunnerStat.jumpUp;
+            this.sprite.stopAllActions();
+            this.sprite.runAction(this.jumpUpAction);
+        }
+    },
+</code></pre>
+
+<p>And also we should tie these things up int the <em>update</em> function:</p>
+<pre><code>//in the update method of AnimationLayer
+    // check and update runner stat
+        var vel = this.body.getVel();
+        if (this.stat == RunnerStat.jumpUp) {
+            if (vel.y &lt; 0.1) {
+                this.stat = RunnerStat.jumpDown;
+                this.sprite.stopAllActions();
+                this.sprite.runAction(this.jumpDownAction);
+            }
+        } else if (this.stat == RunnerStat.jumpDown) {
+            if (vel.y == 0) {
+                this.stat = RunnerStat.running;
+                this.sprite.stopAllActions();
+                this.sprite.runAction(this.runningAction);
+            }
+        }
+</code></pre>
+
+<p>One more word, don't forget the cleanup stuff. We should release the created actions when the AnimationLayer exit.</p>
+<pre><code>    onExit:function() {
+        this.runningAction.release();
+        this.jumpUpAction.release();
+        this.jumpDownAction.release();
+        this._super();
+    },
+</code></pre>
+
+<p>You may also want to check whether all the created js files are loaded in <em>cocos2d.js</em> file or not.</p>
+<h2 id="summary">Summary</h2>
+<p>Congratulations! You have finished another epic tutorial again.</p>
+<p>Let's see what we have done in this tutorial.</p>
+<p>At first, we have learned how to update our game hud elements.</p>
+<p>Then we added the game over logic.</p>
+<p>At last, we have created a simple gesture recognizer to handle the controlling of our hero's jumping action.</p>
+<p>You can download the final project from <a href="../res/Parkour.zip">here</a>.</p>
+<h2 id="where-to-go-from-here">Where to go from here?</h2>
+<p>In the next tutorial, we will cover the final bolts and nuts of the parkour game. Keep tuning!</p>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../../chapter8/en/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../../chapter10/en/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+</div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <p style="text-align:center">Copyright (c) 2014-2016 Chukong Technologies Inc.</p>
+            
+           <!-- <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>-->
+        </footer>
+
+        <script src="../../../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../../../js/highlight.pack.js"></script>
+        <script>var base_url = '../../../../..';</script>
+
+        <!-- PG languages -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script>
+        $(function() {
+          var key = "Cocos2d-x_pg_lang";
+          var switch_lang = function(l) {
+              $('.langs li a').removeClass('selected');
+              $('#'+l).addClass('selected');
+              $('.tab_content').hide();
+              $('.'+l).show();
+              $.cookie(key, l);
+          }
+          $('.langs li a').click(function() {switch_lang(this.id);return false;});
+          var c = $.cookie(key);
+          if (typeof c == 'undefined') c='tab-cpp';
+          switch_lang(c);
+        });
+        </script>
+
+        <script data-main="../../../../../mkdocs/js/search.js" src="../../../../../mkdocs/js/require.js"></script>
+        <script src="../../../../../js/base.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/Cocos2d-html5-min.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chipmunk.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d-jsb.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/main.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/AnimationLayer.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/BackgroundLayer.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Coin.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/GameOverLayer.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/PlayScene.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Rock.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/SimpleRecognizer.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/StatusLayer.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/globals.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/myApp.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/resource.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

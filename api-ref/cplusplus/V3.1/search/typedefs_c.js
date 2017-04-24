@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['sel_5fanimationstateevent',['SEL_AnimationStateEvent',['../da/dd2/namespacespine.html#a8b6f47fcea2ba11300ef2494d2e96aa4',1,'spine']]],
+  ['sel_5fcallfunc',['SEL_CallFunc',['../d9/d1f/group__base__nodes.html#ga09058e33d759237b2ea0afa3bfacdfb4',1,'cocos2d']]],
+  ['sel_5fcallfuncn',['SEL_CallFuncN',['../d9/d1f/group__base__nodes.html#gaadda18da6a72eae5ad1a01115931279c',1,'cocos2d']]],
+  ['sel_5fcallfuncnd',['SEL_CallFuncND',['../d9/d1f/group__base__nodes.html#ga0747198009c5ba31865d5542091a2d2d',1,'cocos2d']]],
+  ['sel_5fcallfunco',['SEL_CallFuncO',['../d9/d1f/group__base__nodes.html#gab323130ea53f1586630f1a8aa9e5db03',1,'cocos2d']]],
+  ['sel_5fframeeventcallfunc',['SEL_FrameEventCallFunc',['../dd/d2d/namespacecocostudio.html#a340dca5ce507e08b24560ffd9e275910',1,'cocostudio']]],
+  ['sel_5fhttpresponse',['SEL_HttpResponse',['../d6/d7c/namespacecocos2d_1_1network.html#aa72255bd005bf7595566b79906d1d070',1,'cocos2d::network']]],
+  ['sel_5fmenuhandler',['SEL_MenuHandler',['../d9/d1f/group__base__nodes.html#ga09245716cf1e3fefd4982ccd24fc5a9b',1,'cocos2d']]],
+  ['sel_5fmovementeventcallfunc',['SEL_MovementEventCallFunc',['../dd/d2d/namespacecocostudio.html#a20341380afa6a2c1c49502460097c239',1,'cocostudio']]],
+  ['sel_5fparseevent',['SEL_ParseEvent',['../dd/d2d/namespacecocostudio.html#a78805b124da7007cb19ec3df08435e5c',1,'cocostudio']]],
+  ['sel_5fschedule',['SEL_SCHEDULE',['../d9/d1f/group__base__nodes.html#ga88e9413171e4d0f066e51d0c4c482fc4',1,'cocos2d']]],
+  ['sioevent',['SIOEvent',['../d6/d7c/namespacecocos2d_1_1network.html#a015b801b0e219268ced86c241d71d038',1,'cocos2d::network']]],
+  ['spanimationstatelistener',['spAnimationStateListener',['../dc/d08/_animation_state_8h.html#ae22a59c32722ecf0c336c6c0db2bc9cc',1,'AnimationState.h']]],
+  ['spscaletimeline',['spScaleTimeline',['../dc/d8b/_animation_8h.html#a147beaa3ddea95848cc4469ad3ca23c0',1,'Animation.h']]],
+  ['sptranslatetimeline',['spTranslateTimeline',['../dc/d8b/_animation_8h.html#a21d45233b1a790fc659a7cd01df48d9c',1,'Animation.h']]],
+  ['ssize_5ft',['ssize_t',['../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386',1,'ssize_t():&#160;CCStdC.h'],['../df/d52/winrt_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386',1,'ssize_t():&#160;CCStdC.h']]],
+  ['successcallback',['SuccessCallback',['../df/d02/classcocos2d_1_1extension_1_1_assets_manager.html#a891bfe62270fcd104c083f3df9b060fb',1,'cocos2d::extension::AssetsManager']]]
+];

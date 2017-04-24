@@ -1,0 +1,26 @@
+var classcocos2d_1_1_terrain =
+[
+    [ "CrackFixedType", "da/d35/group____3d.html#gabc12737321beef08836e1b9aeb1c19bd", null ],
+    [ "initProperties", "db/de7/classcocos2d_1_1_terrain.html#abcfe74dcd73e54915f24c4ec8c8fe545", null ],
+    [ "initHeightMap", "db/de7/classcocos2d_1_1_terrain.html#a7ac23796a323afea59d7fb03f44f5721", null ],
+    [ "initTextures", "db/de7/classcocos2d_1_1_terrain.html#a88a8dee98daa26fff5d01f4f0beed13d", null ],
+    [ "getHeight", "db/de7/classcocos2d_1_1_terrain.html#a47aabff56a87353f8038ef49ae8198b9", null ],
+    [ "getHeight", "db/de7/classcocos2d_1_1_terrain.html#a1a90af33af725d98e0ca3a21855c7adb", null ],
+    [ "getNormal", "db/de7/classcocos2d_1_1_terrain.html#a83f0333b5aa538fc0511f0d9a4e6d032", null ],
+    [ "getImageHeight", "db/de7/classcocos2d_1_1_terrain.html#a4b2fcdf611579257d27b69001f9b8d3c", null ],
+    [ "setDrawWire", "db/de7/classcocos2d_1_1_terrain.html#a003f58a4b35f30673b78200eb6fa1831", null ],
+    [ "setLODDistance", "db/de7/classcocos2d_1_1_terrain.html#ad1c219d2359b6fda586f55cabd4cc7af", null ],
+    [ "setIsEnableFrustumCull", "db/de7/classcocos2d_1_1_terrain.html#af25e900114c2b7097162aa4537ddfe7b", null ],
+    [ "setAlphaMap", "db/de7/classcocos2d_1_1_terrain.html#a87b0f941a632a1bc79e195bcb69087c3", null ],
+    [ "setDetailMap", "db/de7/classcocos2d_1_1_terrain.html#a8ceae963415934248abdd38b16e0d781", null ],
+    [ "draw", "db/de7/classcocos2d_1_1_terrain.html#a322cba2b57a39b76d11c831eec53f9d8", null ],
+    [ "getIntersectionPoint", "db/de7/classcocos2d_1_1_terrain.html#a45e64c5e4a71cd8067c4e696f2311542", null ],
+    [ "setMaxDetailMapAmount", "db/de7/classcocos2d_1_1_terrain.html#ae08de735f04c76412238445887a7cb19", null ],
+    [ "convertToTerrainSpace", "db/de7/classcocos2d_1_1_terrain.html#a722cd694beea6b08ca449185b375482e", null ],
+    [ "resetHeightMap", "db/de7/classcocos2d_1_1_terrain.html#a69d8868351ddfc057a0f81143fcb2a8f", null ],
+    [ "getMinHeight", "db/de7/classcocos2d_1_1_terrain.html#a44030623694b3bd6e647702ab1612b60", null ],
+    [ "getMaxHeight", "db/de7/classcocos2d_1_1_terrain.html#a115107c8daf23eb7ab01f286db4c6444", null ],
+    [ "getAABB", "db/de7/classcocos2d_1_1_terrain.html#af744fe52ee6ac9d294af7701c99d2607", null ],
+    [ "setSkirtHeightRatio", "db/de7/classcocos2d_1_1_terrain.html#a33113dfb4cbedf22ed8eb12b42b3be50", null ],
+    [ "getQuadTree", "db/de7/classcocos2d_1_1_terrain.html#ac7784963733c5647556965e0e4a23011", null ]
+];

@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Cocos Team">
+        <link rel="canonical" href="http://cocos2d-x.org/docs/editors_and_tools/creator-chapters/getting-started/quick-start/index.html">
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+
+	<title>_Quick Start - Cocos Documentation</title>
+
+  <link href="../../../../css/bootstrap-custom.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+<link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href="../../../../css/base.css" rel="stylesheet">
+<link href="../../../../css/cinder.css" rel="stylesheet">
+<link href="../../../../css/pg.css" rel="stylesheet">
+<link href="../../../../css/highlight.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-3216502-3', 'Cocos2d-x.org');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a style="padding: 12px 0px;" class="navbar-brand" href="../../../../index.html">Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../../../index.html">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Manual Installations</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../installation/A/index.html">Prerequisites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Android-terminal/index.html">Android Command-line Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Android-VisualStudio/index.html">Android Visual Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Android-Studio/index.html">Android Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Android-Eclipse/index.html">Android Eclipse Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/iOS/index.html">IOS and OSX Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Linux/index.html">Linux Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Tizen/index.html">Tizen Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Windows/index.html">Windows Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Windows-Phone/index.html">Windows Phone Setup</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Programmers Guide</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/about/index.html">About Cocos2d-x</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/basic_concepts/index.html">Basic Concepts</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/sprites/index.html">Sprites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/actions/index.html">Actions</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/scenes/index.html">Scenes</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/ui_components/index.html">UI</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/other_node_types/index.html">Other Node Types</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/event_dispatch/index.html">Event Dispatch</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/3d/index.html">3D</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/scripting/index.html">Scripting</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/physics/index.html">Physics</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/audio/index.html">Audio</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/vr/index.html">VR</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/advanced_topics/index.html">Advanced Topics</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Editors & Tools</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../cocosCLTool/index.html">Command-line tool</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../creator/index.html">Cocos Creator</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+  
+  <li >
+      <a href="../../../cocos/index.html">Cocos Launcher</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Services</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../services/sdkbox/index.html">SDKBOX</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Tutorials</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../tutorials/javascript/javascript/index.html">Parkour Game Tutorials for Cocos2d-JS</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+  <li >
+      <a href="../../../../api-ref/index.html">API Reference</a>
+  </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Deprecated</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../deprecated/studio/index.html">Cocos Studio</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                        </ul>
+                    </li>
+                
+                
+
+                <!-- new add for language button -->
+                <!--<li>
+                    <a href="http://sdkbox-doc.github.io/zh/">中文</a>
+                </li>-->
+
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <!-- 
+                    <li >
+                        <a rel="next" href="../hello-world/index.html">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../cocos2d-x-guide/index.html">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                 -->
+                
+                    <li>
+                        <a href="https://github.com/chukong/cocos-docs">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+              
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+      
+        
+          <li class="main active"><a href="#quick-startcreating-your-first-game">Quick Start：Creating your first game</a></li>
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#prepare-project-and-resources">Prepare project and resources</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#open-the-original-project">Open the original project</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#check-game-resources">Check game resources</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#creating-a-game-scene">Creating a game scene</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#setting-up-a-scene-image">Setting up a scene image</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#writing-the-main-characters-script">Writing the main character's script</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#making-stars">Making stars</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#adding-score">Adding score</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#judgement-of-failure-and-restarting">Judgement of failure and restarting</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#adding-sound-effects">Adding sound effects</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#summary">Summary</a></li>
+              
+
+          
+
+        
+      
+    
+    </ul>
+</div></div>
+              
+                <div class="col-md-9" role="main">
+
+<!-- bread crumb trail -->
+<ol class="breadcrumb">
+<li><a href="../../../../index.html">Docs</a></li>
+
+  
+    
+      <li>Contents</li>
+    
+  
+    
+      <li>Editors & Tools</li>
+    
+  
+
+<li>_Quick Start</li>
+</ol>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../hello-world/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../cocos2d-x-guide/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+
+
+<!-- we can put this here if we want it on all content pages, but we don't at this point -->
+<!--<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>-->
+    <!--<li><a href="#" id="tab-lua">Lua</a></li>-->
+  <!--</ul>
+</div>-->
+
+<h1 id="quick-startcreating-your-first-game">Quick Start：Creating your first game</h1>
+<p>The document you are reading now includes systematic introductions of the editor panel, functions and workflows of Cocos Creator. However, if you want to quickly learn the general flow and method of developing games by Cocos Creator, this chapter will meet your needs. After finishing the tutorial in this chapter, you might obtain enough information for creating games. But we still recommend you to continue reading this guide to understand the details of each functional block and the complete workflows.</p>
+<p>Now, let's begin! Following the tutorial, we will create a deceiving game that is named <strong>Pick Up the Stars</strong>. Players of this game need to manipulate an <strong>obtuse</strong> monster that never stops jumping to touch the continuously appearing stars. The dazzling acceleration will bring great challenges to players. Play with your friends and see who can obtain the most stars!</p>
+<p>The completed form of this game can be experienced here:</p>
+<p>http://fbdemos.avosapps.com/star-catcher/</p>
+<h2 id="prepare-project-and-resources">Prepare project and resources</h2>
+<p>We have prepared for you all the resources needed for creating this game. Download <strong>Original Project</strong> and decompress it to the location you want. Then we can start:</p>
+<p><a href="https://github.com/cocos-creator/tutorial-first-game/releases/download/0.7.0/start_project.zip">Download the original project</a></p>
+<p>You can also download the completed project. If there is any confusion when following the tutorial to create the game, you can open the completed project for reference:</p>
+<p><a href="https://github.com/cocos-creator/tutorial-first-game/releases/download/0.7.0/complete_project.zip">Download the completed project</a></p>
+<h2 id="open-the-original-project">Open the original project</h2>
+<p>If you still don't know how to obtain and start Cocos Creator, please read the <a href="../install/index.html">Install</a> section.</p>
+<ol>
+<li>Firstly, start Cocos Creator, and choose <strong>Open other projects</strong></li>
+<li>In the pop up input field for selecting folder, choose <code>start_project</code> that has just been downloaded and decompressed, and click the <strong>Open</strong> button</li>
+<li>The main window of Cocos Creator editor will be opened, and you will see the project status as follows</li>
+</ol>
+<p><img alt="start project" src="../quick-start/init_start_project.png" /></p>
+<h2 id="check-game-resources">Check game resources</h2>
+<p>Our original project has included all the game resources needed; therefore, you don't need to import any other resources. For details on importing resources, please read content related to <a href="../../asset-workflow/index.html">Asset Workflow</a>.</p>
+<p>Next, let's get to know the resources of the project. Please pay attention to a panel named <strong>Assets</strong>, on which all the resource allocation graphs of the project are shown.</p>
+<p>We can see that the root directory of the project resources is named as <strong>assets</strong>, which is in accordance with the <code>assets</code> directory in the decompressed original project. Only resources under this directory can be imported by Cocos Creator into the project and be managed.</p>
+<p>The <strong>Assets</strong> panel can display the directory structure of any hierarchy. An icon like <img alt="folder" src="../quick-start/folder.png" /> represents a folder. Clicking the triangle icon on the left side of the folder, you can unfold the contents of the folder. After completely unfolding the folder, the <strong>Assets</strong> panel will present itself as illustrated below.</p>
+<p><img alt="assets overview" src="../quick-start/assets_overview.png" /></p>
+<p>Every resource is a document, which, after being imported into the project, will be recognized as different types of resources according to the differences in extension name. Its icon will be differentiated too. Next, let's take a look at the respective types and usages of the resources in the project.</p>
+<ul>
+<li><img alt="audioclip" src="../quick-start/audio-clip.png" /> audio document, which is an mp3 document generally. Audio documents named as <code>jump</code> and <code>score</code> will be played respectively when the character jumps and scores.</li>
+<li><img alt="bmfont" src="../quick-start/bitmap-font.png" /> bitmap font, which is jointly formed by a fnt document and png document. Bitmap font is a commonly used font resource in game development. For detailed information, please read <a href="../../asset-workflow/font/index.html">Font</a></li>
+<li>There are various kinds of abbreviated icons, all of which are image resources, normally a png or jpg document. After being imported into the project, the image document will be crudely processed into the resource of <strong>texture</strong> type. Then these resources can be dragged into scenes or component properties for use.</li>
+</ul>
+<h2 id="creating-a-game-scene">Creating a game scene</h2>
+<p>In Cocos Creator, the game scene is the core of organizing the game contents when developing games, which is also the carrier for all the game contents presented to players. The game scene will normally include the following contents:</p>
+<ul>
+<li>Scene images and words (Sprite, Label)</li>
+<li>Characters</li>
+<li>Game logic scripts attached to scene nodes in the form of components</li>
+</ul>
+<p>When players run the game, the game scene will be loaded. After that, the game scripts of included components will automatically run to realize various kinds of logic functions set up by developers. Therefore, apart from resources, the game scene is the foundation of all content creation. Now let's create a new scene.</p>
+<ol>
+<li>Click the <strong>assets</strong> directory in the <strong>Assets</strong> panel, making sure the scene will be created under this directory</li>
+<li>Click the plus sign on the top left corner of the <strong>Assets</strong> panel, and choose <strong>Scene</strong> in the pop up menu
+<img alt="create scene" src="../quick-start/create_scene.png" /></li>
+<li>We created a scene document named as <code>New Scene</code>. Right click it and choose <strong>Rename</strong> to rename it as <code>game</code>.</li>
+<li>Double click <code>game</code> and the scene will be opened in the <strong>scene editor</strong> and the <strong>Node Tree</strong>.</li>
+</ol>
+<h3 id="to-understand-canvas">To understand Canvas</h3>
+<p>After opening the scene, all the nodes (and their hierarchical relations) of the current scene will be shown in the the <strong>Node Tree</strong>. The newly created scene has only one node called <code>Canvas</code>. <strong>Canvas</strong> can be called the canvas node or rendering root node. Click <strong>Canvas</strong>, its properties will display in the <strong>Properties</strong> panel.</p>
+<p><img alt="canvas" src="../quick-start/canvas.png" /></p>
+<p>The <code>Design Resolution</code> property here stipulates the design resolution of the game. <code>Fit Height</code> and <code>Fit Width</code> stipulate how we should zoom <strong>Canvas</strong> to adjust to different resolutions when running on screens of different sizes.</p>
+<p>Being provided with the function of adjusting to different resolutions, we will normally put all the nodes in charge of image display in the scene under <strong>Canvas</strong>. In this way, when the <code>scale</code> property of <strong>Canvas</strong> changes, all the images, as its subnodes, will zoom together to adjust to the sizes of different screens.</p>
+<p>For more detailed information, please read <a href="../../components/canvas/index.html">Canvas</a>. Currently, we only need to know that the scene images added next will all be put under the <strong>Canvas</strong> node.</p>
+<h2 id="setting-up-a-scene-image">Setting up a scene image</h2>
+<h3 id="adding-a-background">Adding a background</h3>
+<p>First, find the background image resource according to the path of <code>assets/textures/background</code> in the <strong>Assets</strong> panel. Click and drag this resource to the <strong>Canvas</strong> node in <strong>Arrangement editor</strong>. Don't release the mouse until the <strong>Canvas</strong> node is highlighted orange, which means a subnode using <code>background</code> as the image resource will be added.</p>
+<p><img alt="drag to canvas" src="../quick-start/drag_to_canvas.png" /></p>
+<p>Now you can release the mouse button, and you will see a node named <code>background</code> has been added under <strong>Canvas</strong>. When we use the way of dragging a resource to add a node, the node will be automatically named as the name of the image resource.</p>
+<p>When we edit and modify the scene, we can promptly save our modifications by main menu <code>document-&gt;save scene</code>. Or we can save by shortcut keys: <kbd>Ctrl+S</kbd>（Windows）or <kbd>Cmd + S</kbd>（Mac）.</p>
+<h3 id="modify-background-size">Modify background size</h3>
+<p><img alt="background1" src="../quick-start/background1.png" /></p>
+<p>In <strong>scene editor</strong>, the newly added background images can be seen. Next we will modify the size of the background image to make it cover the whole screen.</p>
+<p>Firstly, click the <code>background</code> node, and click the fourth <strong>rectangle tool</strong> at the top left corner of the main window:</p>
+<p><img alt="rect gizmo" src="../quick-start/rect_gizmo.png" /></p>
+<p>By using this tool we can conveniently modify the size of the image node. Move the mouse to rest on the left side of <code>background</code> in <strong>scene editor</strong>, click and drag it to the left until the left side of <code>background</code> exceeds the blue frame that represents the design resolution. Then we can drag the right side of <code>background</code> to the right using the same method.</p>
+<p><img alt="resize_background" src="../quick-start/resize_background.png" /></p>
+<p>Then we need to drag the upper and lower sides to make the size of the background image fully cover the frame of the designing resolution.</p>
+<p><img alt="background finish" src="../quick-start/background_finish.png" /></p>
+<p>When using <strong>rectangle tool</strong> to modify the size of the background image, we can see the <code>Size</code> property of <strong>Node</strong> in the <strong>Properties</strong> panel is changing accordingly. After completion, the size of the background image is approximately <code>(1360, 760)</code>. You can also directly input a numeric value into the input field of the <code>Size</code> property, which will achieve the same effect as that of using <strong>rectangle tool</strong>. A background image of this size can cover the whole screen of all the phones on the market, with no exceptions.</p>
+<h3 id="add-ground">Add ground</h3>
+<p>Our main character needs a ground that it can jump on. We will add one instantly. By the same method of adding a background image, drag the <code>assets/textures/ground</code> resource in the <strong>Assets</strong> panel to <code>Canvas</code> in the <strong>Node Tree</strong>. When dragging, we can choose the order relation of newly added nodes and <code>background</code> nodes. When in the state of dragging the resource, move the mouse pointer to the bottom of the <code>background</code> node until a highlighted orange frame appears on <code>Canvas</code> and a green line representing the insert position appears below <code>background</code>, and then release the mouse. In this way, <code>ground</code> will be put under the <code>background</code> in the scene hierarchy, which is also a subnode of <code>Canvas</code>.</p>
+<p>In the <strong>Node Tree</strong>, the render order of nodes shown below will follow that of nodes shown above. We can see the <code>ground</code> object at the bottom is the first to appear in <strong>scene editor</strong>. Besides, the subnode will permanently display before the parent node. We can adjust the hierarchical order and relation of nodes at anytime to control their show order.</p>
+<p>According to the method of modifying the background, we can also use <strong>rectangle tool</strong> to set a suitable size for the ground node. When activating <strong>rectangle tool</strong>, by dragging the vertices and the parts other than the four sides of nodes, we can change the position of nodes. The state of set ground nodes is as illustrated below:</p>
+<p><img alt="ground finish" src="../quick-start/ground_finish.png" /></p>
+<p>Apart from <strong>rectangle tool</strong>, we can also use <strong>move tool</strong> <img alt="translate gizmo" src="../quick-start/translate_gizmo.png" /> to change the positions of the nodes. Try to hold down the arrow of <strong>move tool</strong> shown on the node and drag it, then we can change the position of the node on a single coordinate axis at one time.</p>
+<p>When setting up the position and size of the background and ground, we don't need precise numeric values and can drag them by guessing. If you prefer whole numbers, you can directly input numeric values of <code>position</code> and <code>size</code> according to the screenshot.</p>
+<h3 id="adding-a-main-character">Adding a main character</h3>
+<p>Next our main character the little monster will make its debut. Drag <code>assets/texture/PurpleMonster</code> from the <strong>Assets</strong> panel and put it under <code>Canvas</code> in the <strong>Node Tree</strong>, and make sure its position is below <code>ground</code>, in this way our main character will be shown at the very front.</p>
+<p>To highlight the aura of the main character in the scene nodes, we right click the newly added <code>PurpleMonster</code> node, choose <code>rename</code> and rename it as <code>Player</code>.</p>
+<p>Next we will set up the properties of the main character. First, we change the position of <strong>Anchor</strong>. The anchor point of any node will be at the center of itself by default, which means the position of the center of the node is the position of the node. We hope to manipulate the position of the base of the main character to simulate the effect of jumping on the ground; therefore, we need to set up the anchor point of the main character under its foot now. Find <strong>Anchor</strong> property in the <strong>Properties</strong> panel and set up the value of <code>y</code> as <code>0</code>. We will see that in <strong>scene editor</strong>, the arrow of the <strong>move tool</strong> that represents the position of the main character appears under the foot of the main character.</p>
+<p>Next, drag <code>Player</code> from <strong>scene editor</strong> and put it on the ground. The effect is as illustrated below:</p>
+<p><img alt="player position" src="../quick-start/player_position.png" /></p>
+<p>In this way our scene's basic artistic content is set up. In the next section we will write code to vivify the contents of the game.</p>
+<h2 id="writing-the-main-characters-script">Writing the main character's script</h2>
+<p>One of the core ideas of developing games by Cocos Creator is to let the content creation and function development undergo parallel cooperation smoothly. In the last section we focused on artistic content. Next we will write script to develop the flow of functions, and we will see that the finished program script can be used by content creators easily.</p>
+<p>Even if you have never written a program before, there's no need to worry. We will provide all the necessary codes in the tutorial. You only need to copy and paste them to the correct position. Then in this part you can ask your programmer partners for help. Next let's start creating script that drives the main character to act.</p>
+<h3 id="create-script">Create script</h3>
+<ol>
+<li>First, right click the <code>assets</code> folder in the <strong>Assets</strong> panel and choose <code>Create-&gt;folder</code> <img alt="new folder" src="../quick-start/new_folder.png" /></li>
+<li>Right click <code>New Folder</code>, choose <code>Rename</code> and rename it as <code>scripts</code>, under which all our scripts will be saved.</li>
+<li>Right click the <code>scripts</code> folder, choose <code>Create-&gt;JavaScript</code> and create a JavaScript script</li>
+<li>Rename the newly created script as <code>Player</code>. Double click this script and open the code editor.</li>
+</ol>
+<h3 id="writing-component-property">Writing component property</h3>
+<p>The opened script already has some preset code blocks. These codes are the structure needed for writing a component script. Scripts of such a structure are the components in Cocos creator, which can be mounted on the nodes in the scene and provide various functions that manipulate nodes. First, we will set up some properties and see how to adjust them in the scene.</p>
+<p>Find the portion of <code>properties</code> in the <code>Player</code> script in <strong>code editor</strong>, change it to the following content and press <kbd>Ctrl + S</kbd>（Windows）or <kbd>Cmd + S</kbd>（Mac）to save it:</p>
+<pre><code class="js">// Player.js
+    //...
+    properties: {
+        // main character's jump height
+        jumpHeight: 0,
+        // main character's jump duration
+        jumpDuration: 0,
+        // maximal movement speed
+        maxMoveSpeed: 0,
+        // acceleration
+        accel: 0,
+    },
+    //...
+</code></pre>
+
+<p>These newly added properties will stipulate the movement of the main character. In code, we don't have to care about how much these numeric values are, because we will directly set up these numeric values in the <strong>Properties</strong> panel later.</p>
+<p>Now we can add the <code>Player</code> component to the node of the main character. Choose the <code>Player</code> node in the <strong>Node Tree</strong>, click the <strong>add component</strong> button in the <strong>Properties</strong> panel and choose <code>add user's script component-&gt;Player</code> to add the <code>Player</code> component to the node of the main character.</p>
+<p><img alt="add player component" src="../quick-start/add_player_component.png" /></p>
+<p>Now we can see the newly added <code>Player</code> component in the <strong>Properties</strong> panel of the <code>Player</code> node. Set up properties related to the jumping and movement of the main character according to the image below:</p>
+<p><img alt="player properties" src="../quick-start/player_properties.png" /></p>
+<p>Only jumpDuration's unit is seconds. The unit of the other values is pixels. According to the current setting of the <code>Player</code> component: Our main character will have a jump height of 200 pixels. The time needed for jumping to the highest point is 0.3 seconds. Its maximum horizontal movement speed is 400 pixels per second. Its horizontal acceleration is 350 pixels per second.</p>
+<p>All these numeric values are suggestions. Later when the game is running, you can modify these numeric values in the <strong>Properties</strong> panel at anytime according to your preference, no need to change any codes. How convenient it is, right?</p>
+<h3 id="writing-code-for-jumping-and-movement">Writing code for jumping and movement</h3>
+<p>Next we will add a method to make the main character jump. Add a method called <code>setJumpAction</code> and put it below the <code>properties: {...},</code> code block:</p>
+<pre><code class="js">// Player.js
+    properties: {
+        //...
+    },
+
+    setJumpAction: function () {
+        // jump up
+        var jumpUp = cc.moveBy(this.jumpDuration, cc.p(0, this.jumpHeight)).easing(cc.easeCubicActionOut());
+        // jump down
+        var jumpDown = cc.moveBy(this.jumpDuration, cc.p(0, -this.jumpHeight)).easing(cc.easeCubicActionIn());
+        // repeat
+        return cc.repeatForever(cc.sequence(jumpUp, jumpDown));
+    },
+</code></pre>
+
+<p>Here some Action in the Cocos2d-js engine is used to realize the jumping animation of the main character. For detailed information, please check <a href="http://www.cocos2d-x.org/reference/html5-js/V3.8/index.html">Cocos2d-js API</a>.</p>
+<p>Next invoke the newly added <code>setJumpAction</code> method in the <code>onLoad</code> method and implement <code>runAction</code> to start action:</p>
+<pre><code class="js">// Player.js
+    onLoad: function () {
+        // initialize jump action
+        this.jumpAction = this.setJumpAction();
+        this.node.runAction(this.jumpAction);
+    },
+</code></pre>
+
+<p>The <code>onLoad</code> method will be immediately implemented after loading the scene. So we will put operations and logic concerning initialization into it.</p>
+<p>After the script is saved, we can start running the game for the first time!</p>
+<p>Click the <strong>preview</strong> button at the top of Cocos Creator editor, which looks like a "play" button. Cocos Creator will automatically open your default browser and run the game in it. Now we should see the main character --- a purple monster jumping lively and continuously in the scene.</p>
+<p><img alt="preview" src="../quick-start/preview_game.png" /></p>
+<h3 id="manipulation-of-movement">Manipulation of movement</h3>
+<p>A main character that can only jump foolishly up and down on the same spot is not very promising. Let us add keyboard input for the main character, using <kbd>A</kbd> and <kbd>D</kbd> to manipulate its jump direction. Below the <code>setJumpAction</code> method, add a new <code>setInputControl</code> method:</p>
+<pre><code class="js">// Player.js
+    setJumpAction: function () {
+        //...
+    },
+
+    setInputControl: function () {
+        var self = this;
+        // add keyboard event listener
+        cc.eventManager.addListener({
+            event: cc.EventListener.KEYBOARD,
+            // When there is a key being pressed down, judge if it's the designated directional button and set up acceleration in the corresponding direction
+            onKeyPressed: function(keyCode, event) {
+                switch(keyCode) {
+                    case cc.KEY.a:
+                        self.accLeft = true;
+                        self.accRight = false;
+                        break;
+                    case cc.KEY.d:
+                        self.accLeft = false;
+                        self.accRight = true;
+                        break;
+                }
+            },
+            // when releasing the button, stop acceleration in this direction
+            onKeyReleased: function(keyCode, event) {
+                switch(keyCode) {
+                    case cc.KEY.a:
+                        self.accLeft = false;
+                        break;
+                    case cc.KEY.d:
+                        self.accRight = false;
+                        break;
+                }
+            }
+        }, self.node);
+    },
+</code></pre>
+
+<p>Then modify the <code>onLoad</code> method, into which we add the switch of accelerating to the left/right and the current horizontal speed of the main character. Then invoke the newly added <code>setInputControl</code> method. Start monitoring keyboard input after loading the scene:</p>
+<pre><code class="js">// Player.js
+    onLoad: function () {
+        // initialize jump action
+        this.jumpAction = this.setJumpAction();
+        this.node.runAction(this.jumpAction);
+
+        // switch of acceleration direction
+        this.accLeft = false;
+        this.accRight = false;
+        // current horizontal speed of main character
+        this.xSpeed = 0;
+
+        // initialize keyboard input listener
+        this.setInputControl();
+    },
+</code></pre>
+
+<p>Finally, modify the content of the <code>update</code> method by adding settings for the acceleration, speed and the current position of the main character:</p>
+<pre><code class="js">// Player.js
+    update: function (dt) {
+        // update speed of each frame according to the current acceleration direction
+        if (this.accLeft) {
+            this.xSpeed -= this.accel * dt;
+        } else if (this.accRight) {
+            this.xSpeed += this.accel * dt;
+        }
+        // restrict the movement speed of the main character to the maximum movement speed
+        if ( Math.abs(this.xSpeed) &gt; this.maxMoveSpeed ) {
+            // if speed reaches its limit, use the max speed with current direction
+            this.xSpeed = this.maxMoveSpeed * this.xSpeed / Math.abs(this.xSpeed);
+        }
+
+        // update the position of the main character according to the current speed
+        this.node.x += this.xSpeed * dt;
+    },
+</code></pre>
+
+<p><code>update</code> will be invoked once for each frame after loading the scene. We normally put the logic contents that need to be frequently calculated or timely updated here. In our game, after obtaining the acceleration direction by keyboard input, we need to calculate the speed and position of the main character in <code>update</code> for each frame.</p>
+<p>After saving the script, you can brew a cup of tea and click <strong>preview</strong> to check the latest outcome. After opening the preview in your browser, click the game scene with the mouse (due to the restrictions of browsers, keyboard input can only be accepted after clicking the game scene) , then you can press the <kbd>A</kbd> and <kbd>D</kbd> buttons to manipulate the main character to move to the left/right!</p>
+<p>Is the movement a little bit too slow? Does the main character not jump high enough? Hope to extend jump duration? No problem! All these can be adjusted at anytime. Just set up different property values for the <code>Player</code> component, then you can adjust the game at your will. Here is a set of settings for reference:</p>
+<pre><code>Jump Height: 150
+Jump Duration: 0.3
+Max Move Speed: 400
+Accel: 1000
+</code></pre>
+
+<p>This set of property settings will make the main character as agile as possible. As for how to choose the values, it all depends on what style of game you want.</p>
+<h2 id="making-stars">Making stars</h2>
+<p>The main character can jump freely now so we need to set up a goal for players. The stars will appear continuously in the scene and players need to manipulate the monster to touch the stars to collect points. The star touched by the main character will disappear and a new one will be immediately re-created at a random position.</p>
+<h3 id="create-prefab">Create Prefab</h3>
+<p>As for the nodes that need to be created repeatedly, we can save it as a <strong>Prefab</strong> resource, which can be a template for the dynamic generation of nodes. For more information about <strong>Prefab</strong>, please read <a href="../../asset-workflow/prefab/index.html">Prefab</a>.</p>
+<p>Firstly, drag the <code>assets/textures/star</code> resource from the <strong>Assets</strong> panel into the scene. Anywhere in the <strong>Node Tree</strong> is fine. We only need the scene to be the operating platform for creating Prefab. After creation we will delete this node from the scene.</p>
+<p>We don't need to modify the position of the stars or its render properties. But to make the stars disappear after being touched by the main character, we need to add a special component to the star. By the same method of adding the <code>Player</code> script, add a JavaScript script named <code>Star</code> to <code>assets/scripts/</code> (in the <strong>Properties</strong> panel of the <code>star</code>, select <strong>Add component</strong> and then <strong>Add custom component</strong> and then <strong><code>Star</code></strong>).</p>
+<p><img alt="star script" src="../quick-start/star_script.png" /></p>
+<p>Next, double click this script to start editing. Only one property is needed for the star component to stipulate the distance for collecting points by the main character. Modify <code>properties</code> and add the following content:</p>
+<pre><code class="js">// Star.js
+    properties: {
+        // When the distance between the star and main character is less than this value, collection of the point will be completed
+        pickRadius: 0
+    },
+</code></pre>
+
+<p>After saving the script, add this script to the newly created <code>star</code> node. Then set up the property value of <code>Pick Radius</code> in the <strong>Properties</strong> panel as <code>60</code>:</p>
+<p><img alt="quick start" src="../quick-start/star_property.png" /></p>
+<p>The settings needed by Star Prefab are now finished. Now drag the <code>star</code> node from the <strong>Node Tree</strong> and drop it into the <code>assets</code> folder in the <strong>Assets</strong> panel. This should generate a Prefab resource named <code>star</code>, as shown below.</p>
+<p><img alt="star prefab" src="../quick-start/prefab_asset.png" /></p>
+<p>Now the <code>star</code> node can be deleted from the scene. We can dynamically use the Prefab resource of stars in the script to generate stars.</p>
+<h3 id="adding-game-control-script">Adding game control script</h3>
+<p>The generation of stars is a part of the game's main logic. Therefore we need to add a script named <code>Game</code> and make it the script of the game's main logic. Logic concerning scoring, failure and restarting will be added to this script later.</p>
+<p>Add a new <code>Game</code> script inside the <code>assets/scripts</code> folder (next to <code>Star</code> and <code>Player</code>). Double click to open the script. First, add the properties needed for generating stars:</p>
+<pre><code class="js">// Game.js
+    properties: {
+        // this property quotes the PreFab resource of stars
+        starPrefab: {
+            default: null,
+            type: cc.Prefab
+        },
+        // the random scale of disappearing time for stars
+        maxStarDuration: 0,
+        minStarDuration: 0,
+        // ground node for confirming the height of the generated star's position
+        ground: {
+            default: null,
+            type: cc.Node
+        },
+        // player node for obtaining the jump height of the main character and controlling the movement switch of the main character
+        player: {
+            default: null,
+            type: cc.Node
+        }
+    },
+</code></pre>
+
+<p>After saving the script, add the <code>Game</code> component to the <code>Canvas</code> node in the <strong>Node Tree</strong> (after choosing the <code>Canvas</code> node, drag the script to the <strong>Properties</strong> panel or click the <strong>Add component</strong> button in the <strong>Properties</strong> panel and choose <code>Game</code> in <code>Add Custom Component</code>).</p>
+<p>Next, drag the <code>star</code> Prefab resource from the <strong>Assets</strong> panel into the <code>Star Prefab</code> property of the newly created <code>Game</code> component. This is the first time we have set up a quotation for the property. Only when setting <code>type</code> as quote type when declaring a property (such as the <code>cc.Prefab</code> type written here) can an asset or a node be dragged to the property.)</p>
+<p>Then, drag the <code>ground</code> and <code>Player</code> nodes from the <strong>Node Tree</strong> to properties of the same name in the component, to finish the node quotation.</p>
+<p>Finally, set the values of the <code>Min Star Duration</code> and <code>Max Star Duration</code> properties as <code>3</code> and <code>5</code>. Later when generating stars, we will choose a random value between these two values, for the duration of each star.</p>
+<h3 id="generate-stars-at-a-random-position">Generate stars at a random position</h3>
+<p>Next, we will continue to modify the <code>Game</code> script by adding the logic of generating stars and putting it after the <code>onLoad</code> method:</p>
+<pre><code class="js">// Game.js
+    onLoad: function () {
+        // obtain the anchor point of ground level on the y axis
+        this.groundY = this.ground.y + this.ground.height/2;   // this.ground.top may also work
+        // generate a new star
+        this.spawnNewStar();
+    },
+
+    spawnNewStar: function() {
+        // generate a new node in the scene with a preset template
+        var newStar = cc.instantiate(this.starPrefab);
+        // put the newly added node under the Canvas node
+        this.node.addChild(newStar);
+        // set up a random position for the star
+        newStar.setPosition(this.getNewStarPosition());
+    },
+
+    getNewStarPosition: function () {
+        var randX = 0;
+        // According to the position of the ground level and the main character's jump height, randomly obtain an anchor point of the star on the y axis
+        var randY = this.groundY + cc.random0To1() * this.player.getComponent('Player').jumpHeight + 50;
+        // according to the width of the screen, randomly obtain an anchor point of star on the x axis
+        var maxX = this.node.width/2;
+        randX = cc.randomMinus1To1() * maxX;
+        // return to the anchor point of the star
+        return cc.p(randX, randY);
+    }
+</code></pre>
+
+<p>After saving the script, click the <strong>preview</strong> button. Then in the browser you will see that a star is dynamically generated after the game is started! By the same method, you can dynamically generate any preset node with a Prefab template in the game.</p>
+<p><img alt="spawn star" src="../quick-start/spawn_star.png" /></p>
+<h3 id="adding-the-action-of-the-main-characters-touching-and-collecting-of-stars">Adding the action of the main character's touching and collecting of stars</h3>
+<p>Now we will add the action logic of the main character's collecting of stars. The essential point here lies in the fact that the star needs to obtain the position of the main character's node at any time to judge if the distance between them is shorter than the collectable distance. How do we obtain the quotation of the main character's node? Don't forget that we have done two things before:</p>
+<ol>
+<li>There is a property named <code>player</code> in the <code>Game</code> component, which saved the quotation of the main character's node.</li>
+<li>Each star is dynamically generated in the <code>Game</code> script.</li>
+</ol>
+<p>Therefore, we only need to deliver the concrete example in the <code>Game</code> component into a star and save it after the concrete example of the <code>Star</code> node is generated in the <code>Game</code> script. Then we can visit the main character's node by <code>game.player</code> at anytime. Let's open the <code>Game</code> script, and add the following code to the end of the <code>spawnNewStar</code> method:</p>
+<pre><code class="js">// Game.js
+    spawnNewStar: function() {
+        // ...
+        // deliver the concrete example of the Game component into the star component
+        newStar.getComponent('Star').game = this;
+    },
+</code></pre>
+
+<p>Open the <code>Star</code> script after saving, now we can use the <code>player</code> node quoted in the <code>Game</code> component to judge the distance. Add the methods named <code>getPlayerDistance</code> and <code>onPicked</code> and put them below the <code>onLoad</code> method:</p>
+<pre><code class="js">// Star.js
+    getPlayerDistance: function () {
+        // judge the distance according to the position of the player node
+        var playerPos = this.game.player.getPosition();
+        // calculate the distance between two nodes according to their positions
+        var dist = cc.pDistance(this.node.position, playerPos);
+        return dist;
+    },
+
+    onPicked: function() {
+        // When the stars are being collected, invoke the interface in the Game script to generate a new star
+        this.game.spawnNewStar();
+        // then destroy the current star's node
+        this.node.destroy();
+    },
+</code></pre>
+
+<p>Then add the judging distance for each frame to the <code>update</code> method. If the distance is shorter than the collectable distance set by the <code>pickRadius</code> property, implement collecting behavior:</p>
+<pre><code class="js">// Star.js
+    update: function (dt) {
+        // judge if the distance between the star and main character is shorter than the collecting distance for each frame
+        if (this.getPlayerDistance() &lt; this.pickRadius) {
+            // invoke collecting behavior
+            this.onPicked();
+            return;
+        }
+    },
+</code></pre>
+
+<p>Save the script, then preview and test again. You will see that when the main character gets close to the star, the star will disappear and a new one will be generated at a random position!</p>
+<h2 id="adding-score">Adding score</h2>
+<p>The little monster makes a great effort to collect the stars. But how come it receives no reward? Now, let's add the logic and display of scoring when collecting stars.</p>
+<h3 id="adding-a-score-labellabel">Adding a score label（Label）</h3>
+<p>The score will start from 0 when the game is started. 1 point will be added for 1 star collected. To display the score, we should first create a <strong>Label</strong> node. Choose the <code>Canvas</code> node in the <strong>Node Tree</strong>, right click and choose <code>Create -&gt; Create Renderer Nodes -&gt; Node With Label</code>. A new Label node will be created under <code>Canvas</code>, and it will be located at the bottom. Next we will use the following steps to set up this Label node:</p>
+<ol>
+<li>Change the node's name to <code>score</code>.</li>
+<li>Select the <code>score</code> node, and set the X,Y of the <code>position</code> property to <code>(0, 180)</code>.
+<!-- 0. Set the X,Y of the <code>size</code> property to <code>(300, 80)</code>. --></li>
+<li>Edit the <code>String</code> property of the <strong>Label</strong> component and input <code>Score: 0</code>.</li>
+<li>Set the <code>Font Size</code> property of the <strong>Label</strong> component to <code>50</code>.</li>
+<li>Drag the <code>assets/mikado_outline_shadow</code> bitmap font resource from the <strong>Assets</strong> panel（pay attention! the icon is <img alt="bmfont" src="../quick-start/bitmap-font.png" />）into the <code>Font</code> property of the <strong>Label</strong> component, to change the font used to render the score.</li>
+</ol>
+<p>The completed effect is as illustrated below (don't worry about the <code>Size</code>):</p>
+<p><img alt="score label" src="../quick-start/score_label.png" /></p>
+<h3 id="adding-scoring-logic-to-game-script">Adding scoring logic to Game script</h3>
+<p>We will put the logic of scoring and updating the score display in the <code>Game</code> script. Open the <code>Game</code> script to start editing. First, add a reference property of the score display Label to the end of the <code>properties</code> block:</p>
+<pre><code class="js">// Game.js
+    properties: {
+        // ...
+        // quotation of score label
+        scoreDisplay: {
+            default: null,
+            type: cc.Label
+        }
+    },
+</code></pre>
+
+<p>Next, add the initialization of variables for scoring in the <code>onLoad</code> method:</p>
+<pre><code class="js">// Game.js
+    onLoad: function () {
+        // ...
+        // initialize scoring
+        this.score = 0;
+    },
+</code></pre>
+
+<p>Then add a new method named <code>gainScore</code> to the back of the <code>update</code> method:</p>
+<pre><code class="js">// Game.js
+    gainScore: function () {
+        this.score += 1;
+        // update the words of the scoreDisplay Label
+        this.scoreDisplay.string = 'Score: ' + this.score.toString();
+    },
+</code></pre>
+
+<h3 id="invoke-the-scoring-logic-of-the-game-in-star-script">Invoke the scoring logic of the Game in Star script</h3>
+<p>Open the <code>Star</code> script after saving the <code>Game</code> script. Add the invoking of <code>gainScore</code> to the <code>onPicked</code> method:</p>
+<pre><code class="js">// Star.js
+    onPicked: function() {
+        // when the stars are being collected, invoke the interface in the Game script to generate a new star
+        this.game.spawnNewStar();
+        // invoke the scoring method of the Game script
+        this.game.gainScore();
+        // then destroy the current star's node
+        this.node.destroy();
+    },
+</code></pre>
+
+<p>Preview after saving. You will see that when collecting stars, the scores displayed at the top of screen will increase now!</p>
+<p><img alt="preview score" src="../quick-start/preview_score.png" /></p>
+<h2 id="judgement-of-failure-and-restarting">Judgement of failure and restarting</h2>
+<p>Now our game has taken shape. But no matter how many scores one may get, a game without the possibility of failure won't give players any fulfillment. Now let's add the action of the stars' regular disappearance. And if all the stars disappear, the game will be viewed as failed. In other words, players need to finish collecting the star before the star disappears and repeat this procedure unceasingly to finish the loop of the play method.</p>
+<h3 id="adding-the-logic-of-disappearing-in-a-limited-time-to-the-star">Adding the logic of disappearing in a limited time to the star</h3>
+<p>Open the <code>Game</code> script, and add the variable declaration needed for counting time before invoking <code>spawnNewStar</code> of the <code>onLoad</code> method:</p>
+<pre><code class="js">// Game.js
+    onLoad: function () {
+        // ...
+        // initialize timer
+        this.timer = 0;
+        this.starDuration = 0;
+        // generate a new star
+        this.spawnNewStar();
+        // initialize scoring
+        this.score = 0;
+    },
+</code></pre>
+
+<p>Then add the logic of resetting the timer to the end of the <code>spawnNewStar</code> method, in which <code>this.minStarDuration</code> and <code>this.maxStarDuration</code> are properties of the <code>Game</code> component that was declared at the beginning. They are used to stipulate the random scale of star duration:</p>
+<pre><code class="js">// Game.js
+    spawnNewStar: function() {
+        // ...
+        // reset timer, randomly choose a value according the scale of star duration
+        this.starDuration = this.minStarDuration + cc.random0To1() * (this.maxStarDuration - this.minStarDuration);
+        this.timer = 0;
+    },
+</code></pre>
+
+<p>Add the logic of updating the timer and judgement of exceeding the duration to the <code>update</code> method:</p>
+<pre><code class="js">// Game.js
+    update: function (dt) {
+        // update timer for each frame, when a new star is not generated after exceeding duration
+        // invoke the logic of game failure
+        if (this.timer &gt; this.starDuration) {
+            this.gameOver();
+            return;
+        }
+        this.timer += dt;
+    },
+</code></pre>
+
+<p>In the end, add the <code>gameOver</code> method. Reload the scene when failure occurs.</p>
+<pre><code class="js">// Game.js
+    gameOver: function () {
+        this.player.stopAllActions(); // stop the jumping action of the player node
+        cc.director.loadScene('game');
+    }
+</code></pre>
+
+<p>Modification of the <code>Game</code> script is now finished. Save the script and open the <code>Star</code> script, because we need to add a simple visual prompt effect to the star that is about to disappear. Add the following code to the end of the <code>update</code> method:</p>
+<pre><code class="js">// Star.js
+    update: function() {
+        // ...
+        // update the transparency of the star according to the timer in the Game script
+        var opacityRatio = 1 - this.game.timer/this.game.starDuration;
+        var minOpacity = 50;
+        this.node.opacity = minOpacity + Math.floor(opacityRatio * (255 - minOpacity));
+    }
+</code></pre>
+
+<p>Save the <code>Star</code> script, and the logic of this game's play method will now be completely finished. Now click the <strong>preview</strong> button, we will see a qualified game with a core play method, incentive mechanism and failure mechanism in the browser.</p>
+<h2 id="adding-sound-effects">Adding sound effects</h2>
+<p>Although lots of people will ignore sound when playing smartphone games, for the completeness of the workflow presented in this tutorial, we still have to supplement the task of adding sound effects.</p>
+<h3 id="jumping-sound-effect">Jumping sound effect</h3>
+<p>Firstly, add the jumping sound effect. Open the <code>Player</code> script and add the <code>jumpAudio</code> property that quotes the sound document resource:</p>
+<pre><code class="js">// Player.js
+    properties: {
+        // ...
+        // jumping sound effect resource
+        jumpAudio: {
+            default: null,
+            url: cc.AudioClip
+        },
+    },
+</code></pre>
+
+<p>Then rewrite the <code>setJumpAction</code> method, insert the callback of playing the sound effect and play the sound by adding the <code>playJumpSound</code> method:</p>
+<pre><code class="js">// Player.js
+    setJumpAction: function () {
+        // jump up
+        var jumpUp = cc.moveBy(this.jumpDuration, cc.p(0, this.jumpHeight)).easing(cc.easeCubicActionOut());
+        // jump down
+        var jumpDown = cc.moveBy(this.jumpDuration, cc.p(0, -this.jumpHeight)).easing(cc.easeCubicActionIn());
+        // add a callback function to invoke other defined methods after the action is finished
+        var callback = cc.callFunc(this.playJumpSound, this);
+        // repeat unceasingly, and invoke callback to play sound after landing each time
+        return cc.repeatForever(cc.sequence(jumpUp, jumpDown, callback));
+    },
+
+    playJumpSound: function () {
+        // invoke sound engine to play the sound
+        cc.audioEngine.playEffect(this.jumpAudio, false);
+    },
+</code></pre>
+
+<h3 id="scoring-sound-effect">Scoring sound effect</h3>
+<p>After saving the <code>Player</code> script, open the <code>Game</code> script to add the scoring sound effect. Firstly, we still add a property to <code>properties</code> to quote the sound document resource:</p>
+<pre><code class="js">// Game.js
+    properties: {
+        // ...
+        // scoring sound effect resource
+        scoreAudio: {
+            default: null,
+            url: cc.AudioClip
+        }
+    },
+</code></pre>
+
+<p>Then insert the code of playing the sound into the <code>gainScore</code> method:</p>
+<pre><code class="js">// Game.js
+    gainScore: function () {
+        this.score += 1;
+        // update the words of the scoreDisplay Label
+        this.scoreDisplay.string = 'Score: ' + this.score.toString();
+        // play the scoring sound effect
+        cc.audioEngine.playEffect(this.scoreAudio, false);
+    },
+</code></pre>
+
+<p>Save the script. Go back to the <strong>Node Tree</strong>, choose the <code>Player</code> node, and drag the <code>assets/audio/jump</code> resource from the <strong>Assets</strong> panel to the <code>Jump Audio</code> property of the <code>Player</code> component.</p>
+<p>Then choose the <code>Canvas</code> node, drag the <code>assets/audio/score</code> resource to the <code>Score Audio</code> property of the <code>Game</code> component.</p>
+<p>Now it's done! The scene hierarchy of the completed form and properties of each key component are as follows:</p>
+<p><img alt="hierarchy complete" src="../quick-start/hierarchy_complete.png" /> <img alt="game complete" src="../quick-start/game_complete.png" /> <img alt="player complete" src="../quick-start/player_complete.png" /></p>
+<p>Now we can fully enjoy the newly created game. How many scores can you get? Don't forget that you can modify game parameters like movement control and star duration, etc. in the <code>Player</code> and <code>Game</code> components at anytime to quickly adjust the game's degree of difficulty. The scene needs to be saved after modifications of component properties. Only the saved values can be recorded.</p>
+<h2 id="summary">Summary</h2>
+<p>Congratulations! You have finished the first game created by Cocos Creator. We hope this quick start tutorial for beginners can help you understand the basic concepts and workflows in the game development process of Cocos Creator. If you are not interested in writing and learning script programming, you can directly copy and paste the completed script from the completed project.</p>
+<p>Next, you can continue to perfect this game. The following are some recommended improving methods:</p>
+<ul>
+<li>Add a simple start menu, display a start button when the game starts running. Only after clicking the button will the game start</li>
+<li>Add a simple menu interface for the failure of the game. Only after clicking the button will the game restart after failure</li>
+<li>Restrict the movement of the main character to the window's boundaries</li>
+<li>Add more exquisite animation performance to the jumping action of the main character</li>
+<li>Add a countdown progress bar to the state when a star disappears</li>
+<li>Add more gorgeous effects when collecting stars</li>
+<li>Add input controls for touch screen devices</li>
+</ul>
+<p>For editions that have been improved in all the above aspects, you can download <a href="https://github.com/cocos-creator/tutorial-first-game/releases/download/0.7.0/polished_project.zip">evolution edition project</a> for reference and learning, which will not be discussed in detail here.</p>
+<p>Moreover, if you want to release the completed game on a server to share with your friends, you can read the content of the <a href="../../basics/preview-build/index.html">Preview Build</a> section.</p>
+<p>Today's tutorial ends here. You can immediately start creating your second Cocos Creator game or continue reading this guide. For any questions on this quick start tutorial, you can send feedback on <a href="https://github.com/cocos-creator/tutorial-first-game">Warehouse of this tutorial on Github</a>.</p>
+<hr />
+<p>According to your experience of using the engine, you can continue to read:</p>
+<ul>
+<li><a href="../cocos2d-x-guide/index.html">Cocos2d-x User Guide</a></li>
+<li><a href="../unity-guide/index.html">Unity User Guide</a></li>
+</ul>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../hello-world/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../cocos2d-x-guide/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+</div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <p style="text-align:center">Copyright (c) 2014-2016 Chukong Technologies Inc.</p>
+            
+           <!-- <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>-->
+        </footer>
+
+        <script src="../../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../../js/highlight.pack.js"></script>
+        <script>var base_url = '../../../..';</script>
+
+        <!-- PG languages -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script>
+        $(function() {
+          var key = "Cocos2d-x_pg_lang";
+          var switch_lang = function(l) {
+              $('.langs li a').removeClass('selected');
+              $('#'+l).addClass('selected');
+              $('.tab_content').hide();
+              $('.'+l).show();
+              $.cookie(key, l);
+          }
+          $('.langs li a').click(function() {switch_lang(this.id);return false;});
+          var c = $.cookie(key);
+          if (typeof c == 'undefined') c='tab-cpp';
+          switch_lang(c);
+        });
+        </script>
+
+        <script data-main="../../../../mkdocs/js/search.js" src="../../../../mkdocs/js/require.js"></script>
+        <script src="../../../../js/base.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/Cocos2d-html5-min.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chipmunk.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d-jsb.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/main.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/AnimationLayer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/BackgroundLayer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Coin.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/GameOverLayer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/PlayScene.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Rock.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/SimpleRecognizer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/StatusLayer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/globals.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/myApp.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/resource.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

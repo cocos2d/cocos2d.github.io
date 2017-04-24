@@ -1,0 +1,1771 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Cocos Team">
+        <link rel="canonical" href="http://cocos2d-x.org/docs/programmers-guide/3d/index.html">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>3D - Cocos Documentation</title>
+
+  <link href="../../css/bootstrap-custom.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+<link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href="../../css/base.css" rel="stylesheet">
+<link href="../../css/cinder.css" rel="stylesheet">
+<link href="../../css/pg.css" rel="stylesheet">
+<link href="../../css/highlight.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-3216502-3', 'Cocos2d-x.org');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a style="padding: 12px 0px;" class="navbar-brand" href="../../index.html">Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../index.html">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Manual Installations</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../installation/A/index.html">Prerequisites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Android-terminal/index.html">Android Command-line Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Android-VisualStudio/index.html">Android Visual Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Android-Studio/index.html">Android Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Android-Eclipse/index.html">Android Eclipse Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/iOS/index.html">IOS and OSX Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Linux/index.html">Linux Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Tizen/index.html">Tizen Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Windows/index.html">Windows Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Windows-Phone/index.html">Windows Phone Setup</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Programmers Guide</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../about/index.html">About Cocos2d-x</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../basic_concepts/index.html">Basic Concepts</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../sprites/index.html">Sprites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../actions/index.html">Actions</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../scenes/index.html">Scenes</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../ui_components/index.html">UI</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../other_node_types/index.html">Other Node Types</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../event_dispatch/index.html">Event Dispatch</a>
+  </li>
+  
+
+          
+              
+  
+  <li class="active">
+      <a href="index.html">3D</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../scripting/index.html">Scripting</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../physics/index.html">Physics</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../audio/index.html">Audio</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../vr/index.html">VR</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../advanced_topics/index.html">Advanced Topics</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Editors & Tools</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../editors_and_tools/cocosCLTool/index.html">Command-line tool</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../editors_and_tools/creator/index.html">Cocos Creator</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+  
+  <li >
+      <a href="../../editors_and_tools/cocos/index.html">Cocos Launcher</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Services</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../services/sdkbox/index.html">SDKBOX</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Tutorials</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../tutorials/javascript/javascript/index.html">Parkour Game Tutorials for Cocos2d-JS</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+  <li >
+      <a href="../../api-ref/index.html">API Reference</a>
+  </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Deprecated</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../deprecated/studio/index.html">Cocos Studio</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                        </ul>
+                    </li>
+                
+                
+
+                <!-- new add for language button -->
+                <!--<li>
+                    <a href="http://sdkbox-doc.github.io/zh/">中文</a>
+                </li>-->
+
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <!-- 
+                    <li >
+                        <a rel="next" href="../event_dispatch/index.html">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../scripting/index.html">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                 -->
+                
+                    <li>
+                        <a href="https://github.com/chukong/cocos-docs">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+              
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+      
+        
+          <li class="main active"><a href="#3d">3D</a></li>
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#terminology">Terminology</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#sprite3d">Sprite3D</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#animation">Animation</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#camera">Camera</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#cubemap-texture">Cubemap Texture</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#skybox">Skybox</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#light">Light</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#terrain">Terrain</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#3d-software-packages">3D Software Packages</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#3d-file-formats">3D File Formats</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#advanced-topics">Advanced Topics</a></li>
+              
+
+          
+
+        
+      
+    
+    </ul>
+</div></div>
+              
+                <div class="col-md-9" role="main">
+
+<!-- bread crumb trail -->
+<ol class="breadcrumb">
+<li><a href="../../index.html">Docs</a></li>
+
+  
+    
+      <li>Contents</li>
+    
+  
+    
+      <li>Programmers Guide</li>
+    
+  
+
+<li>3D</li>
+</ol>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../event_dispatch/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../scripting/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+
+
+<!-- we can put this here if we want it on all content pages, but we don't at this point -->
+<!--<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>-->
+    <!--<li><a href="#" id="tab-lua">Lua</a></li>-->
+  <!--</ul>
+</div>-->
+
+<h1 id="3d">3D</h1>
+<p>You probably started with Cocos2d-x and know it as a 2D game engine. Starting
+with version 3, 3D features are being added and refined. 3D gaming is a huge
+market and Cocos2d-x is adding all the features you need for 3D development. 3D
+development might be new to you and use some terminology that you are unfamiliar
+with. There are also additional software tools that you need to become familiar
+with. Let's jump right in and get our feet wet.</p>
+<h2 id="terminology">Terminology</h2>
+<p>When using 3D, there are some commonly used terms that you should be familiar with:</p>
+<ul>
+<li>
+<p><strong>Mesh</strong> - vertices that construct a shape and texture with which you are
+rendering.</p>
+</li>
+<li>
+<p><strong>Model</strong> - an object that can be rendered. It is a collection of meshes. In our
+engine <code>Sprite3D</code>.</p>
+</li>
+<li>
+<p><strong>Texture</strong> - All surfaces and vertices of a 3D model can be mapped to a texture.
+In most cases you will have multiple textures per model, unwrapped in a texture
+atlas.</p>
+</li>
+<li>
+<p><strong>Camera</strong> - Since a 3D world is not flat, you need to set a camera to look at
+it. You get different scenes with different camera parameters.</p>
+</li>
+<li>
+<p><strong>Light</strong> - Lightening is applied to make scenes look realistic. To make an object
+look real, the color should change according to the light. When you face the light
+it is bright and the opposite is dark. <em>Lightening</em> an object means computing the
+object's color according to the light.</p>
+</li>
+</ul>
+<h2 id="sprite3d">Sprite3D</h2>
+<p>Just like 2D games, 3D games also have <code>Sprite</code> objects. <code>Sprite</code> objects are a
+core foundation of any game. One of the main differences between <code>Sprite</code> and
+<code>Sprite3D</code> is <code>Sprite3D</code> objects have 3 axes it can be positioned on:
+<strong>x</strong>,  <strong>y</strong> and <strong>z</strong>. <code>Sprite3D</code> works in many ways just like a normal <code>Sprite</code>.
+It is easy to load and display a <code>Sprite3D</code> object:</p>
+<pre><code class="cpp">auto sprite = Sprite3D::create(&quot;boss.c3b&quot;); //c3b file, created with the FBX-converter
+sprite-&gt;setScale(5.f); //sets the object scale in float
+sprite-&gt;setPosition(Vec2(200,200)); //sets sprite position
+scene-&gt;addChild(sprite,1); //adds sprite to scene, z-index: 1
+</code></pre>
+
+<p>This creates and positions a <code>Sprite3D</code> object from <code>.c3b</code> file. Example:</p>
+<p><img alt="" src="../3d-img/9_1.png" /></p>
+<p>Now let's rotate the model in a loop. For this we will create an action and run
+it:</p>
+<pre><code class="cpp">//rotate around the X axis
+auto rotation = RotateBy::create(15, Vec3(0, 360, 0));
+//our sprite object runs the action
+sprite-&gt;runAction(RepeatForever::create(rotation));
+</code></pre>
+
+<p>To set an anchor point on the <code>Sprite</code> or <code>Sprite3D</code> use:</p>
+<pre><code class="cpp">sprite-&gt;setAnchorPoint(Point(0.0f,0.0f));
+</code></pre>
+
+<h3 id="attaching-3d-models-to-sprite3d-objects">Attaching 3D models to Sprite3D objects.</h3>
+<p>Recall above that a 3D model is a collection of <strong>meshes</strong>. You can attach 3D models
+to other 3D models to create rich effects. An example would
+be adding a weapon to a character. To do this you need to find the attachment
+point where the weapon is to be added. For this use the <strong>getAttachNode(attachment_point_name)</strong>
+function. And then we just add the new model to the attachment point as a child
+with <strong>addChild()</strong>. You can think of this as combining multiple simpler 3D models
+to create more complex models. For example adding a model to a <code>Sprite3D</code> object:</p>
+<pre><code class="cpp">auto sp = Sprite3D::create(&quot;axe.c3b&quot;);
+sprite-&gt;getAttachNode(&quot;Bip001 R Hand&quot;)-&gt;addChild(sp);
+</code></pre>
+
+<p><img alt="" src="../3d-img/9_3.png" /></p>
+<h3 id="swap-3d-model">Swap 3D Model</h3>
+<p>When doing 3D development you might want to make dynamic changes to your model.
+Perhaps due to power-ups, costume changes or visual cues to notify the user about
+status changes of your model. If your 3D model is comprised from <strong>meshes</strong> you can
+access the <strong>mesh data</strong> using <strong>getMeshByIndex()</strong> and <strong>getMeshByName()</strong>. Using
+these functions it is possible to achieve effects like swapping a weapon or clothing
+for a character. Let's take a look at an example of a girl wearing a coat:</p>
+<p><img alt="" src="../3d-img/9_4.png" /></p>
+<p>We can change the coat that the girl is wearing by changing the visibility of
+the <strong>mesh</strong> objects we are using. The following example demonstrates how to do
+this:</p>
+<pre><code class="cpp">auto sprite = Sprite3D::create(&quot;ReskinGirl.c3b&quot;);
+
+// display the first coat
+auto girlTop0 = sprite-&gt;getMeshByName(&quot;Girl_UpperBody01&quot;);
+girlTop0-&gt;setVisible(true);
+
+auto girlTop1 = sprite-&gt;getMeshByName(&quot;Girl_UpperBody02&quot;);
+girlTop1-&gt;setVisible(false);
+
+// swap to the second coat
+girlTop0-&gt;setVisible(false);
+girlTop1-&gt;setVisible(true);
+</code></pre>
+
+<p>The results:</p>
+<p><img alt="" src="../3d-img/9_4_0.png" /></p>
+<h2 id="animation">Animation</h2>
+<p><code>Sprite3D</code> objects are essential to our game! We have learned how to manipulate them.
+However, we might want a more rich experience. Enter animation! To run a 3d
+animation, you can use the <code>Animation3D</code> and <code>Animate3D</code> objects. You then create
+an <code>Animate3D</code> action using the <code>Animation3D</code> object. Example:</p>
+<pre><code class="cpp">// the animation is contained in the .c3b file
+auto animation = Animation3D::create(&quot;orc.c3b&quot;);
+
+// creates the Action with Animation object
+auto animate = Animate3D::create(animation);
+
+// runs the animation
+sprite-&gt;runAction(RepeatForever::create(animate));
+</code></pre>
+
+<p>Run the example <strong>Programmer Guide Sample</strong> code to see this in action! Please
+keep in mind that 3D animations are exactly the same concepts as 2D. Please refer
+to Chapter 4 in this guide.</p>
+<h3 id="multiple-animations">Multiple animations</h3>
+<p>What do you do when you want to run multiple <strong>animations</strong> at the same time?
+Using both the <strong>animation start time</strong> and <strong>animation length</strong> parameters you
+can create multiple animations. The unit for both parameters is seconds. Example:</p>
+<pre><code class="cpp">auto animation = Animation3D::create(fileName);
+
+auto runAnimate = Animate3D::create(animation, 0, 2);
+sprite-&gt;runAction(runAnimate);
+
+auto attackAnimate = Animate3D::create(animation, 3, 5);
+sprite-&gt;runAction(attackAnimate);
+</code></pre>
+
+<p>In the above example there are two animations that get run. The first starts
+immediately and lasts for <em>2 seconds</em>. The second starts after <em>3 seconds</em> and lasts
+for <em>5 seconds</em>.</p>
+<h3 id="animation-speed">Animation speed</h3>
+<p>The <strong>speed</strong> of the animation is a positive integer for forward while
+a negative speed would be reverse. In this case the speed is set to <em>10</em>.
+This means that this animation can be considered to be <em>10</em> seconds in length.</p>
+<h3 id="animation-blending">Animation blending</h3>
+<p>When using multiple animations, <strong>blending</strong> is automatically applied between each
+animation. The purpose of <strong>blending</strong> is to create a smooth transition between
+effects. Given two animations, A and B, the last few frames of animation A and
+the first few frames of animation B overlap to make the change in animation look
+natural.</p>
+<p>The default transition time is 0.1 seconds. You can set the transition time by
+using <strong>Animate3D::setTransitionTime</strong>.</p>
+<p>Cocos2d-x only supports <strong>linear interpolation</strong> between keyframes. This fills in
+<strong>gaps</strong> in the curve to ensure a smooth path. If you use other interpolation
+methods in the model production, our built-in tool, <strong>fbx-conv</strong> will
+generate additional keyframes to compensate. This compensation is completed in
+accordance with the target frame. For more information on <strong>fbx-conv</strong> please refer
+to the section discussing it at the end of this chapter.</p>
+<h2 id="camera">Camera</h2>
+<p><strong>Camera</strong> objects are an important aspect of 3D development. Since a 3D world is
+not flat you need to use a <code>Camera</code> to look at it and navigate around it. Just
+like when you are watching a movie and the scene pans to the left or right. This
+same concept is applied when using a <code>Camera</code> object. The <code>Camera</code> object inherits
+from <code>Node</code> and therefore supports most of the same <code>Action</code> objects. There are two types
+of <code>Camera</code> objects: <strong>perspective camera</strong> and <strong>orthographic camera</strong>.</p>
+<p>The <strong>perspective camera</strong> is used to see objects having a near to far effect. A
+<strong>perspective camera</strong> view might look like this:</p>
+<p><img alt="" src="../3d-img/PerspectiveCamera.png" /></p>
+<p>As you can see with a <strong>perspective camera</strong>, objects in the <em>near</em> are larger and
+objects in the <strong>far</strong> are smaller.</p>
+<p>The <strong>orthogonal camera</strong> is used to see objects as large distance. You can think
+about it as converting a 3D world to a 2D representation. An <strong>orthogonal camera</strong>
+view might look like this:</p>
+<p><img alt="" src="../3d-img/OrthographicCamera.png" /></p>
+<p>As you can see with an <strong>orthogonal camera</strong>, objects are the same size regardless
+of how far away from the <code>Camera</code> object they are. <strong>Mini Maps</strong> in games are
+commonly rendered with an <strong>orthogonal camera</strong>. Another example would be a top -
+down view, perhaps in a dungeon style game.</p>
+<h3 id="camera-use">Camera Use</h3>
+<p>Don't worry! <code>Camera</code> objects may sound complicated but Cocos2d-x makes them easy.
+When using 3D you don't have to do anything special to create a <code>Camera</code> object.
+Each <code>Scene</code> automatically creates a default camera, based on the projection
+properties of the <code>Director</code> object. If you need more than one camera, you can
+use the following code to create one:</p>
+<pre><code class="cpp">auto s = Director::getInstance()-&gt;getWinSize();
+auto camera = Camera::createPerspective(60, (GLfloat)s.width/s.height, 1, 1000);
+
+// set parameters for camera
+camera-&gt;setPosition3D(Vec3(0, 100, 100));
+camera-&gt;lookAt(Vec3(0, 0, 0), Vec3(0, 1, 0));
+
+addChild(camera); //add camera to the scene
+</code></pre>
+
+<h3 id="creating-orthogonal-camera">Creating orthogonal camera</h3>
+<p>The default <code>Camera</code> is a <strong>perspective camera</strong>. If you want to create an
+<strong>orthogonal camera</strong>, it's easy to do by calling:</p>
+<pre><code class="cpp">Camera::createOrthographic();
+</code></pre>
+
+<p>Example:</p>
+<pre><code class="cpp">auto s = Director::getInstance()-&gt;getWinSize();
+auto camera = Camera::createOrthographic(s.width, s.height, 1, 1000);
+</code></pre>
+
+<h3 id="hiding-objects-from-the-camera">Hiding objects from the camera</h3>
+<p>Sometimes you don't want to have all objects visible in a <code>Camera</code> view. Hiding
+an object from one camera is very easy. Use <strong>setCameraMask(CameraFlag)</strong> on the
+<code>Node</code> and <strong>setCameraFlag(CameraFlag)</strong> on the <code>Camera</code>. Example:</p>
+<pre><code class="cpp">//Camera
+camera-&gt;setCameraFlag(CameraFlag::USER1);
+
+//Node
+node-&gt;setCameraMask(CameraFlag::USER1);
+</code></pre>
+
+<h2 id="cubemap-texture">Cubemap Texture</h2>
+<p>A <strong>cube map texture</strong> is a collection of six separate square textures that are
+put onto the faces of an imaginary cube. Most often they are used to display
+infinitely far away reflections on objects, similar to how <strong>sky box</strong> displays
+far away scenery in the background. This is what an expanded cube map might look
+like:</p>
+<p><img alt="" src="../3d-img/Cubemap.jpg" /></p>
+<p>In Cocos2d-x,you can create a <strong>cube map texture</strong> in this way:</p>
+<pre><code class="cpp">// create a textureCube object with six texture assets
+auto _textureCube = TextureCube::create(&quot;skybox/left.jpg&quot;,  &quot;skybox/right.jpg&quot;,
+&quot;skybox/top.jpg&quot;, &quot;skybox/bottom.jpg&quot;, &quot;skybox/front.jpg&quot;,&quot;skybox/back.jpg&quot;);
+
+// set cube map texture parameters
+Texture2D::TexParams tRepeatParams;
+tRepeatParams.magFilter = GL_NEAREST;
+tRepeatParams.minFilter = GL_NEAREST;
+tRepeatParams.wrapS = GL_MIRRORED_REPEAT;
+tRepeatParams.wrapT = GL_MIRRORED_REPEAT;
+_textureCube-&gt;setTexParameters(tRepeatParams);
+
+// create and set our custom shader
+auto shader = GLProgram::createWithFilenames(&quot;cube_map.vert&quot;,&quot;cube_map.frag&quot;);
+auto _state = GLProgramState::create(shader);
+
+// bind cube map texture to uniform
+_state-&gt;setUniformTexture(&quot;u_cubeTex&quot;, _textureCube);
+</code></pre>
+
+<h2 id="skybox">Skybox</h2>
+<p><code>Skybox</code> is a wrapper around your entire scene that shows what the world looks
+like beyond your geometry. You might use a <code>Skybox</code> to simulate infinite sky,
+mountains and other phenomena.</p>
+<p><img alt="" src="../3d-img/Skybox.png" /></p>
+<p>Creating a <code>Skybox</code>:</p>
+<pre><code class="cpp">// create a Skybox object
+auto box = Skybox::create();
+
+// set textureCube for Skybox
+box-&gt;setTexture(_textureCube);
+
+// attached to scene
+_scene-&gt;addChild(box);
+</code></pre>
+
+<h2 id="light">Light</h2>
+<p>Light is really important for building mood and ambiance for a game. There are
+currently 4 lighting techniques supported. You would use different lighting
+techniques depending upon your needs. Each lighting effect achieves a different
+result.</p>
+<h3 id="ambient-light">Ambient Light</h3>
+<p>An <code>AmbientLight</code> object will apply light evenly for everything in the scene.
+Think of lighting in an office environment. The lights are overhead and when you
+look at objects around the office you see them in the same light. Example:</p>
+<pre><code class="cpp">auto light = AmbientLight::create (Color3B::RED);
+addChild(light);
+</code></pre>
+
+<p>This produces:</p>
+<p><img alt="" src="../3d-img/9_9_1.png" /></p>
+<h3 id="directional-light">Directional Light</h3>
+<p><code>DirectionalLight</code> is often used to simulate a light source such as
+sunlight. When using <code>DirectionalLight</code> keep in mind that is has the same density
+no matter where you are in relationship to it. Also think about being outside on
+a sunny day with the sun beaming down on you. When you look directly at the sun,
+it is an intense light even if you move a few steps in any direction. Example:</p>
+<pre><code class="cpp">auto light = DirectionLight::create(Vec3(-1.0f, -1.0f, 0.0f), Color3B::RED);
+addChild(light);
+</code></pre>
+
+<p>This produces:</p>
+<p><img alt="" src="../3d-img/9_9_2.png" /></p>
+<h3 id="point-light">Point Light</h3>
+<p><code>PointLight</code> is often used to simulate the effect of light bulbs, lamps
+or torches. The direction of a <code>PointLight</code> is from the lighted position to the
+<code>PointLight</code>. Keep in mind that the density is different depending upon the
+distance from the <code>PointLight</code>. What does this mean? If you are close to the
+start of the <code>PointLight</code> it will be really strong. If you are towards the end
+of the <code>PointLight</code> it will be dim. <code>PointLight</code> also becomes weaker the larger
+the distance it is projected. Example:</p>
+<pre><code class="cpp">auto light = PointLight::create(Vec3(0.0f, 0.0f, 0.0f), Color3B::RED, 10000.0f);
+addChild(light);
+</code></pre>
+
+<p>This produces:</p>
+<p><img alt="" src="../3d-img/9_9_3.png" /></p>
+<h3 id="spot-light">Spot Light</h3>
+<p>A <code>SpotLight</code> object is often used to simulate a flashlight. This means that it
+is emitted in just one direction in the shape of a cone. Think about the power
+going out in your house. You may need to take a flashlight down into your basement
+to reset your circuits. The flashlight produces a cone shaped lighting pattern
+and you can only see objects inside that cone pattern. Another example is in dark,
+dungeon based games where your path is light by torches. You can only see the
+limited cone shape that those torches emit. Example:</p>
+<pre><code class="cpp">auto spotLight = SpotLight::create(Vec3(-1.0f, -1.0f, 0.0f), Vec3(0.0f, 0.0f, 0.0f),
+Color3B::RED, 0.0, 0.5, 10000.0f) ;
+addChild(spotLight);
+</code></pre>
+
+<p>This produces:</p>
+<p><img alt="" src="../3d-img/9_9_4.png" /></p>
+<h3 id="light-masking">Light Masking</h3>
+<p>What do you use for lights in your kitchen or living room? Probably a few lamps?
+Do you ever notice that perhaps you only use a lamp to light up a certain portion
+of the room? You are essentially applying a <strong>lighting mask</strong>!</p>
+<p>A <strong>lighting mask</strong> is used on a <code>Node</code> to only apply a particular <strong>lighting source</strong>
+to it. For example, if you had multiple lights in a <code>Scene</code>, a <code>Node</code> can only be
+lighted by one of the lights instead of all three. You can use <strong>setLightFlag(LightFlag)</strong>
+to control which <code>Node</code> objects are effected by the light. It is important to note
+that all lighting sources are rendered in a single pass. Due to mobile platform
+performance issues the use of multiple light sources is not recommended. The
+default maximum is 1. If you want to open multiple light sources you must define
+the following keys in <strong>info.plist</strong>:</p>
+<pre><code class="xml">&lt;key&gt; cocos2d.x.3d.max_dir_light_in_shader &lt;/key&gt;
+&lt;integer&gt; 1 &lt;/integer&gt;
+&lt;key&gt; cocos2d.x.3d.max_point_light_in_shader &lt;/key&gt;
+&lt;integer&gt; 1 &lt;/integer&gt;
+&lt;key&gt; cocos2d.x.3d.max_spot_light_in_shader &lt;/key&gt;
+&lt;integer&gt; 1 &lt;/integer&gt;
+</code></pre>
+
+<h2 id="terrain">Terrain</h2>
+<p><code>Terrain</code> is an important component in 3D game. A texture is used to stand for the
+height map. And up to 4 textures can be used to blend the details of the terrain,
+grass, road, and so on.</p>
+<h3 id="heightmap">HeightMap</h3>
+<p><code>HeightMap</code> objects are the core of the terrain. Different from the common image
+the height map represents the height of vertices. It determines the terrain's
+geometry shape.</p>
+<h3 id="detailmap">DetailMap</h3>
+<p><code>DetailMap</code> objects are a list of textures determining the details of the terrain,
+up to four textures can be used.</p>
+<h3 id="alphamap">AlphaMap</h3>
+<p><code>AlphaMap</code> objects are an image whose data is the blend weights of <strong>detail maps</strong>.
+The blending result is the final terrain's appearance.</p>
+<h3 id="lod-policy">LOD policy</h3>
+<p><code>Terrain</code> uses an optimization technique called <strong>Level Of Detail</strong> or <strong>LOD</strong>.
+This is a rendering technique that reduces the number of <strong>verticies</strong> (or triangles)
+that are rendered ,for an object,  as its distance from camera increases. Users
+can set the distance to the <code>Camera</code> by calling the
+<strong>Terrain::setLODDistance(float lod1, float lod2, float lod3)</strong> method.</p>
+<p>Neighboring chunks of <code>Terrain</code> objects, which have different <strong>LOD</strong> may cause
+ the <strong>crack</strong> artifacts. <code>Terrain</code> provide two functions to avoid them:</p>
+<pre><code class="cpp">Terrain::CrackFixedType::SKIRT
+
+Terrain::CrackFixedType::INCREASE_LOWER
+</code></pre>
+
+<p><strong>Terrain::CrackFixedType::SKIRT</strong> will generate four, skirt-like meshes at each
+edge of the chunk.</p>
+<p><strong>Terrain::CrackFixedType::INCREASE_LOWER</strong> will dynamically adjust each chunks
+<strong>indices</strong> to seamlessly connect them.</p>
+<h3 id="how-to-create-a-terrain">How to create a terrain</h3>
+<p>Creating a <code>Terrain</code> takes a few steps. Example:</p>
+<p>The following code snippet is creating a player and place it on the terrain:</p>
+<pre><code class="cpp">auto player = Sprite3D::create(&quot;chapter9/orc.c3b&quot;);
+player-&gt;setScale(0.08);
+player-&gt;setPositionY(terrain-&gt;getHeight(player-&gt;getPositionX(),player-&gt;getPositionZ()));
+</code></pre>
+
+<p><img alt="" src="../3d-img/9_10.png" /></p>
+<ul>
+<li>create all <code>DetailMap</code> objects (up to four), you need pass the <code>DetailMap</code>
+objects to the <strong>Terrain::DetailMap</strong> struct:</li>
+</ul>
+<pre><code class="cpp">  Terrain::DetailMap r(&quot;dirt.dds&quot;);
+  Terrain::DetailMap g(&quot;grass.dds&quot;);
+  Terrain::DetailMap b(&quot;road.dds&quot;);
+  Terrain::DetailMap a(&quot;greenSkin.jpg&quot;);
+</code></pre>
+
+<ul>
+<li>to create a <code>TerrainData</code> variable with <strong>detail maps</strong>, you need to specify
+the terrain's <strong>height map</strong> file path and <strong>alpha map</strong> file path:</li>
+</ul>
+<pre><code class="cpp">Terrain::TerrainData data(&quot;chapter9/heightmap16.jpg&quot;,&quot;TerrainTest/alphamap.png&quot;, r, g, b, a);
+</code></pre>
+
+<ul>
+<li>pass the <code>TerrainData</code> object to <strong>Terrain::create</strong>, the last parameter determines
+the LOD policy (as talked about above). Example:</li>
+</ul>
+<pre><code class="cpp">_terrain = Terrain::create(data, Terrain::CrackFixedType::SKIRT);
+</code></pre>
+
+<ul>
+<li>If you set a <code>Terrain</code> objects <strong>camera mask</strong> and add it to a <code>Node</code> or a
+<code>Scene</code>, be careful. When <code>Terrain</code> is added into a <code>Node</code> or a <code>Scene</code>, you can
+not use <strong>transform(translate, scale)</strong> on it anymore. If you do this after calling
+<strong>addChild()</strong>, some of the terrain's methods may calculate wrong results.</li>
+</ul>
+<h3 id="get-terrain-height">Get Terrain Height</h3>
+<p>Use the method <strong>Terrain::getHeight(float x, float z, Vec3 * normal= nullptr)</strong> to
+get the specified position's height. This method is very useful when you want to
+put a <code>Sprite3D</code> object or any <code>Node</code> on the terrain's surface.</p>
+<h3 id="ray-terrain-intersection-test">Ray-Terrain intersection test</h3>
+<p>A <strong>Ray-Terrain</strong> intersection test will calculate the intersection point by giving
+a specified position.</p>
+<p><strong>Terrain::CrackFixedType::SKIRT</strong> will generate four skirt-like meshes at each
+chunks edge.</p>
+<p><strong>Terrain::CrackFixedType::INCREASE_LOWER</strong> will dynamically adjust each chunks
+index to seamlessly connect them.</p>
+<h2 id="3d-software-packages">3D Software Packages</h2>
+<h3 id="3d-editors">3D Editors</h3>
+<p>3D editors are collections of tools that you use to build your 3D graphics. There
+are both commercial and free tools available. These are the most popular editors:</p>
+<ul>
+<li><a href="http://www.blender.org/">Blender (Free)</a></li>
+<li><a href="http://www.autodesk.com/products/3ds-max/overview">3DS Max</a></li>
+<li><a href="http://www.maxon.net/products/">Cinema4D</a></li>
+<li><a href="http://www.autodesk.com/products/maya/overview">Maya</a></li>
+</ul>
+<p>Most 3D editors usually save files in a common collection of formats for easy
+use within other editors as well as a standard way for game engines to import
+your files for use.</p>
+<h3 id="cocos2d-x-provided-tools">Cocos2d-x Provided Tools</h3>
+<p>Cocos2d-x provides tools to help with converting your 3D models to formats that
+Cocos2d-x uses to provide access to all aspects of your 3D files.</p>
+<h4 id="fbx-conv-command-line-tool">fbx-conv command-line tool</h4>
+<p><strong>fbx-conv</strong> allows the conversion of an FBX file into the Cocos2d-x proprietary
+formats. FBX is the most popular 3D file format and is being supported by all
+the major editors. <strong>fbx-conv</strong> exports to <strong>.c3b</strong> by default. It is simple to use
+with just a few parameters:</p>
+<pre><code class="sh">fbx-conv [-a|-b|-t] FBXFile
+</code></pre>
+
+<p>The possible switches are:</p>
+<ul>
+<li>-?: show help</li>
+<li>-a: export both text and binary format</li>
+<li>-b: export binary format</li>
+<li>-t: export text format</li>
+</ul>
+<p>Example:</p>
+<pre><code class="sh">fbx-conv -a boss.FBX
+</code></pre>
+
+<p>There are a few things to note about <strong>fbx-conv</strong>:
+<em> The model needs to have a material that contains at least one texture
+</em> it only supports skeletal animation.
+<em> it only supports one skeleton object no multiple skeleton support yet.
+</em> You can create a 3d scene by exporting multiple static model
+* The maximum amount of vertices or indices a mesh is 32767</p>
+<h2 id="3d-file-formats">3D File Formats</h2>
+<p>Cocos2d-x currently supports two 3d file formats:</p>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Wavefront_.obj_file">Wavefront Object</a> files:
+<strong>.obj</strong> files</li>
+<li>Cocos2d-x 3d ad-hoc format:<strong>c3t</strong>, <strong>c3b</strong> files.</li>
+</ul>
+<p>The <strong>Wavefront</strong> file format is supported because it has been widely adopted by
+3D editors and it is extremely easy to parse. It is, however, limited and
+doesn't support advanced features like animations.</p>
+<p>On the other hand, <strong>c3t</strong> and <strong>c3b</strong> are Cocos2d-x proprietary file formats that
+were created to allow animations, materials and other advanced 3d features.
+The suffix <strong>t</strong> means <strong>text</strong>, while the suffix <strong>b</strong> means <strong>binary</strong>. Developers
+must use <strong>c3b</strong> for production because it is more efficient. In case you want to
+debug the file and track its changes in Git or any other version control system,
+you should <strong>c3t</strong> instead. Also, <code>Animation3D</code> objects can be created with <strong>c3b</strong>
+or <strong>c3t</strong> files as it is not possible to animate <strong>obj</strong> files.</p>
+<h2 id="advanced-topics">Advanced Topics</h2>
+<h3 id="billboard">BillBoard</h3>
+<p>You may not have heard of a <code>BillBoard</code> before. No, I'm not talking about an
+advertisement on the side of a highway. Rather, <code>Billboard</code> is a special <code>Sprite</code>
+that always faces the <code>Camera</code>. As you rotate the <code>Camera</code>, <code>Billboard</code> objects
+also rotate. Using a<code>BillBoard</code> is a very common rendering technique. Take for
+example a downhill skiing game. Any trees, rocks or other objects that are in
+the way of the skier are <code>Billboard</code> objects.</p>
+<p>This is how <code>Camera</code> and <code>Billboard</code> objects relate to each other.</p>
+<p><img alt="" src="../3d-img/BillBoard.png" /></p>
+<p><code>Billboard</code> objects are easy to create. <code>BillBoard</code> is derived from <code>Sprite</code>, so
+it supports most of the features as a <code>Sprite</code> object. We can create one using the
+following create method:</p>
+<pre><code class="cpp">auto billboard = BillBoard::create(&quot;Blue_Front1.png&quot;, BillBoard::Mode::VIEW_POINT_ORIENTED);
+</code></pre>
+
+<p>You can also create a <code>Billboard</code> object for the camera XOY plane (like the plane
+  of a floor) by changing the <code>BillBoard</code> objects mode:</p>
+<pre><code class="cpp">auto billboard = BillBoard::create(&quot;Blue_Front1.png&quot;, BillBoard::Mode::VIEW_PLANE_ORIENTED);
+</code></pre>
+
+<p>These <em>create</em> methods look a little different since an additional parameter of
+<strong>BillBoard::Mode</strong> is passed in. There are two <strong>BillBoard::Mode</strong> types,
+<strong>VIEW_POINT_ORIENTED</strong> and <strong>VIEW_PLANE_ORIENTED</strong>.</p>
+<p><strong>VIEW_POINT_ORIENTED</strong> is where the <code>BillBoard</code> object is oriented to the
+<code>Camera</code>. Example:</p>
+<p><img alt="" src="../3d-img/9_8_1.png" /></p>
+<p><strong>VIEW_PLANE_ORIENTED</strong> is where the <code>BillBoard</code> is oriented towards the XOY plane
+ of the <code>Camera</code>. Example:</p>
+<p><img alt="" src="../3d-img/9_8_2.png" /></p>
+<p>You can also set properties for a <code>BillBoard</code> just like with any other <code>Node</code>.
+These include, but are not limited to: <strong>scale</strong>, <strong>position</strong>, <strong>rotation</strong>.
+Examples:</p>
+<pre><code class="cpp">billboard-&gt;setScale(0.5f);
+billboard-&gt;setPosition3D(Vec3(0.0f, 0.0f, 0.0f));
+billboard-&gt;setBlendFunc(BlendFunc::ALPHA_NON_PREMULTIPLIED);
+addChild(billboard);
+</code></pre>
+
+<h3 id="particlesystem3d">ParticleSystem3D</h3>
+<p>In Chapter 7, you learned about 2D particles and how to use them. When you use 3D
+you might also want to use a 3D particle system for rich, advanced effects. Many
+of the same concepts apply for a 3D particle system as they did with a 2D particle
+system. Cocos2d-x currently supports <strong>Particle Universe</strong> (http://www.fxpression.com/)
+for particle system construction. <strong>Particle Universe</strong> provides a special particle
+editor that allows you to quickly and easily set up a variety of effects, such as
+explosions, fire, blood and other special effects. This editor uses a <strong>pu</strong> file
+extension when saving or exporting.</p>
+<p>When you are happy with your particle and ready to use it in code, exporting to
+its built-in format of <strong>pu</strong> is enough! Cocos2d-x supports this format directly.
+Also, as <code>ParticleSystem3D</code> is derived from <code>Node</code>, it supports most of the
+features that <code>Node</code> supports. <code>PUParticleSystem3D</code> is an object type specifically
+for dealing with <strong>Particle Universe</strong> particles. <code>PUParticleSystem3D</code> offers two
+ways for creating particles.</p>
+<p>The first way is to build a particle by passing in a <strong>Particle Universe</strong> file
+and its corresponding <strong>material file</strong>. Remember from Chapter 7 that a
+<strong>material file</strong> is what describes the particle. This is required. Example:</p>
+<pre><code class="cpp">auto ps = PUParticleSystem3D::create(&quot;lineStreak.pu&quot;, &quot;pu_mediapack_01.material&quot;);
+ps-&gt;startParticleSystem();
+this-&gt;addChild(ps);
+</code></pre>
+
+<p>The second way is to build the particle system only by passing a <strong>particle universe</strong>
+file. When you create a particle this way, besides loading the particle, all
+<strong>material files</strong> in the same folder as the particle file will automatically be
+loaded. Here is an example:</p>
+<pre><code class="cpp">auto ps = PUParticleSystem3D::create(&quot;electricBeamSystem.pu&quot;);
+ps-&gt;startParticleSystem();
+
+this-&gt;addChild(ps);
+</code></pre>
+
+<p><strong>Note:</strong> using this method will result in an increase in loading times and
+consumes more memory since everything will be loaded. If you know what <strong>material</strong>
+you want to use and don't need to load everything, using the first method would
+be preferred.</p>
+<p>In these images below, on the left is the particle in <strong>particle universe</strong>, while
+on the right is the effect running in Cocos2d-x:</p>
+<p><img alt="" src="../3d-img/particle1.png" /> <img alt="" src="../3d-img/particle2.png" /></p>
+<p>Once you have your particle, you can interact with it it fairly obvious ways. You
+can interact with with the <strong>particle system</strong> as a whole, starting, stopping,
+pausing, resuming and obtaining the total number of particles:</p>
+<pre><code class="cpp">virtual void startParticleSystem() override;
+virtual void stopParticleSystem() override;
+virtual void pauseParticleSystem() override;
+virtual void resumeParticleSystem() override;
+virtual int getAliveParticleCount() const override;
+</code></pre>
+
+<p>As <code>PUParticleSystem3D</code> is derived from <code>Node</code> you can run <code>Action</code> and <code>Sequence</code>
+objects on your particles! Example:</p>
+<pre><code class="cpp">auto ps = PUParticleSystem3D::create(&quot;blackHole.pu&quot;, &quot;pu_mediapack_01.material&quot;);
+ps-&gt;setPosition(-25.0f, 0.0f);
+
+auto moveby = MoveBy::create(2.0f, Vec2(50.0f, 0.0f));
+auto moveby1 = MoveBy::create(2.0f, Vec2(-50.0f, 0.0f));
+
+ps-&gt;runAction(RepeatForever::create(Sequence::create(moveby, moveby1, nullptr)));
+ps-&gt;startParticleSystem();
+</code></pre>
+
+<p>Combining <code>Action</code> and <code>Sequence</code> objects could produce an interesting black hole
+effect:</p>
+<p><img alt="" src="../3d-img/particle3.png" /></p>
+<p>Just like with other 3D objects you can also combine 3D objects using <code>AttachNode</code>.
+This allows for creating rich models. Example:</p>
+<pre><code class="cpp">auto sprite3d = Sprite3D::create(&quot;orc.c3b&quot;);
+sprite3d-&gt;setPosition3D(Vec3(0.0f, 0.0f, 0.0f));
+sprite3d-&gt;setRotation3D(Vec3(0.0f, 180.0f, 0.0f));
+
+auto animation = Animation3D::create(&quot;orc.c3b&quot;);
+if (animation)
+{
+    auto animate = Animate3D::create(animation);
+    sprite3d-&gt;runAction(RepeatForever::create(animate));
+}
+
+auto handler = PUParticleSystem3D::create(&quot;lightningBolt.pu&quot;);
+handler-&gt;startParticleSystem();
+sprite3d-&gt;getAttachNode(&quot;Bip001 L Hand&quot;)-&gt;addChild(handler);
+
+this-&gt;addChild(sprite3d);
+</code></pre>
+
+<p><img alt="" src="../3d-img/particle4.png" /></p>
+<!---
+BillBoard provides several create methods, as follows:
+
+wzxhzdk:33
+
+Cocos2d-x from the BillBoard increase in the Renderer class to introduce a transparent
+render queue, in order to ensure proper rendering of transparent objects, the queue
+after the other rendering render queue, and the queue at the specified Order values ​​
+are sorted in descending . In BillBoard's rendering, BillBoard passed to clear the
+queue itself -Z value in the camera coordinate system (farther away from the camera
+body The higher the value) size, and then be able to achieve the correct rendering
+of BillBoard's. If you need a custom rendering of transparent objects can consider
+using the queue, the queue to add way as follows:
+
+_quadCommand.init (_zDepthInView, _texture-> getName (), getGLProgramState (), _blendFunc, & _quad, 1, _billboardTransform);
+renderer-> addCommandToTransparentQueue (& _ quadCommand);
+BillBoard more details see the use of the methods and examples of BillBoardTest
+with cpptests
+
+
+### Coordinate transformation
+`Camera` provide helpers to transform coordinates from screen space to world
+space. Example:
+
+wzxhzdk:34
+
+Here viewport is _viewport size_, use `src` as screen coordinates, the z axis of
+the `src` indicates clipping plane distance information, -1 means the near
+clipping plane, 1 means far clipping plane. The `dst` parameter will return
+world space coordinates.
+
+
+ ## Ray
+`Ray` is super useful in 3D game. You can use `Ray` to achieve things like picking up
+an object in 3D or detect collision in 3D.
+
+Illustration:
+
+![](3d-img/Ray.png)
+
+### Creating a Ray
+
+You need two vectors to create a `Ray`, one is the origin, the other is the
+direction. Example:
+
+wzxhzdk:35
+
+This will create a `Ray` originated from (0,0,0) in the direction of the positive
+Z axis.
+
+With this `Ray`, you can call the function with space intersects AABB box or any
+box OBB collision, the code is as follows:
+
+wzxhzdk:36
+
+
+## AABB
+`AABB` mean axis aligned bounding box, a 3D AABB is a simple six-sided, each side
+is parallel to a coordinate plane. It would look like this:
+
+![](3d-img/AABB.png)
+
+AABB properties:
+
+Two vertices is particularly important: Pmin = [Xmin Ymin Zmin], Pmax = [Xmax Ymax Zmax].
+Other points on the box are met
+
+Xmin <= X <= Xmax Ymin <= Y <= Ymax Zmin <= Z <= Zmax
+
+### AABB use
+`AABB` is usually used in the game to do some non-precision collision detection,
+AABB concept without direction, only Pmin and Pmax points, you can build an AABB
+box through these two points, the code is as follows:
+
+wzxhzdk:37
+
+If you want to detect whether two AABB collision can call
+bool intersects (const AABB & aabb) const function, for example, we create two
+AABB bounding box collision detection and then the code is as follows:
+
+AABB a (Vec (-1, -1, -1), Vec (1,1,1)); AABB b (Vec (0,0,0), Vec (2,2,2));
+if (a .intersect (b)) {// collision} else {// not collide}
+
+AABB collision detection is done with two points Pmin and Pmax compare AABB
+collision detection so fast.
+
+In addition, citing several AABB commonly used functions, as follows:
+
+wzxhzdk:38
+
+## OBB
+`OBB` (Oriented Bounding Box, there is the bounding box) is a close rectangular
+object, but the object of the box can be rotated. OBB than AABB bounding sphere
+and is closer to the object, can significantly reduce the number of the surrounded
+body. It would look like this:
+
+![](3d-img/OBB.png)
+
+### OBB nature
+
+OOBB bounding boxes are directional, we use three mutually perpendicular vectors
+to describe the OBB bounding box of the local coordinate system, these three
+vectors are _xAxis, _yAxis, _zAxis, with _extents vector to describe the OBB
+bounding box in each on the axial length.
+
+### OBB use
+
+You can AABB structure OBB, the code is as follows:
+
+wzxhzdk:39
+
+Or you can directly constructed by eight points
+
+Vec3 a [] = {Vec3 (0,0,0), Vec3 (0,1,0), Vec3 (1,1,0), Vec3 (1,0,0), Vec3 (1,0,1) , Vec3 (1,1,1), Vec3 (0,1,1), Vec3 (0,0,1)}; OBB obb ​​(a, 8);
+
+If you want to detect whether two OBB collision can call
+bool intersects (const OBB & aabb) const function,
+for example, then we create two OBB collision detection code below
+
+AABB aabbSrc (Vec (-1, -1, -1), Vec (1,1,1)); AABB aabbDes (Vec (0,0,0), Vec (2,2,2)); OBB obbSrc (aabbSrc); OBB obbDes (aabbDes); if (obbSrc.intersect (obbDes)) {// collision} else {// not collide}
+
+In addition, citing several OBB commonly used functions, as follows:
+
+void getCorners (Vec3 * dst) const; // get the world coordinate OBB 8 vertices
+
+bool containPoint (const Vec3 & point) const; // detect whether a point is
+contained in a box inside OBB
+
+void transform (const Mat4 & mat); // transform on OBB box
+
+## Mesh
+A `Mesh` is an object that can be rendered and includes the _index cache_,
+_GLProgram state set_, _texture_, _bone_, _blending equations_, _AABB_ and any
+other data you might need. `Mesh` objects are usually built by an internal class
+and does not require users to set up and use by the time `Sprite3D` created. For
+advanced users and sometimes may not need to import by way of an external model,
+but directly to build the model (such as a plane, cube, sphere, etc.) through the
+vertex index data for rendering. This time we need to build the appropriate data
+independently Mesh and customize rendering Command for custom drawing, it is
+necessary to use a separate pair Mesh explained.
+
+### Building a Mesh
+Mesh by more create methods can create the Mesh, for example, by the most common
+vertex array, normals, texture coordinates, and index the array passed to create
+a quadrilateral:
+
+wzxhzdk:40
+
+How to render the construct Mesh? When all the information is rendered after we
+finished building Mesh already have, but also need the appropriate data into the
+rendering pipeline to render, so you can consider building a custom class derived
+from Node, overloading the Draw method, and building a MeshCommand in the Draw
+method and pass relevant data into the Mesh render queue, eventually rendering.
+For example custom class Draw method can add the following code:
+
+wzxhzdk:41
+
+The results:
+
+![](3d-img/quad.png)
+--->
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../event_dispatch/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../scripting/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+</div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <p style="text-align:center">Copyright (c) 2014-2016 Chukong Technologies Inc.</p>
+            
+           <!-- <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>-->
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+
+        <!-- PG languages -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script>
+        $(function() {
+          var key = "Cocos2d-x_pg_lang";
+          var switch_lang = function(l) {
+              $('.langs li a').removeClass('selected');
+              $('#'+l).addClass('selected');
+              $('.tab_content').hide();
+              $('.'+l).show();
+              $.cookie(key, l);
+          }
+          $('.langs li a').click(function() {switch_lang(this.id);return false;});
+          var c = $.cookie(key);
+          if (typeof c == 'undefined') c='tab-cpp';
+          switch_lang(c);
+        });
+        </script>
+
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/Cocos2d-html5-min.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chipmunk.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d-jsb.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/main.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/AnimationLayer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/BackgroundLayer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Coin.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/GameOverLayer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/PlayScene.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Rock.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/SimpleRecognizer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/StatusLayer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/globals.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/myApp.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/resource.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

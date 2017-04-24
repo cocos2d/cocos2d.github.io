@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Cocos Team">
+        <link rel="canonical" href="http://cocos2d-x.org/docs/programmers-guide/event_dispatch/index.html">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>Event Dispatch - Cocos Documentation</title>
+
+  <link href="../../css/bootstrap-custom.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+<link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href="../../css/base.css" rel="stylesheet">
+<link href="../../css/cinder.css" rel="stylesheet">
+<link href="../../css/pg.css" rel="stylesheet">
+<link href="../../css/highlight.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-3216502-3', 'Cocos2d-x.org');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a style="padding: 12px 0px;" class="navbar-brand" href="../../index.html">Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../index.html">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Manual Installations</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../installation/A/index.html">Prerequisites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Android-terminal/index.html">Android Command-line Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Android-VisualStudio/index.html">Android Visual Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Android-Studio/index.html">Android Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Android-Eclipse/index.html">Android Eclipse Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/iOS/index.html">IOS and OSX Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Linux/index.html">Linux Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Tizen/index.html">Tizen Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Windows/index.html">Windows Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Windows-Phone/index.html">Windows Phone Setup</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Programmers Guide</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../about/index.html">About Cocos2d-x</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../basic_concepts/index.html">Basic Concepts</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../sprites/index.html">Sprites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../actions/index.html">Actions</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../scenes/index.html">Scenes</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../ui_components/index.html">UI</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../other_node_types/index.html">Other Node Types</a>
+  </li>
+  
+
+          
+              
+  
+  <li class="active">
+      <a href="index.html">Event Dispatch</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../3d/index.html">3D</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../scripting/index.html">Scripting</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../physics/index.html">Physics</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../audio/index.html">Audio</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../vr/index.html">VR</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../advanced_topics/index.html">Advanced Topics</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Editors & Tools</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../editors_and_tools/cocosCLTool/index.html">Command-line tool</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../editors_and_tools/creator/index.html">Cocos Creator</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+  
+  <li >
+      <a href="../../editors_and_tools/cocos/index.html">Cocos Launcher</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Services</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../services/sdkbox/index.html">SDKBOX</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Tutorials</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../tutorials/javascript/javascript/index.html">Parkour Game Tutorials for Cocos2d-JS</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+  <li >
+      <a href="../../api-ref/index.html">API Reference</a>
+  </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Deprecated</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../deprecated/studio/index.html">Cocos Studio</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                        </ul>
+                    </li>
+                
+                
+
+                <!-- new add for language button -->
+                <!--<li>
+                    <a href="http://sdkbox-doc.github.io/zh/">中文</a>
+                </li>-->
+
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <!-- 
+                    <li >
+                        <a rel="next" href="../other_node_types/index.html">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../3d/index.html">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                 -->
+                
+                    <li>
+                        <a href="https://github.com/chukong/cocos-docs">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+              
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+      
+        
+          <li class="main active"><a href="#event-dispatcher">Event Dispatcher</a></li>
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#what-is-the-eventdispatch-mechanism">What is the EventDispatch mechanism?</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#5-types-of-event-listeners">5 types of event listeners.</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#fixedpriority-vs-scenegraphpriority">FixedPriority vs SceneGraphPriority</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#touch-events">Touch Events</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#swallowing-events">Swallowing Events</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#creating-a-keyboard-event">Creating a keyboard event</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#creating-an-accelerometer-event">Creating an accelerometer event</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#creating-a-mouse-event">Creating a mouse event</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#creating-a-custom-event">Creating a Custom Event</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#registering-event-with-the-dispatcher">Registering event with the dispatcher</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#removing-events-from-the-dispatcher">Removing events from the dispatcher</a></li>
+              
+
+          
+
+        
+      
+    
+    </ul>
+</div></div>
+              
+                <div class="col-md-9" role="main">
+
+<!-- bread crumb trail -->
+<ol class="breadcrumb">
+<li><a href="../../index.html">Docs</a></li>
+
+  
+    
+      <li>Contents</li>
+    
+  
+    
+      <li>Programmers Guide</li>
+    
+  
+
+<li>Event Dispatch</li>
+</ol>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../other_node_types/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../3d/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+
+
+<!-- we can put this here if we want it on all content pages, but we don't at this point -->
+<!--<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>-->
+    <!--<li><a href="#" id="tab-lua">Lua</a></li>-->
+  <!--</ul>
+</div>-->
+
+<h1 id="event-dispatcher">Event Dispatcher</h1>
+<h2 id="what-is-the-eventdispatch-mechanism">What is the EventDispatch mechanism?</h2>
+<p><strong>EventDispatch</strong> is a mechanism for responding to user events.</p>
+<p>The basics:</p>
+<ul>
+<li>Event listeners encapsulate your event processing code.</li>
+<li>Event dispatcher notifies listeners of user events.</li>
+<li>Event objects contain information about the event.</li>
+</ul>
+<h2 id="5-types-of-event-listeners">5 types of event listeners.</h2>
+<p><code>EventListenerTouch</code> - responds to touch events</p>
+<p><code>EventListenerKeyboard</code> - responds to keyboard events</p>
+<p><code>EventListenerAcceleration</code> - responds to accelerometer events</p>
+<p><code>EventListenMouse</code> - responds to mouse events</p>
+<p><code>EventListenerCustom</code> - responds to custom events</p>
+<h2 id="fixedpriority-vs-scenegraphpriority">FixedPriority vs SceneGraphPriority</h2>
+<p>The <strong>EventDispatcher</strong> uses priorities to decide which listeners get delivered an
+event first.</p>
+<p><strong>Fixed Priority</strong> is an integer value. Event listeners with lower Priority values
+get to process events before event listeners with higher Priority values.</p>
+<p><strong>Scene Graph Priority</strong> is a pointer to a <code>Node</code>. Event listeners whose <em>Nodes</em> have
+higher <strong>z-order</strong> values (that is, are drawn on top) receive events before event
+listeners whose <em>Nodes</em> have lower <strong>z-order</strong> values (that is, are drawn below).
+This ensures that touch events, for example, get delivered front-to-back, as you
+would expect.</p>
+<p>Remember Chapter 2? Where we talked about the <strong>scene graph</strong> and we talked about
+this diagram?</p>
+<p><img alt="" src="../basic_concepts-img/in-order-walk.png" title="in-order walk" /></p>
+<p>Well, when use <strong>Scene Graph Priority</strong> you are actually walking this above tree
+backwards... <strong>I</strong>, <strong>H</strong>, <strong>G</strong>, <strong>F</strong>, <strong>E</strong>, <strong>D</strong>, <strong>C</strong>, <strong>B</strong>, <strong>A</strong>. If
+an event is triggered, <strong>H</strong> would take a look and either <strong>swallow</strong> it (more
+  on this below) or let is pass through to _I<strong>. Same thing, </strong>I<strong> will either
+  </strong>consume<strong> it or let is pass through to </strong>G<strong> and so on until the event either
+  </strong>swallowed__ it or does not get answered.</p>
+<h2 id="touch-events">Touch Events</h2>
+<p><strong>Touch events</strong> are the most important event in mobile gaming. They are easy to
+create and provide versatile functionality. Let's make sure we know what a touch
+event is. When you touch the screen of your mobile device, it accepts the touch,
+looks at where you touched and decides what you touched. Your touch is then answered.
+It is possible that what you touched might not be the responding object but perhaps
+something underneath it. Touch events are usually assigned a priority and the
+event with the highest priority is the one that answers. Here is how you create
+a basic touch event listener:</p>
+<pre><code class="cpp">//  Create a &quot;one by one&quot; touch event listener
+// (processes one touch at a time)
+auto listener1 = EventListenerTouchOneByOne::create();
+
+// trigger when you push down
+listener1-&gt;onTouchBegan = [](Touch* touch, Event* event){
+    // your code
+    return true; // if you are consuming it
+};
+
+// trigger when moving touch
+listener1-&gt;onTouchMoved = [](Touch* touch, Event* event){
+    // your code
+};
+
+// trigger when you let up
+listener1-&gt;onTouchEnded = [=](Touch* touch, Event* event){
+    // your code
+};
+
+// Add listener
+_eventDispatcher-&gt;addEventListenerWithSceneGraphPriority(listener1, this);
+</code></pre>
+
+<p>As you can see there are 3 distinct events that you can act upon when using a
+touch event listener. They each have a distinct time in which they are called.</p>
+<p><strong>onTouchBegan</strong> is triggered when you press down.</p>
+<p><strong>onTouchMoved</strong> is triggered if you move the object around while still pressing
+down.</p>
+<p><strong>onTouchEnded</strong> is triggered when you let up on the touch.</p>
+<h2 id="swallowing-events">Swallowing Events</h2>
+<p>When you have a listener and you want an object to accept the event it was given
+you must <strong>swallow</strong> it. To say it another way, you <strong>consume</strong> it so that it
+doesn't get passed to other objects in highest to lowest priority. This is easy
+to do.</p>
+<pre><code class="cpp">// When &quot;swallow touches&quot; is true, then returning 'true' from the
+// onTouchBegan method will &quot;swallow&quot; the touch event, preventing
+// other listeners from using it.
+listener1-&gt;setSwallowTouches(true);
+
+// you should also return true in onTouchBegan()
+
+listener1-&gt;onTouchBegan = [](Touch* touch, Event* event){
+    // your code
+
+    return true;
+};
+</code></pre>
+
+<h2 id="creating-a-keyboard-event">Creating a keyboard event</h2>
+<p>For desktop games, you might want find using keyboard mechanics useful.
+Cocos2d-x supports keyboard events. Just like with touch events above,
+keyboard events are easy to create.</p>
+<pre><code class="cpp">// creating a keyboard event listener
+auto listener = EventListenerKeyboard::create();
+listener-&gt;onKeyPressed = CC_CALLBACK_2(KeyboardTest::onKeyPressed, this);
+listener-&gt;onKeyReleased = CC_CALLBACK_2(KeyboardTest::onKeyReleased, this);
+
+_eventDispatcher-&gt;addEventListenerWithSceneGraphPriority(listener, this);
+
+// Implementation of the keyboard event callback function prototype
+void KeyboardTest::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event)
+{
+        log(&quot;Key with keycode %d pressed&quot;, keyCode);
+}
+
+void KeyboardTest::onKeyReleased(EventKeyboard::KeyCode keyCode, Event* event)
+{
+        log(&quot;Key with keycode %d released&quot;, keyCode);
+}
+</code></pre>
+
+<h2 id="creating-an-accelerometer-event">Creating an accelerometer event</h2>
+<p>Some mobile devices come equipped with an accelerometer. An accelerometer is a
+sensor that measures g-force as well as changes in direction. A use case would
+be needing to move your phone back and forth, perhaps to simulate a balancing act.
+Cocos2d-x also supports these events and creating them is simple.
+Before using accelerometer events, you need to enable them on the device:</p>
+<pre><code class="cpp">Device::setAccelerometerEnabled(true);
+</code></pre>
+
+<pre><code class="cpp">// creating an accelerometer event
+auto listener = EventListenerAcceleration::create(CC_CALLBACK_2(
+AccelerometerTest::onAcceleration, this));
+
+_eventDispatcher-&gt;addEventListenerWithSceneGraphPriority(listener, this);
+
+// Implementation of the accelerometer callback function prototype
+void AccelerometerTest::onAcceleration(Acceleration* acc, Event* event)
+{
+    //  Processing logic here
+}
+</code></pre>
+
+<h2 id="creating-a-mouse-event">Creating a mouse event</h2>
+<p>As it always has, Cocos2d-x supports mouse events.</p>
+<pre><code class="cpp">_mouseListener = EventListenerMouse::create();
+_mouseListener-&gt;onMouseMove = CC_CALLBACK_1(MouseTest::onMouseMove, this);
+_mouseListener-&gt;onMouseUp = CC_CALLBACK_1(MouseTest::onMouseUp, this);
+_mouseListener-&gt;onMouseDown = CC_CALLBACK_1(MouseTest::onMouseDown, this);
+_mouseListener-&gt;onMouseScroll = CC_CALLBACK_1(MouseTest::onMouseScroll, this);
+
+_eventDispatcher-&gt;addEventListenerWithSceneGraphPriority(_mouseListener, this);
+
+void MouseTest::onMouseDown(Event *event)
+{
+    // to illustrate the event....
+    EventMouse* e = (EventMouse*)event;
+    string str = &quot;Mouse Down detected, Key: &quot;;
+    str += tostr(e-&gt;getMouseButton());
+}
+
+void MouseTest::onMouseUp(Event *event)
+{
+    // to illustrate the event....
+    EventMouse* e = (EventMouse*)event;
+    string str = &quot;Mouse Up detected, Key: &quot;;
+    str += tostr(e-&gt;getMouseButton());
+}
+
+void MouseTest::onMouseMove(Event *event)
+{
+    // to illustrate the event....
+    EventMouse* e = (EventMouse*)event;
+    string str = &quot;MousePosition X:&quot;;
+    str = str + tostr(e-&gt;getCursorX()) + &quot; Y:&quot; + tostr(e-&gt;getCursorY());
+}
+
+void MouseTest::onMouseScroll(Event *event)
+{
+    // to illustrate the event....
+    EventMouse* e = (EventMouse*)event;
+    string str = &quot;Mouse Scroll detected, X: &quot;;
+    str = str + tostr(e-&gt;getScrollX()) + &quot; Y: &quot; + tostr(e-&gt;getScrollY());
+}
+</code></pre>
+
+<h2 id="creating-a-custom-event">Creating a Custom Event</h2>
+<p>The event types above are defined by the system, and the events (such as touch
+screen, keyboard response etc) are triggered by the system automatically. In
+addition, you can make your own custom events which are not triggered by the system,
+but by your code, as follows:</p>
+<pre><code class="cpp">_listener = EventListenerCustom::create(&quot;game_custom_event1&quot;, [=](EventCustom* event){
+    std::string str(&quot;Custom event 1 received, &quot;);
+    char* buf = static_cast&lt;char*&gt;(event-&gt;getUserData());
+    str += buf;
+    str += &quot; times&quot;;
+    statusLabel-&gt;setString(str.c_str());
+});
+
+_eventDispatcher-&gt;addEventListenerWithFixedPriority(_listener, 1);
+</code></pre>
+
+<p>A custom event listener has been defined above, with a response method, and added
+to the event dispatcher. So how is the event handler triggered? Check it out:</p>
+<pre><code class="cpp">static int count = 0;
+++count;
+
+char* buf[10];
+sprintf(buf, &quot;%d&quot;, count);
+
+EventCustom event(&quot;game_custom_event1&quot;);
+event.setUserData(buf);
+
+_eventDispatcher-&gt;dispatchEvent(&amp;event);
+</code></pre>
+
+<p>The above example creates an EventCustom object and sets its UserData. It is then
+dispatched manually with <code>_eventDispatcher-&gt;dispatchEvent(&amp;event)</code>. This triggers
+the event handler defined previously. The handler is called immediately so a local
+stack variable can be used as the UserData.</p>
+<h2 id="registering-event-with-the-dispatcher">Registering event with the dispatcher</h2>
+<p>It is easy to register an event with the <strong>Event Dispatcher</strong>. Taking the sample
+touch event listener from above:</p>
+<pre><code class="cpp">// Add listener
+_eventDispatcher-&gt;addEventListenerWithSceneGraphPriority(listener1,
+sprite1);
+</code></pre>
+
+<p>It is important to note that a touch event can only be registered once per object.
+If you need to use the same listener for multiple objects you should
+use <strong>clone()</strong>.</p>
+<pre><code class="cpp">// Add listener
+_eventDispatcher-&gt;addEventListenerWithSceneGraphPriority(listener1,
+sprite1);
+
+// Add the same listener to multiple objects.
+_eventDispatcher-&gt;addEventListenerWithSceneGraphPriority(listener1-&gt;clone(),
+ sprite2);
+
+_eventDispatcher-&gt;addEventListenerWithSceneGraphPriority(listener1-&gt;clone(),
+ sprite3);
+</code></pre>
+
+<h2 id="removing-events-from-the-dispatcher">Removing events from the dispatcher</h2>
+<p>An added listener can be removed with following method:</p>
+<pre><code class="cpp">_eventDispatcher-&gt;removeEventListener(listener);
+</code></pre>
+
+<p>Although they may seem special, built-in <code>Node</code> objects use the <strong>event dispatcher</strong>
+in the same way we have talked out. Makes sense, right? Take <code>Menu</code> for an example.
+When you have a <code>Menu</code> with <code>MenuItems</code> when you click them you are dispatching a
+event. You can also <strong>removeEventListener()</strong> on built-in <code>Node</code> objects.</p>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../other_node_types/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../3d/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+</div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <p style="text-align:center">Copyright (c) 2014-2016 Chukong Technologies Inc.</p>
+            
+           <!-- <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>-->
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+
+        <!-- PG languages -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script>
+        $(function() {
+          var key = "Cocos2d-x_pg_lang";
+          var switch_lang = function(l) {
+              $('.langs li a').removeClass('selected');
+              $('#'+l).addClass('selected');
+              $('.tab_content').hide();
+              $('.'+l).show();
+              $.cookie(key, l);
+          }
+          $('.langs li a').click(function() {switch_lang(this.id);return false;});
+          var c = $.cookie(key);
+          if (typeof c == 'undefined') c='tab-cpp';
+          switch_lang(c);
+        });
+        </script>
+
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/Cocos2d-html5-min.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chipmunk.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d-jsb.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/main.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/AnimationLayer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/BackgroundLayer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Coin.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/GameOverLayer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/PlayScene.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Rock.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/SimpleRecognizer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/StatusLayer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/globals.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/myApp.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/resource.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

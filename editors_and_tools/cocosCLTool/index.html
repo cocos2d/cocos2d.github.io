@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Cocos Team">
+        <link rel="canonical" href="http://cocos2d-x.org/docs/editors_and_tools/cocosCLTool/index.html">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>Command-line tool - Cocos Documentation</title>
+
+  <link href="../../css/bootstrap-custom.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+<link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href="../../css/base.css" rel="stylesheet">
+<link href="../../css/cinder.css" rel="stylesheet">
+<link href="../../css/pg.css" rel="stylesheet">
+<link href="../../css/highlight.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-3216502-3', 'Cocos2d-x.org');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a style="padding: 12px 0px;" class="navbar-brand" href="../../index.html">Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../index.html">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Manual Installations</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../installation/A/index.html">Prerequisites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Android-terminal/index.html">Android Command-line Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Android-VisualStudio/index.html">Android Visual Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Android-Studio/index.html">Android Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Android-Eclipse/index.html">Android Eclipse Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/iOS/index.html">IOS and OSX Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Linux/index.html">Linux Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Tizen/index.html">Tizen Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Windows/index.html">Windows Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Windows-Phone/index.html">Windows Phone Setup</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Programmers Guide</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../programmers-guide/about/index.html">About Cocos2d-x</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../programmers-guide/basic_concepts/index.html">Basic Concepts</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../programmers-guide/sprites/index.html">Sprites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../programmers-guide/actions/index.html">Actions</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../programmers-guide/scenes/index.html">Scenes</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../programmers-guide/ui_components/index.html">UI</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../programmers-guide/other_node_types/index.html">Other Node Types</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../programmers-guide/event_dispatch/index.html">Event Dispatch</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../programmers-guide/3d/index.html">3D</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../programmers-guide/scripting/index.html">Scripting</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../programmers-guide/physics/index.html">Physics</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../programmers-guide/audio/index.html">Audio</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../programmers-guide/vr/index.html">VR</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../programmers-guide/advanced_topics/index.html">Advanced Topics</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Editors & Tools</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li class="active">
+      <a href="index.html">Command-line tool</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../creator/index.html">Cocos Creator</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+  
+  <li >
+      <a href="../cocos/index.html">Cocos Launcher</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Services</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../services/sdkbox/index.html">SDKBOX</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Tutorials</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../tutorials/javascript/javascript/index.html">Parkour Game Tutorials for Cocos2d-JS</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+  <li >
+      <a href="../../api-ref/index.html">API Reference</a>
+  </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Deprecated</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../deprecated/studio/index.html">Cocos Studio</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                        </ul>
+                    </li>
+                
+                
+
+                <!-- new add for language button -->
+                <!--<li>
+                    <a href="http://sdkbox-doc.github.io/zh/">中文</a>
+                </li>-->
+
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <!-- 
+                    <li >
+                        <a rel="next" href="../../programmers-guide/advanced_topics/index.html">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../creator/index.html">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                 -->
+                
+                    <li>
+                        <a href="https://github.com/chukong/cocos-docs">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+              
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+      
+        
+          <li class="main active"><a href="#cocos-command-line-tool">Cocos command-line tool</a></li>
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#what-is-the-cocos-command-line-tool">What is the cocos command-line tool?</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#setting-up-cocos">Setting up cocos</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#testing-your-path-for-cocos">Testing your path for cocos</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#creating-a-new-project">Creating a new project</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#compiling-a-project">Compiling a project</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#running-a-project">Running a project</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#deploy-a-project">Deploy a project</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#creating-pre-built-libraries-to-use-instead-of-source-code">Creating pre-built libraries to use instead of source code.</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#using-the-pre-built-libraries-in-your-projects">Using the pre-built libraries in your projects.</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#installing-additional-plugins">Installing additional plugins</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#unique-command-line-options">Unique command-line options</a></li>
+              
+
+          
+
+        
+      
+    
+    </ul>
+</div></div>
+              
+                <div class="col-md-9" role="main">
+
+<!-- bread crumb trail -->
+<ol class="breadcrumb">
+<li><a href="../../index.html">Docs</a></li>
+
+  
+    
+      <li>Contents</li>
+    
+  
+    
+      <li>Editors & Tools</li>
+    
+  
+
+<li>Command-line tool</li>
+</ol>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../../programmers-guide/advanced_topics/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../creator/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+
+
+<!-- we can put this here if we want it on all content pages, but we don't at this point -->
+<!--<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>-->
+    <!--<li><a href="#" id="tab-lua">Lua</a></li>-->
+  <!--</ul>
+</div>-->
+
+<h1 id="cocos-command-line-tool">Cocos command-line tool</h1>
+<h2 id="what-is-the-cocos-command-line-tool">What is the <code>cocos</code> command-line tool?</h2>
+<p>Cocos2d-x comes with a command-line tool called <strong>cocos</strong>. It is a cross-platform
+tool that allows you to create new Cocos2d-x applications as well as <strong>run</strong> them
+and <strong>deploy</strong> them. <strong>cocos</strong> works for all cocos2d-x supported platforms, which
+include: <strong>ios</strong>, <strong>android</strong>, <strong>mac</strong>, <strong>linux</strong>, <strong>win32</strong>, <strong>wp8_1</strong>, <strong>wp10</strong>
+and <strong>web</strong>. You don't need to use an IDE unless you want to. It has many options,
+so let's go through them grouped by function.</p>
+<h2 id="setting-up-cocos">Setting up <code>cocos</code></h2>
+<p>it is a good idea to run <strong><cocos2d-x root>/setup.py</strong> to properly setup your
+<strong>PATH</strong>. Doing so ensures that you can run Cocos2d-x and its related tools. Example:</p>
+<pre><code class="sh"># Option 1
+&gt; ./setup.py
+
+# Option 2
+&gt; python setup.py
+</code></pre>
+
+<p>On OS X, it is also a good idea to add a few lines to your <strong>~/.bash_profile</strong> to
+ensure your character encoding is set to <strong>UTF-8</strong>. Example:</p>
+<pre><code class="sh">export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+</code></pre>
+
+<p>After adding these lines, it is necessary to run <strong>source ~/.bash_profile</strong> or
+restart your shell.</p>
+<h2 id="testing-your-path-for-cocos">Testing your path for <code>cocos</code></h2>
+<p>It is necessary for <strong>cocos</strong> to be in your path or to specify the complete path
+to it when using it. An easy test:</p>
+<pre><code class="sh">&gt; cocos -v
+</code></pre>
+
+<p>If you see output like <strong>1.2</strong> you are all set. If you see anything else you need
+to either add the location to your <strong>PATH</strong>.</p>
+<p>On <strong>OS X</strong> run <strong>source ~/.bash_profile</strong> after updating your <strong>PATH</strong> or
+specify the full path to <strong><cocos2d-x root>\tools\cocos2d-console\bin</strong>.</p>
+<h2 id="creating-a-new-project">Creating a new project</h2>
+<p>To create a new project you use the <strong>cocos new</strong> command. The command is formatted
+as:</p>
+<pre><code class="sh">cocos new &lt;game name&gt; -p &lt;package identifier&gt; -l &lt;language&gt; -d &lt;location&gt;
+</code></pre>
+
+<p>Examples:</p>
+<pre><code class="sh">cocos new MyGame -p com.MyCompany.MyGame -l cpp -d ~/MyCompany
+
+cocos new MyGame -p com.MyCompany.MyGame -l lua -d ~/MyCompany
+
+cocos new MyGame -p com.MyCompany.MyGame -l js -d ~/MyCompany
+</code></pre>
+
+<p>In the above examples, a new project is created using the Cocos2d-x source code.
+If you want to create a new project using the pre-built libraries you need to pass
+an additional flag of <strong>-t binary</strong>. Example:</p>
+<pre><code class="sh">cocos new MyGame -p com.MyCompany.MyGame -l cpp -d ~/MyCompany -t binary
+</code></pre>
+
+<p>If you haven't generated the pre-built libraries, please see the section below on
+doing so.</p>
+<p>You can run <strong>cocos new --help</strong> to see even more options as well as platform
+specific options.</p>
+<h2 id="compiling-a-project">Compiling a project</h2>
+<p>As you make changes to your code it is necessary to compile it. We all know this
+has to happen, let's go through it. The command is formatted as:</p>
+<pre><code class="sh">cocos compile -s &lt;path to your project&gt; -p &lt;platform&gt; -m &lt;mode&gt; -o &lt;output directory&gt;
+</code></pre>
+
+<p>Examples:</p>
+<pre><code class="sh">cocos compile -s ~/MyCompany/MyGame -p ios -m release -o ~/MyCompany/MyGame/bin
+
+cocos compile -s ~/MyCompany/MyGame -p android -m release -o ~/MyCompany/MyGame/bin
+
+cocos compile -s c:\MyCompany\MyGame -p win32 -m release -o c:\MyCompany\MyGame\bin
+</code></pre>
+
+<p>There is a lot going on here so let's go over the finer points. <strong>-p</strong> is the <strong>platform</strong>
+you are compiling for. <strong>-m</strong> is mode, <strong>debug</strong> or <strong>release</strong> with the default
+being <strong>debug</strong> if this parameter is not specified.</p>
+<p>Also, it is important to know that the <strong>-s</strong> and <strong>-o</strong> parameters are optional as
+well as long as you are already in your project's working directory. Taking the
+example above if you are already in <strong>~/MyCompany/MyGame</strong> then the <strong>cocos compile</strong>
+command can be shortened:</p>
+<pre><code class="sh">cocos compile . -p ios -m release
+</code></pre>
+
+<p>You can also specify an optional parameter <strong>-q</strong> for <strong>quiet</strong>. This lessens the
+output that is outputted to the console. Taking an example from above:</p>
+<pre><code class="sh">cocos compile -q -s ~/MyCompany/MyGame -p ios -m release -o ~/MyCompany/MyGame/bin
+</code></pre>
+
+<p>As <strong>cocos</strong> supports a lot of platforms there are also platform specific options
+which allow you to fine tune targeting specific SDK versions, signing code, lua
+options as well as web specific options. You can run <strong>cocos compile --help</strong> to see
+all available options broken down by platform.</p>
+<h3 id="android-compiling-could-require-specifying-an-api-level">Android compiling could require specifying an API level.</h3>
+<p>If you are compiling for Android, the <strong>cocos</strong> command is flexible and allows developers
+to compile using specific Android API versions. You may have <strong>Android-22</strong> installed on 
+your system (or any other version). You will want to add <strong>--ap android-api-version</strong> to 
+the end of the <strong>cocos</strong> command to specify. Example:</p>
+<pre><code class="sh">cocos compile -p android --ap android-22
+</code></pre>
+
+<p>You can always check <code>project.properties</code> to see what api-version is being targetted. For 
+more info, please read out <a href="https://github.com/cocos2d/cocos2d-x/blob/v3/docs/RELEASE_NOTES.md#cocos-command-modification">Release Notes</a>.</p>
+<h2 id="running-a-project">Running a project</h2>
+<p>Once you have created a project you can run it right from the command-line. <strong>cocos</strong>
+takes care of launching the environment you specify. The command is formatted as:</p>
+<pre><code class="sh">cocos run -s &lt;path to your project&gt; -p &lt;platform&gt;
+</code></pre>
+
+<p>Examples:</p>
+<pre><code class="sh">cocos run -s ~/MyCompany/MyGame -p ios
+
+cocos run -s ~/MyCompany/MyGame -p android
+
+cocos run -s c:\MyCompany\MyGame -p win32
+</code></pre>
+
+<p>You can also specify to run in <strong>debug</strong> or <strong>release</strong> mode using the optional
+<strong>-m</strong> parameter. Excluding this parameter defaults to <strong>debug</strong>.</p>
+<pre><code class="sh">cocos run -s ~/MyCompany/MyGame -p ios -m release
+</code></pre>
+
+<p>As with the <strong>cocos compile</strong> command above, it is important to know that the
+<strong>-s</strong> and <strong>-o</strong> parameters are optional as well as long as you are already in your
+project's working directory. Taking the example above if you are already in
+<strong>~/MyCompany/MyGame</strong> then the <strong>cocos run</strong> command can be shortened:</p>
+<pre><code class="sh">cocos run . -p ios -m release
+</code></pre>
+
+<p>When running for the <strong>web</strong> there are additional parameters that allow you to
+specify what web browser you want to run in. You can also specify ip address and
+port. This, again is done via command-line parameters. Examples, specifying
+Google Chrome:</p>
+<pre><code>cocos run -s ~/MyCompany/MyGame -p web -b /Applications/Google\ Chrome.app
+
+cocos run -s ~/MyCompany/MyGame -p web -b C:\Program Files\Google\Chrome\Application\chrome.exe
+
+cocos run -s ~/MyCompany/MyGame -p web -b /usr/local/bin/chrome
+</code></pre>
+
+<p>You can run <strong>cocos run --help</strong> to see all available options broken down by platform.</p>
+<h2 id="deploy-a-project">Deploy a project</h2>
+<p>Once you are ready to ship your game <strong>cocos</strong> provides an easy mechanism for
+deploying it. Just like with the commands above you specify what want to do. The
+command is formatted as:</p>
+<pre><code class="sh">cocos deploy -s &lt;path to your project&gt; -p &lt;platform&gt; -m &lt;mode&gt;
+</code></pre>
+
+<p>Examples:</p>
+<pre><code class="sh">cocos deploy -s ~/MyCompany/MyGame -p ios -m release
+
+cocos deploy -s ~/MyCompany/MyGame -p android -m release
+
+cocos deploy -s c:\MyCompany\MyGame -p win32 -m release
+</code></pre>
+
+<p>You can also specify an optional parameter <strong>-q</strong> for <strong>quiet</strong>. This reduces the
+output that is logged to the console. Taking an example from above:</p>
+<pre><code class="sh">cocos deploy -q -s ~/MyCompany/MyGame -p ios -m release
+</code></pre>
+
+<p>You can run <strong>cocos deploy --help</strong> to see all available options broken down by
+platform.</p>
+<h2 id="creating-pre-built-libraries-to-use-instead-of-source-code">Creating pre-built libraries to use instead of source code.</h2>
+<p>Cocos2d-x is available to use as both source code and pre-built libraries. Using
+the source allows developers to see <strong>under the hood</strong> what the engine is doing.
+Using the source increases compilation time. To decrease compilation time, by a
+great deal, you can create <strong>pre-built</strong>  (or <strong>static</strong>) libraries from the source. These are static
+libraries you can add to your project to use Cocos2d-x. This is the same as saying: "I won't touch the 
+engine, just build on top if it". Compiling the <strong>pre-built</strong>
+libraries with the <strong>cocos</strong> tool is easy. Examples:</p>
+<pre><code class="sh"># remove the 'prebuilt' folder
+# without the -m flag, this builds for release mode
+# generates libraries for every platform
+cocos gen-templates
+cocos gen-libs -c
+
+# remove the 'prebuilt' folder
+# without the -m flag, this builds for release mode
+# generates libraries for just ios
+cocos gen-templates
+cocos gen-libs -c -p ios
+
+# remove the 'prebuilt' folder
+# without the -m flag, this builds for release mode
+# generates libraries for just ios and android
+cocos gen-templates
+cocos gen-libs -c -p ios -p android
+
+# remove the 'prebuilt' folder
+# with the -m flag, this builds for debug
+# generates libraries for just ios and android
+cocos gen-templates
+cocos gen-libs -c -p ios -m debug
+</code></pre>
+
+<p>You can run <strong>cocos gen-libs --help</strong> to see all available options broken down by platform.</p>
+<h2 id="using-the-pre-built-libraries-in-your-projects">Using the pre-built libraries in your projects.</h2>
+<p>Once you have built the pre-built libraries, you can tell <code>cocos</code> to use them when creating a 
+new project. You may have heard developers refer to using <strong>static libraries</strong>. This is exactly 
+what you have created by running the <strong>cocos gen-libs</strong> command above. Doing this you have told the
+compilation process that <strong>these files don't need to be compiled again, just use them</strong>. Using 
+<strong>static libraries</strong> will speed up your compilation time. To create a new project and have it use
+<strong>static libraries</strong> rather than the <strong>raw engine source</strong> you specify the <code>-t binary</code> flag to your <code>cocos new ...</code>
+command. Example:</p>
+<pre><code class="sh">cocos new ProjectName -p projectname.com.name -l cpp -t binary
+</code></pre>
+
+<h2 id="installing-additional-plugins">Installing additional plugins</h2>
+<p>Using the <strong>Cocos Package Manager</strong> you can easily add additional functionality to your games,
+including <strong>VR</strong> and <strong>SDKBOX</strong>. There are a variety of commands to assist with this. Examples:</p>
+<pre><code class="sh"># list available packages
+cocos package list
+
+# show all packages imported into your project
+cocos package info
+
+# update installed packages to the latest versions
+cocos package update
+</code></pre>
+
+<p>You can run <strong>cocos package --help</strong> to see all available options broken down by platform.</p>
+<h3 id="installing-vr">Installing VR</h3>
+<p><strong>VR</strong> is easily added to your project! Every <strong>VR</strong> project needs <strong>vrsdkbase</strong>, it takes care
+of setting up your project to use <strong>VR</strong>. It is easy to import:</p>
+<pre><code class="sh">$ cocos package import -v -b vrsdkbase --anysdk
+</code></pre>
+
+<p>If you are using a supported <strong>VR SDK</strong> make sure to import it. Examples:</p>
+<pre><code class="sh"># add the GearVR package
+$ cocos package import -v -b gearvr --anysdk
+
+# add the Deepoon VR package
+$ cocos package import -v -b deepoon --anysdk
+
+# add the Google VR package
+$ cocos package import -v -b gvr --anysdk
+
+# add the Oculus VR package
+$ cocos package import -v -b oculus --anysdk
+</code></pre>
+
+<p>For more information, please see our chapter on <a href="../../programmers-guide/vr/index.html"><strong>VR</strong></a>.</p>
+<h3 id="installing-sdkbox-plugins">Installing SDKBOX plugins</h3>
+<p><strong>SDKBOX</strong> plugins can be installed using the <strong>Cocos Package Manager</strong>. Example:</p>
+<pre><code class="sh"># install a package, in this example, Facebook
+cocos package import facebook
+</code></pre>
+
+<h2 id="unique-command-line-options">Unique command-line options</h2>
+<p><strong>cocos</strong> has a number of unique options you can use to help build your games. To see all of these options, please run <strong>cocos --help</strong>. Let's us talk about these optios.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>no-apk</strong></td>
+<td>compile without building an apk.</td>
+</tr>
+<tr>
+<td><strong>luacompile</strong></td>
+<td>Encrypt the lua scripts in your game. This is invoked once <code>cocos compile</code> is invoked with the <code>-m release</code> argument. Developers can invoke this manually for encrypting their scripts.</td>
+</tr>
+<tr>
+<td><strong>jscompile</strong></td>
+<td>Encrypt the JavaScript scripts in your game. This is invoked once <code>cocos compile</code> is invoked with the <code>-m release</code> argument. Developers can invoke this manually for encrypting their scripts.</td>
+</tr>
+<tr>
+<td><strong>gen-simulator</strong></td>
+<td>The simulator powers the  <strong>preview</strong> function in Cocos Creator.</td>
+</tr>
+<tr>
+<td><strong>gen-templates</strong></td>
+<td>is used for generating the binary templates you can use to get started on a project that uses the <strong>pre-built libraries</strong>. Binary templates are required by Cocos Bundle package and also Cocos Creator.</td>
+</tr>
+</tbody>
+</table>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../../programmers-guide/advanced_topics/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../creator/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+</div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <p style="text-align:center">Copyright (c) 2014-2016 Chukong Technologies Inc.</p>
+            
+           <!-- <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>-->
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+
+        <!-- PG languages -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script>
+        $(function() {
+          var key = "Cocos2d-x_pg_lang";
+          var switch_lang = function(l) {
+              $('.langs li a').removeClass('selected');
+              $('#'+l).addClass('selected');
+              $('.tab_content').hide();
+              $('.'+l).show();
+              $.cookie(key, l);
+          }
+          $('.langs li a').click(function() {switch_lang(this.id);return false;});
+          var c = $.cookie(key);
+          if (typeof c == 'undefined') c='tab-cpp';
+          switch_lang(c);
+        });
+        </script>
+
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/Cocos2d-html5-min.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chipmunk.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d-jsb.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/main.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/AnimationLayer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/BackgroundLayer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Coin.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/GameOverLayer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/PlayScene.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Rock.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/SimpleRecognizer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/StatusLayer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/globals.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/myApp.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/resource.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

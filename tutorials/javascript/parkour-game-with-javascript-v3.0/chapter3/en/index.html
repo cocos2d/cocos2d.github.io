@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Cocos Team">
+        <link rel="canonical" href="http://cocos2d-x.org/docs/tutorials/javascript/parkour-game-with-javascript-v3.0/chapter3/en/index.html">
+        <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+
+	<title>_Chapter3 - Cocos Documentation</title>
+
+  <link href="../../../../../css/bootstrap-custom.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+<link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href="../../../../../css/base.css" rel="stylesheet">
+<link href="../../../../../css/cinder.css" rel="stylesheet">
+<link href="../../../../../css/pg.css" rel="stylesheet">
+<link href="../../../../../css/highlight.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-3216502-3', 'Cocos2d-x.org');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a style="padding: 12px 0px;" class="navbar-brand" href="../../../../../index.html">Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../../../../index.html">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Manual Installations</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/A/index.html">Prerequisites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Android-terminal/index.html">Android Command-line Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Android-VisualStudio/index.html">Android Visual Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Android-Studio/index.html">Android Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Android-Eclipse/index.html">Android Eclipse Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/iOS/index.html">IOS and OSX Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Linux/index.html">Linux Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Tizen/index.html">Tizen Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Windows/index.html">Windows Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Windows-Phone/index.html">Windows Phone Setup</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Programmers Guide</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/about/index.html">About Cocos2d-x</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/basic_concepts/index.html">Basic Concepts</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/sprites/index.html">Sprites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/actions/index.html">Actions</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/scenes/index.html">Scenes</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/ui_components/index.html">UI</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/other_node_types/index.html">Other Node Types</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/event_dispatch/index.html">Event Dispatch</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/3d/index.html">3D</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/scripting/index.html">Scripting</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/physics/index.html">Physics</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/audio/index.html">Audio</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/vr/index.html">VR</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/advanced_topics/index.html">Advanced Topics</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Editors & Tools</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../editors_and_tools/cocosCLTool/index.html">Command-line tool</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../editors_and_tools/creator/index.html">Cocos Creator</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+  
+  <li >
+      <a href="../../../../../editors_and_tools/cocos/index.html">Cocos Launcher</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Services</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../services/sdkbox/index.html">SDKBOX</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Tutorials</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../javascript/index.html">Parkour Game Tutorials for Cocos2d-JS</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+  <li >
+      <a href="../../../../../api-ref/index.html">API Reference</a>
+  </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Deprecated</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../deprecated/studio/index.html">Cocos Studio</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                        </ul>
+                    </li>
+                
+                
+
+                <!-- new add for language button -->
+                <!--<li>
+                    <a href="http://sdkbox-doc.github.io/zh/">中文</a>
+                </li>-->
+
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <!-- 
+                    <li >
+                        <a rel="next" href="../../chapter2/en/index.html">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../chapter4/en/index.html">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                 -->
+                
+                    <li>
+                        <a href="https://github.com/chukong/cocos-docs">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+              
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+      
+        
+          <li class="main active"><a href="#making-your-first-game-scene">Making Your First Game Scene</a></li>
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#basic-concepts">Basic concepts</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#making-the-game-scene">Making the game scene</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#summary">Summary</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#where-to-go-from-here">Where to go from here</a></li>
+              
+
+          
+
+        
+      
+    
+    </ul>
+</div></div>
+              
+                <div class="col-md-9" role="main">
+
+<!-- bread crumb trail -->
+<ol class="breadcrumb">
+<li><a href="../../../../../index.html">Docs</a></li>
+
+  
+    
+      <li>Contents</li>
+    
+  
+    
+      <li>Tutorials</li>
+    
+  
+
+<li>_Chapter3</li>
+</ol>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../../chapter2/en/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../../chapter4/en/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+
+
+<!-- we can put this here if we want it on all content pages, but we don't at this point -->
+<!--<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>-->
+    <!--<li><a href="#" id="tab-lua">Lua</a></li>-->
+  <!--</ul>
+</div>-->
+
+<h1 id="making-your-first-game-scene">Making Your First Game Scene</h1>
+<p>Before creating the first scene for your game, you should be familiar with some basic concepts of Cocos2d. If you are already familiar with these concepts, you can skip to the next section.</p>
+<h2 id="basic-concepts">Basic concepts</h2>
+<p>In a Cocos2d game, every element is a node. The game is constructed mostly by three kinds of nodes:</p>
+<ul>
+<li>
+<p>Scene</p>
+</li>
+<li>
+<p>Layer </p>
+</li>
+<li>
+<p>Sprite </p>
+</li>
+</ul>
+<p>For now we will focus on the Layers in this game, you can find more details about the Scene and Sprite <a href="http://cocos2d-x.org/wiki/Director_Scene_Layer_and_Sprite">here</a>.</p>
+<h4 id="layer">Layer</h4>
+<p>A cc.Layer is a cc.Node which knows how to draw itself and may be semi-transparent, allowing players to see other layers behind them. cc.Layer is very useful for defining your game's appearance and behaviour, so it will take a lot of time to deal with cc.Layer subclasses to reach your expectation.</p>
+<p><img alt="layer" src="../res/layerstructure.png" /></p>
+<p>While complex applications will require you to define custom cc.Layer subclasses, Cocos2d provides several predefined layers. Some examples include cc.Menu (a simple menu layer), cc.ColorLayer (a layer that draws a solid color), and cc.LayerMultiplex (a layer that lets you multiplex its children, activating one at a time while disabling the others).</p>
+<p>Layers may contain any cc.Node as a child, including cc.Sprite, cc.Label, and even other cc.Layer objects. Because layers are a subclass of cc.Node, they can be transformed manually or by using a cc.Action.</p>
+<h3 id="coordinate-system">Coordinate system</h3>
+<p>Cocos2d-JS uses the same coordinate system as OpenGL, which is the so-called “Right-handed Cartesian Coordinate System”. It is popular in the gaming industry, however, it is  different from the traditional top left coordinate system which used in web-page design. </p>
+<p><img alt="Coordinate" src="../res/coordinatesystem.png" /></p>
+<p>More details about the coordinate system can be found <a href="http://cocos2d-x.org/wiki/Coordinate_System">here</a>.</p>
+<h4 id="anchor-point">Anchor point</h4>
+<p>The anchor point is used for both positioning and rotation of an object. The anchor point's coordinate is a relative coordinate. For example, the anchor point in position (0, 0), which we always define in Cocos2d-x as cc.p(0 , 0), corresponds to the most bottom-left point of that object, while cc.p(0.5, 0.5) corresponds to the center of the object. When setting the position of an object, the object is positioned such that the anchor point will be at the coordinates specified with the setPosition() call. Similarly, when rotating the object, it is rotated around the anchor point.</p>
+<p>The properties can be set as attributes in Cocos2d-JS v3.0.</p>
+<p>For example, this sprite has an anchorPoint of cc.p(0, 0) and a position of cc.p(0,0):</p>
+<pre><code> // create sprite 
+    var sprite = new cc.Sprite ( &quot;bottomleft.png&quot; ) ; 
+    sprite.attr({
+            x: 0,
+            y: 0,
+            anchorX: 0,
+            anchorY: 0
+        });
+    this.addChild ( sprite ) ;
+</code></pre>
+
+<h3 id="action">Action</h3>
+<p>More details about Actions can be found <a href="http://cocos2d-x.org/wiki/Actions">here</a>.</p>
+<p>Example of moving a sprite using the cc.MoveBy action:</p>
+<pre><code>// Move a sprite 50 pixels to the right, and 10 pixels to the top over 2 seconds.
+sprite.runAction(new cc.MoveBy(2, cc.p(50, 10)));
+</code></pre>
+
+<h3 id="animation">Animation</h3>
+<p>More details about Animations can be found <a href="http://cocos2d-x.org/wiki/Animations">here</a>.</p>
+<p>Example of playing an animation:</p>
+<pre><code> var animation = new cc.Animation ( ) ;
+
+ for ( var i = 1 ; i &lt; 15 ; i ++ ) {         
+    var frameName = &quot;res/Images/grossini_dance_&quot; + ( ( i &lt; 10 ) ? ( &quot;0&quot; + i ) : i ) + &quot;.png&quot; ; 
+    animation.addSpriteFrameWithFile ( frameName ) ;
+ }
+
+ animation.setDelayPerUnit ( 2.8 / 14 ) ; 
+ animation.setRestoreOriginalFrame ( true ) ; 
+ var action = new cc.Animate ( animation ) ; 
+ sprite.runAction ( new cc.Sequence( action, action.reverse ( ) ) ) ;
+
+</code></pre>
+
+<h3 id="scheduler-and-timer-callbacks">Scheduler and Timer callbacks</h3>
+<p>More details about Scheduler and Timer Callback can be found <a href="http://cocos2d-x.org/wiki/Scheduler_and_Timer_Callback">here</a>.</p>
+<h3 id="eventmanager">EventManager</h3>
+<p>Cocos2d-JS v3.0 migrated a new mechanism for responding to user events. </p>
+<p>The basics:</p>
+<ul>
+<li><strong>Event listeners</strong> encapsulate your event processing code.</li>
+<li><strong>Event Manager</strong> manages listeners of user events.</li>
+<li><strong>Event objects</strong> contain information about the event.</li>
+</ul>
+<p>To respond to events, you must first create a cc.EventListener. There are five different kinds of EventListeners:</p>
+<ul>
+<li>cc.EventListenerTouch - responds to touch events</li>
+<li>cc.EventListenerKeyboard - responds to keyboard events</li>
+<li>cc.EventListenerAcceleration - responds to accelerometer events</li>
+<li>cc.EventListenMouse - responds to mouse events</li>
+<li>cc.EventListenerCustom - responds to custom events</li>
+</ul>
+<p>Then, attach your event processing code to the appropriate callback on the event listener (e.g. <code>onTouchBegan</code> for <code>EventListenerTouch</code> listeners, or <code>onKeyPressed</code> for keyboard event listeners).</p>
+<p>Next, register your EventListener with the <strong>cc.eventManager</strong>.</p>
+<p>When events occur (for example, the user touches the screen or types on the keyboard), the <code>cc.eventManager</code> distributes <strong>Event objects</strong> (e.g. <code>EventTouch</code>, <code>EventKeyboard</code>) to the appropriate EventListeners by calling your callbacks. Each Event object contains information about the event (for example, the coordinates where the touch occurred).</p>
+<p>Please refer to <a href="http://www.cocos2d-x.org/docs/manual/framework/html5/v3/eventManager/en">EventManager</a> for more details.</p>
+<h2 id="making-the-game-scene">Making the game scene</h2>
+<p>In last tutorial, we have analysed the execution path of a Cocos2d-JS game. Our first game scene is loaded in the function <strong>cc.game.onStart</strong> of main.js. Here is the code snippet which does the real trick:</p>
+<pre><code>cc.game.onStart = function(){
+    cc.view.setDesignResolutionSize(480, 320, cc.ResolutionPolicy.SHOW_ALL);
+    cc.view.resizeWithBrowserSize(true);
+    //load resources
+    cc.LoaderScene.preload(g_resources, function () {
+        cc.director.runScene(new HelloWorldScene());
+    }, this);
+};
+</code></pre>
+
+<p>Here, we use cc.LoaderScene to preload the resources of our game and after loading all resources, the director will run our first scene. </p>
+<p><strong>Note:</strong></p>
+<p>The <strong>cc.game</strong> is actual game object which will initialize game configuration and launch games.</p>
+<h4 id="cleanup-work">Cleanup work</h4>
+<p>Before we can create our own scene, we need to clean some stuff up.</p>
+<h5 id="cleanup-the-appjs">Cleanup the app.js</h5>
+<p>This process is very simple. First, we should delete all the contents of app.js, because we will rewrite it from scratch.</p>
+<p>Secondly, we should change this line in main.js:</p>
+<pre><code>cc.director.runScene(new HelloWorldScene());
+</code></pre>
+
+<p>to </p>
+<pre><code>cc.director.runScene(new MenuScene());
+</code></pre>
+
+<p>When the game starts, we want to run the MenuScene which we will define instead of the HelloWorldScene.</p>
+<p>At last, we should add the resources for our scene and define some resource variables for easy access.</p>
+<p><img alt="res" src="../res/resdirectory.png" /></p>
+<p>Open resource.js and change its content to:</p>
+<pre><code>var res = {
+    helloBG_png : &quot;res/helloBG.png&quot;,
+    start_n_png : &quot;res/start_n.png&quot;,
+    start_s_png : &quot;res/start_s.png&quot;
+};
+
+var g_resources = [
+    //image
+    res.helloBG_png,
+    res.start_n_png,
+    res.start_s_png
+];
+</code></pre>
+
+<h4 id="define-your-first-scene-the-menuscene">Define your first scene, the MenuScene</h4>
+<p>Open app.js and start to define the MenuLayer:</p>
+<pre><code>var MenuLayer = cc.Layer.extend({
+    ctor : function(){
+        //1. call super class's ctor function
+        this._super();
+    },
+    init:function(){
+        //call super class's super function
+        this._super();
+
+        //2. get the screen size of your game canvas
+        var winsize = cc.director.getWinSize();
+
+        //3. calculate the center point
+        var centerpos = cc.p(winsize.width / 2, winsize.height / 2);
+
+        //4. create a background image and set it's position at the center of the screen
+        var spritebg = new cc.Sprite(res.helloBG_png);
+        spritebg.setPosition(centerpos);
+        this.addChild(spritebg);
+
+        //5.
+        cc.MenuItemFont.setFontSize(60);
+
+        //6.create a menu and assign onPlay event callback to it
+        var menuItemPlay = new cc.MenuItemSprite(
+            new cc.Sprite(res.start_n_png), // normal state image
+            new cc.Sprite(res.start_s_png), // select state image
+            this.onPlay, this);
+        var menu = new cc.Menu(menuItemPlay);  //7. create the menu
+        menu.setPosition(centerpos);
+        this.addChild(menu);
+    },
+
+    onPlay : function(){
+        cc.log(&quot;==onplay clicked&quot;);
+    }
+});
+</code></pre>
+
+<p>Let's go through all the details from 1-6:</p>
+<ol>
+<li>It calls the init function of its super class.</li>
+<li>Get the screen size of you game.</li>
+<li>Calculate the center point of your screen which will be used to center background images.</li>
+<li>Create a background image using a file name and set its position to the center of the screen. Then, add the sprite to MenuLayer as a child.</li>
+<li>Call the MenuItemFont's setFontSize function to adjust the font size. It is not used in this example, but if you want to use MenuItemFont to create some menu items, it will affect the menu item label size.</li>
+<li>Create a menu with two images, one for the normal state and another for the selected state. Then the menu's position is set to the center of the screen. At last, the menu is added to the current layer.</li>
+</ol>
+<p>We should also define a Menu scene:</p>
+<pre><code>var MenuScene = cc.Scene.extend({
+    onEnter:function () {
+        this._super();
+        var layer = new MenuLayer();
+        layer.init();
+        this.addChild(layer);
+    }
+});
+</code></pre>
+
+<p>The process of creating a MenuScene is very straightforward. You defined a variable which derived from cc.Scene. You should remember the sign <strong>extend</strong>, which is used for external classes.</p>
+<p>Once the scene is created, the <strong>onEnter</strong> function should be defined. It defines the MenuLayer as it's child. We can also define a <strong>ctor</strong> function instead of the onEnter function. The onEnter function is called after ctor function.</p>
+<h2 id="summary">Summary</h2>
+<p>In this tutorial, you were introduced to the basic concepts of programming Cocos2d-JS games. You were also giving a detailed explanation of how to set up your first game scene. We hope you enjoyed it! The related sample project can be downloaded <a href="../res/Parkour.zip">here</a>. It only includes user part and doesn't includes frameworks. You could use them to replace the corresponding parts of Cocos2d-JS template.</p>
+<h2 id="where-to-go-from-here">Where to go from here</h2>
+<p>In the next chapter, you will learn how to define your game scene with the various game layers, how to design these layers and what the responsibility of each layer is.</p>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../../chapter2/en/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../../chapter4/en/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+</div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <p style="text-align:center">Copyright (c) 2014-2016 Chukong Technologies Inc.</p>
+            
+           <!-- <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>-->
+        </footer>
+
+        <script src="../../../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../../../js/highlight.pack.js"></script>
+        <script>var base_url = '../../../../..';</script>
+
+        <!-- PG languages -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script>
+        $(function() {
+          var key = "Cocos2d-x_pg_lang";
+          var switch_lang = function(l) {
+              $('.langs li a').removeClass('selected');
+              $('#'+l).addClass('selected');
+              $('.tab_content').hide();
+              $('.'+l).show();
+              $.cookie(key, l);
+          }
+          $('.langs li a').click(function() {switch_lang(this.id);return false;});
+          var c = $.cookie(key);
+          if (typeof c == 'undefined') c='tab-cpp';
+          switch_lang(c);
+        });
+        </script>
+
+        <script data-main="../../../../../mkdocs/js/search.js" src="../../../../../mkdocs/js/require.js"></script>
+        <script src="../../../../../js/base.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/Cocos2d-html5-min.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chipmunk.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d-jsb.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/main.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/AnimationLayer.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/BackgroundLayer.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Coin.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/GameOverLayer.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/PlayScene.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Rock.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/SimpleRecognizer.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/StatusLayer.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/globals.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/myApp.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/resource.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

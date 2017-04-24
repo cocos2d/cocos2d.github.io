@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Cocos Team">
+        <link rel="canonical" href="http://cocos2d-x.org/docs/programmers-guide/sprites/index.html">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>Sprites - Cocos Documentation</title>
+
+  <link href="../../css/bootstrap-custom.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+<link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href="../../css/base.css" rel="stylesheet">
+<link href="../../css/cinder.css" rel="stylesheet">
+<link href="../../css/pg.css" rel="stylesheet">
+<link href="../../css/highlight.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-3216502-3', 'Cocos2d-x.org');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a style="padding: 12px 0px;" class="navbar-brand" href="../../index.html">Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../index.html">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Manual Installations</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../installation/A/index.html">Prerequisites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Android-terminal/index.html">Android Command-line Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Android-VisualStudio/index.html">Android Visual Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Android-Studio/index.html">Android Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Android-Eclipse/index.html">Android Eclipse Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/iOS/index.html">IOS and OSX Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Linux/index.html">Linux Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Tizen/index.html">Tizen Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Windows/index.html">Windows Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../installation/Windows-Phone/index.html">Windows Phone Setup</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Programmers Guide</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../about/index.html">About Cocos2d-x</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../basic_concepts/index.html">Basic Concepts</a>
+  </li>
+  
+
+          
+              
+  
+  <li class="active">
+      <a href="index.html">Sprites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../actions/index.html">Actions</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../scenes/index.html">Scenes</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../ui_components/index.html">UI</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../other_node_types/index.html">Other Node Types</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../event_dispatch/index.html">Event Dispatch</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../3d/index.html">3D</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../scripting/index.html">Scripting</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../physics/index.html">Physics</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../audio/index.html">Audio</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../vr/index.html">VR</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../advanced_topics/index.html">Advanced Topics</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Editors & Tools</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../editors_and_tools/cocosCLTool/index.html">Command-line tool</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../editors_and_tools/creator/index.html">Cocos Creator</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+  
+  <li >
+      <a href="../../editors_and_tools/cocos/index.html">Cocos Launcher</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Services</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../services/sdkbox/index.html">SDKBOX</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Tutorials</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../tutorials/javascript/javascript/index.html">Parkour Game Tutorials for Cocos2d-JS</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+  <li >
+      <a href="../../api-ref/index.html">API Reference</a>
+  </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Deprecated</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../deprecated/studio/index.html">Cocos Studio</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                        </ul>
+                    </li>
+                
+                
+
+                <!-- new add for language button -->
+                <!--<li>
+                    <a href="http://sdkbox-doc.github.io/zh/">中文</a>
+                </li>-->
+
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <!-- 
+                    <li >
+                        <a rel="next" href="../basic_concepts/index.html">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../actions/index.html">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                 -->
+                
+                    <li>
+                        <a href="https://github.com/chukong/cocos-docs">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+              
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+      
+        
+          <li class="main active"><a href="#sprites">Sprites</a></li>
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#what-are-sprites">What are Sprites</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#creating-sprites">Creating Sprites</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#creating-a-sprite-from-a-sprite-sheet">Creating a Sprite from a Sprite Sheet</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#sprite-manipulation">Sprite Manipulation</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#polygon-sprite">Polygon Sprite</a></li>
+              
+
+          
+
+        
+      
+    
+    </ul>
+</div></div>
+              
+                <div class="col-md-9" role="main">
+
+<!-- bread crumb trail -->
+<ol class="breadcrumb">
+<li><a href="../../index.html">Docs</a></li>
+
+  
+    
+      <li>Contents</li>
+    
+  
+    
+      <li>Programmers Guide</li>
+    
+  
+
+<li>Sprites</li>
+</ol>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../basic_concepts/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../actions/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+
+
+<!-- we can put this here if we want it on all content pages, but we don't at this point -->
+<!--<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>-->
+    <!--<li><a href="#" id="tab-lua">Lua</a></li>-->
+  <!--</ul>
+</div>-->
+
+<h1 id="sprites">Sprites</h1>
+<h2 id="what-are-sprites">What are Sprites</h2>
+<p>A Sprite is a 2D image that can be animated or transformed by changing its
+properties, including <strong>rotation</strong>, <strong>position</strong>, <strong>scale</strong>, <strong>color</strong>, etc.</p>
+<h2 id="creating-sprites">Creating Sprites</h2>
+<p>There are different ways to create Sprites depending upon what you need to
+accomplish. You can create a <code>Sprite</code> from an image with various graphic formats
+including: <strong>PNG</strong>, <strong>JPEG</strong>, <strong>TIFF</strong>, and others. Let's go through some create methods and
+talk about each one.</p>
+<h3 id="creating-a-sprite">Creating a Sprite</h3>
+<p>A <code>Sprite</code> can be created by specifying an image file to use.</p>
+<p><div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content"></p>
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="cpp">  auto mySprite = Sprite::create(&quot;mysprite.png&quot;);
+</code></pre>
+
+</div>
+
+<div class="tab-js tab_content">
+
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="javascript">  var mySprite = new cc.Sprite(res.mySprite_png);
+</code></pre>
+
+</div>
+
+<p><img alt="" src="../sprites-img/i1.png" title="" /></p>
+<p>The statement above creates a <code>Sprite</code> using the <strong>mysprite.png</strong> image. The result
+is that the created <code>Sprite</code> uses the whole image. <code>Sprite</code> has the same dimensions
+of <strong>mysprite.png</strong>. If the image file is 200 x 200 the resulting <code>Sprite</code> is 200 x
+200.</p>
+<h3 id="creating-a-sprite-with-a-rect">Creating a Sprite with a Rect</h3>
+<p>In the previous example, the created <code>Sprite</code> has the same size as the original
+image file. If you want to create a <code>Sprite</code> with only a certain portion of the
+image file, you can do it by specifying a <code>Rect</code>.</p>
+<p><code>Rect</code> has 4 values: <strong>origin x</strong>, <strong>origin y</strong>, <strong>width</strong> and <strong>height</strong>.</p>
+<p><div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content"></p>
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="cpp">auto mySprite = Sprite::create(&quot;mysprite.png&quot;, Rect(0,0,40,40));
+</code></pre>
+
+</div>
+
+<div class="tab-js tab_content">
+
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="javascript">var mySprite = new cc.Sprite(res.mySprite_png, cc.rect(0,0,40,40));
+</code></pre>
+
+</div>
+
+<p><img alt="" src="../sprites-img/i4.png" title="" /></p>
+<p><code>Rect</code> starts at the top left corner. This is the opposite of what you might be
+used to when laying out screen position as it starts from the lower left corner.
+Thus the resulting <code>Sprite</code> is only a portion of the image file. In this case the
+<code>Sprite</code> dimension is 40 x 40 starting at the top left corner.</p>
+<p>If you don't specify a <code>Rect</code>, Cocos2d-x will automatically use the full width
+and height of the image file you specify. Take a look at the example below. If
+we use an image with dimensions 200 x 200 the following 2 statements would have
+the same result.</p>
+<p><div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content"></p>
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="cpp">auto mySprite = Sprite::create(&quot;mysprite.png&quot;);
+
+auto mySprite = Sprite::create(&quot;mysprite.png&quot;, Rect(0,0,200,200));
+</code></pre>
+
+</div>
+
+<div class="tab-js tab_content">
+
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="javascript">var mySprite = new cc.Sprite(res.mySprite_png);
+
+var mySprite = new cc.Sprite(res.mySprite_png, cc.rect(0,0,200,200));
+</code></pre>
+
+</div>
+
+<h2 id="creating-a-sprite-from-a-sprite-sheet">Creating a Sprite from a Sprite Sheet</h2>
+<p>A <strong>sprite sheet</strong> is a way to combine sprites into a single file. Using a
+<strong>sprite sheet</strong> helps achieve better performance by <strong>batching</strong> the
+<strong>draw calls</strong>. They can also save disk and video memory in cases where the
+sprites can be packed on a sheet more efficiently (generally requires special tools).
+You will read more about this in the Advanced Chapter, but it is but it is one of many
+standard methods in the industry for increasing game performance.</p>
+<p>When using a <strong>sprite sheet</strong> it is first loaded, in its entirety, into the
+<code>SpriteFrameCache</code>. <code>SpriteFrameCache</code> is a caching class that retains the <code>SpriteFrame</code>
+objects added to it, for future quicker access. The <code>SpriteFrame</code> is loaded
+once and retained in the <code>SpriteFrameCache</code></p>
+<p>Here is an example sprite sheet:</p>
+<p><img alt="" src="../sprites-img/3_1.png" title="example SpriteSheet" /></p>
+<p>It doesn't look like much but let's take a closer look at what is happening:</p>
+<p><img alt="" src="../sprites-img/spritesheet.png" title="example SpriteSheet" /></p>
+<p>As you can see the <strong>sprite sheet</strong>, at a minimum it reduces unneeded space and
+consolidates all sprites into a single file.</p>
+<p>Let's tie this all together!</p>
+<h3 id="loading-a-sprite-sheet">Loading a Sprite Sheet</h3>
+<p>Load your <strong>sprite sheet</strong> into the <code>SpriteFrameCache</code>, probably in <strong>AppDelegate</strong>:</p>
+<p><div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content"></p>
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="cpp">// load the Sprite Sheet
+auto spritecache = SpriteFrameCache::getInstance();
+
+// the .plist file can be generated with any of the tools mentioned below
+spritecache-&gt;addSpriteFramesWithFile(&quot;sprites.plist&quot;);
+</code></pre>
+
+</div>
+
+<div class="tab-js tab_content">
+
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="javascript">// load the Sprite Sheet
+var spritecache = cc.SpriteFrameCache;
+
+// the .plist file can be generated with any of the tools mentioned below
+spritecache.addSpriteFramesWithFile(res.sprites_plist);
+</code></pre>
+
+</div>
+
+<p>Now that we have a <strong>sprite sheet</strong> loaded into <code>SpriteFrameCache</code> we can create
+<code>Sprite</code> objects by utilizing it.</p>
+<h3 id="creating-a-sprite-from-spriteframecache">Creating a Sprite from SpriteFrameCache</h3>
+<p>This creates a <code>Sprite</code> by pulling it from the <code>SpriteFrameCache</code>.</p>
+<p><div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content"></p>
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="cpp">// Our .plist file has names for each of the sprites in it.  We'll grab
+// the sprite named, &quot;mysprite&quot; from the sprite sheet:
+auto mysprite = Sprite::createWithSpriteFrameName(&quot;mysprite.png&quot;);
+</code></pre>
+
+</div>
+
+<div class="tab-js tab_content">
+
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="javascript">// Our .plist file has names for each of the sprites in it.  We'll grab
+// the sprite named, &quot;Blue_Front1&quot; from the sprite sheet:
+var mysprite = cc.Sprite.createWithSpriteFrameName(res.mySprite_png);
+</code></pre>
+
+</div>
+
+<p><img alt="" src="../sprites-img/i3.png" title="" /></p>
+<h3 id="creating-a-sprite-from-a-spriteframe">Creating a Sprite from a SpriteFrame</h3>
+<p>Another way to create the same <code>Sprite</code> is by fetching the <code>SpriteFrame</code> from the
+<code>SpriteFrameCache</code>, and then creating the <code>Sprite</code> with the <code>SpriteFrame</code>. Example:</p>
+<p><div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content"></p>
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="cpp">// this is equivalent to the previous example,
+// but it is created by retrieving the SpriteFrame from the cache.
+auto newspriteFrame = SpriteFrameCache::getInstance()-&gt;getSpriteFrameByName(&quot;Blue_Front1.png&quot;);
+auto newSprite = Sprite::createWithSpriteFrame(newspriteFrame);
+</code></pre>
+
+</div>
+
+<div class="tab-js tab_content">
+
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="javascript">// this is equivalent to the previous example,
+// but it is created by retrieving the SpriteFrame from the cache.
+var newspriteFrame = cc.SpriteFrameCache.getSpriteFrameByName(res.sprites_plist);
+var newSprite = cc.Sprite.createWithSpriteFrame(newspriteFrame);
+</code></pre>
+
+</div>
+
+<p><img alt="" src="../sprites-img/i3.png" title="" /></p>
+<h3 id="tools-for-creating-sprite-sheets">Tools for creating Sprite Sheets</h3>
+<p>Creating a <strong>sprite sheet</strong> manually is a tedious process. Fortunately there are
+tools that can generate them automatically. These tools can provide even more
+ways to adjust your <strong>sprite sheet</strong> for maximum optimization!</p>
+<p>Here are a few tools:</p>
+<ul>
+<li><a href="http://www.Cocos2d-x.org/wiki/CocoStudio">Cocos Studio</a></li>
+<li><a href="http://renderhjs.net/shoebox/">ShoeBox</a></li>
+<li><a href="https://www.codeandweb.com/texturepacker">Texture Packer</a></li>
+<li><a href="https://www.zwopple.com/zwoptex/">Zwoptex</a></li>
+<li><a href="http://amakaseev.github.io/sprite-sheet-packer/">Sprite Sheet Packer</a></li>
+</ul>
+<h2 id="sprite-manipulation">Sprite Manipulation</h2>
+<p>After creating a <code>Sprite</code> you will have access to a variety of properties it
+has that can be manipulated.</p>
+<p>Given:</p>
+<p><div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content"></p>
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="cpp">auto mySprite = Sprite::create(&quot;mysprite.png&quot;);
+</code></pre>
+
+</div>
+
+<div class="tab-js tab_content">
+
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="javascript">var mySprite = new Sprite(res.mysprite_png);
+</code></pre>
+
+</div>
+
+<p><img alt="" src="../sprites-img/i1.png" title="" /></p>
+<h3 id="anchor-point-and-position">Anchor Point and Position</h3>
+<p><strong>Anchor Point</strong> is a point that you set as a way to specify what part of
+the <code>Sprite</code> will be used when setting its position. <strong>Anchor Point</strong> affects
+only properties that can be transformed. This includes <strong>scale</strong>, <strong>rotation</strong>,
+<strong>skew</strong>. This excludes <strong>color</strong> and <strong>opacity</strong>. The <strong>anchor point</strong> uses a
+bottom left coordinate system. This means that when specifying X and Y coordinate
+values you need to make sure to start at the bottom left hand corner to do your
+calculations. By default, all <code>Node</code> objects have a default <strong>anchor point</strong> of
+is <strong>(0.5, 0.5)</strong>.</p>
+<p>Setting the <strong>anchor point</strong> is easy:</p>
+<p><div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content"></p>
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="cpp">// DEFAULT anchor point for all Sprites
+mySprite-&gt;setAnchorPoint(0.5, 0.5);
+
+// bottom left
+mySprite-&gt;setAnchorPoint(0, 0);
+
+// top left
+mySprite-&gt;setAnchorPoint(0, 1);
+
+// bottom right
+mySprite-&gt;setAnchorPoint(1, 0);
+
+// top right
+mySprite-&gt;setAnchorPoint(1, 1);
+</code></pre>
+
+</div>
+
+<div class="tab-js tab_content">
+
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="javascript">// DEFAULT anchor point for all Sprites
+mySprite.setAnchorPoint(cc._p(0.5, 0.5));
+
+// bottom left
+mySprite.setAnchorPoint(cc._p(0, 0));
+
+// top left
+mySprite.setAnchorPoint(cc._p(0, 1));
+
+// bottom right
+mySprite.setAnchorPoint(cc._p(1, 0));
+
+// top right
+mySprite.setAnchorPoint(cc._p(1, 1));
+</code></pre>
+
+</div>
+
+<p>To represent this visually:</p>
+<p><img alt="" src="../sprites-img/i6.png" title="" /></p>
+<h3 id="sprite-properties-effected-by-anchor-point">Sprite properties effected by anchor point</h3>
+<p>Using <strong>anchor point</strong> effects only properties that can be transformed. This includes
+<strong>scale</strong>, <strong>rotation</strong>, <strong>skew</strong>.</p>
+<h4 id="position">Position</h4>
+<p>A <strong>sprite's</strong> position is affected by its <strong>anchor point</strong> as it is this point
+that is used as a starting point for positioning. Let's visually look at how this
+happens. Notice the colored line and where the <em>sprite's</em> position is in relation
+to it. Notice, as we change the <strong>anchor point</strong> values, the <em>sprite's</em> position
+changes. It is important to note that all it took was changing the <strong>anchor point</strong>
+value. We did not use a <code>setPosition()</code> statement to achieve this:</p>
+<p><img alt="" src="../sprites-img/i9.png" title="" /></p>
+<p>There are more ways to set position than just <strong>anchor point</strong>. <code>Sprite</code> objects
+can also be set using the <code>setPosition()</code> method.</p>
+<p><div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content"></p>
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="cpp">// position a sprite to a specific position of x = 100, y = 200.
+mySprite-&gt;setPosition(Vec2(100, 200));
+</code></pre>
+
+</div>
+
+<div class="tab-js tab_content">
+
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="javascript">mySprite.setPosition(cc._p(100, 200));
+</code></pre>
+
+</div>
+
+<h4 id="rotation">Rotation</h4>
+<p>Changes the <strong>sprite's</strong> rotation, by a positive or negative number of degrees.
+A positive value rotates the <code>Sprite</code> object clockwise, while a negative value
+rotates the <code>Sprite</code> object counter-clockwise. The default value is <strong>0</strong>.</p>
+<p><div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content"></p>
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="cpp">// rotate sprite by +20 degrees
+mySprite-&gt;setRotation(20.0f);
+
+// rotate sprite by -20 degrees
+mySprite-&gt;setRotation(-20.0f);
+
+// rotate sprite by +60 degrees
+mySprite-&gt;setRotation(60.0f);
+
+// rotate sprite by -60 degrees
+mySprite-&gt;setRotation(-60.0f);
+</code></pre>
+
+</div>
+
+<div class="tab-js tab_content">
+
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="javascript">// rotate sprite by +20 degrees
+mySprite.setRotation(cc._p(20.0));
+
+// rotate sprite by -20 degrees
+mySprite.setRotation(cc._p(-20.0));
+
+// rotate sprite by +60 degrees
+mySprite.setRotation(cc._p(60.0));
+
+// rotate sprite by -60 degrees
+mySprite.setRotation(cc._p(-60.0));
+</code></pre>
+
+</div>
+
+<p><img alt="" src="../sprites-img/i8.png" title="" /></p>
+<h4 id="scale">Scale</h4>
+<p>Changes the <strong>sprite's</strong> scale, either by x, y or uniformly for both x and y.
+The default value is 1.0 for both x and y.</p>
+<p><div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content"></p>
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="cpp">// increases X and Y size by 2.0 uniformly
+mySprite-&gt;setScale(2.0);
+
+// increases just X scale by 2.0
+mySprite-&gt;setScaleX(2.0);
+
+// increases just Y scale by 2.0
+mySprite-&gt;setScaleY(2.0);
+</code></pre>
+
+</div>
+
+<div class="tab-js tab_content">
+
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="javascript">// increases X and Y size by 2.0 uniformly
+mySprite.setScale(cc._p(2.0));
+
+// increases just X scale by 2.0
+mySprite.setScaleX(cc._p(2.0));
+
+// increases just Y scale by 2.0
+mySprite.setScaleY(cc._p(2.0));
+</code></pre>
+
+</div>
+
+<p><img alt="" src="../sprites-img/i5.png" title="" /></p>
+<h4 id="skew">Skew</h4>
+<p>Changes the <strong>sprite's</strong> skew, either by x, y or uniformly for both x and y.
+The default value is 0,0 for both x and y.</p>
+<p><div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content"></p>
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="cpp">// adjusts the X skew by 20.0
+mySprite-&gt;setSkewX(20.0f);
+
+// adjusts the Y skew by 20.0
+mySprite-&gt;setSkewY(20.0f);
+</code></pre>
+
+</div>
+
+<div class="tab-js tab_content">
+
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="javascript">// adjusts the X skew by 20.0
+mySprite.setSkewX(cc._p(20.0));
+
+// adjusts the Y skew by 20.0
+mySprite.setSkewY(cc._p(20.0));
+</code></pre>
+
+</div>
+
+<p><img alt="" src="../sprites-img/i7.png" title="" /></p>
+<h3 id="sprite-properties-not-affected-by-anchor-point">Sprite properties not affected by anchor point</h3>
+<p>There are a few properties of <code>Sprite</code> objects that are not affected by
+<strong>anchor point</strong>. Why? Because they only change superficial qualities like <strong>color</strong>
+and <strong>opacity</strong>.</p>
+<h4 id="color">Color</h4>
+<p>Changes the <em>sprite's</em> color. This is done by passing in a <code>Color3B</code> object.
+<code>Color3B</code> objects are <strong>RGB</strong> values. We haven't encountered <code>Color3B</code> yet but
+it is simply an object that defines an <strong>RGB color</strong>. An <strong>RGB color</strong> is a 3 byte
+value from 0 - 255. Cocos2d-x also provides pre-defined colors that you can pick
+from. Using these will be a bit faster since they are pre-defined. A few examples:
+<code>Color3B::White</code> and <code>Color3B::Red</code>.</p>
+<p><div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content"></p>
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="cpp">// set the color by passing in a pre-defined Color3B object.
+mySprite-&gt;setColor(Color3B::WHITE);
+
+// Set the color by passing in a Color3B object.
+mySprite-&gt;setColor(Color3B(255, 255, 255)); // Same as Color3B::WHITE
+</code></pre>
+
+</div>
+
+<div class="tab-js tab_content">
+
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="javascript">// set the color by passing in a pre-defined Color3B object.
+mySprite.setColor(cc.color.WHITE);
+
+// Set the color by passing in a Color3B object.
+mySprite.setColor(cc.color(255, 255, 255)); // Same as Color3B::WHITE
+</code></pre>
+
+</div>
+
+<p><img alt="" src="../sprites-img/i10.png" title="" /></p>
+<h4 id="opacity">Opacity</h4>
+<p>Changes the <em>sprite's</em> opacity by the specified value. An opaque object is not
+transparent at all. This property expects a value from 0 to 255, where 255 means
+fully opaque and 0 means fully transparent. Think: <strong>zero opacity means invisible</strong>,
+and you'll always understand how this works. The default value is 255 (fully opaque).</p>
+<p><div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content"></p>
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="cpp">// Set the opacity to 30, which makes this sprite 11.7% opaque.
+// (30 divided by 256 equals 0.1171875...)
+mySprite-&gt;setOpacity(30);
+</code></pre>
+
+</div>
+
+<div class="tab-js tab_content">
+
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="javascript">// Set the opacity to 30, which makes this sprite 11.7% opaque.
+// (30 divided by 256 equals 0.1171875...)
+mySprite.setOpacity(30);
+</code></pre>
+
+</div>
+
+<p><img alt="" src="../sprites-img/i11.png" title="" /></p>
+<h2 id="polygon-sprite">Polygon Sprite</h2>
+<p>A <strong>Polygon Sprite</strong> is also a <code>Sprite</code>, that is used to display a 2d image.
+However, unlike a normal <code>Sprite</code> object, which is a rectangle made of just 2
+triangles, <code>PolygonSprite</code> objects are made of a series of triangles.</p>
+<h4 id="why-use-a-polygon-sprite">Why use a Polygon Sprite?</h4>
+<p>Simple, <strong>performance</strong>!</p>
+<p>There is a lot of technical jargon that we can toss around here about <strong>pixel fill rate</strong>
+but the take home lesson is that a <code>PolygonSprite</code> draws based upon the shape of
+your <code>Sprite</code>, not a simple rectangle around the largest width and height. This
+saves a lot of unnecessary drawing. Consider this example:</p>
+<p><img alt="" src="../sprites-img/polygonsprite.png" title="" /></p>
+<p>Notice the difference between the left and right versions?</p>
+<p>On the left, a typical <code>Sprite</code> drawn in rectangular fashion by the use of 2
+triangles.</p>
+<p>On the right, a <code>PolygonSprite</code> drawn with many smaller triangles.</p>
+<p>Whether or not this trade-off is worth it for purely performance reasons depends
+on a number of factors (sprite shape/detail, size, quantity drawn on screen, etc.),
+but in general, <em>vertices are cheaper than pixels</em> on modern GPUs.</p>
+<!--Now more and more GPUs were tailor designed to do 3d graphics, which can handle loads of vertices, but limited in Pixel Fill-Rate. But by representing almost always "None-rectangular" 2d images with a rectangular quad, GPU wastes precious bandwidth drawing totally transparent part of the sprite.
+
+Take the above Grossini example, the left side is a normal Sprite, the right side is the same image but with 18 triangles and 20 vertices. Because the triangles were such a "tight fit", the 18 triangles counts only 4089 pixels surface area compared to the quad version which is 10285 pixels, that is 60% pixels saved!
+
+![](sprites-img/polygonsprite.png "")
+
+Here is a performance test.The test keep on adding dynamic sprite to the screen until it reach down to 40 fps, the numbers are how many SpritePolygon or Sprite it can run stably at 40PS.
+
+| Devices        | Sprite  | Polygon Sprite| Promotion|
+| -------------- |:-------:| :------------:| :-------:|
+| iPhone 6 plus  | 259     | 566           | 118.53%  |
+| Samsung 9100   | 365     | 526           | 44.1%    |
+| rMBP late 2013 | 471     | 1150          | 144.16%  |
+-->
+
+<h4 id="autopolygon">AutoPolygon</h4>
+<p><code>AutoPolygon</code> is a helper class. It's purpose is to process an image into a 2d
+polygon mesh at runtime.</p>
+<p>There are functions for each step in the process, from tracing all the points,
+to triangulation. The result, can be then passed to a <code>Sprite</code> objects <strong>create</strong>
+function to create a <code>PolygonSprite</code>. Example:</p>
+<p><div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content"></p>
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="cpp">// Generate polygon info automatically.
+auto pinfo = AutoPolygon::generatePolygon(&quot;filename.png&quot;);
+
+// Create a sprite with polygon info.
+auto sprite = Sprite::create(pinfo);
+</code></pre>
+
+</div>
+
+<div class="tab-js tab_content">
+
+<!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
+
+<pre><code class="javascript">// Generate polygon info automatically.
+var pinfo = cc.autopolygon.generatePolygon(res.mysprite_png);
+
+// Create a sprite with polygon info.
+var sprite = new cc.Sprite(pinfo);
+</code></pre>
+
+</div>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../basic_concepts/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../actions/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+</div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <p style="text-align:center">Copyright (c) 2014-2016 Chukong Technologies Inc.</p>
+            
+           <!-- <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>-->
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+
+        <!-- PG languages -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script>
+        $(function() {
+          var key = "Cocos2d-x_pg_lang";
+          var switch_lang = function(l) {
+              $('.langs li a').removeClass('selected');
+              $('#'+l).addClass('selected');
+              $('.tab_content').hide();
+              $('.'+l).show();
+              $.cookie(key, l);
+          }
+          $('.langs li a').click(function() {switch_lang(this.id);return false;});
+          var c = $.cookie(key);
+          if (typeof c == 'undefined') c='tab-cpp';
+          switch_lang(c);
+        });
+        </script>
+
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/Cocos2d-html5-min.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chipmunk.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d-jsb.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/main.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/AnimationLayer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/BackgroundLayer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Coin.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/GameOverLayer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/PlayScene.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Rock.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/SimpleRecognizer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/StatusLayer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/globals.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/myApp.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/resource.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

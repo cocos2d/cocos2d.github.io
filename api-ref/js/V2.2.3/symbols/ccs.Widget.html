@@ -1,0 +1,4736 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="generator" content="JsDoc Toolkit" />
+		<title>ccs.Widget | JsDoc Reference</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		<meta name="mobileoptimized" content="0" />
+	
+		<link rel="stylesheet" href="../css/all.css" media="all" />
+		<link rel="stylesheet" href="../css/handheld.css" media="only screen and (max-width: 660px)" />
+		<link rel="stylesheet" href="../css/handheld.css" media="handheld" />
+		<link rel="stylesheet" href="../css/screen.css" media="screen and (min-width: 661px)" />
+
+		<script src="../javascript/all.js"></script>
+		<!--[if lt IE 9]>
+			<script src="../javascript/html5.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+
+<div class="content">
+	<div class="innerContent">
+		<article>
+			<header>
+				<h1 class="classTitle">
+					
+					Class <span>ccs.Widget</span>
+				</h1>
+				
+				<div class="intro">
+					<p class="description summary">
+						
+					</p>
+						
+					
+						<ul class="summary">
+							
+							
+							
+								<li>Defined in: <a href="../symbols/src/E__Projects_cocos2d-html5_extensions_CocoStudio_GUI_BaseClasses_UIWidget.js.html">UIWidget.js</a></li>
+							
+							<li>Extends <span class="fixedFont">
+								<a href="../symbols/ccs.Node.html">ccs.Node</a></span></li>
+							
+						</ul>
+					
+				</div>
+			</header>
+			
+			
+				<section>
+					<div class="props">
+						<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class ccs.Widget.">
+							<caption class="sectionTitle">Class Summary</caption>
+							<thead>
+								<tr>
+									<th scope="col">Constructor Attributes</th>
+									<th scope="col">Constructor Name and Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription" >
+										<div class="fixedFont">
+											<b><a href="../symbols/ccs.Widget.html#constructor">ccs.Widget</a></b>()
+										</div>
+										<div class="description">Base class for ccs.Widget</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+			
+			
+			
+	<!--
+	#### METHODS SUMMARY
+	-->
+			
+				<section>
+					
+					
+					<div class="props">
+						<h2 class="sectionTitle">Method Summary</h2>
+						
+						
+							<nav>
+								<table class="summaryTable" id="MethodsList" cellspacing="0" summary="A summary of the methods documented in the class ccs.Widget.">
+									<thead>
+										<tr>
+											<th scope="col">Method Attributes</th>
+											<th scope="col">Method Name and Description</th>
+										</tr>
+									</thead>
+									
+									<tbody>
+										
+										
+											<tr
+												 class='item0'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#addChild">addChild</a></b>(widget, zOrder, tag)
+													</div>
+													<div class="description">Adds a child to the container.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item1'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#addNode">addNode</a></b>(node, zOrder, tag)
+													</div>
+													<div class="description">add node for widget</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item2'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#addTouchEventListener">addTouchEventListener</a></b>(selector, target)
+													</div>
+													<div class="description">Sets the touch event target/selector of the menu item</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item3'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#checkChildInfo">checkChildInfo</a></b>(handleState, sender, touchPoint)
+													</div>
+													<div class="description">Sends the touch event to widget's parent</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item4'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#clippingParentAreaContainPoint">clippingParentAreaContainPoint</a></b>(pt)
+													</div>
+													<div class="description">Checks a point if in parent's area.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item5'
+											>
+												<td class="attributes">&lt;static&gt; &nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont">ccs.Widget.<b><a href="../symbols/ccs.Widget.html#.create">create</a></b>()
+													</div>
+													<div class="description">allocates and initializes a UIWidget.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item6'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#didNotSelectSelf">didNotSelectSelf</a></b>()
+													</div>
+													<div class="description">A call back function when widget lost of focus.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item7'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#getBottomInParent">getBottomInParent</a></b>()
+													</div>
+													<div class="description">Gets the bottom boundary position of this widget.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item8'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#getChildByName">getChildByName</a></b>(name)
+													</div>
+													<div class="description">Gets a child from the container with its name</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item9'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#getChildByTag">getChildByTag</a></b>(tag)
+													</div>
+													<div class="description"></div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item10'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#getChildren">getChildren</a></b>()
+													</div>
+													<div class="description">Return an array of children</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item11'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#getChildrenCount">getChildrenCount</a></b>()
+													</div>
+													<div class="description">get the count of children</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item12'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#getColor">getColor</a></b>()
+													</div>
+													<div class="description">Get color</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item13'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#getContentSize">getContentSize</a></b>()
+													</div>
+													<div class="description">Gets the content size of widget.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item14'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#getCustomSize">getCustomSize</a></b>()
+													</div>
+													<div class="description">Get custom size</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item15'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#getDescription">getDescription</a></b>()
+													</div>
+													<div class="description">Returns the "class name" of widget.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item16'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#getLayoutParameter">getLayoutParameter</a></b>(type)
+													</div>
+													<div class="description">Gets layout parameter</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item17'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#getLeftInParent">getLeftInParent</a></b>()
+													</div>
+													<div class="description">Gets the left boundary position of this widget.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item18'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#getName">getName</a></b>()
+													</div>
+													<div class="description">Gets the name of widget</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item19'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#getNodeByTag">getNodeByTag</a></b>(tag)
+													</div>
+													<div class="description">get node by tag</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item20'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#getNodes">getNodes</a></b>()
+													</div>
+													<div class="description">get all node</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item21'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#getOpacity">getOpacity</a></b>()
+													</div>
+													<div class="description">Get opacity</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item22'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#getPositionPercent">getPositionPercent</a></b>()
+													</div>
+													<div class="description">Gets the percent (x,y) of the widget</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item23'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#getPositionType">getPositionType</a></b>()
+													</div>
+													<div class="description">Gets the position type of the widget</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item24'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#getRightInParent">getRightInParent</a></b>()
+													</div>
+													<div class="description">Gets the right boundary position of this widget.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item25'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#getSize">getSize</a></b>()
+													</div>
+													<div class="description">Returns size of widget</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item26'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#getSizePercent">getSizePercent</a></b>()
+													</div>
+													<div class="description">Returns size percent of widget</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item27'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#getSizeType">getSizeType</a></b>()
+													</div>
+													<div class="description">Gets the size type of widget.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item28'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#getTopInParent">getTopInParent</a></b>()
+													</div>
+													<div class="description">Gets the top boundary position of this widget.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item29'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#getTouchEndPos">getTouchEndPos</a></b>()
+													</div>
+													<div class="description">Gets touch end position</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item30'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#getTouchMovePos">getTouchMovePos</a></b>()
+													</div>
+													<div class="description">Gets touch move position</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item31'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#getTouchStartPos">getTouchStartPos</a></b>()
+													</div>
+													<div class="description">Gets touch start position</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item32'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#getVirtualRenderer">getVirtualRenderer</a></b>()
+													</div>
+													<div class="description">Gets the Virtual Renderer of widget.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item33'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#getWidgetType">getWidgetType</a></b>()
+													</div>
+													<div class="description">get widget type</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item34'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#getWorldPosition">getWorldPosition</a></b>()
+													</div>
+													<div class="description">Gets world position of widget.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item35'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#hitTest">hitTest</a></b>(pt)
+													</div>
+													<div class="description">Checks a point if is in widget's space</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item36'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#ignoreContentAdaptWithSize">ignoreContentAdaptWithSize</a></b>(ignore)
+													</div>
+													<div class="description">Ignore the widget size</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item37'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#init">init</a></b>()
+													</div>
+													<div class="description">initializes state of widget.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item38'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#initRenderer">initRenderer</a></b>()
+													</div>
+													<div class="description">initializes renderer of widget.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item39'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#isBright">isBright</a></b>()
+													</div>
+													<div class="description">Determines if the widget is bright</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item40'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#isEnabled">isEnabled</a></b>()
+													</div>
+													<div class="description">Determines if the widget is enabled</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item41'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#isFlippedX">isFlippedX</a></b>()
+													</div>
+													<div class="description">Get flipped x</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item42'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#isFlippedY">isFlippedY</a></b>()
+													</div>
+													<div class="description">Get flipped y</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item43'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#isFocused">isFocused</a></b>()
+													</div>
+													<div class="description">Determines if the widget is on focused</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item44'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#isIgnoreContentAdaptWithSize">isIgnoreContentAdaptWithSize</a></b>()
+													</div>
+													<div class="description">Gets the widget if is ignore it's size.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item45'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#isTouchEnabled">isTouchEnabled</a></b>()
+													</div>
+													<div class="description">To set the bright style of widget.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item46'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#isUpdateEnabled">isUpdateEnabled</a></b>()
+													</div>
+													<div class="description">is the "update" method scheduled.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item47'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#onPressStateChangedToDisabled">onPressStateChangedToDisabled</a></b>()
+													</div>
+													<div class="description">call back function called widget's state changed to dark.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item48'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#onPressStateChangedToNormal">onPressStateChangedToNormal</a></b>()
+													</div>
+													<div class="description">call back function called widget's state changed to normal.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item49'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#onPressStateChangedToPressed">onPressStateChangedToPressed</a></b>()
+													</div>
+													<div class="description">call back function called widget's state changed to selected.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item50'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#onSizeChanged">onSizeChanged</a></b>()
+													</div>
+													<div class="description">call back function called when size changed.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item51'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#onTouchCancelled">onTouchCancelled</a></b>(touchPoint)
+													</div>
+													<div class="description">A call back function called when widget is selected, and on touch canceled.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item52'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#onTouchLongClicked">onTouchLongClicked</a></b>(touchPoint)
+													</div>
+													<div class="description">A call back function called when widget is selected, and on touch long clicked.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item53'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#removeAllChildren">removeAllChildren</a></b>(cleanup)
+													</div>
+													<div class="description">Removes all children from the container, and do a cleanup to all running actions depending on the cleanup parameter.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item54'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#removeAllNodes">removeAllNodes</a></b>()
+													</div>
+													<div class="description">remove all node</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item55'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#removeChild">removeChild</a></b>(widget, cleanup)
+													</div>
+													<div class="description">remove  child</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item56'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#removeNode">removeNode</a></b>(node, cleanup)
+													</div>
+													<div class="description">remove node</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item57'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#removeNodeByTag">removeNodeByTag</a></b>(tag, cleanup)
+													</div>
+													<div class="description">remove node by tag</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item58'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#setBrightStyle">setBrightStyle</a></b>(style)
+													</div>
+													<div class="description">To set the bright style of widget.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item59'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#setColor">setColor</a></b>(color)
+													</div>
+													<div class="description">Set color</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item60'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#setEnabled">setEnabled</a></b>(enabled)
+													</div>
+													<div class="description">Set enabled renderer</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item61'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#setFlippedX">setFlippedX</a></b>(flipX)
+													</div>
+													<div class="description">Set flipped x</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item62'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#setFlippedY">setFlippedY</a></b>(flipY)
+													</div>
+													<div class="description">Set flipped y</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item63'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#setFocused">setFocused</a></b>(fucos)
+													</div>
+													<div class="description">Sets whether the widget is on focusedThe default value is false, a widget is default to not on focused</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item64'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#setLayoutParameter">setLayoutParameter</a></b>(parameter)
+													</div>
+													<div class="description">Sets layout parameter</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item65'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#setName">setName</a></b>(name)
+													</div>
+													<div class="description">Sets the name of widget</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item66'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#setOpacity">setOpacity</a></b>(opacity)
+													</div>
+													<div class="description">Set opacity</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item67'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#setPosition">setPosition</a></b>(pos, posY)
+													</div>
+													<div class="description">Changes the position (x,y) of the widget .</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item68'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#setPositionPercent">setPositionPercent</a></b>(percent)
+													</div>
+													<div class="description">Changes the position (x,y) of the widget</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item69'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#setPositionType">setPositionType</a></b>(type)
+													</div>
+													<div class="description">Changes the position type of the widget</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item70'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#setSize">setSize</a></b>(size)
+													</div>
+													<div class="description">Changes the size that is widget's size</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item71'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#setSizePercent">setSizePercent</a></b>(percent)
+													</div>
+													<div class="description">Changes the percent that is widget's percent size</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item72'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#setSizeType">setSizeType</a></b>(type)
+													</div>
+													<div class="description">Changes the size type of widget.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item73'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#setTouchEnabled">setTouchEnabled</a></b>(enable)
+													</div>
+													<div class="description">Sets whether the widget is touch enabled</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item74'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#setUpdateEnabled">setUpdateEnabled</a></b>(enable)
+													</div>
+													<div class="description">Schedules the "update" method.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item75'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/ccs.Widget.html#updateSizeAndPosition">updateSizeAndPosition</a></b>()
+													</div>
+													<div class="description">update size and position</div>
+												</td>
+											</tr>
+										
+									</tbody>
+								</table>
+							</nav>
+						
+					
+						
+							<nav>
+								<dl class="inheritsList" id="MethodsListInherited">
+								
+								</dl>
+							</nav>
+						
+					</div>
+				</section>
+			
+			
+	<!--
+	#### EVENTS SUMMARY
+	-->
+			
+	<!--
+	#### CONSTRUCTOR DETAILS
+	-->
+			
+				<section>
+					<div class="details props">
+						<div class="innerProps">
+							<h2 class="sectionTitle" id="constructor">
+								Class Detail
+							</h2>
+							
+							<div class="fixedFont">
+								<b>ccs.Widget</b>()
+							</div>
+							
+							<div class="description">
+								Base class for ccs.Widget
+								
+							</div>
+							
+							
+						
+							
+							
+							
+						</div>
+					</div>
+				</section>
+			
+	<!--
+	#### FIELD DETAILS
+	-->
+			
+	<!--
+	#### METHOD DETAILS
+	-->		
+			
+				<section>
+					<div class="details props">
+						<div class="innerProps">
+							<h2 class="sectionTitle">
+								Method Detail
+							</h2>
+							
+							<ul class="methodDetail" id="MethodDetail">
+								
+								
+									<li 
+										 class='item0'
+									>
+										<div class="fixedFont heading" id="addChild">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>addChild</b>(widget, zOrder, tag)
+										</div>
+										
+										<div class="description">
+											Adds a child to the container.
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{<a href="../symbols/ccs.Widget.html">ccs.Widget</a>}</span> <b>widget</b>
+														
+													</dt>
+													<dd></dd>
+												
+													<dt>
+														<span class="light fixedFont">{Number}</span> <b>zOrder</b>
+														
+													</dt>
+													<dd></dd>
+												
+													<dt>
+														<span class="light fixedFont">{Number}</span> <b>tag</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item1'
+									>
+										<div class="fixedFont heading" id="addNode">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>addNode</b>(node, zOrder, tag)
+										</div>
+										
+										<div class="description">
+											add node for widget
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{<a href="../symbols/cc.Node.html">cc.Node</a>}</span> <b>node</b>
+														
+													</dt>
+													<dd></dd>
+												
+													<dt>
+														<span class="light fixedFont">{Number}</span> <b>zOrder</b>
+														
+													</dt>
+													<dd></dd>
+												
+													<dt>
+														<span class="light fixedFont">{Number}</span> <b>tag</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item2'
+									>
+										<div class="fixedFont heading" id="addTouchEventListener">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>addTouchEventListener</b>(selector, target)
+										</div>
+										
+										<div class="description">
+											Sets the touch event target/selector of the menu item
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{Function}</span> <b>selector</b>
+														
+													</dt>
+													<dd></dd>
+												
+													<dt>
+														<span class="light fixedFont">{Object}</span> <b>target</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item3'
+									>
+										<div class="fixedFont heading" id="checkChildInfo">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>checkChildInfo</b>(handleState, sender, touchPoint)
+										</div>
+										
+										<div class="description">
+											Sends the touch event to widget's parent
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{number}</span> <b>handleState</b>
+														
+													</dt>
+													<dd></dd>
+												
+													<dt>
+														<span class="light fixedFont">{<a href="../symbols/ccs.Widget.html">ccs.Widget</a>}</span> <b>sender</b>
+														
+													</dt>
+													<dd></dd>
+												
+													<dt>
+														<span class="light fixedFont">{<a href="../symbols/cc.Point.html">cc.Point</a>}</span> <b>touchPoint</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item4'
+									>
+										<div class="fixedFont heading" id="clippingParentAreaContainPoint">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{Boolean}</span>
+											
+											<b>clippingParentAreaContainPoint</b>(pt)
+										</div>
+										
+										<div class="description">
+											Checks a point if in parent's area.
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{<a href="../symbols/cc.Point.html">cc.Point</a>}</span> <b>pt</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{Boolean}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item5'
+									>
+										<div class="fixedFont heading" id=".create">
+											<span class='lighter'>
+											&lt;static&gt; 
+											</span>
+											
+											<span class="light">{<a href="../symbols/ccs.Widget.html">ccs.Widget</a>}</span>
+											
+											<span class="light">ccs.Widget.</span><b>create</b>()
+										</div>
+										
+										<div class="description">
+											allocates and initializes a UIWidget.
+											
+											
+											
+											
+										</div>
+										
+										
+											
+												<pre class="code">// examplevar uiWidget = ccs.Widget.create();</pre>
+											
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{<a href="../symbols/ccs.Widget.html">ccs.Widget</a>}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item6'
+									>
+										<div class="fixedFont heading" id="didNotSelectSelf">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>didNotSelectSelf</b>()
+										</div>
+										
+										<div class="description">
+											A call back function when widget lost of focus.
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item7'
+									>
+										<div class="fixedFont heading" id="getBottomInParent">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{number}</span>
+											
+											<b>getBottomInParent</b>()
+										</div>
+										
+										<div class="description">
+											Gets the bottom boundary position of this widget.
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{number}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item8'
+									>
+										<div class="fixedFont heading" id="getChildByName">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{<a href="../symbols/ccs.Widget.html">ccs.Widget</a>}</span>
+											
+											<b>getChildByName</b>(name)
+										</div>
+										
+										<div class="description">
+											Gets a child from the container with its name
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{string}</span> <b>name</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{<a href="../symbols/ccs.Widget.html">ccs.Widget</a>}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item9'
+									>
+										<div class="fixedFont heading" id="getChildByTag">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{<a href="../symbols/ccs.Widget.html">ccs.Widget</a>}</span>
+											
+											<b>getChildByTag</b>(tag)
+										</div>
+										
+										<div class="description">
+											
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<b>tag</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{<a href="../symbols/ccs.Widget.html">ccs.Widget</a>}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item10'
+									>
+										<div class="fixedFont heading" id="getChildren">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{Array}</span>
+											
+											<b>getChildren</b>()
+										</div>
+										
+										<div class="description">
+											Return an array of children
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{Array}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item11'
+									>
+										<div class="fixedFont heading" id="getChildrenCount">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{Number}</span>
+											
+											<b>getChildrenCount</b>()
+										</div>
+										
+										<div class="description">
+											get the count of children
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{Number}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item12'
+									>
+										<div class="fixedFont heading" id="getColor">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{<a href="../symbols/cc.Color3B.html">cc.Color3B</a>}</span>
+											
+											<b>getColor</b>()
+										</div>
+										
+										<div class="description">
+											Get color
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{<a href="../symbols/cc.Color3B.html">cc.Color3B</a>}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item13'
+									>
+										<div class="fixedFont heading" id="getContentSize">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{<a href="../symbols/cc.Size.html">cc.Size</a>}</span>
+											
+											<b>getContentSize</b>()
+										</div>
+										
+										<div class="description">
+											Gets the content size of widget.
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{<a href="../symbols/cc.Size.html">cc.Size</a>}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item14'
+									>
+										<div class="fixedFont heading" id="getCustomSize">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{<a href="../symbols/cc.Size.html">cc.Size</a>}</span>
+											
+											<b>getCustomSize</b>()
+										</div>
+										
+										<div class="description">
+											Get custom size
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{<a href="../symbols/cc.Size.html">cc.Size</a>}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item15'
+									>
+										<div class="fixedFont heading" id="getDescription">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{string}</span>
+											
+											<b>getDescription</b>()
+										</div>
+										
+										<div class="description">
+											Returns the "class name" of widget.
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{string}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item16'
+									>
+										<div class="fixedFont heading" id="getLayoutParameter">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{<a href="../symbols/ccs.LayoutParameter.html">ccs.LayoutParameter</a>}</span>
+											
+											<b>getLayoutParameter</b>(type)
+										</div>
+										
+										<div class="description">
+											Gets layout parameter
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{<a href="../symbols/ccs.html#.LayoutParameterType">ccs.LayoutParameterType</a>}</span> <b>type</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{<a href="../symbols/ccs.LayoutParameter.html">ccs.LayoutParameter</a>}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item17'
+									>
+										<div class="fixedFont heading" id="getLeftInParent">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{number}</span>
+											
+											<b>getLeftInParent</b>()
+										</div>
+										
+										<div class="description">
+											Gets the left boundary position of this widget.
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{number}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item18'
+									>
+										<div class="fixedFont heading" id="getName">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{string}</span>
+											
+											<b>getName</b>()
+										</div>
+										
+										<div class="description">
+											Gets the name of widget
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{string}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item19'
+									>
+										<div class="fixedFont heading" id="getNodeByTag">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{<a href="../symbols/cc.Node.html">cc.Node</a>}</span>
+											
+											<b>getNodeByTag</b>(tag)
+										</div>
+										
+										<div class="description">
+											get node by tag
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{Number}</span> <b>tag</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{<a href="../symbols/cc.Node.html">cc.Node</a>}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item20'
+									>
+										<div class="fixedFont heading" id="getNodes">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{Array}</span>
+											
+											<b>getNodes</b>()
+										</div>
+										
+										<div class="description">
+											get all node
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{Array}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item21'
+									>
+										<div class="fixedFont heading" id="getOpacity">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{Number}</span>
+											
+											<b>getOpacity</b>()
+										</div>
+										
+										<div class="description">
+											Get opacity
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{Number}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item22'
+									>
+										<div class="fixedFont heading" id="getPositionPercent">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{<a href="../symbols/cc.Point.html">cc.Point</a>}</span>
+											
+											<b>getPositionPercent</b>()
+										</div>
+										
+										<div class="description">
+											Gets the percent (x,y) of the widget
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{<a href="../symbols/cc.Point.html">cc.Point</a>}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item23'
+									>
+										<div class="fixedFont heading" id="getPositionType">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{cc.pPositionType}</span>
+											
+											<b>getPositionType</b>()
+										</div>
+										
+										<div class="description">
+											Gets the position type of the widget
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{cc.pPositionType}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item24'
+									>
+										<div class="fixedFont heading" id="getRightInParent">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{number}</span>
+											
+											<b>getRightInParent</b>()
+										</div>
+										
+										<div class="description">
+											Gets the right boundary position of this widget.
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{number}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item25'
+									>
+										<div class="fixedFont heading" id="getSize">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{<a href="../symbols/cc.Size.html">cc.Size</a>}</span>
+											
+											<b>getSize</b>()
+										</div>
+										
+										<div class="description">
+											Returns size of widget
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{<a href="../symbols/cc.Size.html">cc.Size</a>}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item26'
+									>
+										<div class="fixedFont heading" id="getSizePercent">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{<a href="../symbols/cc.Point.html">cc.Point</a>}</span>
+											
+											<b>getSizePercent</b>()
+										</div>
+										
+										<div class="description">
+											Returns size percent of widget
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{<a href="../symbols/cc.Point.html">cc.Point</a>}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item27'
+									>
+										<div class="fixedFont heading" id="getSizeType">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{<a href="../symbols/ccs.html#.SizeType">ccs.SizeType</a>}</span>
+											
+											<b>getSizeType</b>()
+										</div>
+										
+										<div class="description">
+											Gets the size type of widget.
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{<a href="../symbols/ccs.html#.SizeType">ccs.SizeType</a>}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item28'
+									>
+										<div class="fixedFont heading" id="getTopInParent">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{number}</span>
+											
+											<b>getTopInParent</b>()
+										</div>
+										
+										<div class="description">
+											Gets the top boundary position of this widget.
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{number}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item29'
+									>
+										<div class="fixedFont heading" id="getTouchEndPos">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{<a href="../symbols/cc.Point.html">cc.Point</a>}</span>
+											
+											<b>getTouchEndPos</b>()
+										</div>
+										
+										<div class="description">
+											Gets touch end position
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{<a href="../symbols/cc.Point.html">cc.Point</a>}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item30'
+									>
+										<div class="fixedFont heading" id="getTouchMovePos">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{<a href="../symbols/cc.Point.html">cc.Point</a>}</span>
+											
+											<b>getTouchMovePos</b>()
+										</div>
+										
+										<div class="description">
+											Gets touch move position
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{<a href="../symbols/cc.Point.html">cc.Point</a>}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item31'
+									>
+										<div class="fixedFont heading" id="getTouchStartPos">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{<a href="../symbols/cc.Point.html">cc.Point</a>}</span>
+											
+											<b>getTouchStartPos</b>()
+										</div>
+										
+										<div class="description">
+											Gets touch start position
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{<a href="../symbols/cc.Point.html">cc.Point</a>}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item32'
+									>
+										<div class="fixedFont heading" id="getVirtualRenderer">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{<a href="../symbols/cc.Node.html">cc.Node</a>}</span>
+											
+											<b>getVirtualRenderer</b>()
+										</div>
+										
+										<div class="description">
+											Gets the Virtual Renderer of widget.
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{<a href="../symbols/cc.Node.html">cc.Node</a>}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item33'
+									>
+										<div class="fixedFont heading" id="getWidgetType">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{<a href="../symbols/ccs.html#.WidgetType">ccs.WidgetType</a>}</span>
+											
+											<b>getWidgetType</b>()
+										</div>
+										
+										<div class="description">
+											get widget type
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{<a href="../symbols/ccs.html#.WidgetType">ccs.WidgetType</a>}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item34'
+									>
+										<div class="fixedFont heading" id="getWorldPosition">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{<a href="../symbols/cc.Point.html">cc.Point</a>}</span>
+											
+											<b>getWorldPosition</b>()
+										</div>
+										
+										<div class="description">
+											Gets world position of widget.
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{<a href="../symbols/cc.Point.html">cc.Point</a>}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item35'
+									>
+										<div class="fixedFont heading" id="hitTest">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{boolean}</span>
+											
+											<b>hitTest</b>(pt)
+										</div>
+										
+										<div class="description">
+											Checks a point if is in widget's space
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{<a href="../symbols/cc.Point.html">cc.Point</a>}</span> <b>pt</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{boolean}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item36'
+									>
+										<div class="fixedFont heading" id="ignoreContentAdaptWithSize">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>ignoreContentAdaptWithSize</b>(ignore)
+										</div>
+										
+										<div class="description">
+											Ignore the widget size
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{Boolean}</span> <b>ignore</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item37'
+									>
+										<div class="fixedFont heading" id="init">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{boolean}</span>
+											
+											<b>init</b>()
+										</div>
+										
+										<div class="description">
+											initializes state of widget.
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{boolean}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item38'
+									>
+										<div class="fixedFont heading" id="initRenderer">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>initRenderer</b>()
+										</div>
+										
+										<div class="description">
+											initializes renderer of widget.
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item39'
+									>
+										<div class="fixedFont heading" id="isBright">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{boolean}</span>
+											
+											<b>isBright</b>()
+										</div>
+										
+										<div class="description">
+											Determines if the widget is bright
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{boolean}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item40'
+									>
+										<div class="fixedFont heading" id="isEnabled">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{boolean}</span>
+											
+											<b>isEnabled</b>()
+										</div>
+										
+										<div class="description">
+											Determines if the widget is enabled
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{boolean}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item41'
+									>
+										<div class="fixedFont heading" id="isFlippedX">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{Boolean}</span>
+											
+											<b>isFlippedX</b>()
+										</div>
+										
+										<div class="description">
+											Get flipped x
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{Boolean}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item42'
+									>
+										<div class="fixedFont heading" id="isFlippedY">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{Boolean}</span>
+											
+											<b>isFlippedY</b>()
+										</div>
+										
+										<div class="description">
+											Get flipped y
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{Boolean}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item43'
+									>
+										<div class="fixedFont heading" id="isFocused">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{boolean}</span>
+											
+											<b>isFocused</b>()
+										</div>
+										
+										<div class="description">
+											Determines if the widget is on focused
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{boolean}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item44'
+									>
+										<div class="fixedFont heading" id="isIgnoreContentAdaptWithSize">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{boolean}</span>
+											
+											<b>isIgnoreContentAdaptWithSize</b>()
+										</div>
+										
+										<div class="description">
+											Gets the widget if is ignore it's size.
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{boolean}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item45'
+									>
+										<div class="fixedFont heading" id="isTouchEnabled">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{boolean}</span>
+											
+											<b>isTouchEnabled</b>()
+										</div>
+										
+										<div class="description">
+											To set the bright style of widget.
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{boolean}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item46'
+									>
+										<div class="fixedFont heading" id="isUpdateEnabled">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{boolean}</span>
+											
+											<b>isUpdateEnabled</b>()
+										</div>
+										
+										<div class="description">
+											is the "update" method scheduled.
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{boolean}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item47'
+									>
+										<div class="fixedFont heading" id="onPressStateChangedToDisabled">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>onPressStateChangedToDisabled</b>()
+										</div>
+										
+										<div class="description">
+											call back function called widget's state changed to dark.
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item48'
+									>
+										<div class="fixedFont heading" id="onPressStateChangedToNormal">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>onPressStateChangedToNormal</b>()
+										</div>
+										
+										<div class="description">
+											call back function called widget's state changed to normal.
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item49'
+									>
+										<div class="fixedFont heading" id="onPressStateChangedToPressed">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>onPressStateChangedToPressed</b>()
+										</div>
+										
+										<div class="description">
+											call back function called widget's state changed to selected.
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item50'
+									>
+										<div class="fixedFont heading" id="onSizeChanged">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>onSizeChanged</b>()
+										</div>
+										
+										<div class="description">
+											call back function called when size changed.
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item51'
+									>
+										<div class="fixedFont heading" id="onTouchCancelled">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>onTouchCancelled</b>(touchPoint)
+										</div>
+										
+										<div class="description">
+											A call back function called when widget is selected, and on touch canceled.
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{<a href="../symbols/cc.Point.html">cc.Point</a>}</span> <b>touchPoint</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item52'
+									>
+										<div class="fixedFont heading" id="onTouchLongClicked">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>onTouchLongClicked</b>(touchPoint)
+										</div>
+										
+										<div class="description">
+											A call back function called when widget is selected, and on touch long clicked.
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{<a href="../symbols/cc.Point.html">cc.Point</a>}</span> <b>touchPoint</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item53'
+									>
+										<div class="fixedFont heading" id="removeAllChildren">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>removeAllChildren</b>(cleanup)
+										</div>
+										
+										<div class="description">
+											Removes all children from the container, and do a cleanup to all running actions depending on the cleanup parameter.
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<b>cleanup</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item54'
+									>
+										<div class="fixedFont heading" id="removeAllNodes">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>removeAllNodes</b>()
+										</div>
+										
+										<div class="description">
+											remove all node
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item55'
+									>
+										<div class="fixedFont heading" id="removeChild">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>removeChild</b>(widget, cleanup)
+										</div>
+										
+										<div class="description">
+											remove  child
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{<a href="../symbols/ccs.Widget.html">ccs.Widget</a>}</span> <b>widget</b>
+														
+													</dt>
+													<dd></dd>
+												
+													<dt>
+														<span class="light fixedFont">{Boolean}</span> <b>cleanup</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item56'
+									>
+										<div class="fixedFont heading" id="removeNode">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>removeNode</b>(node, cleanup)
+										</div>
+										
+										<div class="description">
+											remove node
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{<a href="../symbols/cc.Node.html">cc.Node</a>}</span> <b>node</b>
+														
+													</dt>
+													<dd></dd>
+												
+													<dt>
+														<span class="light fixedFont">{Boolean}</span> <b>cleanup</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item57'
+									>
+										<div class="fixedFont heading" id="removeNodeByTag">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>removeNodeByTag</b>(tag, cleanup)
+										</div>
+										
+										<div class="description">
+											remove node by tag
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{Number}</span> <b>tag</b>
+														
+													</dt>
+													<dd></dd>
+												
+													<dt>
+														<span class="light fixedFont">{Boolean}</span> <b>cleanup</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item58'
+									>
+										<div class="fixedFont heading" id="setBrightStyle">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>setBrightStyle</b>(style)
+										</div>
+										
+										<div class="description">
+											To set the bright style of widget.
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{<a href="../symbols/ccs.html#.BrightStyle">ccs.BrightStyle</a>}</span> <b>style</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item59'
+									>
+										<div class="fixedFont heading" id="setColor">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>setColor</b>(color)
+										</div>
+										
+										<div class="description">
+											Set color
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{<a href="../symbols/cc.Color3B.html">cc.Color3B</a>}</span> <b>color</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item60'
+									>
+										<div class="fixedFont heading" id="setEnabled">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>setEnabled</b>(enabled)
+										</div>
+										
+										<div class="description">
+											Set enabled renderer
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{Boolean}</span> <b>enabled</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item61'
+									>
+										<div class="fixedFont heading" id="setFlippedX">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>setFlippedX</b>(flipX)
+										</div>
+										
+										<div class="description">
+											Set flipped x
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{Boolean}</span> <b>flipX</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item62'
+									>
+										<div class="fixedFont heading" id="setFlippedY">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>setFlippedY</b>(flipY)
+										</div>
+										
+										<div class="description">
+											Set flipped y
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{Boolean}</span> <b>flipY</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item63'
+									>
+										<div class="fixedFont heading" id="setFocused">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>setFocused</b>(fucos)
+										</div>
+										
+										<div class="description">
+											Sets whether the widget is on focusedThe default value is false, a widget is default to not on focused
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{boolean}</span> <b>fucos</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item64'
+									>
+										<div class="fixedFont heading" id="setLayoutParameter">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>setLayoutParameter</b>(parameter)
+										</div>
+										
+										<div class="description">
+											Sets layout parameter
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{<a href="../symbols/ccs.LayoutParameter.html">ccs.LayoutParameter</a>}</span> <b>parameter</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item65'
+									>
+										<div class="fixedFont heading" id="setName">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>setName</b>(name)
+										</div>
+										
+										<div class="description">
+											Sets the name of widget
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{String}</span> <b>name</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item66'
+									>
+										<div class="fixedFont heading" id="setOpacity">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>setOpacity</b>(opacity)
+										</div>
+										
+										<div class="description">
+											Set opacity
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{Number}</span> <b>opacity</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item67'
+									>
+										<div class="fixedFont heading" id="setPosition">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>setPosition</b>(pos, posY)
+										</div>
+										
+										<div class="description">
+											Changes the position (x,y) of the widget .
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{<a href="../symbols/cc.Point.html">cc.Point</a>||Number}</span> <b>pos</b>
+														
+													</dt>
+													<dd></dd>
+												
+													<dt>
+														<span class="light fixedFont">{Number}</span> <b>posY</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item68'
+									>
+										<div class="fixedFont heading" id="setPositionPercent">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>setPositionPercent</b>(percent)
+										</div>
+										
+										<div class="description">
+											Changes the position (x,y) of the widget
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{<a href="../symbols/cc.Point.html">cc.Point</a>}</span> <b>percent</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item69'
+									>
+										<div class="fixedFont heading" id="setPositionType">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>setPositionType</b>(type)
+										</div>
+										
+										<div class="description">
+											Changes the position type of the widget
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{<a href="../symbols/ccs.html#.PositionType">ccs.PositionType</a>}</span> <b>type</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item70'
+									>
+										<div class="fixedFont heading" id="setSize">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>setSize</b>(size)
+										</div>
+										
+										<div class="description">
+											Changes the size that is widget's size
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{<a href="../symbols/cc.Size.html">cc.Size</a>}</span> <b>size</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item71'
+									>
+										<div class="fixedFont heading" id="setSizePercent">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>setSizePercent</b>(percent)
+										</div>
+										
+										<div class="description">
+											Changes the percent that is widget's percent size
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{<a href="../symbols/cc.Point.html">cc.Point</a>}</span> <b>percent</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item72'
+									>
+										<div class="fixedFont heading" id="setSizeType">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>setSizeType</b>(type)
+										</div>
+										
+										<div class="description">
+											Changes the size type of widget.
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{<a href="../symbols/ccs.html#.SizeType">ccs.SizeType</a>}</span> <b>type</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item73'
+									>
+										<div class="fixedFont heading" id="setTouchEnabled">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>setTouchEnabled</b>(enable)
+										</div>
+										
+										<div class="description">
+											Sets whether the widget is touch enabled
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<b>enable</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item74'
+									>
+										<div class="fixedFont heading" id="setUpdateEnabled">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>setUpdateEnabled</b>(enable)
+										</div>
+										
+										<div class="description">
+											Schedules the "update" method.
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<b>enable</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item75'
+									>
+										<div class="fixedFont heading" id="updateSizeAndPosition">
+											<span class='lighter'>
+											
+											</span>
+											
+											
+											
+											<b>updateSizeAndPosition</b>()
+										</div>
+										
+										<div class="description">
+											update size and position
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+										
+									</li>
+								
+							</ul>
+						</div>
+					</div>
+				</section>
+			
+			
+	<!--
+	#### EVENT DETAILS
+	-->		
+			
+		</article>
+	</div>
+</div>
+
+		<script type="text/javascript">
+			wbos.CssTools.MediaQueryFallBack.LoadCss('../css/screen.css', '../css/handheld.css', 660);
+			codeview.classFilter.Init();
+
+
+
+            //class tree by Hao Wu
+            var theList = document.getElementById("ClassList");
+            var child, parent;
+            for(var i=0; i < theList.children.length; i++)
+            {
+                child = theList.children[i];
+                extendedFrom = child.getAttribute('extends');
+                if(extendedFrom)
+                {
+                    parent = document.querySelector("[self='"+extendedFrom+"']");
+                    if(parent)
+                    {
+                        if(!parent.ul)
+                        {
+                            var ul = document.createElement('ul');
+                            //ul.style.marginLeft = "0";
+                            parent.appendChild(ul);
+                            parent.ul = ul;
+                        }
+                        parent.ul.appendChild(child);
+                        //console.log(child.getAttribute('self')+" extends "+ extendedFrom);
+                        i--;
+                    }
+                }
+            }
+
+            //expandable list
+            /*
+
+             CollapsibleLists.js
+
+             An object allowing lists to dynamically expand and collapse
+
+             Created by Stephen Morley - http://code.stephenmorley.org/ - and released under
+             the terms of the CC0 1.0 Universal legal code:
+
+             http://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+             */
+
+            // create the CollapsibleLists object
+            var CollapsibleLists =
+                    new function(){
+
+                        /* Makes all lists with the class 'collapsibleList' collapsible. The
+                         * parameter is:
+                         *
+                         * doNotRecurse - true if sub-lists should not be made collapsible
+                         */
+                        this.apply = function(doNotRecurse){
+
+                            // loop over the unordered lists
+                            var uls = document.getElementsByTagName('ul');
+                            for (var index = 0; index < uls.length; index ++){
+
+                                // check whether this list should be made collapsible
+                                if (uls[index].className.match(/(^| )collapsibleList( |$)/)){
+
+                                    // make this list collapsible
+                                    this.applyTo(uls[index], true);
+
+                                    // check whether sub-lists should also be made collapsible
+                                    if (!doNotRecurse){
+
+                                        // add the collapsibleList class to the sub-lists
+                                        var subUls = uls[index].getElementsByTagName('ul');
+                                        for (var subIndex = 0; subIndex < subUls.length; subIndex ++){
+                                            subUls[subIndex].className += ' collapsibleList';
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+
+                        };
+
+                        /* Makes the specified list collapsible. The parameters are:
+                         *
+                         * node         - the list element
+                         * doNotRecurse - true if sub-lists should not be made collapsible
+                         */
+                        this.applyTo = function(node, doNotRecurse){
+
+                            // loop over the list items within this node
+                            var lis = node.getElementsByTagName('li');
+                            for (var index = 0; index < lis.length; index ++){
+
+                                // check whether this list item should be collapsible
+                                if (!doNotRecurse || node == lis[index].parentNode){
+
+                                    // prevent text from being selected unintentionally
+                                    if (lis[index].addEventListener){
+                                        lis[index].addEventListener(
+                                                'mousedown', function (e){ e.preventDefault(); }, false);
+                                    }else{
+                                        lis[index].attachEvent(
+                                                'onselectstart', function(){ event.returnValue = false; });
+                                    }
+
+                                    // add the click listener
+                                    if (lis[index].addEventListener){
+                                        lis[index].addEventListener(
+                                                'click', createClickListener(lis[index]), false);
+                                    }else{
+                                        lis[index].attachEvent(
+                                                'onclick', createClickListener(lis[index]));
+                                    }
+
+                                    // close the unordered lists within this list item
+                                    toggle(lis[index]);
+
+                                }
+
+                            }
+                            prettify(node);
+                        };
+
+                        /* Returns a function that toggles the display status of any unordered
+                         * list elements within the specified node. The parameter is:
+                         *
+                         * node - the node containing the unordered list elements
+                         */
+                        function createClickListener(node){
+
+                            // return the function
+                            return function(e){
+
+                                // ensure the event object is defined
+                                if (!e) e = window.event;
+
+                                // find the list item containing the target of the event
+                                var li = (e.target ? e.target : e.srcElement);
+                                while (li.nodeName != 'LI') li = li.parentNode;
+
+                                // toggle the state of the node if it was the target of the event
+                                if (li == node) toggle(node);
+
+                            };
+
+                        }
+
+                        /* Opens or closes the unordered list elements directly within the
+                         * specified node. The parameter is:
+                         *
+                         * node - the node containing the unordered list elements
+                         */
+                        function toggle(node){
+
+                            // determine whether to open or close the unordered lists
+                            var open = node.className.match(/(^| )collapsibleListClosed( |$)/);
+
+                            // loop over the unordered list elements with the node
+                            var uls = node.getElementsByTagName('ul');
+                            for (var index = 0; index < uls.length; index ++){
+
+                                // find the parent list item of this unordered list
+                                var li = uls[index];
+                                while (li.nodeName != 'LI') li = li.parentNode;
+
+                                // style the unordered list if it is directly within this node
+                                if (li == node) uls[index].style.display = (open ? 'block' : 'none');
+
+                            }
+
+                            // remove the current class from the node
+                            node.className =
+                                    node.className.replace(
+                                            /(^| )collapsibleList(Open|Closed)( |$)/, '');
+
+                            // if the node contains unordered lists, set its class
+                            if (uls.length > 0){
+                                node.className += ' collapsibleList' + (open ? 'Open' : 'Closed');
+                            }
+                            prettify(node);
+
+                        }
+                        function prettify(node)
+                        {
+                            /*//find all last child and applie the .lastchild
+                            var test = node.querySelector('li:last-child');
+                            if(test)
+                            {
+                                if(test.className.indexOf('lastChild') == -1)
+                                {
+                                    test.className += " lastChild";
+                                    test.className.replace('contents','');
+                                }
+                            }
+                            if(node.parentNode.className == "classList")
+                            {
+                                if(node.className.indexOf('contents') == -1)
+                                {
+                                    node.className += " contents";
+                                }
+                                if(node.parentNode.lastChild == node)
+                                {
+                                    if(node.className.indexOf('lastChild') == -1)
+                                    {
+                                        node.className += " lastChild";
+                                        node.className.replace('contents', '');
+                                    }
+                                }
+
+                            }*/
+                        }
+                        //prettify(node);
+                        window.mytoggle = toggle;
+                    }();
+
+            CollapsibleLists.applyTo(document.getElementsByClassName('classList')[0]);
+            mytoggle(document.querySelector("li[self='cc.Class']"));//.className = "collapsibleListOpen";
+            //document.querySelector('.classList>li:last-child').className += " none";
+            //document.querySelector('.classList>li:last-child').className.replace('contents', '');
+            //document.querySelector('.classList>li:first-child').className += " root";
+        </script>
+	</body>
+</html>
+

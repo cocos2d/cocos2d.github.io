@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Cocos Team">
+        <link rel="canonical" href="http://cocos2d-x.org/docs/installation/Android-terminal/index.html">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>Android Command-line Setup - Cocos Documentation</title>
+
+  <link href="../../css/bootstrap-custom.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+<link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href="../../css/base.css" rel="stylesheet">
+<link href="../../css/cinder.css" rel="stylesheet">
+<link href="../../css/pg.css" rel="stylesheet">
+<link href="../../css/highlight.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-3216502-3', 'Cocos2d-x.org');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a style="padding: 12px 0px;" class="navbar-brand" href="../../index.html">Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../index.html">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Manual Installations</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../A/index.html">Prerequisites</a>
+  </li>
+  
+
+          
+              
+  
+  <li class="active">
+      <a href="index.html">Android Command-line Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../Android-VisualStudio/index.html">Android Visual Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../Android-Studio/index.html">Android Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../Android-Eclipse/index.html">Android Eclipse Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../iOS/index.html">IOS and OSX Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../Linux/index.html">Linux Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../Tizen/index.html">Tizen Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../Windows/index.html">Windows Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../Windows-Phone/index.html">Windows Phone Setup</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Programmers Guide</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../programmers-guide/about/index.html">About Cocos2d-x</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../programmers-guide/basic_concepts/index.html">Basic Concepts</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../programmers-guide/sprites/index.html">Sprites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../programmers-guide/actions/index.html">Actions</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../programmers-guide/scenes/index.html">Scenes</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../programmers-guide/ui_components/index.html">UI</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../programmers-guide/other_node_types/index.html">Other Node Types</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../programmers-guide/event_dispatch/index.html">Event Dispatch</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../programmers-guide/3d/index.html">3D</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../programmers-guide/scripting/index.html">Scripting</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../programmers-guide/physics/index.html">Physics</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../programmers-guide/audio/index.html">Audio</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../programmers-guide/vr/index.html">VR</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../programmers-guide/advanced_topics/index.html">Advanced Topics</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Editors & Tools</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../editors_and_tools/cocosCLTool/index.html">Command-line tool</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../editors_and_tools/creator/index.html">Cocos Creator</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+  
+  <li >
+      <a href="../../editors_and_tools/cocos/index.html">Cocos Launcher</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Services</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../services/sdkbox/index.html">SDKBOX</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Tutorials</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../tutorials/javascript/javascript/index.html">Parkour Game Tutorials for Cocos2d-JS</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+  <li >
+      <a href="../../api-ref/index.html">API Reference</a>
+  </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Deprecated</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../deprecated/studio/index.html">Cocos Studio</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                        </ul>
+                    </li>
+                
+                
+
+                <!-- new add for language button -->
+                <!--<li>
+                    <a href="http://sdkbox-doc.github.io/zh/">中文</a>
+                </li>-->
+
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <!-- 
+                    <li >
+                        <a rel="next" href="../A/index.html">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../Android-VisualStudio/index.html">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                 -->
+                
+                    <li>
+                        <a href="https://github.com/chukong/cocos-docs">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+              
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+      
+        
+          <li class="main active"><a href="#android-with-command-line-installation-and-setup">Android with Command-line Installation and Setup</a></li>
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#environment-requirements">Environment Requirements</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#starting-decisions">Starting decisions</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#prerequisites">Prerequisites</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#os-x-instructions">OS X Instructions</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#starting-a-new-project">Starting a new project</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#how-to-deploy-it-on-your-android-phone-via-command-line">How to deploy it on your Android phone via command line</a></li>
+              
+
+          
+
+        
+      
+    
+    </ul>
+</div></div>
+              
+                <div class="col-md-9" role="main">
+
+<!-- bread crumb trail -->
+<ol class="breadcrumb">
+<li><a href="../../index.html">Docs</a></li>
+
+  
+    
+      <li>Contents</li>
+    
+  
+    
+      <li>Manual Installations</li>
+    
+  
+
+<li>Android Command-line Setup</li>
+</ol>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../A/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../Android-VisualStudio/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+
+
+<!-- we can put this here if we want it on all content pages, but we don't at this point -->
+<!--<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>-->
+    <!--<li><a href="#" id="tab-lua">Lua</a></li>-->
+  <!--</ul>
+</div>-->
+
+<h1 id="android-with-command-line-installation-and-setup">Android with Command-line Installation and Setup</h1>
+<h2 id="environment-requirements">Environment Requirements</h2>
+<p>A supported environment. See <strong><a href="../A/index.html">Installation Prerequisites</a></strong></p>
+<h2 id="starting-decisions">Starting decisions</h2>
+<p>Android development is a complicated beast. Not only are there several development 
+environment options, each also requires several dependencies. These all need to be 
+working before you can attempt to build a Cocos2d-x project. Read these steps <strong>a few</strong>
+times and take a few minutes to think about what workflow best suites you.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before we even talk about Cocos2d-x specific tasks, you need a working Android
+environment. This includes:</p>
+<ul>
+<li>
+<p>JDK/SDK 1.6+ <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a></p>
+</li>
+<li>
+<p>Android NDK <a href="https://developer.android.com/tools/sdk/ndk/index.html">https://developer.android.com/tools/sdk/ndk/index.html</a></p>
+</li>
+<li>
+<p>Apache Ant <a href="http://ant.apache.org/bindownload.cgi">http://ant.apache.org/bindownload.cgi</a></p>
+</li>
+<li>
+<p>Python 2.7.5 <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a> <strong>NOT PYTHON 3</strong></p>
+</li>
+</ul>
+<p>Your system may already have some of these items. Download the items that you need 
+to inorder to have a complete environment. Nothing on this list can be missing.</p>
+<h2 id="os-x-instructions">OS X Instructions</h2>
+<h3 id="python">Python</h3>
+<p>OS X systems come with <strong>Python</strong> installed by default. Verify that your system
+has <strong>Python</strong> and ensusre that it is a version <strong>less than 3</strong>. From <em>Terminal.app</em> 
+or <em>iTerm 2</em> execute the following:</p>
+<pre><code class="sh">&gt; python --version
+</code></pre>
+
+<p>If you see output, such as:</p>
+<pre><code class="sh">Python 2.7.10
+</code></pre>
+
+<p>You are good to go. If you see anything else you may need to install Python. 
+Use the link above. <strong>You cannot move on in this document until this step is working.</strong></p>
+<h3 id="java">JAVA</h3>
+<p>OS X systems usually <em>do not</em> come with JAVA installed. It is necessary to download and
+install it using the link above. Make sure that you install the <strong>JDK</strong>. It is not enough
+to just install the <strong>JRE</strong>.</p>
+<p><img alt="" src="../Android-terminal-img/osx-java.png" title="" /></p>
+<p>Once installed, it is necessary to set <strong>JAVA_HOME</strong> in your <strong>.bash_profile</strong>. Example:</p>
+<pre><code class="sh">export JAVA_HOME=$&quot;(/usr/libexec/java_home -v 1.8)&quot;
+</code></pre>
+
+<p>Once you are done with this step, <strong>re-source</strong> your <strong>.bash_profile</strong>: <code>source ~/.bash_profile</code>.
+Now you can test that <strong>JAVA</strong> is available on your system:</p>
+<pre><code class="sh">&gt; java -v
+</code></pre>
+
+<p>You should see some version info as output. Example:</p>
+<pre><code class="sh">java version &quot;1.8.0_111&quot;
+Java(TM) SE Runtime Environment (build 1.8.0_111-b14)
+Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode)
+</code></pre>
+
+<p>If you see any of the following types of errors, the <strong>JDK</strong> is either not installed
+or is not accessible. Verify you have set <strong>JAVA_HOME</strong>. Example errors:</p>
+<pre><code class="sh">Unable to find any JVMs matching version &quot;(null)&quot;.
+Matching Java Virtual Machines (0):
+
+No Java runtime present, requesting install.
+
+Unable to find any JVMs matching version &quot;(null)&quot;.
+No Java runtime present, try --request to install.
+</code></pre>
+
+<p>If you are unsure, you can always execute <code>/usr/libexec/java_home -V</code> for a listing
+of <strong>JAVA JDKs</strong> on your system. Example:</p>
+<pre><code class="sh">&gt; usr/libexec/java_home -V
+Matching Java Virtual Machines (1):
+    1.8.0_111, x86_64:  &quot;Java SE 8&quot; /Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home
+
+/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home
+</code></pre>
+
+<h3 id="apache-ant">Apache Ant</h3>
+<p><strong>Apache Ant</strong> is another required tool. It is not installed on an OSX system by
+default. It is neccessary to download it using the link above. Using a <strong>binary</strong>
+distribution is fine. There is no need to download the source and compile by hand
+unless this is your preferred method.</p>
+<p>After downloading, unzip the <strong>Apache Ant</strong> archive. You only need to place the 
+<strong>Apache Ant</strong> folder someplace in your <strong>$PATH</strong> and then set an <strong>$ANT_ROOT</strong>
+environment variable in your <strong>.bash_profile</strong>. Exactly the same way <strong>$JAVA_HOME</strong> 
+was added above. Example, if your <strong>Apache ANT</strong> folder is named <strong>apache-ant-1.10.0</strong>:</p>
+<pre><code class="sh">export ANT_ROOT=/Applications/Cocos/tools/ant/bin
+export PATH=$ANT_ROOT:$PATH
+</code></pre>
+
+<h3 id="android-ndk-and-sdk">Android NDK and SDK</h3>
+<p>Obviously, you need the <strong>Android NDK and SDK</strong> to do Android development. These 
+are not installed on an OSX system by default. It is neccessary to download it 
+using the link above. </p>
+<h4 id="brew">Brew</h4>
+<p>Using <a href="http://brew.sh/"><strong>brew</strong></a> is one option for installing the <strong>Android NDK and SDK</strong>.
+Installing with <strong>brew</strong> makes the installation simple. A single command, a few 
+environment variables and you are done. Example:</p>
+<pre><code class="sh">brew install android-ndk android-sdk
+</code></pre>
+
+<p>This will take a while to complete. Once it is done, you need to set a few 
+envorinment variables in your <strong>.bash_profile</strong>.</p>
+<pre><code class="sh">export NDK_ROOT=/usr/local/Cellar/android-ndk/r12b
+export PATH=$NDK_ROOT:$PATH
+export ANDROID_HOME=/usr/local/opt/android-sdk
+export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/24.4.1_1
+export PATH=$ANDROID_SDK_ROOT:$PATH
+export PATH=$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools:$PATH
+</code></pre>
+
+<p>Make sure to re-source your <strong>.bash_profile</strong>!</p>
+<h4 id="installing-manually">Installing manually.</h4>
+<p>If you choose not to use <strong>brew</strong> you can still download and install the
+<strong>Android NDK and SDK</strong> by hand. After downloading, set the same environment
+variables as above, but using your custom paths. For example, if you downloaded
+the <strong>Android NDK and SDK</strong> to <strong>~/Projects/</strong>:</p>
+<pre><code class="sh">export NDK_ROOT=/Users/username/Projects/android-ndk/r12b
+export PATH=$NDK_ROOT:$PATH
+export ANDROID_HOME=/Users/username/Projects/android-sdk
+export ANDROID_SDK_ROOT=/Users/username/Projects/android-sdk/24.4.1_1
+export PATH=$ANDROID_SDK_ROOT:$PATH
+export PATH=$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools:$PATH
+</code></pre>
+
+<h4 id="installing-additional-android-sdks">Installing additional Android SDKs</h4>
+<p>Depending upon what Android OS versions you wish to target, you may need to 
+install additional <strong>Android SDKs</strong> to cover those OS versions. As <strong>Android SDKs</strong>
+evolve, sometimes older OS suppot is dropped. This means that your game might
+not be able to target older devices. This is a personal decision on the part of
+the game developer.</p>
+<p>If you wish to install additional <strong>Android SDKs</strong>, use the built in <strong>android</strong>
+GUI tool to install whatever you need. Example:</p>
+<pre><code class="sh">&gt; android
+</code></pre>
+
+<p><img alt="" src="../Android-terminal-img/osx-android-sdk-manager.png" title="" /></p>
+<p>It is only necessary to install the <strong>Android SDK Tools</strong> for each release you
+want installed on your system. It is always a good idea to update the <strong>Android SDK Platform-Tools</strong>
+when a new version becomes available.</p>
+<p><img alt="" src="../Android-terminal-img/osx-android-sdk-manager-tools.png" title="" /></p>
+<h3 id="cocos2d-x">Cocos2d-x</h3>
+<p>Installing <strong>Cocos2d-x</strong> is probably the easiest part of this process. You can 
+get started with <strong>Cocos2d-x</strong> by either downloading a self-contained 
+<strong>.zip</strong> from the <a href="http://cocos2d-x.org/download">website</a> or by cloning our 
+<a href="https://github.com/cocos2d/cocos2d-x">GitHub Repo</a>. Pick what works for you.
+<strong>There is no need to do both.</strong></p>
+<h4 id="by-downloading-a-zip-archive">By downloading a .zip archive</h4>
+<p>Download Cocos2d-x and unzip it. (maybe: <strong>~/</strong> or <strong>~/Projects</strong> )</p>
+<p><img alt="" src="../Android-terminal-img/unzip.png" title="" /></p>
+<h4 id="cloning-from-github">Cloning from GitHub</h4>
+<p>Use the following commands to clone our GitHub repo and get your environment setup.
+If you are not familar with GitHub's workflow, <a href="https://guides.github.com/activities/hello-world/">learn it</a> or download 
+using the step above, <strong>By downloading a .zip archive</strong>.</p>
+<pre><code class="sh">cd &lt;to where you want to clone this repo&gt;
+
+git clone git@github.com:cocos2d/cocos2d-x.git
+
+git submodule update --init
+
+git submodule update
+
+./download-deps.py
+</code></pre>
+
+<h3 id="making-sure-you-are-ready-to-create-the-next-hit-game">Making sure you are ready to create the next hit game!</h3>
+<p>Next, you are ready to build <strong>cpp-tests</strong>. It is a good idea to perform this 
+step before starting a new project. It ensures that your environment is setup 
+completely. If anything fails during this step, it is important to read the 
+error message carefully and re-visit the step above that is related to the
+error message you see. </p>
+<p>Change your directory to the where the <strong>android-build.py</strong> script is located.
+(usually <strong>Cocos2d-x/build</strong>). To see what targets are available. run:</p>
+<pre><code class="sh">&gt; android list targets
+</code></pre>
+
+<p><img alt="" src="../Android-terminal-img/osx-android-list-targets.png" title="" /></p>
+<p>Now you can execute the command to build:</p>
+<pre><code class="sh">&gt; python android-build.py -p &lt;target # from above&gt; cpp-tests
+</code></pre>
+
+<p>Everything should build successfully!</p>
+<p><img alt="" src="../Android-terminal-img/buildsuccess.png" title="" /></p>
+<h2 id="starting-a-new-project">Starting a new project</h2>
+<p>Once everything above works, you can start a new project! To do this, read our
+document on the <strong><a href="../../editors_and_tools/cocosCLTool/">Cocos Command-line tool</a></strong>.</p>
+<h2 id="how-to-deploy-it-on-your-android-phone-via-command-line">How to deploy it on your Android phone via command line</h2>
+<p>Enable <strong><a href="http://stackoverflow.com/questions/16707137/how-to-find-and-turn-on-usb-debugging-mode-on-nexus-4">USB Debugging</a></strong>
+on your phone and then connect your phone via USB.</p>
+<p>Change your directory to the the <strong>bin</strong> directory of your android project</p>
+<p>Use <code>adb</code> to install the <strong>.apk</strong> to your Android phone by executing:</p>
+<pre><code class="sh">&gt; adb install MyGame-debug.apk
+</code></pre>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../A/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../Android-VisualStudio/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+</div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <p style="text-align:center">Copyright (c) 2014-2016 Chukong Technologies Inc.</p>
+            
+           <!-- <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>-->
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+
+        <!-- PG languages -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script>
+        $(function() {
+          var key = "Cocos2d-x_pg_lang";
+          var switch_lang = function(l) {
+              $('.langs li a').removeClass('selected');
+              $('#'+l).addClass('selected');
+              $('.tab_content').hide();
+              $('.'+l).show();
+              $.cookie(key, l);
+          }
+          $('.langs li a').click(function() {switch_lang(this.id);return false;});
+          var c = $.cookie(key);
+          if (typeof c == 'undefined') c='tab-cpp';
+          switch_lang(c);
+        });
+        </script>
+
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/Cocos2d-html5-min.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chipmunk.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d-jsb.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/main.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/AnimationLayer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/BackgroundLayer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Coin.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/GameOverLayer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/PlayScene.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Rock.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/SimpleRecognizer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/StatusLayer.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/globals.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/myApp.js"></script>
+        <script src="../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/resource.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

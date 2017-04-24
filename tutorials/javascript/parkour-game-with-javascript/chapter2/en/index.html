@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Cocos Team">
+        <link rel="canonical" href="http://cocos2d-x.org/docs/tutorials/javascript/parkour-game-with-javascript/chapter2/en/index.html">
+        <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+
+	<title>_Chapter2 - Cocos Documentation</title>
+
+  <link href="../../../../../css/bootstrap-custom.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+<link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href="../../../../../css/base.css" rel="stylesheet">
+<link href="../../../../../css/cinder.css" rel="stylesheet">
+<link href="../../../../../css/pg.css" rel="stylesheet">
+<link href="../../../../../css/highlight.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-3216502-3', 'Cocos2d-x.org');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a style="padding: 12px 0px;" class="navbar-brand" href="../../../../../index.html">Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../../../../index.html">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Manual Installations</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/A/index.html">Prerequisites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Android-terminal/index.html">Android Command-line Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Android-VisualStudio/index.html">Android Visual Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Android-Studio/index.html">Android Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Android-Eclipse/index.html">Android Eclipse Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/iOS/index.html">IOS and OSX Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Linux/index.html">Linux Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Tizen/index.html">Tizen Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Windows/index.html">Windows Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Windows-Phone/index.html">Windows Phone Setup</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Programmers Guide</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/about/index.html">About Cocos2d-x</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/basic_concepts/index.html">Basic Concepts</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/sprites/index.html">Sprites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/actions/index.html">Actions</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/scenes/index.html">Scenes</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/ui_components/index.html">UI</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/other_node_types/index.html">Other Node Types</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/event_dispatch/index.html">Event Dispatch</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/3d/index.html">3D</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/scripting/index.html">Scripting</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/physics/index.html">Physics</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/audio/index.html">Audio</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/vr/index.html">VR</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/advanced_topics/index.html">Advanced Topics</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Editors & Tools</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../editors_and_tools/cocosCLTool/index.html">Command-line tool</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../editors_and_tools/creator/index.html">Cocos Creator</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+  
+  <li >
+      <a href="../../../../../editors_and_tools/cocos/index.html">Cocos Launcher</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Services</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../services/sdkbox/index.html">SDKBOX</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Tutorials</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../javascript/index.html">Parkour Game Tutorials for Cocos2d-JS</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+  <li >
+      <a href="../../../../../api-ref/index.html">API Reference</a>
+  </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Deprecated</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../deprecated/studio/index.html">Cocos Studio</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                        </ul>
+                    </li>
+                
+                
+
+                <!-- new add for language button -->
+                <!--<li>
+                    <a href="http://sdkbox-doc.github.io/zh/">中文</a>
+                </li>-->
+
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <!-- 
+                    <li >
+                        <a rel="next" href="../../chapter1/en/index.html">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../chapter3/en/index.html">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                 -->
+                
+                    <li>
+                        <a href="https://github.com/chukong/cocos-docs">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+              
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+      
+        
+          <li class="main active"><a href="#hello-world-cocos2d-html5">Hello World Cocos2d-HTML5</a></li>
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#overview-of-cocos2d-html5-directory-structures">Overview of Cocos2d-html5 directory structures</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#taking-a-look-at-the-built-in-examples">Taking a look at the built-in examples</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#setting-up-your-first-hello-world-project">Setting up your first "Hello World" Project</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#summary">Summary</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#where-to-go-from-here">Where to go from here?</a></li>
+              
+
+          
+
+        
+      
+    
+    </ul>
+</div></div>
+              
+                <div class="col-md-9" role="main">
+
+<!-- bread crumb trail -->
+<ol class="breadcrumb">
+<li><a href="../../../../../index.html">Docs</a></li>
+
+  
+    
+      <li>Contents</li>
+    
+  
+    
+      <li>Tutorials</li>
+    
+  
+
+<li>_Chapter2</li>
+</ol>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../../chapter1/en/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../../chapter3/en/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+
+
+<!-- we can put this here if we want it on all content pages, but we don't at this point -->
+<!--<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>-->
+    <!--<li><a href="#" id="tab-lua">Lua</a></li>-->
+  <!--</ul>
+</div>-->
+
+<h1 id="hello-world-cocos2d-html5">Hello World Cocos2d-HTML5</h1>
+<p>In the tutorial, I will show you how to setup a new Cocos2d-html5 project from scratch. Before that, I want to
+give you a brief description of Cocos2d-html5's directory structures.</p>
+<h2 id="overview-of-cocos2d-html5-directory-structures">Overview of Cocos2d-html5 directory structures</h2>
+<p>Here is the Cocos2d-html5 directory structure:</p>
+<p><strong>Figure1</strong></p>
+<p><img alt="directory" src="../res/directorystructure.png" /></p>
+<h3 id="understanding-the-directory-structures">Understanding the directory structures</h3>
+<p>The directory structures can be separated into four parts:</p>
+<h4 id="part1-engine-related-folders">Part1: engine related folders</h4>
+<ul>
+<li>
+<p>The <strong>Cocos2d</strong> directory holds all the core engine files. The main components of cocos2d-html5 are implemented in these js files.</p>
+</li>
+<li>
+<p>The <strong>CocosDenshion</strong> directory holds all the audio engine related files.</p>
+</li>
+<li>
+<p>The <strong>extension</strong> directory holds some useful extension modules, such as EditBox, CocosBuilder Reader and CocoStudio Reader, etc. </p>
+</li>
+<li>
+<p>The folder <strong>box2d</strong> and <strong>chipmunk</strong> are third party physics engine.</p>
+</li>
+</ul>
+<h4 id="part2-testssample-games-and-template">Part2: tests,sample games and template</h4>
+<ul>
+<li>
+<p>The folder <strong>HelloHTML5World</strong> contains a simple <strong>Hello World</strong> sample. When you are new to Cocos2d-htlm5, you may want to give it a try. It is the minimax skeleton of a full Cocos2d-html5 app.</p>
+</li>
+<li>
+<p>The <strong>template</strong> is more or less the same as <strong>HelloHTML5World</strong> except for that <strong>template</strong> is more clean. <strong>Template</strong>  folder is where you should start from. At the end of part of this tutorial, we will create a new project based on this folder.</p>
+</li>
+<li>
+<p>The <strong>samples</strong> directory, it contains all the <strong>tests</strong> of Cocos2d-html5. It also includes some playable sample games. All the tests and games can be run in iOS and android with JavaScript binding. </p>
+</li>
+</ul>
+<h4 id="part3-miscellaneous">Part3: miscellaneous</h4>
+<ul>
+<li>
+<p>The <strong>license</strong> directory includes all the license files in this project, as we mentioned before, the license of Cocos2d-html5 is MIT,you can refer to the folder to get more details about the licenses of Cocos2d-html5.</p>
+</li>
+<li>
+<p>The <strong>tools</strong> directory includes JS Doc tool and closure compiler. The <strong>template</strong> folder contains a build.xml which is a config file for closure compiler, you can package your game into one single file via Ant. </p>
+</li>
+</ul>
+<h2 id="taking-a-look-at-the-built-in-examples">Taking a look at the built-in examples</h2>
+<p>When you have downloaded and configured your Cocos2d-html5 development environment successfully. It is highly recommended  to take a look at the built-in examples. It covers over 90% features of Cocos2d-html5. And it is also the most valuable learning resource that you can get currently. </p>
+<p>When you debug the index.html file within WebStorm, it will open the index.html file in Chrome and you will get the following result:</p>
+<p><strong>Figure 2</strong></p>
+<p><img alt="index" src="../res/index.png" /></p>
+<p>As we can see, there are many demos and sample games. If you are curious about what Cocos2d-html5 can do , prepare a coffee, sit down and take a look at the built-in sample games. </p>
+<h3 id="taking-a-look-at-the-tests">Taking a Look at the Tests</h3>
+<p>In Figure 2, when you open the link named “Test cases”. It will show you the entire tests built-in with Cocos2d-html5. Here is the screenshot:</p>
+<p><strong>Figure 3</strong></p>
+<p><img alt="tests" src="../res/tests.png" /></p>
+<p>The tests are the best learning resources for you. The tests show nearly every features of Cocos2d-html5. You can tweak these tests files and you will get feedback immediately after refresh browser. It is better to have a taste of Cocos2d-html5 this way than reading a huge documentation at the very beginning.</p>
+<h3 id="taking-a-look-at-the-sample-games">Taking a Look at the Sample Games</h3>
+<p>There are 2 types of full game samples built-in with Cocos2d-html5. All of the source code are completely free and open to you. Here is a brief introduction about these sample games</p>
+<h4 id="moonwarrior">MoonWarrior</h4>
+<p>The first game I would like to show you is MoonWarrior. It is a vertical shooting game. In this game sample, many useful game techniques are applied, including tiled-map, animation, parallax background etc. Here is the screenshot, you can dive into the source code for more information:</p>
+<p><strong>Figure 4</strong></p>
+<p><img alt="moonwarrior" src="../res/moonwarrior.png" /></p>
+<h4 id="fruit-attack">Fruit Attack</h4>
+<p>This is a matching game. You can swap the position of the nearby fruits, if there are three or more  fruits with same type in vertical direction or horizontal direction. You are getting a match. And the same fruits will be cleared.  Here is the screenshot:</p>
+<p><strong>Figure 5</strong></p>
+<p><img alt="fruitattack" src="../res/fruitaatack.png" /></p>
+<p>There are also other type games, you could try it by yourself.</p>
+<h2 id="setting-up-your-first-hello-world-project">Setting up your first "Hello World" Project</h2>
+<p>Finally, we are reaching the final important part of this tutorial. Here I wil not really create a "Hello World" project. I will take Parkour game as a example. In the future, all of these epic tutorials are about how to make a Parkour game with Cocos2d-html5.</p>
+<p>Can't help waiting? Let's do it right now!</p>
+<h3 id="making-parkour-project-skeleton">Making Parkour project skeleton</h3>
+<p>As we talked before, there is a <strong>template</strong> folder under Cocos2d-html5 root directory. Right click the <strong>template</strong> folder and choose <strong>Duplicate</strong> to create a copy of it. Then modify the <strong>Template Copy</strong> folder to <strong>Parkour</strong>.</p>
+<p>Now open your WebStorm and there will be a new directory in the previous Project Root. Now the project navigator looks like this:</p>
+<p><strong>Figure 6</strong></p>
+<p><img alt="newnavigator" src="../res/newnavigator.png" /></p>
+<p>Right click the <strong>index.html</strong> in WebStorm and choose <strong>Debug 'index.html(1)'</strong>. It will open your Chrome automatically and you have successfully setted up a new project. Cheers! The browser address is </p>
+<pre><code>http://localhost:63342/Cocos2d-html5/Parkour/index.html.
+</code></pre>
+
+<p><strong>Note:</strong></p>
+<p>If the "Hello World" png file is not properly displayed in your browser. You can open main.js under Parkour and modify the following code line:</p>
+<pre><code>   cc.EGLView.getInstance().setDesignResolutionSize(designSize.width, designSize.height, cc.RESOLUTION_POLICY.NO_BORDER);
+</code></pre>
+
+<p>to</p>
+<pre><code>   cc.EGLView.getInstance().setDesignResolutionSize(designSize.width, designSize.height, cc.RESOLUTION_POLICY.SHOW_ALL);
+</code></pre>
+
+<p>Why should we do this little change? What's the magic? Haha, It is a very long story of Cocos2d-x's Multiple Resolution Adaption. If you want to know more about the mechanism of this topic, refer to <a href="http://cocos2d-x.org/wiki/Multi_resolution_support">this link</a> for more information. We will cover this topic in the future tutorials.</p>
+<p>After this modification, save and run, it gives us the classic <strong>Hello World</strong> screenshot:</p>
+<p><strong>Figure 7</strong></p>
+<p><img alt="helloworld" src="../res/helloworld.png" /></p>
+<h3 id="sample-game-template-code-analysis">Sample game template code analysis</h3>
+<p>Since the <strong>template</strong> brings us so many things, but we even don't know anything about it.</p>
+<p>Such as what is the main entry of the template program. How are  these files organized? What does each file do in the sample program? In this section, I will give you some explanation of these questions.</p>
+<h4 id="taking-a-look-at-all-the-files-of-the-project">Taking a look at all the files of the project</h4>
+<p>At first, let take a look at all the files and the directory structure:</p>
+<p><strong> Figure 8</strong></p>
+<p><img alt="projectstructure" src="../res/projectstructure.png" /></p>
+<p>In the Figure 8, we can see that:</p>
+<ul>
+<li>
+<p>the <strong>res</strong> directory. It contains all the resource filed needed by our project. Now it only contains some sample pictures. But if you want to add some meta files of your game or some awesome game music files. You should also put them under this folder. You should choose a proper name for each file. You may notice that there are two folders named <strong>HD</strong> and <strong>Normal</strong> which have the exactly same file name but with different resolutions. They are for <strong>Multiple resolutions adaption</strong>. You can just skip it now. In the Figure 7, there is a HelloWrold picture shown on your screen which is the HelloWorld.png. You can double click to view the actual image file in the disk.</p>
+</li>
+<li>
+<p>The <strong>src</strong> folder. It contains all of your actual game logic code. If there are hundreds of JavaScript source files, you'd better organized them into small chunks using subfolders. Now our template has two JavaScript source files. The <strong>myApp.js</strong> contains the first scene's code of our sample. The <strong>resource.js</strong> defines some global variables of the resource.</p>
+</li>
+<li>
+<p>The <strong>build.xm</strong> file is used for package all of your game source code into one compact file. We have talked about it before.</p>
+</li>
+<li>
+<p>The <strong>index.html</strong> file is the entry point of a HTML5 based web application. It is a HTML5 compatible format. It defines some meta data like setting viewpoint and fullscreen parameters.</p>
+</li>
+<li>
+<p>The <strong>ccos2d-jsb.js</strong> file is a bridge file between Cocos2d-html5 and Cocos2d-x JavaScript bindings. You can safety leave it out currently.</p>
+</li>
+<li>
+<p>The <strong>cocos2d.js</strong> file is the main entry point of our js engine. It uses a auto execution anonymous function to start our game engine.</p>
+</li>
+<li>
+<p>The <strong>main.js</strong> is called by Cocos2d-html5 framework after the cocos2d.js is loaded. It is 
+where the main function like c/c++ language lies in. The <strong>applicationDidFinishLanching</strong> function will define the screen orientation, color format and resource load strategy. It is also the place to create your first game scene and show it on the browser.</p>
+</li>
+</ul>
+<p>Ok, you have known what these files and folder are for. Now it's time to understand the source code and the execution path.</p>
+<h4 id="analysis-of-the-projects-execution-path">Analysis of the project's execution path</h4>
+<p>It is very important to know a program's execution path. Here is a picture shows every Cocos2d-html5 project's execution path:</p>
+<p><strong>Figure 9</strong></p>
+<p><img alt="exepath" src="../res/execute-path.png" /></p>
+<p>From Figure 9, we can see that our program is loaded into browser from index.html. Then it moves to Cocos2d.js. In this file, the code logic diverse due to the following config:</p>
+<pre><code> var c = {
+        COCOS2D_DEBUG:2, 
+        box2d:false,
+        chipmunk:false,
+        showFPS:true,
+        loadExtension:false,
+        frameRate:60,
+        renderMode:0,       
+        tag:'gameCanvas',
+        engineDir:'../cocos2d/',
+        //SingleEngineFile:'',
+        appFiles:[
+            'src/resource.js',
+            'src/myApp.js'
+        ]
+    };
+</code></pre>
+
+<p>Loot at the code piece, there is a object property named <strong>engineDir</strong> and a commented object property named <strong>SingleEngineFile</strong> which are the key point to decide the execution path of the following program. In the default case, we have specify the engineDir and the execution path will go to <strong>N</strong> direction in Figure 9. Thus the main.js will be loaded right after the engine files and before the files specified by <strong>appFiles</strong>. It is more clear to read the source code than reading my plain text. But the flow chart will do some favor for you to understand the process better.</p>
+<h3 id="making-some-little-tweaks-of-the-project">Making Some little tweaks of the project</h3>
+<p>As we known from the previous section, before we actually do some sort of real coding stuff. Let's make some small tweaks to get our hands dirty at first.</p>
+<h4 id="hiding-the-fps-in-the-left-corner-of-your-game-screen">Hiding the FPS in the left corner of your game screen</h4>
+<p>The section may be a little bit trivial. We can easily achieve this by modifying <strong>showFPS</strong> property to <strong>false</strong> in cocos2d.js. </p>
+<p>Here is the code:</p>
+<pre><code>var c = {
+        COCOS2D_DEBUG:2,
+        box2d:false,
+        chipmunk:false,
+        showFPS:true,
+        loadExtension:false,
+        frameRate:60,
+        renderMode:0,       
+        tag:'gameCanvas', 
+        engineDir:'../cocos2d/',
+        //SingleEngineFile:'',
+        appFiles:[
+            'src/resource.js',
+            'src/myApp.js'
+        ]
+    };
+</code></pre>
+
+<p>There are many thing we can tweak by modifying this object's property. I will give your a table of each property's intention.</p>
+<table>
+<thead>
+<tr>
+<th>property name</th>
+<th>options</th>
+<th>explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>COCOS2D_DEBUG</td>
+<td>0,1,2</td>
+<td>0 to turn debug off, 1 for basic debug, and 2 for full debug</td>
+</tr>
+<tr>
+<td>box2d</td>
+<td>true or false</td>
+<td>whether to load box2d physic engine or not in your project</td>
+</tr>
+<tr>
+<td>chipmunk</td>
+<td>true or false</td>
+<td>whether to load chipmunk physic engine or not in your project</td>
+</tr>
+<tr>
+<td>showFPS</td>
+<td>true or false</td>
+<td>toggle FPS visibility</td>
+</tr>
+<tr>
+<td>loadExtension</td>
+<td>true or false</td>
+<td>whether to load cocos2d extension library or not in your project</td>
+</tr>
+<tr>
+<td>frameRate</td>
+<td>a positive number above 24, usually 60-30</td>
+<td>adjust the frame rate of your game</td>
+</tr>
+<tr>
+<td>renderMode</td>
+<td>0,1,2</td>
+<td>Choose of RenderMode: 0(default), 1(Canvas only), 2(WebGL only)</td>
+</tr>
+<tr>
+<td>tag</td>
+<td>"gameCanvas"</td>
+<td>the dom element to run cocos2d on</td>
+</tr>
+<tr>
+<td>engineDir</td>
+<td>the engine directory related to your project</td>
+<td>specify the directory the engine code</td>
+</tr>
+<tr>
+<td>SingleEngineFile</td>
+<td>a single game js file</td>
+<td>this file can be generated by Google closure compiler</td>
+</tr>
+<tr>
+<td>appFiles</td>
+<td>a list of your game source code</td>
+<td>add your own file lists after myApp.js</td>
+</tr>
+</tbody>
+</table>
+<p>The rest of cocos2d.js  are some boilerplate code like obtaining DOM element by tag and setting up the game running environment. If you are curious about it, go ahead and dive into the source code.</p>
+<h4 id="modify-the-design-resolution-size">Modify the design resolution size</h4>
+<p>Now Cocos2d-html5 take web browser as a full screen game canvas. We don't need to manually adjust the canvas size any more. We just need to care about the design resolution size. In order to let our game to run seamlessly on iOS and Android with JavaScript binding technics. We should change the design resolution size to 480*320. Open you main.js and in function <strong>applicationDidFinishLaunching</strong> change <strong>designSize</strong> to cc.Size(480,320).</p>
+<pre><code>var designSize = cc.size(480, 320);
+</code></pre>
+
+<p>And you also should make resolution policy to <strong>SHOW_ALL</strong>:</p>
+<pre><code>        cc.EGLView.getInstance().setDesignResolutionSize(designSize.width, designSize.height, cc.RESOLUTION_POLICY.SHOW_ALL);
+</code></pre>
+
+<p>If you are curious about why  we should do this, please refer to <a href="http://cocos2d-x.org/wiki/Multi_resolution_support">this post</a> for more information.</p>
+<h2 id="summary">Summary</h2>
+<p>In this tutorial, we have talked about the directory structures and the built-in tests and sample games of cocos2d-html5. We also created our first project based on the template provided by Cocos2d-html5. In the last part, we took effort to analysis the files and the code structures of the template.</p>
+<h2 id="where-to-go-from-here">Where to go from here?</h2>
+<p>In the next tutorial, I will show you how to set up your first game main menu scene. We will do more coding with Cocos2d-html5. </p>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../../chapter1/en/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../../chapter3/en/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+</div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <p style="text-align:center">Copyright (c) 2014-2016 Chukong Technologies Inc.</p>
+            
+           <!-- <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>-->
+        </footer>
+
+        <script src="../../../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../../../js/highlight.pack.js"></script>
+        <script>var base_url = '../../../../..';</script>
+
+        <!-- PG languages -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script>
+        $(function() {
+          var key = "Cocos2d-x_pg_lang";
+          var switch_lang = function(l) {
+              $('.langs li a').removeClass('selected');
+              $('#'+l).addClass('selected');
+              $('.tab_content').hide();
+              $('.'+l).show();
+              $.cookie(key, l);
+          }
+          $('.langs li a').click(function() {switch_lang(this.id);return false;});
+          var c = $.cookie(key);
+          if (typeof c == 'undefined') c='tab-cpp';
+          switch_lang(c);
+        });
+        </script>
+
+        <script data-main="../../../../../mkdocs/js/search.js" src="../../../../../mkdocs/js/require.js"></script>
+        <script src="../../../../../js/base.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/Cocos2d-html5-min.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chipmunk.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d-jsb.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/main.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/AnimationLayer.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/BackgroundLayer.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Coin.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/GameOverLayer.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/PlayScene.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Rock.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/SimpleRecognizer.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/StatusLayer.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/globals.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/myApp.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/resource.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

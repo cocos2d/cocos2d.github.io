@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Cocos Team">
+        <link rel="canonical" href="http://cocos2d-x.org/docs/editors_and_tools/creator-chapters/getting-started/cocos2d-x-guide/index.html">
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+
+	<title>_Cocos2d-x Guide - Cocos Documentation</title>
+
+  <link href="../../../../css/bootstrap-custom.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+<link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href="../../../../css/base.css" rel="stylesheet">
+<link href="../../../../css/cinder.css" rel="stylesheet">
+<link href="../../../../css/pg.css" rel="stylesheet">
+<link href="../../../../css/highlight.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-3216502-3', 'Cocos2d-x.org');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a style="padding: 12px 0px;" class="navbar-brand" href="../../../../index.html">Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../../../index.html">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Manual Installations</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../installation/A/index.html">Prerequisites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Android-terminal/index.html">Android Command-line Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Android-VisualStudio/index.html">Android Visual Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Android-Studio/index.html">Android Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Android-Eclipse/index.html">Android Eclipse Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/iOS/index.html">IOS and OSX Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Linux/index.html">Linux Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Tizen/index.html">Tizen Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Windows/index.html">Windows Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Windows-Phone/index.html">Windows Phone Setup</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Programmers Guide</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/about/index.html">About Cocos2d-x</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/basic_concepts/index.html">Basic Concepts</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/sprites/index.html">Sprites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/actions/index.html">Actions</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/scenes/index.html">Scenes</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/ui_components/index.html">UI</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/other_node_types/index.html">Other Node Types</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/event_dispatch/index.html">Event Dispatch</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/3d/index.html">3D</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/scripting/index.html">Scripting</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/physics/index.html">Physics</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/audio/index.html">Audio</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/vr/index.html">VR</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/advanced_topics/index.html">Advanced Topics</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Editors & Tools</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../cocosCLTool/index.html">Command-line tool</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../creator/index.html">Cocos Creator</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+  
+  <li >
+      <a href="../../../cocos/index.html">Cocos Launcher</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Services</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../services/sdkbox/index.html">SDKBOX</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Tutorials</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../tutorials/javascript/javascript/index.html">Parkour Game Tutorials for Cocos2d-JS</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+  <li >
+      <a href="../../../../api-ref/index.html">API Reference</a>
+  </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Deprecated</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../deprecated/studio/index.html">Cocos Studio</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                        </ul>
+                    </li>
+                
+                
+
+                <!-- new add for language button -->
+                <!--<li>
+                    <a href="http://sdkbox-doc.github.io/zh/">中文</a>
+                </li>-->
+
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <!-- 
+                    <li >
+                        <a rel="next" href="../quick-start/index.html">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../unity-guide/index.html">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                 -->
+                
+                    <li>
+                        <a href="https://github.com/chukong/cocos-docs">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+              
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+      
+        
+          <li class="main active"><a href="#cocos2d-x-user-guide">Cocos2d-x User Guide</a></li>
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#1-typical-misconceptions">1. Typical Misconceptions</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#2-data-driven">2. Data Driven</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#3-changes-at-framework-level">3. Changes at Framework Level</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#4-next-step">4. Next step</a></li>
+              
+
+          
+
+        
+      
+    
+    </ul>
+</div></div>
+              
+                <div class="col-md-9" role="main">
+
+<!-- bread crumb trail -->
+<ol class="breadcrumb">
+<li><a href="../../../../index.html">Docs</a></li>
+
+  
+    
+      <li>Contents</li>
+    
+  
+    
+      <li>Editors & Tools</li>
+    
+  
+
+<li>_Cocos2d-x Guide</li>
+</ol>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../quick-start/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../unity-guide/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+
+
+<!-- we can put this here if we want it on all content pages, but we don't at this point -->
+<!--<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>-->
+    <!--<li><a href="#" id="tab-lua">Lua</a></li>-->
+  <!--</ul>
+</div>-->
+
+<h1 id="cocos2d-x-user-guide">Cocos2d-x User Guide</h1>
+<p>Cocos Creator is a new type of game development tool oriented towards content creation that has completely integrated the componentized edition Cocos2d-x WEB, by which you can launch games on platforms like Web, iOS, Android, Mac, Windows, etc.. Moreover, you can use it to directly launch games on Cocos Play platform, grasping the new opportunity brought by the rapid development of the channel for mobile web games. For more introductions to Cocos Creator, please refer to <a href="../introduction/index.html">Introduction</a>.</p>
+<p>The aim of this document is to introduce the users of Cocos2d-x to Cocos Creator and help them learn how to use the new editor as soon as possible.
+This document will discuss possible problems that may occur in the transition from Cocos2d-x to Cocos Creator development and offer relative solutions, which will not go deep into framework details but provide links to detailed reference documents of different parts.</p>
+<h2 id="1-typical-misconceptions">1. Typical Misconceptions</h2>
+<p>For new Cocos Creator users, some of the following typical misconceptions may occur：</p>
+<ol>
+<li><strong>Hoping to use Cocos Creator by coordinating it with Cocos2d-x</strong>：Cocos Creator, having had a complete JavaScript WEB engine internally, can work without relying on Cocos2d-x. However, if you want to launch the original edition, you still need to set up a Cocos2d-x in your computer.</li>
+<li><strong>Building an entire code framework at first and then add in game contents</strong>：Cocos Creator's workflows are content creation oriented, which is very convenient for prototype creation. You can create scenes and write logic code directly into the editor, then you can drive the game scene and run it. The following data driven chapters will introduce changes of workflows in detail</li>
+<li><strong>Directly check the API of Cocos2d-JS when coding</strong>：Cocos Creator has said to be originated from Cocos2d-JS. Their APIs have the same origin and have lots of identical parts. But with entirely new componentized frameworks, their APIs are different and not compatible with each other</li>
+<li><strong>Hoping to directly run the old Cocos2d-JS games on Cocos Creator</strong>：Their APIs are not 100% compatible; therefore, such operation is unavailable.</li>
+<li><strong>Extend functions by way of inheritance</strong>：In Cocos2d-JS, inheritance is a basic method for extending node functions. But in Cocos Creator, inheriting and extending nodes is not recommended. The node is only an entity. The logic of the game should be realized by different components and then be assembled in the node.</li>
+</ol>
+<p>The reason for mentioning these misconceptions at the beginning of this document is that we hope developers can realize that the workflows and development ideas provided by Cocos Creator are tremendously different from those of Cocos2d-x.
+For a better understanding of how to code correctly in Cocos Creator, the following two chapters will introduce the changes in workflows and API level brought by data driven in more detail.</p>
+<h2 id="2-data-driven">2. Data Driven</h2>
+<p>In Cocos2d-x, the development method is driven by code and most of the game's data is stored in the code, unless the developer has built his/her own data driven framwork.
+In the framework of Cocos Creator, all the scenes will be serialized as pure data. When running, these pure data will be used to rebuild factors like scenes, interfaces, animations and even components, etc..</p>
+<h3 id="what-is-code-driven-and-what-is-data-driven">What is code driven and what is data driven?</h3>
+<p>Why do we call Cocos2d-x a code driven development method? For instance, suppose that there is a character in the scene, who will walk around continuously in one area, then we will code as follows:</p>
+<pre><code class="javascript">var role = new cc.Sprite('role.png');
+scene.addChild(role);
+role.setPosition(100, 100);
+var walk = cc.sequence(cc.moveBy(5, 100, 0), cc.moveBy(5, -100, 0)).repeatForever();
+role.runAction(walk);
+</code></pre>
+
+<p>In this code, scene relationship, position information, action section and animation information of <strong>role</strong> are all realized by code; therefore it's called code driven. There also are some developers who store data information in other documents, but they still have to realize the parser of data themselves. Even when using some traditional editors, parsers are also needed to parse the data exported from editors into scenes.</p>
+<p>But what Cocos Creator provides is a more thorough data driven method. All the information edited in the editor will be serialized into data documents. When running, the engine will directly transform the data into object by deserialization. This procedure is fundamentally different from the procedure described above: the category property in the engines can be directly serialized or deserialized. You don't need to transform it by any mapping relation. Scene graph, position property and animation, etc. in the above example can all be serialized by the editor into data. When loading scenes, no data is needed, developers only need to deserialize the whole scene from scene data:</p>
+<pre><code class="javascript">cc.director.loadScene('SampleScene');
+</code></pre>
+
+<h3 id="serialization">Serialization</h3>
+<p>Serialization and deserialization supports most public properties in Cocos Creator. These properties are exposed to developers through the properties panel. Developers can arbitrarily modify and save properties in editor. The procedure of saving is to serialize resources and scene data into Asset Database. In contrast, in the procedure of loading scenes, the deserialization mechanism can instantiate corresponding objects according to scene data, and restore all properties set up in the editor.</p>
+<p>What's more, the power of data driven lies in the fact that components edited by users themselves can also make property declarations. These properties can be edited in editor, saved in scene data, and finally deserialized into game scenes when running.</p>
+<p><em>The source database is presented as <a href="../../basics/editor-panels/assets/index.html">Assets</a> in the editor.</em></p>
+<h3 id="understanding-workflows-of-cocos-creator-from-the-angle-of-data-driven">Understanding workflows of Cocos Creator from the angle of data driven</h3>
+<p>Being different from Cocos2d-x, workflows of Cocos Creator are content creation oriented. Developers might encounter various kinds of confusion in the process of transition. However, when viewing from the angle of data driven, such changes of workflows will be a matter of course. Data driven makes it possible to freely edit scenes. Developers can not only build the whole scene visually, but also edit the logic of the game (edit properties exposed by components), which makes the editor the access for all, but not code. Just like the example before, in Cocos Creator, developers build a parent-child relationship, set position, and design animation with editor at first, then design the logic of the nodes in the scene using the component code; and assemble components into different nodes in the end.</p>
+<p><img alt="Data Driven" src="../cocos2d-x-guide/data-driven.png" /></p>
+<h2 id="3-changes-at-framework-level">3. Changes at Framework Level</h2>
+<p>As is mentioned at the beginning, Cocos Creator has been completely integrated with componentized Cocos2d-JS. This is a highly customized edition. Due to componentization and the needs of data driven, API sets and the standard edition of Cocos2d-JS have the same origin, but the two of which are uncompatible with each other.  The following are detailed introductions of some important API differences:</p>
+<h3 id="logic-tree-and-render-tree">Logic Tree and Render Tree</h3>
+<p>In Cocos2d-JS, the Render device will traverse the scene's node tree to generate a render queue; therefore, the node tree built by developers is in fact a render tree. However, in Cocos Creator, we introduce a new concept: logic tree. The node tree built by developers and mounting components constitutes a logic tree, within which nodes constitute entity units and components are in charge of logic.</p>
+<p>The most essential difference is: What the logic tree concerns is game logic but not render relation.</p>
+<p>Th logic tree will generate the scene's render tree and decide rendering order. But developers don't need to worry about these, they only need to make sure the correctness of the displaying effect in editor. In <a href="../../basics/editor-panels/hierarchy/index.html">Hierarchy</a> of editor, developers can adjust the order and parent-child relationship of the logic tree.</p>
+<h3 id="scene-management">Scene Management</h3>
+<p>In Cocos2d-JS, after building scenes with code, developers can switch scenes by 'cc.director.runScene'. In Cocos Creator, when developers have finished building scenes in editor, all the data will be saved as a 'scene-name.fire' document and then be stored in Asset Database. Developers can load a scene resource by using <code>cc.director.loadScene</code>. Please refer to the following concrete example:</p>
+<pre><code class="javascript">var sceneName = 'scene-name';
+var onLaunched = function () {
+    console.log('Scene ' + sceneName + ' launched');
+};
+// The first parameter is the name of the scene. The second optional parameter is the callback function after the loading scene.
+cc.director.loadScene(sceneName, onLaunched);
+</code></pre>
+
+<p>Besides, interface for visiting scene nodes is provided:</p>
+<pre><code class="javascript">// To obtain scene nodes of logic tree
+var logicScene = cc.director.getScene();
+</code></pre>
+
+<h3 id="node-and-component">Node and Component</h3>
+<p>In Cocos Creator, 'cc.Node'is replaced by the logic node, and the old node is renamed as <code>_ccsg.Node</code> and becomes a private category that is not recommended to be used anymore. The reason for this is that developers only need to focus on logic nodes and they no longer need to care about render nodes at the bottom. Of course, we have preserved its API sets as much as possible. APIs like information concerning Transform, node tree, Action and properties remain unchanged.</p>
+<p>There used to be a crude mechanism of components. Developers could receive callbacks like onEnter, onExit, update, etc. by adding components to Node. In Cocos Creator, the same interface <code>addComponent</code> is used, but the component system becomes the core of the whole engine. Components can extend the function of the logic node in various ways. It could even be said that the logic node shouldn't include any actual game logic and it's logic should be completely assembled by various kinds of logic components.</p>
+<p>And this leads to the biggst difference between Cocos2d-JS and Cocos Creator: How to extend node behavior?</p>
+<p>In Cocos2d-JS, developers can extend Nodes. Cocos Creator does not allow this. All the extensions should be done by adding components. In a componentized framework like Cocos Creator, composition is the preferred extension method.</p>
+<p>For more information on the component system, please refer to chapters like <a href="../../content-workflow/node-component/index.html">Node Component</a> and <a href="../../components/index.html">Components</a>, etc..</p>
+<h3 id="coordinate-system-and-anchor-point">Coordinate System and Anchor Point</h3>
+<p>The coordinate system of Cocos Creator is still a cartesian coordinate system, but there are some changes in anchor points. Please look at the diagram before reading the explanations:</p>
+<p><img alt="coordinate" src="../cocos2d-x-guide/coordinate.png" /></p>
+<p>Supposing the anchor point of a context node is (0.5, 0.5). This node has a subnode, the anchor point of which is (0, 0). In Cocos2d-JS, its illustration will be like that in the left diagram. But in Cocos Creator, its illustration will be like that of the right diagram. The reason is that the local coordinate systems of the subnodes are different. In Cocos2d-JS, wherever the anchor point of the parent node is located, the origin of the subnode's coordinate system is at the lower left corner of the parent node. But in Cocos Creator, the origin of the subnode's coordinate system is in the position of the parent node's coordinate position(i.e., its anchor point). Such modification is more compatiable with the editor, which is, in general, very natural for scenes built by the editior. But when developers use code to build nodes, they should pay special attention.</p>
+<h3 id="categories-and-objects-that-remain-unchanged">Categories and objects that remain unchanged</h3>
+<p>In Cocos Creator, we preserved the behaviors of lots of important categories and objects, which include:</p>
+<ul>
+<li><code>cc.game</code></li>
+<li><code>cc.view</code></li>
+<li><code>cc.director</code></li>
+<li><code>cc.audioEngine</code></li>
+<li><code>cc.eventManager</code></li>
+<li><a href="../../scripting/scheduler/index.html"><code>cc.scheduler</code></a></li>
+<li><code>cc.textureCache</code></li>
+<li><code>cc.sys</code></li>
+<li><code>cc.visibleRect</code></li>
+<li><a href="../../scripting/actions/index.html">scripting actions</a></li>
+<li>Some types of render nodes: Menu and MenuItem,ClippingNode,ProgressTimer,MotionStreak,ParallaxNode,RenderTexture,DrawNode,relative categories of Tile map, etc.</li>
+<li>Chipmunk physics engine and PhysicsDebugNode</li>
+<li>Types of basic data</li>
+</ul>
+<p>Points to be noted:</p>
+<ol>
+<li>Those types of preserved render nodes listed above can only interact with the render tree and can't be used together with logic nodes and components.</li>
+<li>Action system supports not just render nodes, but all the actions operated on Transform support logic nodes too.</li>
+<li><code>cc.scheduler</code> supports components, which contain interfaces like <code>schedule</code>,<code>scheduleOnce</code>,<code>unschedule</code>,<code>unscheduleAllCallbacks</code></li>
+<li>Though event manager is preserved, logic nodes have a set of new event API. Direct use of event manager is not recommended. For detailed information, please refer to the introduction of the event system that follows</li>
+</ol>
+<h3 id="event-system">Event System</h3>
+<p>In <code>cc.Node</code>, a series of wholly new event APIs are added. From logic nodes, various events can be distributed. The monitor's register of some kind of event is also allowed. The monitor could be a simple callback function, or an assembly of callback functions and its caller. List of important APIs:</p>
+<ol>
+<li><code>node.emit(type, detail)</code>: Inform all the monitors to monitor <code>type</code> event. Capable of sending an additional parameter.</li>
+<li><code>node.dispatchEvent(event)</code>: Send an event to its monitor. Support bubbling.</li>
+<li><code>node.on(type, callback, target)</code>: Continuously monitor <code>type</code> event of <code>node</code>.</li>
+<li><code>node.once(type, callback, target)</code>: Monitor  <code>type</code> event of <code>node</code> once.</li>
+<li><code>node.off(type, callback, target)</code>: Cancel the monitoring of all <code>type</code> events or cancel a certain monitor of <code>type</code> event (appointed by callback and target).</li>
+</ol>
+<p>Such an event distribution method has changed from centralized distribution by <code>cc.eventManager</code> to distribution by the node which has the event itself. It can be called a transformation from a centralized event system to a discrete event system. In the meantime, Cocos Creator has built in two kinds of system events(i.e., <code>MOUSE</code> and <code>TOUCH</code>) in nodes:</p>
+<table>
+<thead>
+<tr>
+<th>Definition of enumeration object</th>
+<th align="center">Corresponding event name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cc.Node.EventType.TOUCH_START</code></td>
+<td align="center">'touchstart'</td>
+</tr>
+<tr>
+<td><code>cc.Node.EventType.TOUCH_MOVE</code></td>
+<td align="center">'touchmove'</td>
+</tr>
+<tr>
+<td><code>cc.Node.EventType.TOUCH_END</code></td>
+<td align="center">'touchend'</td>
+</tr>
+<tr>
+<td><code>cc.Node.EventType.TOUCH_CANCEL</code></td>
+<td align="center">'touchcancel'</td>
+</tr>
+<tr>
+<td><code>cc.Node.EventType.MOUSE_DOWN</code></td>
+<td align="center">'mousedown'</td>
+</tr>
+<tr>
+<td><code>cc.Node.EventType.MOUSE_ENTER</code></td>
+<td align="center">'mouseenter'</td>
+</tr>
+<tr>
+<td><code>cc.Node.EventType.MOUSE_MOVE</code></td>
+<td align="center">'mousemove'</td>
+</tr>
+<tr>
+<td><code>cc.Node.EventType.MOUSE_LEAVE</code></td>
+<td align="center">'mouseleave'</td>
+</tr>
+<tr>
+<td><code>cc.Node.EventType.MOUSE_UP</code></td>
+<td align="center">'mouseup'</td>
+</tr>
+<tr>
+<td><code>cc.Node.EventType.MOUSE_WHEEL</code></td>
+<td align="center">'mousewheel'</td>
+</tr>
+</tbody>
+</table>
+<p>Henceforth, developers can directly respond to various MOUSE and TOUCH events of nodes. They no longer need to judge whether contact points are included in nodes. Moreover, the new event system supports event bubbling. Suppose the TOUCH event is triggered on a node, if the event monitor didn't stop bubbling, its parent node would trigger the same TOUCH event as well. For a concrete method of use for the event system, please refer to <a href="../../scripting/events/index.html">Scripting Events</a></p>
+<h2 id="4-next-step">4. Next step</h2>
+<p>In a highly generalized way, the text above introduced some of the design ideas behind Cocos Creator and obstructions that may occur when transitioning from Cocos2d-JS. Not all the knowledge points are covered here. That's not the purpose of this document either. The purpose of this document is to help Cocos2d-x users learn how to use Cocos Creator more easily. Please continue reading the Cocos Creator User Guide, getting to learn all of the workflows and coding techniques.</p>
+<hr />
+<p>Continue on to read about <a href="../project-structure/index.html">Project Structure</a>.</p>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../quick-start/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../unity-guide/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+</div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <p style="text-align:center">Copyright (c) 2014-2016 Chukong Technologies Inc.</p>
+            
+           <!-- <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>-->
+        </footer>
+
+        <script src="../../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../../js/highlight.pack.js"></script>
+        <script>var base_url = '../../../..';</script>
+
+        <!-- PG languages -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script>
+        $(function() {
+          var key = "Cocos2d-x_pg_lang";
+          var switch_lang = function(l) {
+              $('.langs li a').removeClass('selected');
+              $('#'+l).addClass('selected');
+              $('.tab_content').hide();
+              $('.'+l).show();
+              $.cookie(key, l);
+          }
+          $('.langs li a').click(function() {switch_lang(this.id);return false;});
+          var c = $.cookie(key);
+          if (typeof c == 'undefined') c='tab-cpp';
+          switch_lang(c);
+        });
+        </script>
+
+        <script data-main="../../../../mkdocs/js/search.js" src="../../../../mkdocs/js/require.js"></script>
+        <script src="../../../../js/base.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/Cocos2d-html5-min.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chipmunk.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d-jsb.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/main.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/AnimationLayer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/BackgroundLayer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Coin.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/GameOverLayer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/PlayScene.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Rock.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/SimpleRecognizer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/StatusLayer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/globals.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/myApp.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/resource.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

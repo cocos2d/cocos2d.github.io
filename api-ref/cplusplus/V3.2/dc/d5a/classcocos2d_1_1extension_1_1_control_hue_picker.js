@@ -1,0 +1,25 @@
+var classcocos2d_1_1extension_1_1_control_hue_picker =
+[
+    [ "ControlHuePicker", "dc/d5a/classcocos2d_1_1extension_1_1_control_hue_picker.html#aab2d316ecf8d06546f23021685062c43", null ],
+    [ "~ControlHuePicker", "dc/d5a/classcocos2d_1_1extension_1_1_control_hue_picker.html#ab1f2edb684ddd35521b0e6d7f21c0e2f", null ],
+    [ "checkSliderPosition", "dc/d5a/classcocos2d_1_1extension_1_1_control_hue_picker.html#a35c31db1fbfd1717dfa927bccada41d5", null ],
+    [ "getBackground", "dc/d5a/classcocos2d_1_1extension_1_1_control_hue_picker.html#a4783c98b44de4f3670dafe46452ab5fa", null ],
+    [ "getHue", "dc/d5a/classcocos2d_1_1extension_1_1_control_hue_picker.html#af5e7cac0bce9c3606e58b3fb2ae0922c", null ],
+    [ "getHuePercentage", "dc/d5a/classcocos2d_1_1extension_1_1_control_hue_picker.html#a5897312d6226d7ee64fa549d481aec02", null ],
+    [ "getSlider", "dc/d5a/classcocos2d_1_1extension_1_1_control_hue_picker.html#a6bab0df8607560a7c79e5b648aa0fef7", null ],
+    [ "getStartPos", "dc/d5a/classcocos2d_1_1extension_1_1_control_hue_picker.html#ad2b225ebbd00204bd51289cb090f90b8", null ],
+    [ "initWithTargetAndPos", "dc/d5a/classcocos2d_1_1extension_1_1_control_hue_picker.html#a70a06eb7d52afd90c81035fd5f511d38", null ],
+    [ "onTouchBegan", "dc/d5a/classcocos2d_1_1extension_1_1_control_hue_picker.html#a773620a64957d56de27ab5b4434abfef", null ],
+    [ "onTouchMoved", "dc/d5a/classcocos2d_1_1extension_1_1_control_hue_picker.html#afe41d4dc9d87817a1cc0139f16685f91", null ],
+    [ "setBackground", "dc/d5a/classcocos2d_1_1extension_1_1_control_hue_picker.html#a58ec8d00d2c31bee44fad73fd20c5c0c", null ],
+    [ "setEnabled", "dc/d5a/classcocos2d_1_1extension_1_1_control_hue_picker.html#acec1966bc48684707ffc63e8785c37f4", null ],
+    [ "setHue", "dc/d5a/classcocos2d_1_1extension_1_1_control_hue_picker.html#a403ba9fbfa82785ad4cb89aaffdd798d", null ],
+    [ "setHuePercentage", "dc/d5a/classcocos2d_1_1extension_1_1_control_hue_picker.html#a63e2176ac3d9f10e99e521aa457cea4d", null ],
+    [ "setSlider", "dc/d5a/classcocos2d_1_1extension_1_1_control_hue_picker.html#a6fafb033f77058c282ae582a5abe12f6", null ],
+    [ "updateSliderPosition", "dc/d5a/classcocos2d_1_1extension_1_1_control_hue_picker.html#ac8f34581971b807dd4fcc147b6378135", null ],
+    [ "_background", "dc/d5a/classcocos2d_1_1extension_1_1_control_hue_picker.html#a583482acec6dcfcecff592a130307e2b", null ],
+    [ "_hue", "dc/d5a/classcocos2d_1_1extension_1_1_control_hue_picker.html#ac7129b8118b5c0192423cebb91f8153f", null ],
+    [ "_huePercentage", "dc/d5a/classcocos2d_1_1extension_1_1_control_hue_picker.html#aee35b556bc031396f40ff0c73bcaac00", null ],
+    [ "_slider", "dc/d5a/classcocos2d_1_1extension_1_1_control_hue_picker.html#abf27c388c765d05662c3f958e2c842e6", null ],
+    [ "_startPos", "dc/d5a/classcocos2d_1_1extension_1_1_control_hue_picker.html#a0a0dc424cdd05bb7f3469e44a8c0b771", null ]
+];

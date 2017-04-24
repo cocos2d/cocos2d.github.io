@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Cocos Team">
+        <link rel="canonical" href="http://cocos2d-x.org/docs/tutorials/javascript/parkour-game-with-javascript/chapter7/en/index.html">
+        <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+
+	<title>_Chapter7 - Cocos Documentation</title>
+
+  <link href="../../../../../css/bootstrap-custom.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+<link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href="../../../../../css/base.css" rel="stylesheet">
+<link href="../../../../../css/cinder.css" rel="stylesheet">
+<link href="../../../../../css/pg.css" rel="stylesheet">
+<link href="../../../../../css/highlight.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-3216502-3', 'Cocos2d-x.org');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a style="padding: 12px 0px;" class="navbar-brand" href="../../../../../index.html">Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../../../../index.html">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Manual Installations</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/A/index.html">Prerequisites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Android-terminal/index.html">Android Command-line Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Android-VisualStudio/index.html">Android Visual Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Android-Studio/index.html">Android Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Android-Eclipse/index.html">Android Eclipse Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/iOS/index.html">IOS and OSX Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Linux/index.html">Linux Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Tizen/index.html">Tizen Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Windows/index.html">Windows Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../installation/Windows-Phone/index.html">Windows Phone Setup</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Programmers Guide</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/about/index.html">About Cocos2d-x</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/basic_concepts/index.html">Basic Concepts</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/sprites/index.html">Sprites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/actions/index.html">Actions</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/scenes/index.html">Scenes</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/ui_components/index.html">UI</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/other_node_types/index.html">Other Node Types</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/event_dispatch/index.html">Event Dispatch</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/3d/index.html">3D</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/scripting/index.html">Scripting</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/physics/index.html">Physics</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/audio/index.html">Audio</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/vr/index.html">VR</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../programmers-guide/advanced_topics/index.html">Advanced Topics</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Editors & Tools</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../editors_and_tools/cocosCLTool/index.html">Command-line tool</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../editors_and_tools/creator/index.html">Cocos Creator</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+  
+  <li >
+      <a href="../../../../../editors_and_tools/cocos/index.html">Cocos Launcher</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Services</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../services/sdkbox/index.html">SDKBOX</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Tutorials</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../javascript/index.html">Parkour Game Tutorials for Cocos2d-JS</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+  <li >
+      <a href="../../../../../api-ref/index.html">API Reference</a>
+  </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Deprecated</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../deprecated/studio/index.html">Cocos Studio</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                        </ul>
+                    </li>
+                
+                
+
+                <!-- new add for language button -->
+                <!--<li>
+                    <a href="http://sdkbox-doc.github.io/zh/">中文</a>
+                </li>-->
+
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <!-- 
+                    <li >
+                        <a rel="next" href="../../chapter6/en/index.html">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../chapter8/en/index.html">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                 -->
+                
+                    <li>
+                        <a href="https://github.com/chukong/cocos-docs">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+              
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+      
+        
+          <li class="main active"><a href="#explorer-with-tiledmap-and-camera">Explorer with TiledMap and Camera</a></li>
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#introduction">Introduction</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#do-some-preparation-stuff">Do Some Preparation Stuff</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#introduction-to-tiledmap">Introduction to TiledMap</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#introduction-to-camera">Introduction to Camera</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#wrap-it-up">Wrap it up</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#summary">Summary</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#where-to-go-from-here">Where to go from here?</a></li>
+              
+
+          
+
+        
+      
+    
+    </ul>
+</div></div>
+              
+                <div class="col-md-9" role="main">
+
+<!-- bread crumb trail -->
+<ol class="breadcrumb">
+<li><a href="../../../../../index.html">Docs</a></li>
+
+  
+    
+      <li>Contents</li>
+    
+  
+    
+      <li>Tutorials</li>
+    
+  
+
+<li>_Chapter7</li>
+</ol>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../../chapter6/en/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../../chapter8/en/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+
+
+<!-- we can put this here if we want it on all content pages, but we don't at this point -->
+<!--<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>-->
+    <!--<li><a href="#" id="tab-lua">Lua</a></li>-->
+  <!--</ul>
+</div>-->
+
+<h1 id="explorer-with-tiledmap-and-camera">Explorer with TiledMap and Camera</h1>
+<h2 id="introduction">Introduction</h2>
+<p>In this tutorial, I will show you how to add TiledMap to the parkour game as the new background.</p>
+<p>We will also learn how to make the background to scroll infinitely and the player to run infinitely.</p>
+<p>The magic behind these is all about moving the cocos2d camera.</p>
+<h2 id="do-some-preparation-stuff">Do Some Preparation Stuff</h2>
+<p>Before we get our hands dirty, let's add the resource files and the corresponding names to our game.</p>
+<h3 id="setup-resource-and-globals">Setup Resource and Globals</h3>
+<p>Since we will need to refer to other layers within each layers. So the best way to retrieve the layer is via <strong>tag</strong>.</p>
+<p>Add the following code into <em>globals.js</em>:</p>
+<pre><code>if(typeof TagOfLayer == &quot;undefined&quot;) {
+    var TagOfLayer = {};
+    TagOfLayer.background = 0;
+    TagOfLayer.Animation = 1;
+    TagOfLayer.Status = 2;
+};
+</code></pre>
+
+<p>Here we give background layer, animation layer and status layer a tag name, thus we can retrieve other layer by tag.</p>
+<p>We also need add the resource variables in <em>resource.js</em>:</p>
+<pre><code>//Our two tiled map are named s_map00 and s_map01.
+var s_map = &quot;map.png&quot;;
+var s_map00 = &quot;map00.tmx&quot;;
+var s_map01 = &quot;map01.tmx&quot;;
+var g_resources = [
+    //image
+    //There are a lot of image defined here, we just omit it for clarifying.
+    {src:s_map},
+    {src:s_map00},
+    {src:s_map01}
+];
+</code></pre>
+
+<p>The above code is self-explanation so let's go to the next section.</p>
+<h3 id="enable-chipmunk-debug-drawing">Enable Chipmunk Debug Drawing</h3>
+<p>If we are doing Chipmunk physics, you'd better to enable debug drawing. So the debug process will be more handy.</p>
+<p>Add the following code into <em>AnimationLayer.js</em> 's ctor function:</p>
+<pre><code>this._debugNode = cc.PhysicsDebugNode.create(this.space);
+// Parallax ratio and offset
+this.addChild(this._debugNode, 10);
+</code></pre>
+
+<p>When you run the game again, you will see a red box above the running player:</p>
+<p><img alt="debugdraw" src="../res/debugdraw.png" /></p>
+<h2 id="introduction-to-tiledmap">Introduction to TiledMap</h2>
+<p>TiledMap is a very common used concepts in 2d games. It is useful for building large level map and some parallax scrolling background.</p>
+<p>TiledMap consumes less memory than normal PNG file. If you want to build some huge level map, it is definitely your right choice.</p>
+<p>Without further ado, let's dive into the TiledMap.</p>
+<h3 id="design-and-make-the-tiledmap-background">Design and Make the TiledMap Background</h3>
+<p>At first, you should download TiledMap. You can download it from <a href="http://www.mapeditor.org/download.html">here</a>. Since TiledMap is a cross platform software.</p>
+<p>There are many different kinds of version available. You can choose a version according to your operating system. After downloading the Tiled editor, you should be
+familiar with it's usage. You may want to take a look at it's <a href="https://github.com/bjorn/tiled/wiki">documentation</a>.</p>
+<p>When you feel comfortable with Tiled, you can design your tiled map with the tilesets we provided.</p>
+<p>The detail process of making the two tiled map is out of scope of this tutorial.</p>
+<p>(<em>Note: If you can't make the tiled map by yourself, you can safely skip the process and use the tiled map provided by us.</em>)</p>
+<p><img alt="tiledmap" src="../res/tiledmap.png" /></p>
+<h3 id="replace-previous-background-with-tiledmap">Replace Previous Background with TiledMap</h3>
+<p>Now, it's time to replace the old static background image with our new awesome tiled map.</p>
+<p>We will do this in <em>BackgroundLayer.js</em>. At first, we should add four member variables in BackgroundLayer class:</p>
+<pre><code>map00:null,
+map01:null,
+mapWidth:0,
+mapIndex:0,
+</code></pre>
+
+<p>The we should delete the old code we needed to create the static background.</p>
+<p>(<em>Note</em>: Here I uncomment the code snippets, you can safely delete all of them.)</p>
+<pre><code>//        var winSize = cc.Director.getInstance().getWinSize();
+//
+//        var centerPos = cc.p(winSize.width / 2, winSize.height / 2);
+//        var spriteBG = cc.Sprite.create(s_PlayBG);
+//        spriteBG.setPosition(centerPos);
+//        this.addChild(spriteBG);
+</code></pre>
+
+<p>At last, we will add the new code snippets to create the tiled map background.</p>
+<pre><code>this.map00 = cc.TMXTiledMap.create(s_map00);
+this.addChild(this.map00);
+this.mapWidth = this.map00.getContentSize().width;
+this.map01 = cc.TMXTiledMap.create(s_map01);
+this.map01.setPosition(cc.p(this.mapWidth, 0));
+this.addChild(this.map01);
+</code></pre>
+
+<p>Save all the changes and run it:</p>
+<p><img alt="replacebg" src="../res/replacebg.png" /></p>
+<p>Here, we add two maps. The <em>map01</em> is right beside the <em>map00</em> background. In the later section, We will explain why we should add two maps.</p>
+<h2 id="introduction-to-camera">Introduction to Camera</h2>
+<p>Camera seems a little bit complex in 3D graphic programming. But it is very trivial in 2D game. In this section, we won't cover the theory of camera.</p>
+<p>Nor do we go deep into the implementation details of moving a node's camera.</p>
+<p>We will just show you how to implement the logic of moving a node's camera.</p>
+<h3 id="move-the-animation-layer-camera">Move the Animation Layer Camera</h3>
+<p>At first, we need to move the animation layer's camera. So that player and chipmunk rigid body will go with the same speed.</p>
+<p>Since the physic body will move right infinitely and the sprite will synchronize it's position with the physic body.</p>
+<p>A few seconds later, the player will go outside of the screen, just as it is in the last tutorial.</p>
+<p>So we need to move the camera's x position each frame. Here is the code snippets:</p>
+<pre><code>getEyeX:function () {
+    return this.sprite.getPositionX() - g_runnerStartX;
+},
+update:function (dt) {
+    var eyeX = this.sprite.getPositionX() - g_runnerStartX;
+    var camera = this.getCamera();
+    var eyeZ = cc.Camera.getZEye();
+    camera.setEye(eyeX, 0, eyeZ);
+    camera.setCenter(eyeX, 0, 0);
+}
+</code></pre>
+
+<p>Here the <em>getEyeX</em> function computes the <em>delta</em> movement of animation layer's camera. And in <em>update</em> function, in each frame we will modify the node's camera.</p>
+<p>You will notice that we have stored the <em>eyeZ</em> variable before we call camera's <em>setEye</em> and <em>setCenter</em> function. One more tips: You should always keep the first argument of
+<em>setEye</em> and <em>setCenter</em> the same value. Otherwise you will suffer some wired display problems.</p>
+<p>In the end, we should call the <em>update</em> method each frame by adding the following code at the end of <em>init</em> method in AnimationLayer.js:</p>
+<pre><code>this.scheduleUpdate();
+</code></pre>
+
+<h3 id="move-the-background-layer-camera">Move the Background Layer Camera</h3>
+<p>The process to setup the movement of background layer is almost the same as we do in the last section. But we need to do some calculations of the two tiled map.</p>
+<p>So let's do it. Add a new member function <em>checkAndReload</em> to BackgroundLayer:</p>
+<pre><code>    checkAndReload:function (eyeX) {
+        var newMapIndex = parseInt(eyeX / this.mapWidth);
+        if (this.mapIndex == newMapIndex) {
+            return false;
+        }
+        if (0 == newMapIndex % 2) {
+            // change mapSecond
+            this.map01.setPositionX(this.mapWidth * (newMapIndex + 1));
+        } else {
+            // change mapFirst
+            this.map00.setPositionX(this.mapWidth * (newMapIndex + 1));
+        }
+        this.mapIndex = newMapIndex;
+        return true;
+    },
+</code></pre>
+
+<p>When the camera eyeX has exceeded the width of the screen, the expression <em>parseInt(eyeX / this.mapWidth)</em> will get a value greater than 0.</p>
+<p>We will use the <em>newMapIndex</em> to decide which map need to move and how many pixels need to move.</p>
+<p>Then we should call this function in each frame.</p>
+<pre><code>    update:function (dt) {
+        var animationLayer = this.getParent().getChildByTag(TagOfLayer.Animation);
+        var eyeX = animationLayer.getEyeX();
+        this.checkAndReload(eyeX);
+        var camera = this.getCamera();
+        var eyeZ = cc.Camera.getZEye();
+        camera.setEye(eyeX, 0, eyeZ);
+        camera.setCenter(eyeX, 0, 0);
+    }
+</code></pre>
+
+<p>At last, we should call <em>scheduleUpdate</em> at the end of background layer's init method:</p>
+<pre><code> this.scheduleUpdate();
+</code></pre>
+
+<h2 id="wrap-it-up">Wrap it up</h2>
+<p>Ok. We should do some last ending work.</p>
+<p>Modify the <em>onEnter</em> method of PlayScene:</p>
+<pre><code>    onEnter:function () {
+        this._super();
+        this.initPhysics();
+        this.addChild(new BackgroundLayer(), 0, TagOfLayer.background);
+        this.addChild(new AnimationLayer(this.space),0, TagOfLayer.Animation );
+        this.addChild(new StatusLayer(),0, TagOfLayer.Status);
+        this.scheduleUpdate();
+    },
+</code></pre>
+
+<p>Cheers! You have successfully finish this tutorial. Run and take a look at it.</p>
+<p><em>Note</em>: If you don't want to display the debug drawing information of a chipmunk rigid body. You can safely add the following code right after the creation
+of the PhysicsDebugNode:</p>
+<pre><code>this._debugNode.setVisible(false);
+</code></pre>
+
+<h2 id="summary">Summary</h2>
+<p>In this tutorial, we have met TiledMap and Cocos2d camera. These two concepts are very important ones when you development a physic endless running game.</p>
+<p>You can download the entire project from <a href="../res/Parkour.zip">here</a>.</p>
+<h2 id="where-to-go-from-here">Where to go from here?</h2>
+<p>In the next tutorial, we will add coins and obstacles into our game. At that tutorial, we will also learn how to refactor our game code and make it more extensible.</p>
+<p>We will also do some cleanup work in PlayScene and encapsulate two class named Coin and Rock.</p>
+<p>Keep tuning with the next tutorial and happy coding!</p>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../../chapter6/en/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../../chapter8/en/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+</div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <p style="text-align:center">Copyright (c) 2014-2016 Chukong Technologies Inc.</p>
+            
+           <!-- <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>-->
+        </footer>
+
+        <script src="../../../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../../../js/highlight.pack.js"></script>
+        <script>var base_url = '../../../../..';</script>
+
+        <!-- PG languages -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script>
+        $(function() {
+          var key = "Cocos2d-x_pg_lang";
+          var switch_lang = function(l) {
+              $('.langs li a').removeClass('selected');
+              $('#'+l).addClass('selected');
+              $('.tab_content').hide();
+              $('.'+l).show();
+              $.cookie(key, l);
+          }
+          $('.langs li a').click(function() {switch_lang(this.id);return false;});
+          var c = $.cookie(key);
+          if (typeof c == 'undefined') c='tab-cpp';
+          switch_lang(c);
+        });
+        </script>
+
+        <script data-main="../../../../../mkdocs/js/search.js" src="../../../../../mkdocs/js/require.js"></script>
+        <script src="../../../../../js/base.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/Cocos2d-html5-min.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chipmunk.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d-jsb.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/main.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/AnimationLayer.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/BackgroundLayer.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Coin.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/GameOverLayer.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/PlayScene.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Rock.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/SimpleRecognizer.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/StatusLayer.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/globals.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/myApp.js"></script>
+        <script src="../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/resource.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

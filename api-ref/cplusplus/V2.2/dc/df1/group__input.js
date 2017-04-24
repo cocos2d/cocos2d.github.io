@@ -1,0 +1,225 @@
+var group__input =
+[
+    [ "CCKeypadDelegate", "d2/d2d/classcocos2d_1_1_c_c_keypad_delegate.html", [
+      [ "keyBackClicked", "d2/d2d/classcocos2d_1_1_c_c_keypad_delegate.html#a513d46c9929e62fc377a63d00ddc8fd5", null ],
+      [ "keyMenuClicked", "d2/d2d/classcocos2d_1_1_c_c_keypad_delegate.html#a119bcb4da8b3567c1713260e80743af4", null ]
+    ] ],
+    [ "CCKeypadHandler", "d8/d0d/classcocos2d_1_1_c_c_keypad_handler.html", [
+      [ "~CCKeypadHandler", "d8/d0d/classcocos2d_1_1_c_c_keypad_handler.html#a93b7abb8379ffe6028459a9f9f6bdcdc", null ],
+      [ "getDelegate", "d8/d0d/classcocos2d_1_1_c_c_keypad_handler.html#aec10fab1c21d6659337600ec33d68014", null ],
+      [ "initWithDelegate", "d8/d0d/classcocos2d_1_1_c_c_keypad_handler.html#abb0b562b95366f257be69d34f29e771b", null ],
+      [ "setDelegate", "d8/d0d/classcocos2d_1_1_c_c_keypad_handler.html#a50b9dccfc8807ba6df00e08e54ff4b41", null ],
+      [ "m_pDelegate", "d8/d0d/classcocos2d_1_1_c_c_keypad_handler.html#a34064f107edd4338f4c19a64bbd37d54", null ]
+    ] ],
+    [ "CCKeypadDispatcher", "de/dcb/classcocos2d_1_1_c_c_keypad_dispatcher.html", [
+      [ "CCKeypadDispatcher", "de/dcb/classcocos2d_1_1_c_c_keypad_dispatcher.html#ad72d993c43bdde07cc9e6d03acb119e5", null ],
+      [ "~CCKeypadDispatcher", "de/dcb/classcocos2d_1_1_c_c_keypad_dispatcher.html#aa3cd9e396e7c0acfe426318e8ced36f2", null ],
+      [ "addDelegate", "de/dcb/classcocos2d_1_1_c_c_keypad_dispatcher.html#a0c18319c2443abfd351c71a987976862", null ],
+      [ "dispatchKeypadMSG", "de/dcb/classcocos2d_1_1_c_c_keypad_dispatcher.html#a553fe52a364e2466e3e30f62a5257266", null ],
+      [ "forceAddDelegate", "de/dcb/classcocos2d_1_1_c_c_keypad_dispatcher.html#a005e8775064a097906515dd80ed49387", null ],
+      [ "forceRemoveDelegate", "de/dcb/classcocos2d_1_1_c_c_keypad_dispatcher.html#a96c15ab8f153c2c62f743a0fe8a683c1", null ],
+      [ "removeDelegate", "de/dcb/classcocos2d_1_1_c_c_keypad_dispatcher.html#afae43a79f75118f1da7b14f3bd510c96", null ],
+      [ "m_bLocked", "de/dcb/classcocos2d_1_1_c_c_keypad_dispatcher.html#aac822ff08ee11306a03303f8854ed112", null ],
+      [ "m_bToAdd", "de/dcb/classcocos2d_1_1_c_c_keypad_dispatcher.html#a6384aac35befc1bd27b4f5569ae823a7", null ],
+      [ "m_bToRemove", "de/dcb/classcocos2d_1_1_c_c_keypad_dispatcher.html#accdd91f55037bb0ead018f5ce091f29d", null ],
+      [ "m_pDelegates", "de/dcb/classcocos2d_1_1_c_c_keypad_dispatcher.html#a0aa4367ff58f93e014ee6ebc4d252a10", null ],
+      [ "m_pHandlersToAdd", "de/dcb/classcocos2d_1_1_c_c_keypad_dispatcher.html#a294adead3ce2c9669295e536b6ecda79", null ],
+      [ "m_pHandlersToRemove", "de/dcb/classcocos2d_1_1_c_c_keypad_dispatcher.html#a467e9d1358a6bac1026ce5adeb792f42", null ]
+    ] ],
+    [ "CCIMEKeyboardNotificationInfo", "dc/dc7/structcocos2d_1_1_c_c_i_m_e_keyboard_notification_info.html", [
+      [ "begin", "dc/dc7/structcocos2d_1_1_c_c_i_m_e_keyboard_notification_info.html#a248525f98bdc8e87c9bde3053085fede", null ],
+      [ "duration", "dc/dc7/structcocos2d_1_1_c_c_i_m_e_keyboard_notification_info.html#a66625d8d6c0894b4828b43f826a09b8f", null ],
+      [ "end", "dc/dc7/structcocos2d_1_1_c_c_i_m_e_keyboard_notification_info.html#ac38e22a9b9a14ceb60edbbcc58bf2949", null ]
+    ] ],
+    [ "CCIMEDelegate", "d7/d98/classcocos2d_1_1_c_c_i_m_e_delegate.html", [
+      [ "~CCIMEDelegate", "d7/d98/classcocos2d_1_1_c_c_i_m_e_delegate.html#aa8a28f0e8875aeed889a539a437ec2dc", null ],
+      [ "CCIMEDelegate", "d7/d98/classcocos2d_1_1_c_c_i_m_e_delegate.html#a380b6140e515961eab5f2db3ffcaa246", null ],
+      [ "attachWithIME", "d7/d98/classcocos2d_1_1_c_c_i_m_e_delegate.html#ac3959287df6d13d89b930b3cd2774a95", null ],
+      [ "canAttachWithIME", "d7/d98/classcocos2d_1_1_c_c_i_m_e_delegate.html#a34251ddb038df7b83a0b7c4e55c40b91", null ],
+      [ "canDetachWithIME", "d7/d98/classcocos2d_1_1_c_c_i_m_e_delegate.html#a7bf601f3b433144a03d5bfe387e23613", null ],
+      [ "deleteBackward", "d7/d98/classcocos2d_1_1_c_c_i_m_e_delegate.html#a6ab288599096c862d09d60296dd48789", null ],
+      [ "detachWithIME", "d7/d98/classcocos2d_1_1_c_c_i_m_e_delegate.html#a6dadd87eac43259394bd09f71ff42774", null ],
+      [ "didAttachWithIME", "d7/d98/classcocos2d_1_1_c_c_i_m_e_delegate.html#a71d3dd7bab3f3cf5197fa1a306f79150", null ],
+      [ "didDetachWithIME", "d7/d98/classcocos2d_1_1_c_c_i_m_e_delegate.html#ae31374bd4d4dbf24369c41b34b78bb6e", null ],
+      [ "getContentText", "d7/d98/classcocos2d_1_1_c_c_i_m_e_delegate.html#a1eefa9b18fbd3f75e2d619deeedd63f6", null ],
+      [ "insertText", "d7/d98/classcocos2d_1_1_c_c_i_m_e_delegate.html#a4a4af2d5efe541177f3c1016f4cc62ec", null ],
+      [ "keyboardDidHide", "d7/d98/classcocos2d_1_1_c_c_i_m_e_delegate.html#a7308a48734cbc85c4c8d751f059cbe39", null ],
+      [ "keyboardDidShow", "d7/d98/classcocos2d_1_1_c_c_i_m_e_delegate.html#a5506c0760a352efd98d5303c55363998", null ],
+      [ "keyboardWillHide", "d7/d98/classcocos2d_1_1_c_c_i_m_e_delegate.html#a08dd742e9bddad53f5e0db4e5c7cf438", null ],
+      [ "keyboardWillShow", "d7/d98/classcocos2d_1_1_c_c_i_m_e_delegate.html#a28cca7c01498496523e36cd2112074c4", null ],
+      [ "CCIMEDispatcher", "d7/d98/classcocos2d_1_1_c_c_i_m_e_delegate.html#a9ca2066530f51d93dc0c22a06f7a6f02", null ]
+    ] ],
+    [ "CCIMEDispatcher", "dd/d2f/classcocos2d_1_1_c_c_i_m_e_dispatcher.html", [
+      [ "~CCIMEDispatcher", "dd/d2f/classcocos2d_1_1_c_c_i_m_e_dispatcher.html#a939855b87353c439180b5e71e843b929", null ],
+      [ "addDelegate", "dd/d2f/classcocos2d_1_1_c_c_i_m_e_dispatcher.html#ab9d3a49a1b4c461328eb8f2c628c095e", null ],
+      [ "attachDelegateWithIME", "dd/d2f/classcocos2d_1_1_c_c_i_m_e_dispatcher.html#ad0a2ab34b918813014c4ad5a5cb31a8e", null ],
+      [ "detachDelegateWithIME", "dd/d2f/classcocos2d_1_1_c_c_i_m_e_dispatcher.html#ad3e8db385736ecf341de1cc96d7e9348", null ],
+      [ "dispatchDeleteBackward", "dd/d2f/classcocos2d_1_1_c_c_i_m_e_dispatcher.html#a5acd5dc8a188288dc2771f6763fcbfb7", null ],
+      [ "dispatchInsertText", "dd/d2f/classcocos2d_1_1_c_c_i_m_e_dispatcher.html#a960f0d3f8459dbf609165d4278f80916", null ],
+      [ "dispatchKeyboardDidHide", "dd/d2f/classcocos2d_1_1_c_c_i_m_e_dispatcher.html#adb2c0495a5e312725db0f249f5147cfa", null ],
+      [ "dispatchKeyboardDidShow", "dd/d2f/classcocos2d_1_1_c_c_i_m_e_dispatcher.html#acc5c087afff8246d8b8191e271d254d2", null ],
+      [ "dispatchKeyboardWillHide", "dd/d2f/classcocos2d_1_1_c_c_i_m_e_dispatcher.html#a9a1ef4845f35b5517c76688d68138224", null ],
+      [ "dispatchKeyboardWillShow", "dd/d2f/classcocos2d_1_1_c_c_i_m_e_dispatcher.html#abc5c7bec11f58c49dc78f481bdc469da", null ],
+      [ "getContentText", "dd/d2f/classcocos2d_1_1_c_c_i_m_e_dispatcher.html#a9cd043b527796fd07086eef8db13e939", null ],
+      [ "removeDelegate", "dd/d2f/classcocos2d_1_1_c_c_i_m_e_dispatcher.html#adc7c7c328c92495e4fed2f6c0fd3cb9c", null ],
+      [ "CCIMEDelegate", "dd/d2f/classcocos2d_1_1_c_c_i_m_e_dispatcher.html#a43b5cd642b18332ddf0528a27721346f", null ]
+    ] ],
+    [ "CCTextFieldDelegate", "de/d56/classcocos2d_1_1_c_c_text_field_delegate.html", [
+      [ "onDraw", "de/d56/classcocos2d_1_1_c_c_text_field_delegate.html#a48ac48a7a2837bf0303ee0735f8864b4", null ],
+      [ "onTextFieldAttachWithIME", "de/d56/classcocos2d_1_1_c_c_text_field_delegate.html#a81a41e88efc9ac879ad7fd4b85e20e0a", null ],
+      [ "onTextFieldDeleteBackward", "de/d56/classcocos2d_1_1_c_c_text_field_delegate.html#aa08d84bbc7197d91da263a611eebe90b", null ],
+      [ "onTextFieldDetachWithIME", "de/d56/classcocos2d_1_1_c_c_text_field_delegate.html#a8c4476eb2ae2fcabf52e2e887113b89a", null ],
+      [ "onTextFieldInsertText", "de/d56/classcocos2d_1_1_c_c_text_field_delegate.html#af07e8be4d72767030c83fe9ad0de80b2", null ]
+    ] ],
+    [ "CCTextFieldTTF", "d4/d5b/classcocos2d_1_1_c_c_text_field_t_t_f.html", [
+      [ "CCTextFieldTTF", "d4/d5b/classcocos2d_1_1_c_c_text_field_t_t_f.html#ac225c7f2d7f3a1bde07984c5ec490cda", null ],
+      [ "~CCTextFieldTTF", "d4/d5b/classcocos2d_1_1_c_c_text_field_t_t_f.html#a9f155391133e309dd902b79b673835c2", null ],
+      [ "attachWithIME", "d4/d5b/classcocos2d_1_1_c_c_text_field_t_t_f.html#ac3959287df6d13d89b930b3cd2774a95", null ],
+      [ "canAttachWithIME", "d4/d5b/classcocos2d_1_1_c_c_text_field_t_t_f.html#a34251ddb038df7b83a0b7c4e55c40b91", null ],
+      [ "canDetachWithIME", "d4/d5b/classcocos2d_1_1_c_c_text_field_t_t_f.html#a7bf601f3b433144a03d5bfe387e23613", null ],
+      [ "deleteBackward", "d4/d5b/classcocos2d_1_1_c_c_text_field_t_t_f.html#a6ab288599096c862d09d60296dd48789", null ],
+      [ "detachWithIME", "d4/d5b/classcocos2d_1_1_c_c_text_field_t_t_f.html#a6dadd87eac43259394bd09f71ff42774", null ],
+      [ "draw", "d4/d5b/classcocos2d_1_1_c_c_text_field_t_t_f.html#abc45d04e5f5ce1fbd68f920fcdb2d0e0", null ],
+      [ "getCharCount", "d4/d5b/classcocos2d_1_1_c_c_text_field_t_t_f.html#a2844be59a094ebfc4fa7ca6de364dd9a", null ],
+      [ "getColorSpaceHolder", "d4/d5b/classcocos2d_1_1_c_c_text_field_t_t_f.html#adeb461f64fc232a760f73f490fd1110e", null ],
+      [ "getContentText", "d4/d5b/classcocos2d_1_1_c_c_text_field_t_t_f.html#a1eefa9b18fbd3f75e2d619deeedd63f6", null ],
+      [ "getPlaceHolder", "d4/d5b/classcocos2d_1_1_c_c_text_field_t_t_f.html#a5cf3fb7dd65eb38bd401594cb799421c", null ],
+      [ "getString", "d4/d5b/classcocos2d_1_1_c_c_text_field_t_t_f.html#a5e8245f59639519fbd3256a67478fc80", null ],
+      [ "initWithPlaceHolder", "d4/d5b/classcocos2d_1_1_c_c_text_field_t_t_f.html#a739e2dd067f94f738281786b0d366d4c", null ],
+      [ "initWithPlaceHolder", "d4/d5b/classcocos2d_1_1_c_c_text_field_t_t_f.html#a53804e1caf3775b8916b571b46a44341", null ],
+      [ "insertText", "d4/d5b/classcocos2d_1_1_c_c_text_field_t_t_f.html#a4a4af2d5efe541177f3c1016f4cc62ec", null ],
+      [ "isSecureTextEntry", "d4/d5b/classcocos2d_1_1_c_c_text_field_t_t_f.html#adf55a1ea5b057bc493fab1fcce14336a", null ],
+      [ "setColorSpaceHolder", "d4/d5b/classcocos2d_1_1_c_c_text_field_t_t_f.html#a3c47aaac2790290e9293a9372971e197", null ],
+      [ "setPlaceHolder", "d4/d5b/classcocos2d_1_1_c_c_text_field_t_t_f.html#a7016eee98e0ef1145adffbc5360765b2", null ],
+      [ "setSecureTextEntry", "d4/d5b/classcocos2d_1_1_c_c_text_field_t_t_f.html#a7914b804d934ef08947eaedc8e834026", null ],
+      [ "setString", "d4/d5b/classcocos2d_1_1_c_c_text_field_t_t_f.html#a5e7ca9d7a301390baa58ba7705f7c302", null ],
+      [ "getDelegate", "d4/d5b/classcocos2d_1_1_c_c_text_field_t_t_f.html#abf98c3df6af1596d7cca3461fedc59c4", null ],
+      [ "m_bSecureTextEntry", "d4/d5b/classcocos2d_1_1_c_c_text_field_t_t_f.html#aabdbfd24d341545edfe6ff1046aa3a9c", null ],
+      [ "m_ColorSpaceHolder", "d4/d5b/classcocos2d_1_1_c_c_text_field_t_t_f.html#ad9a26591d870ee8db2076f837646c126", null ],
+      [ "m_nCharCount", "d4/d5b/classcocos2d_1_1_c_c_text_field_t_t_f.html#a4bfd80b141120e727bdfc27ef042d0d6", null ],
+      [ "m_pDelegate", "d4/d5b/classcocos2d_1_1_c_c_text_field_t_t_f.html#a30c474fb3fd3b7e4ff25c5c21b508670", null ],
+      [ "m_pInputText", "d4/d5b/classcocos2d_1_1_c_c_text_field_t_t_f.html#afe95103a754ae04a678c509607a2769e", null ],
+      [ "m_pPlaceHolder", "d4/d5b/classcocos2d_1_1_c_c_text_field_t_t_f.html#ab2b3f71d129b9bbc1602ffad9d1e7ea0", null ]
+    ] ],
+    [ "CCTouch", "de/d9b/classcocos2d_1_1_c_c_touch.html", [
+      [ "CCTouch", "de/d9b/classcocos2d_1_1_c_c_touch.html#a00e422d5532f0eb07272ebf874b1d779", null ],
+      [ "getDelta", "de/d9b/classcocos2d_1_1_c_c_touch.html#a88ab97f15fd14708f19793384eadfafa", null ],
+      [ "getID", "de/d9b/classcocos2d_1_1_c_c_touch.html#af947cd10ac1bf98deb3ccce888ddd573", null ],
+      [ "getLocation", "de/d9b/classcocos2d_1_1_c_c_touch.html#a0c75404bc386063ee0db8b393e3b1d12", null ],
+      [ "getLocationInView", "de/d9b/classcocos2d_1_1_c_c_touch.html#a3cbb14c640e26c74a7f5cc3f440d200b", null ],
+      [ "getPreviousLocation", "de/d9b/classcocos2d_1_1_c_c_touch.html#a994ee22bfde0653715c79999efcf58a4", null ],
+      [ "getPreviousLocationInView", "de/d9b/classcocos2d_1_1_c_c_touch.html#a92f0b5a57de7764087b98341997756f0", null ],
+      [ "getStartLocation", "de/d9b/classcocos2d_1_1_c_c_touch.html#ab9dba2fff629faf23a7f7f43f63e48a2", null ],
+      [ "getStartLocationInView", "de/d9b/classcocos2d_1_1_c_c_touch.html#a339c14e054d73b1ec276c07d26aa0a80", null ],
+      [ "setTouchInfo", "de/d9b/classcocos2d_1_1_c_c_touch.html#a840303f219bf158d4b65d59d965d6a8b", null ]
+    ] ],
+    [ "CCEvent", "df/d67/classcocos2d_1_1_c_c_event.html", null ],
+    [ "CCTouchDelegate", "d0/d38/classcocos2d_1_1_c_c_touch_delegate.html", [
+      [ "CCTouchDelegate", "d0/d38/classcocos2d_1_1_c_c_touch_delegate.html#a072fe7ca14316106cc393ca282086b51", null ],
+      [ "~CCTouchDelegate", "d0/d38/classcocos2d_1_1_c_c_touch_delegate.html#aadb7c984b4f1507ce46f7b21d36d6526", null ],
+      [ "ccTouchBegan", "d0/d38/classcocos2d_1_1_c_c_touch_delegate.html#a37534c85f19e0296e122d9179d712606", null ],
+      [ "ccTouchCancelled", "d0/d38/classcocos2d_1_1_c_c_touch_delegate.html#aecfbc7956f111d0dfc318e4972dd2349", null ],
+      [ "ccTouchEnded", "d0/d38/classcocos2d_1_1_c_c_touch_delegate.html#acb5c34153e751aeff4f88979efd83e47", null ],
+      [ "ccTouchesBegan", "d0/d38/classcocos2d_1_1_c_c_touch_delegate.html#af25e1f3bd5a626ccae1b2c78232c7b39", null ],
+      [ "ccTouchesCancelled", "d0/d38/classcocos2d_1_1_c_c_touch_delegate.html#a05b220926308b71b3588ec67656b8f61", null ],
+      [ "ccTouchesEnded", "d0/d38/classcocos2d_1_1_c_c_touch_delegate.html#af8be76642b34dfb8dd8024db97d9e9e1", null ],
+      [ "ccTouchesMoved", "d0/d38/classcocos2d_1_1_c_c_touch_delegate.html#a93963bf9de8583832a205ab71df4c821", null ],
+      [ "ccTouchMoved", "d0/d38/classcocos2d_1_1_c_c_touch_delegate.html#ad4da57e8306ddb0d633e52409c1cc2d1", null ]
+    ] ],
+    [ "CCTargetedTouchDelegate", "da/da5/classcocos2d_1_1_c_c_targeted_touch_delegate.html", [
+      [ "ccTouchBegan", "da/da5/classcocos2d_1_1_c_c_targeted_touch_delegate.html#a37534c85f19e0296e122d9179d712606", null ],
+      [ "ccTouchCancelled", "da/da5/classcocos2d_1_1_c_c_targeted_touch_delegate.html#aecfbc7956f111d0dfc318e4972dd2349", null ],
+      [ "ccTouchEnded", "da/da5/classcocos2d_1_1_c_c_targeted_touch_delegate.html#acb5c34153e751aeff4f88979efd83e47", null ],
+      [ "ccTouchMoved", "da/da5/classcocos2d_1_1_c_c_targeted_touch_delegate.html#ad4da57e8306ddb0d633e52409c1cc2d1", null ]
+    ] ],
+    [ "CCStandardTouchDelegate", "d0/d07/classcocos2d_1_1_c_c_standard_touch_delegate.html", [
+      [ "ccTouchesBegan", "d0/d07/classcocos2d_1_1_c_c_standard_touch_delegate.html#af25e1f3bd5a626ccae1b2c78232c7b39", null ],
+      [ "ccTouchesCancelled", "d0/d07/classcocos2d_1_1_c_c_standard_touch_delegate.html#a05b220926308b71b3588ec67656b8f61", null ],
+      [ "ccTouchesEnded", "d0/d07/classcocos2d_1_1_c_c_standard_touch_delegate.html#af8be76642b34dfb8dd8024db97d9e9e1", null ],
+      [ "ccTouchesMoved", "d0/d07/classcocos2d_1_1_c_c_standard_touch_delegate.html#a93963bf9de8583832a205ab71df4c821", null ]
+    ] ],
+    [ "ccTouchHandlerHelperData", "d8/d1d/structcocos2d_1_1cc_touch_handler_helper_data.html", [
+      [ "m_type", "d8/d1d/structcocos2d_1_1cc_touch_handler_helper_data.html#a99d221003a0e649cd2d3d68f62cefcca", null ]
+    ] ],
+    [ "EGLTouchDelegate", "d6/dcc/classcocos2d_1_1_e_g_l_touch_delegate.html", [
+      [ "~EGLTouchDelegate", "d6/dcc/classcocos2d_1_1_e_g_l_touch_delegate.html#ac6cbdf6a80342e696b663bdcef8d3a66", null ],
+      [ "touchesBegan", "d6/dcc/classcocos2d_1_1_e_g_l_touch_delegate.html#a3cbc77a5cc7b1faf90dfcaa445b2268f", null ],
+      [ "touchesCancelled", "d6/dcc/classcocos2d_1_1_e_g_l_touch_delegate.html#a12d004521139200e8bc643e868c726e3", null ],
+      [ "touchesEnded", "d6/dcc/classcocos2d_1_1_e_g_l_touch_delegate.html#a38832c0619eb65e8c1d5d4b6a411a747", null ],
+      [ "touchesMoved", "d6/dcc/classcocos2d_1_1_e_g_l_touch_delegate.html#a6031bbfc3ea56b085377dbb3b3ff768b", null ]
+    ] ],
+    [ "CCTouchDispatcher", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html", [
+      [ "~CCTouchDispatcher", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#a5a57f697b8e33693aa4fa2fd8c1632a7", null ],
+      [ "CCTouchDispatcher", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#a26c6bacad205c3799f15c8987d2c04bc", null ],
+      [ "addStandardDelegate", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#ae71a512443043b5ebf14ef6277f6e4ee", null ],
+      [ "addTargetedDelegate", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#a66f60292fcae2a4cb972afb01f055a2e", null ],
+      [ "findHandler", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#a718096610d501845c5bee00ef12e90df", null ],
+      [ "findHandler", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#a22a0471e4be408eeb9ab2503b7c9d002", null ],
+      [ "forceAddHandler", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#a5199b756b73f9068ea221db9a2983046", null ],
+      [ "forceRemoveAllDelegates", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#a537f736cd2de04d9031e2aecf0347a48", null ],
+      [ "forceRemoveDelegate", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#adb5cd0136d5962458c1da6f5f545fb45", null ],
+      [ "init", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#a988e7824fd6ad20a5ad876f9438cded8", null ],
+      [ "isDispatchEvents", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#ac1e180ff3f83dfd5423e742a0c2d16ea", null ],
+      [ "rearrangeHandlers", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#ab6b35784d1089f9816ecda84281c3399", null ],
+      [ "removeAllDelegates", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#a214c3d9e4be902d1dca0ec6690120cda", null ],
+      [ "removeDelegate", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#afd8ad360f345aad043aac5b94a5e1e96", null ],
+      [ "setDispatchEvents", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#a6c9435fd2392e349fbd9ec104f7a6cb7", null ],
+      [ "setPriority", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#a9e4730e0b7ab9c6ec39b95122014b869", null ],
+      [ "touches", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#ab7a3b1a49a1a2504ac1b7768d77678db", null ],
+      [ "touchesBegan", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#aeae3be19b08d8a0a2a2a49ff1b958796", null ],
+      [ "touchesCancelled", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#af230974eb3b47a23b1fa111d23357eb7", null ],
+      [ "touchesEnded", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#a63181c4479bcd8d9cfc5a3ea75c001f1", null ],
+      [ "touchesMoved", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#a6e92e6366f837bc411c3daab01e58a54", null ],
+      [ "m_bDispatchEvents", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#abb2e9d54cfcc4066a9a851e1a36285f5", null ],
+      [ "m_bLocked", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#aac822ff08ee11306a03303f8854ed112", null ],
+      [ "m_bToAdd", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#a6384aac35befc1bd27b4f5569ae823a7", null ],
+      [ "m_bToQuit", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#ab850ed069ea36ca441f526d8aa828d43", null ],
+      [ "m_bToRemove", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#accdd91f55037bb0ead018f5ce091f29d", null ],
+      [ "m_pHandlersToAdd", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#a4f3f8264be6a8ff03aa089884d427c8b", null ],
+      [ "m_pHandlersToRemove", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#a467e9d1358a6bac1026ce5adeb792f42", null ],
+      [ "m_pStandardHandlers", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#a082651c42726f692373ed1ccdf7628cd", null ],
+      [ "m_pTargetedHandlers", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#a74dab4b87d180dda9d677a1c469e9b6f", null ],
+      [ "m_sHandlerHelperData", "da/de4/classcocos2d_1_1_c_c_touch_dispatcher.html#a5d6754ad6b54d40559a1211fcaee470b", null ]
+    ] ],
+    [ "CCTouchHandler", "dc/dee/classcocos2d_1_1_c_c_touch_handler.html", [
+      [ "~CCTouchHandler", "dc/dee/classcocos2d_1_1_c_c_touch_handler.html#ac3cb08d461dd742848b67258b94a6cbb", null ],
+      [ "getDelegate", "dc/dee/classcocos2d_1_1_c_c_touch_handler.html#aa46567ab3bef6ca73b55bb3996809392", null ],
+      [ "getEnabledSelectors", "dc/dee/classcocos2d_1_1_c_c_touch_handler.html#a3db0297273ddb6633705a17634a6610a", null ],
+      [ "getPriority", "dc/dee/classcocos2d_1_1_c_c_touch_handler.html#a1231d448050b20aeac9b5939b71bfcf9", null ],
+      [ "initWithDelegate", "dc/dee/classcocos2d_1_1_c_c_touch_handler.html#aa2393ce15a02dcffe9d1e7752e487cce", null ],
+      [ "setDelegate", "dc/dee/classcocos2d_1_1_c_c_touch_handler.html#a1d7aa9db02def049b04370b04629dc26", null ],
+      [ "setEnalbedSelectors", "dc/dee/classcocos2d_1_1_c_c_touch_handler.html#a5a9e07f3b8c8577ef5e433a0974c00d9", null ],
+      [ "setPriority", "dc/dee/classcocos2d_1_1_c_c_touch_handler.html#a8fee255983355883aac0eb53cbfe2ed8", null ],
+      [ "m_nEnabledSelectors", "dc/dee/classcocos2d_1_1_c_c_touch_handler.html#a8f2b8c257ae9365b0a4e37614e15268b", null ],
+      [ "m_nPriority", "dc/dee/classcocos2d_1_1_c_c_touch_handler.html#a9328e43267004e04143e9e426716c847", null ],
+      [ "m_pDelegate", "dc/dee/classcocos2d_1_1_c_c_touch_handler.html#aec299e433d53ca3d62b9aef1bade64de", null ]
+    ] ],
+    [ "CCStandardTouchHandler", "d4/d5c/classcocos2d_1_1_c_c_standard_touch_handler.html", [
+      [ "initWithDelegate", "d4/d5c/classcocos2d_1_1_c_c_standard_touch_handler.html#aa2393ce15a02dcffe9d1e7752e487cce", null ]
+    ] ],
+    [ "CCTargetedTouchHandler", "d7/dc6/classcocos2d_1_1_c_c_targeted_touch_handler.html", [
+      [ "~CCTargetedTouchHandler", "d7/dc6/classcocos2d_1_1_c_c_targeted_touch_handler.html#aa9a4e677b0e6580babab359aca6eff7b", null ],
+      [ "getClaimedTouches", "d7/dc6/classcocos2d_1_1_c_c_targeted_touch_handler.html#a9ad06d57a857316c31a236c96a455248", null ],
+      [ "initWithDelegate", "d7/dc6/classcocos2d_1_1_c_c_targeted_touch_handler.html#a005788c3cce2abd7a6bddc88cba1660a", null ],
+      [ "isSwallowsTouches", "d7/dc6/classcocos2d_1_1_c_c_targeted_touch_handler.html#afd6212028db01b5cdc0a3436d9af5638", null ],
+      [ "setSwallowsTouches", "d7/dc6/classcocos2d_1_1_c_c_targeted_touch_handler.html#a0df55fa4473b4c6cd40d5029581c00e8", null ],
+      [ "m_bSwallowsTouches", "d7/dc6/classcocos2d_1_1_c_c_targeted_touch_handler.html#af42146c8f831a77265dbcbb29d5bfd6e", null ],
+      [ "m_pClaimedTouches", "d7/dc6/classcocos2d_1_1_c_c_targeted_touch_handler.html#ad45979d61380039af67a6077f6d41899", null ],
+      [ "CCTOUCHBEGAN", "dc/df1/group__input.html#ggaabfcbcb5ac86a1edac4035264bc7d2b8ae6906c55f5aa6de3714315fd36cbd75b", null ],
+      [ "CCTOUCHMOVED", "dc/df1/group__input.html#ggaabfcbcb5ac86a1edac4035264bc7d2b8af4da781dc638b05062f1311ab32d3ebc", null ],
+      [ "CCTOUCHENDED", "dc/df1/group__input.html#ggaabfcbcb5ac86a1edac4035264bc7d2b8aabad631822525457f3029ac18e39ee4d", null ],
+      [ "CCTOUCHCANCELLED", "dc/df1/group__input.html#ggaabfcbcb5ac86a1edac4035264bc7d2b8a2f7374c0e938733b7e5c256e366312fe", null ],
+      [ "ccTouchMax", "dc/df1/group__input.html#ggaabfcbcb5ac86a1edac4035264bc7d2b8adcd7ac93a9c261871d654e58617ce358", null ]
+    ] ],
+    [ "ccKeypadMSGType", "dc/df1/group__input.html#ga038174d3f675f5495247b819a48e46af", [
+      [ "kTypeBackClicked", "dc/df1/group__input.html#gga038174d3f675f5495247b819a48e46afa7acab02fe44cf982b6fb06cea779bbb1", null ],
+      [ "kTypeMenuClicked", "dc/df1/group__input.html#gga038174d3f675f5495247b819a48e46afa7689b61fde78c3eabea430d8a68f0756", null ]
+    ] ],
+    [ "ccTouchSelectorFlag", "dc/df1/group__input.html#gad643f7a48d6c35266113730640e58324", [
+      [ "ccTouchSelectorBeganBit", "dc/df1/group__input.html#ggad643f7a48d6c35266113730640e58324aeff9481d05c003c9152647d1e12fe021", null ],
+      [ "ccTouchSelectorMovedBit", "dc/df1/group__input.html#ggad643f7a48d6c35266113730640e58324ae5f2ad119e4cb9d3384df506be49c743", null ],
+      [ "ccTouchSelectorEndedBit", "dc/df1/group__input.html#ggad643f7a48d6c35266113730640e58324ac9a7dc2e0d1d9a9ef9ffda1953e8d58a", null ],
+      [ "ccTouchSelectorCancelledBit", "dc/df1/group__input.html#ggad643f7a48d6c35266113730640e58324a89b743099fc8475fc44276903835e8b8", null ],
+      [ "ccTouchSelectorAllBits", "dc/df1/group__input.html#ggad643f7a48d6c35266113730640e58324af88a2c5533ea9eda222b293bdf46b59e", null ]
+    ] ]
+];

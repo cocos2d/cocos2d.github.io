@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Cocos Team">
+        <link rel="canonical" href="http://cocos2d-x.org/docs/deprecated/studio-chapters/chapter3/Extend/ParamExtend/en/index.html">
+        <link rel="shortcut icon" href="../../../../../../img/favicon.ico">
+
+	<title>_Properties Extension - Cocos Documentation</title>
+
+  <link href="../../../../../../css/bootstrap-custom.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+<link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href="../../../../../../css/base.css" rel="stylesheet">
+<link href="../../../../../../css/cinder.css" rel="stylesheet">
+<link href="../../../../../../css/pg.css" rel="stylesheet">
+<link href="../../../../../../css/highlight.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-3216502-3', 'Cocos2d-x.org');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a style="padding: 12px 0px;" class="navbar-brand" href="../../../../../../index.html">Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../../../../../index.html">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Manual Installations</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../../installation/A/index.html">Prerequisites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../installation/Android-terminal/index.html">Android Command-line Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../installation/Android-VisualStudio/index.html">Android Visual Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../installation/Android-Studio/index.html">Android Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../installation/Android-Eclipse/index.html">Android Eclipse Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../installation/iOS/index.html">IOS and OSX Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../installation/Linux/index.html">Linux Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../installation/Tizen/index.html">Tizen Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../installation/Windows/index.html">Windows Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../installation/Windows-Phone/index.html">Windows Phone Setup</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Programmers Guide</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../../programmers-guide/about/index.html">About Cocos2d-x</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../programmers-guide/basic_concepts/index.html">Basic Concepts</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../programmers-guide/sprites/index.html">Sprites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../programmers-guide/actions/index.html">Actions</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../programmers-guide/scenes/index.html">Scenes</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../programmers-guide/ui_components/index.html">UI</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../programmers-guide/other_node_types/index.html">Other Node Types</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../programmers-guide/event_dispatch/index.html">Event Dispatch</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../programmers-guide/3d/index.html">3D</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../programmers-guide/scripting/index.html">Scripting</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../programmers-guide/physics/index.html">Physics</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../programmers-guide/audio/index.html">Audio</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../programmers-guide/vr/index.html">VR</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../programmers-guide/advanced_topics/index.html">Advanced Topics</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Editors & Tools</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../../editors_and_tools/cocosCLTool/index.html">Command-line tool</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../../../editors_and_tools/creator/index.html">Cocos Creator</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+  
+  <li >
+      <a href="../../../../../../editors_and_tools/cocos/index.html">Cocos Launcher</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Services</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../../services/sdkbox/index.html">SDKBOX</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Tutorials</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../../tutorials/javascript/javascript/index.html">Parkour Game Tutorials for Cocos2d-JS</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+  <li >
+      <a href="../../../../../../api-ref/index.html">API Reference</a>
+  </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Deprecated</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../../studio/index.html">Cocos Studio</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                        </ul>
+                    </li>
+                
+                
+
+                <!-- new add for language button -->
+                <!--<li>
+                    <a href="http://sdkbox-doc.github.io/zh/">中文</a>
+                </li>-->
+
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <!-- 
+                    <li >
+                        <a rel="next" href="../../WidgetExtend/en/index.html">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../CustomExport/en/index.html">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                 -->
+                
+                    <li>
+                        <a href="https://github.com/chukong/cocos-docs">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+              
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+      
+        
+          <li class="main active"><a href="#properties-extension">Properties Extension</a></li>
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#widget-types">Widget Types</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#creating-a-custom-widget">Creating a Custom Widget</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#interface-changes">Interface Changes</a></li>
+              
+
+          
+
+        
+      
+    
+    </ul>
+</div></div>
+              
+                <div class="col-md-9" role="main">
+
+<!-- bread crumb trail -->
+<ol class="breadcrumb">
+<li><a href="../../../../../../index.html">Docs</a></li>
+
+  
+    
+      <li>Contents</li>
+    
+  
+    
+      <li>Deprecated</li>
+    
+  
+
+<li>_Properties Extension</li>
+</ol>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../../WidgetExtend/en/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../../CustomExport/en/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+
+
+<!-- we can put this here if we want it on all content pages, but we don't at this point -->
+<!--<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>-->
+    <!--<li><a href="#" id="tab-lua">Lua</a></li>-->
+  <!--</ul>
+</div>-->
+
+<h1 id="properties-extension">Properties Extension</h1>
+<p><strong>NOTE:</strong> Some interfaces of property have been changed in v2.3.3.0. More details in <strong>Interface Changes</strong></p>
+<h3 id="widget-types">Widget Types</h3>
+<p>Cocos Studio supports extensions of widgets and widgets’ properties. The editor has some general settings of widgets' properties in default. It is also recommended to add custom properties to widgets (For more information, see Sample).</p>
+<p>A series of widget types is available in Cocos Studio.</p>
+<ul>
+<li><strong>string type</strong></li>
+</ul>
+<p><img alt="image" src="../../../../studio-img/Extend/ParamExtend/image001.png" /></p>
+<p>Frame event is a string type with a text field, which has no text format restriction and can also be blank. For example:</p>
+<pre><code>string customString = string.Empty;
+[UndoPropertyAttribute]
+[DisplayName("字符串")]
+[Category("Custom_Plug")]
+[PropertyOrder(0)]
+[Browsable(true)]
+public string CustomString
+{
+    get { return customString; }
+    set
+    {
+        if (customString != value)
+        {
+            customString = value;
+            this.RaisePropertyChanged(() =&gt; this.CustomString);
+        }
+    }
+}
+</code></pre>
+<p><img alt="image" src="../../../../studio-img/Extend/ParamExtend/image002.png" /></p>
+<p>Name is a string type with a text field, which has no text format restriction but cannot be blank. If it is blank, it will restore the previous value by default. Such text field can be applied by calling <strong>ValidTextEditor</strong>. For example:</p>
+<pre><code>[UndoPropertyAttribute]
+[DisplayName("ValidTextBox")]
+[Editor(typeof(ValidTextEditor), typeof(ValidTextEditor))]
+[Category("Custom_Plug")]
+[PropertyOrder(0)]
+[Browsable(true)]
+public string ValidTextBoxString { get; set; }
+</code></pre>
+<ul>
+<li><strong>int type</strong></li>
+</ul>
+<p>Logical Label is an <strong>int</strong> type with a text field only for numbers extending from -9999999 to 9999999, which can be set by <strong>SetMaxMin</strong>. For example:</p>
+<pre><code>int customInt = 0;
+[UndoPropertyAttribute]
+[DisplayName("Integer")]
+[Category("Custom_Plug")]
+[PropertyOrder(1)]
+[Browsable(true)]
+public int CustomInt
+{
+    get { return customInt; }
+    set
+    {
+        if (customInt != value)
+        {
+            customInt = value;
+            this.RaisePropertyChanged(() =&gt; this.CustomInt);
+        }
+    }
+}
+</code></pre>
+<ul>
+<li><strong>bool type</strong></li>
+</ul>
+<p><img alt="image" src="../../../../studio-img/Extend/ParamExtend/image003.png" /></p>
+<p>Visible is a <strong>bool</strong> type with a check box, which can be checked or unchecked. For example：</p>
+<pre><code>bool customBool = false;
+[UndoPropertyAttribute]
+[DisplayName("Bool")]
+[Category("Custom_Extend")]
+[PropertyOrder(4)]
+[Browsable(true)]
+public bool CustomBool
+{
+    get { return customBool; }
+    set
+    {
+        if (customBool != value)
+        {
+            customBool = value;
+            this.RaisePropertyChanged(() =&gt; this.CustomBool);
+        }
+    }
+}
+</code></pre>
+<ul>
+<li><strong>enum type</strong></li>
+</ul>
+<p><img alt="image" src="../../../../studio-img/Extend/ParamExtend/image004.png" /></p>
+<p>Alignment is an <strong>enmu</strong> type with a combox, in which various enmu items can be selected. For example:</p>
+<pre><code>public enum CocosEnum
+{
+    None,
+    Fir,
+    Sec,
+    Thi
+}
+
+CocosEnum customEnum = CocosEnum.None;
+
+[UndoPropertyAttribute]
+[DisplayName("Enum")]
+[Category("Custom_Plug")]
+[PropertyOrder(5)]
+[Browsable(true)]
+public CocosEnum CustomEnum
+{
+    get { return customEnum; }
+    set
+    {
+        if (customEnum != value)
+        {
+            customEnum = value;
+            this.RaisePropertyChanged(() =&gt; this.CustomEnum);
+        }
+    }
+}
+</code></pre>
+<ul>
+<li><strong>Color type</strong></li>
+</ul>
+<p><img alt="image" src="../../../../studio-img/Extend/ParamExtend/image005.png" /></p>
+<p>Color-blend is a Color type with a combined control, in which various color can be selected. For example:</p>
+<pre><code>System.Drawing.Color customColor = System.Drawing.Color.White;
+[UndoPropertyAttribute]
+[Editor(typeof(ColorEditor), typeof(ColorEditor))]
+[DisplayName("Color")]
+[Category("Custom_Extend")]
+[PropertyOrder(6)]
+[Browsable(true)]
+public System.Drawing.Color CustomColor
+{
+    get { return customColor; }
+    set
+    {
+        if (customColor != value)
+        {
+            customColor = value;
+            this.RaisePropertyChanged(() =&gt; this.CustomColor);
+        }
+    }
+}
+</code></pre>
+<ul>
+<li><strong>ScaleValue type</strong></li>
+</ul>
+<p><img alt="image" src="../../../../studio-img/Extend/ParamExtend/image006.png" /></p>
+<p>Skew is a <strong>ScaleValue</strong> type with a combined control, in which the value of X and Y can be set separately. Minimum/ Maximum values and value range can be set in property. For example:</p>
+<pre><code>ScaleValue customScaleValue = new ScaleValue(1, 1);
+[UndoPropertyAttribute]
+[Editor(typeof(CustomEditor), typeof(CustomEditor))]
+[ValueRange(int.MinValue, int.MaxValue, 1)]
+[DisplayName("ScaleValue")]
+[Category("Custom_Extend")]
+[PropertyOrder(7)]
+[Browsable(true)]
+public ScaleValue CustomScaleValue
+{
+    get { return customScaleValue; }
+    set
+    {
+        if (customScaleValue != value)
+        {
+            customScaleValue = value;
+            this.RaisePropertyChanged(() =&gt; this.CustomScaleValue);
+        }
+    }
+}
+</code></pre>
+<ul>
+<li><strong>PointF type</strong></li>
+</ul>
+<p><img alt="image" src="../../../../studio-img/Extend/ParamExtend/image007.png" /></p>
+<p>The anchor attribute is a <strong>PoinfF</strong> Type. Type refers to a combined control, in which the value of X and Y can be set separately. For example:</p>
+<pre><code>PointF customPointF = new PointF(1, 1);
+[UndoPropertyAttribute]
+[Editor(typeof(PointFEditor), typeof(PointFEditor))]
+[ValueRange(int.MinValue, int.MaxValue, 1)]
+[DisplayName("ScaleValue")]
+[Category("Custom_Extend")]
+[PropertyOrder(7)]
+[Browsable(true)]
+public PointF CustomPointF
+{
+    get { return customPointF; }
+    set
+    {
+        if (customPointF != value)
+        {
+            customPointF = value;
+            this.RaisePropertyChanged(() =&gt; this.CustomScaleValue);
+        }
+    }
+}
+</code></pre>
+<p>Some properties are available in the sample file of <strong>CustomObject</strong>. After adding these properties, users need to add the corresponding properties in <strong>CustomObjectData</strong> class, so that property settings can be saved when exit the editor. Previously saved property settings will be read when a file is opened. For example:</p>
+<pre><code>    [ItemProperty]
+    [JsonProperty]
+    public int CustomInt { get; set; }
+</code></pre>
+<p>The specific codes have been added to <strong>CustomObjectData</strong>.</p>
+<h3 id="creating-a-custom-widget"><strong>Creating a Custom Widget</strong></h3>
+<ul>
+<li>
+<p><strong>CustomEditor</strong> inherits <strong>BaseEditor</strong> base class, <strong>BaseEditor</strong> inherits <strong>IPropertyEditor</strong> interface.</p>
+<p><strong>BaseEditor</strong> has realised <strong>IPropertyEditor</strong>, but when inherit from <strong>BaseEditor</strong>, you still need to override some method of the base class. The methods which must be override are:</p>
+<pre><code>protected abstract Gtk.Widget OnCreateWidget();
+protected abstract void void OnSetControl();
+</code></pre>
+<p>Gtk.Widget OnCreateWidget() is called when initialize the editor. It returns the Gtk widget of the editor which will be shown in the PropertyGrid.</p>
+<p>void OnSetControl() is used to refresh the Gtk widgets when property changed.</p>
+<p>When the value of entry in CustomEditor changed, it will set the property value. This is done through  the member <strong>PropertyItem</strong>. You can get or set property value using <strong>PropertyItem</strong>.</p>
+<pre><code>private void XEntryValueChangedHandler(object sender, EntryIntEventArgs e)
+{
+    using (GetLock())
+    {
+        for (int i = 0; i &lt; PropertyItem.Objects.Count; i++)
+        {
+            ScaleValue value = PropertyItem.Values[i] as ScaleValue;
+            value.ScaleX = e.Value;
+            PropertyItem.Values[i] = value;
+        }
+    }
+}
+</code></pre>
+</li>
+</ul>
+<h3 id="interface-changes">Interface Changes</h3>
+<p>Some interface of property have been changed in v2.3.3.0, including:</p>
+<p><strong>1)</strong> The project <strong>CocoStudio.ToolKit</strong> is merged into <strong>Modules.Communal.PropertyGrid</strong>. Please use <strong>Modules.Communal.PropertyGrid</strong> namespace instead of <strong>CocoStudio.ToolKit</strong> namespace.</p>
+<p><strong>2)</strong> <strong>ITypeEditor</strong> is renamed to <strong>IPropertyEditor</strong>. Old methods in <strong>ITypeEditor</strong> are obsoloted, pleased use new methods in <strong>IPropertyEditor</strong> instead.</p>
+<p><strong>3)</strong> <strong>CatagoryAttribute</strong> is renamed to <strong>ControlGroupAttribute</strong>, and is moved to project <strong>CocoStudio.Model</strong>.</p>
+<p><strong>4)</strong> <strong>PropertyEditorTypeAttribte</strong> is deleted for it is no longer used in the new property grid frame.</p>
+<p><em><strong>Note</strong> The contents of the document are under continuous update based on users' feedback. Please check the latest version for reference. If you have any suggestions or comments on the extensions of Cocos Studio, please let us know. Thanks for your interest and support for Cocos Studio, and for helping us make a better product.</em></p>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../../WidgetExtend/en/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../../CustomExport/en/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+</div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <p style="text-align:center">Copyright (c) 2014-2016 Chukong Technologies Inc.</p>
+            
+           <!-- <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>-->
+        </footer>
+
+        <script src="../../../../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../../../../js/highlight.pack.js"></script>
+        <script>var base_url = '../../../../../..';</script>
+
+        <!-- PG languages -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script>
+        $(function() {
+          var key = "Cocos2d-x_pg_lang";
+          var switch_lang = function(l) {
+              $('.langs li a').removeClass('selected');
+              $('#'+l).addClass('selected');
+              $('.tab_content').hide();
+              $('.'+l).show();
+              $.cookie(key, l);
+          }
+          $('.langs li a').click(function() {switch_lang(this.id);return false;});
+          var c = $.cookie(key);
+          if (typeof c == 'undefined') c='tab-cpp';
+          switch_lang(c);
+        });
+        </script>
+
+        <script data-main="../../../../../../mkdocs/js/search.js" src="../../../../../../mkdocs/js/require.js"></script>
+        <script src="../../../../../../js/base.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/Cocos2d-html5-min.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chipmunk.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d-jsb.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/main.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/AnimationLayer.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/BackgroundLayer.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Coin.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/GameOverLayer.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/PlayScene.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Rock.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/SimpleRecognizer.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/StatusLayer.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/globals.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/myApp.js"></script>
+        <script src="../../../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/resource.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

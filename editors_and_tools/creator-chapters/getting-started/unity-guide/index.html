@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Cocos Team">
+        <link rel="canonical" href="http://cocos2d-x.org/docs/editors_and_tools/creator-chapters/getting-started/unity-guide/index.html">
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+
+	<title>_Unity Guide - Cocos Documentation</title>
+
+  <link href="../../../../css/bootstrap-custom.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+<link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href="../../../../css/base.css" rel="stylesheet">
+<link href="../../../../css/cinder.css" rel="stylesheet">
+<link href="../../../../css/pg.css" rel="stylesheet">
+<link href="../../../../css/highlight.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-3216502-3', 'Cocos2d-x.org');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a style="padding: 12px 0px;" class="navbar-brand" href="../../../../index.html">Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../../../index.html">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Manual Installations</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../installation/A/index.html">Prerequisites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Android-terminal/index.html">Android Command-line Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Android-VisualStudio/index.html">Android Visual Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Android-Studio/index.html">Android Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Android-Eclipse/index.html">Android Eclipse Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/iOS/index.html">IOS and OSX Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Linux/index.html">Linux Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Tizen/index.html">Tizen Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Windows/index.html">Windows Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Windows-Phone/index.html">Windows Phone Setup</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Programmers Guide</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/about/index.html">About Cocos2d-x</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/basic_concepts/index.html">Basic Concepts</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/sprites/index.html">Sprites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/actions/index.html">Actions</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/scenes/index.html">Scenes</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/ui_components/index.html">UI</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/other_node_types/index.html">Other Node Types</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/event_dispatch/index.html">Event Dispatch</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/3d/index.html">3D</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/scripting/index.html">Scripting</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/physics/index.html">Physics</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/audio/index.html">Audio</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/vr/index.html">VR</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/advanced_topics/index.html">Advanced Topics</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Editors & Tools</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../cocosCLTool/index.html">Command-line tool</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../creator/index.html">Cocos Creator</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+  
+  <li >
+      <a href="../../../cocos/index.html">Cocos Launcher</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Services</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../services/sdkbox/index.html">SDKBOX</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Tutorials</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../tutorials/javascript/javascript/index.html">Parkour Game Tutorials for Cocos2d-JS</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+  <li >
+      <a href="../../../../api-ref/index.html">API Reference</a>
+  </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Deprecated</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../deprecated/studio/index.html">Cocos Studio</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                        </ul>
+                    </li>
+                
+                
+
+                <!-- new add for language button -->
+                <!--<li>
+                    <a href="http://sdkbox-doc.github.io/zh/">中文</a>
+                </li>-->
+
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <!-- 
+                    <li >
+                        <a rel="next" href="../cocos2d-x-guide/index.html">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../project-structure/index.html">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                 -->
+                
+                    <li>
+                        <a href="https://github.com/chukong/cocos-docs">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+              
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+      
+        
+          <li class="main active"><a href="#unity-user-guide">Unity User Guide</a></li>
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#abstract">Abstract</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#ccnode-vs-gameobject">cc.Node vs GameObject</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#coordinate-system">Coordinate system</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#cccomponent-vs-monobehaviour">cc.Component vs MonoBehaviour</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#property-definition">Property definition</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#life-cycle">Life cycle</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#message">Message</a></li>
+              
+
+          
+
+        
+      
+    
+    </ul>
+</div></div>
+              
+                <div class="col-md-9" role="main">
+
+<!-- bread crumb trail -->
+<ol class="breadcrumb">
+<li><a href="../../../../index.html">Docs</a></li>
+
+  
+    
+      <li>Contents</li>
+    
+  
+    
+      <li>Editors & Tools</li>
+    
+  
+
+<li>_Unity Guide</li>
+</ol>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../cocos2d-x-guide/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../project-structure/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+
+
+<!-- we can put this here if we want it on all content pages, but we don't at this point -->
+<!--<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>-->
+    <!--<li><a href="#" id="tab-lua">Lua</a></li>-->
+  <!--</ul>
+</div>-->
+
+<h1 id="unity-user-guide">Unity User Guide</h1>
+<p>For users who have used Unity3D before, they will find it extremely easy when starting to use Cocos Creator because many concepts are interlinked between the two. However,
+there still are some differences between Cocos Creator and Unity3D on some detailed concepts. This document will enumerate the differences
+between Cocos Creator and Unity3D to help Unity3D users learn to use Cocos Creator more quickly.</p>
+<h2 id="abstract">Abstract</h2>
+<table>
+<thead>
+<tr>
+<th>Cocos Creator</th>
+<th>Unity3D</th>
+<th>Instruction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cc.Node</td>
+<td>GameObject</td>
+<td>Object in the scene. Each object can contain many components</td>
+</tr>
+<tr>
+<td>node.active</td>
+<td>gameObject.activeSelf</td>
+<td>Set up the activated state of the node itself</td>
+</tr>
+<tr>
+<td>node.activeInHierarchy</td>
+<td>gameObject.activeInHierarchy</td>
+<td>Check the activated state of the node in hierarchy</td>
+</tr>
+<tr>
+<td>node.parent</td>
+<td>transform.parent</td>
+<td></td>
+</tr>
+<tr>
+<td>node.position</td>
+<td>transform.position</td>
+<td>Position in Cocos Creator is in the local coordinate system, but in Unity3D it's in the world coordinate system</td>
+</tr>
+<tr>
+<td>node.rotation</td>
+<td>transform.rotation</td>
+<td>Rotation in Cocos Creator is in the local coordinate system, but in Unity3D it's in the world coordinate system</td>
+</tr>
+<tr>
+<td>node.scale</td>
+<td>transform.localScale</td>
+<td></td>
+</tr>
+<tr>
+<td>cc.find(path, refNode)</td>
+<td>transform.Find(path), GameObject.Find(path)</td>
+<td>If refNode is blank, find it from the scene root node, otherwise, find it from the refNode node.</td>
+</tr>
+<tr>
+<td>cc.game.addPersistRootNode(node)</td>
+<td>Object.DontDestroyOnLoad(gameObject)</td>
+<td></td>
+</tr>
+<tr>
+<td>cc.Component</td>
+<td>Component</td>
+<td>Component</td>
+</tr>
+<tr>
+<td>comp.node</td>
+<td>comp.gameObject</td>
+<td></td>
+</tr>
+<tr>
+<td>comp.onLoad()</td>
+<td>comp.Awake()</td>
+<td></td>
+</tr>
+<tr>
+<td>comp.start()</td>
+<td>comp.Start()</td>
+<td></td>
+</tr>
+<tr>
+<td>comp.update(dt)</td>
+<td>comp.Update()</td>
+<td></td>
+</tr>
+<tr>
+<td>comp.lateUpdate(dt)</td>
+<td>comp.LateUpdate()</td>
+<td></td>
+</tr>
+<tr>
+<td>obj.destroy()</td>
+<td>Object.Destroy(obj)</td>
+<td>obj is the concrete example of cc.Object (normally it is: node, component or asset)</td>
+</tr>
+<tr>
+<td>cc.isValid(obj)</td>
+<td>obj != null</td>
+<td>Judge if cc.Object is effective (normally it is: node, component or asset)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>The API of Firball use camelCase. The first letter of the method and variable is in lowercase. The first letter of the category definition is in uppercase.</li>
+<li>The callback of Firball follows the style of Node.js, which means the first parameter of the callback is wrong information.</li>
+</ul>
+<h2 id="ccnode-vs-gameobject">cc.Node vs GameObject</h2>
+<p>Node in Cocos Creator equals to GameObject + Transform in Unity3D. In Cocos Creator,
+the hierarchical relation of the parent and child nodes is maintained by Node. But in Unity3D, it's in the charge of Transform.</p>
+<pre><code class="javascript">// change the parent-child relation
+this.node.parent = anotherNode;
+
+// rotate by 20 degrees
+this.node.rotation += 20;
+
+// shift by pixcels of (10,10)
+this.node.position.x += 10;
+this.node.position.y += 10;
+
+// zoom in/out for 1.5 times
+this.node.scale.x *= 1.5;
+this.node.scale.y *= 1.5;
+</code></pre>
+
+<h2 id="coordinate-system">Coordinate system</h2>
+<p><code>position</code>, <code>rotation</code> and <code>scale</code> in cc.Node are both in the local coordinate system. As for Unity3D, its <code>Postion</code>,
+<code>Rotation</code> is in the world coordinate system.</p>
+<p>In Cocos Creator, if you want to calculate the world coordinate of cc.Node, you can use the following method:</p>
+<pre><code class="javascript">// set up the node to the position of (100,100) in world coordinate system
+this.node.position = this.node.convertToNodeSpaceAR(cc.v2(100,100));
+// this.node.rotation = TODO
+</code></pre>
+
+<h2 id="cccomponent-vs-monobehaviour">cc.Component vs MonoBehaviour</h2>
+<p>In Cocos Creator, the user defined script is written by extending the cc.Component category. But in Unity3D, it's written by
+extending MonoBehaviour. Let's compare a Cocos Creator script with a Unity3D script that has the same functions:</p>
+<p><strong>Unity3D</strong>:</p>
+<pre><code class="csharp">public class Foobar : MonoBehaviour {
+  public string text = 'Foobar';
+  void Start () {
+    Debug.Log('Hello ' + text );
+  }
+  void Update () {}
+}
+</code></pre>
+
+<p><strong>Cocos Creator</strong>:</p>
+<pre><code class="javascript">// Foobar.js
+cc.Class({
+  extends: cc.Component,
+  properties: {
+    text: 'Foobar',
+  },
+  onLoad: function () {
+    console.log('Hello ' + this.text);
+  },
+  update: function (dt) {},
+});
+</code></pre>
+
+<h2 id="property-definition">Property definition</h2>
+<p>In Cocos Creator, properties are defined in the <code>properties</code> field. But in Unity3D, properties are defined as
+member variables of MonoBehaviour. Apart from differences in the defining positions, Cocos Creator also imports the concept of the property parameter into the property. These parameters can be used to control
+the display method of properties in Inspector, serialization, etc. For detailed parameters, please refer to: [/manual/scripting/attributes]</p>
+<p>The following are defining methods of some commonly used properties in Cocos Creator:</p>
+<pre><code class="javascript">var MyEnum = cc.Enum({
+  Foo: 1,
+  Bar: 2,
+});
+
+// MyScript.js
+var Foobar = require('Foobar');
+cc.Class({
+  extends: cc.Component,
+  properties: {
+    // quote other cc.Node
+    // in Unity3D, it is defined as: public GameObject otherGameObject;
+    otherNode: { default: null, type: cc.Node },
+
+    // quote a concrete example of Foobar Component
+    // in Unity3D, it is defined as: public Foobar foobar;
+    foobar: { default: null, type: Foobar },
+
+    // do not serialize this property
+    // in Unity3D, it is defined as: [System.NonSerialized] public int index = 0;
+    index: { default: 0, type: cc.Integer, serializable: false  },
+
+    // define an array
+    // in Unity3D, it is defined as: public float[] idList;
+    idList: { default: [],  type: cc.Float },
+
+    // define an enumerated category
+    // in Unity3D, it is defined as: public MyEnum myEnum = MyEnum.Foo;
+    myEnum: { default: MyEnum.Foo,  type: MyEnum },
+  }
+})
+</code></pre>
+
+<h2 id="life-cycle">Life cycle</h2>
+<p>The life cycle of Cocos Creator is basically the same as Unity3D, having only slight differences in the naming:</p>
+<table>
+<thead>
+<tr>
+<th>Cocos Creator</th>
+<th>Unity3D</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>onLoad</td>
+<td>Awake</td>
+</tr>
+<tr>
+<td>start</td>
+<td>Start</td>
+</tr>
+<tr>
+<td>update</td>
+<td>Update</td>
+</tr>
+<tr>
+<td>lateUpdate</td>
+<td>LateUpdate</td>
+</tr>
+<tr>
+<td>onEnable</td>
+<td>OnEnable</td>
+</tr>
+<tr>
+<td>onDisable</td>
+<td>OnDisable</td>
+</tr>
+<tr>
+<td>onDestroy</td>
+<td>OnDestroy</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>When you want to destroy a cc.Object concrete example (such as: node, component or asset), you can use obj.destroy() function.</li>
+<li>When you want to determine whether a cc.Object concrete example(such as: node, component or asset) is destroyed or not, you can use cc.isValid(node).</li>
+</ul>
+<h2 id="message">Message</h2>
+<p>The message system of Cocos Creator uses the transmit&amp;receive mode of dom, which can send a message upward, but you need to sign up for message in Node.
+But in Unity3D, messages are realized by going through SendMessage and directly responding to the member function defined in the script.</p>
+<p>The following is the transmit&amp;receive mode of message in Cocos Creator:</p>
+<pre><code class="javascript">cc.Class({
+  extends: cc.Component,
+
+  onLoad: function () {
+    this.node.on('hello-foobar', function ( event ) {
+      event.stopPropagation();
+      console.log('Hello Foobar');
+    });
+  },
+
+  start: function () {
+    this.node.emit('hello-foobar');
+  },
+})
+</code></pre>
+
+<hr />
+<p>Continue on to read about <a href="../project-structure/index.html">Project Structure</a>.</p>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../cocos2d-x-guide/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../project-structure/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+</div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <p style="text-align:center">Copyright (c) 2014-2016 Chukong Technologies Inc.</p>
+            
+           <!-- <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>-->
+        </footer>
+
+        <script src="../../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../../js/highlight.pack.js"></script>
+        <script>var base_url = '../../../..';</script>
+
+        <!-- PG languages -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script>
+        $(function() {
+          var key = "Cocos2d-x_pg_lang";
+          var switch_lang = function(l) {
+              $('.langs li a').removeClass('selected');
+              $('#'+l).addClass('selected');
+              $('.tab_content').hide();
+              $('.'+l).show();
+              $.cookie(key, l);
+          }
+          $('.langs li a').click(function() {switch_lang(this.id);return false;});
+          var c = $.cookie(key);
+          if (typeof c == 'undefined') c='tab-cpp';
+          switch_lang(c);
+        });
+        </script>
+
+        <script data-main="../../../../mkdocs/js/search.js" src="../../../../mkdocs/js/require.js"></script>
+        <script src="../../../../js/base.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/Cocos2d-html5-min.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chipmunk.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d-jsb.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/main.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/AnimationLayer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/BackgroundLayer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Coin.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/GameOverLayer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/PlayScene.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Rock.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/SimpleRecognizer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/StatusLayer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/globals.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/myApp.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/resource.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,31 @@
+/*body {font-size: 90%;}
+pre, code {font-size: 100%;}
+h3, h4, h5, h6 {color: #2980b9; font-weight: 300}
+*/
+.langs {float: right}
+.langs ul{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        border: 1px solid #ccc;
+        background: #FFFFFF;
+}
+.langs li{
+        background: #FFFFFF;
+        display: inline-block;
+        padding: 10px 15px;
+        cursor: pointer;
+}
+.langs a, .lang a:visited {
+  /*color: #fff;*/
+  color: #61cee0; /* */
+  font-weight: bold;
+}
+.langs li a.selected{
+  /*color: #fff;*/
+  color: #61cee0; /* */
+  font-weight: bold;
+}
+.tab-content {
+  display: none;
+}

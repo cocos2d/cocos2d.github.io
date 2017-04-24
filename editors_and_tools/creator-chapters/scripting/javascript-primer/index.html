@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Cocos Team">
+        <link rel="canonical" href="http://cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/javascript-primer/index.html">
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+
+	<title>_JavaScript Primer - Cocos Documentation</title>
+
+  <link href="../../../../css/bootstrap-custom.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+<link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href="../../../../css/base.css" rel="stylesheet">
+<link href="../../../../css/cinder.css" rel="stylesheet">
+<link href="../../../../css/pg.css" rel="stylesheet">
+<link href="../../../../css/highlight.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-3216502-3', 'Cocos2d-x.org');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a style="padding: 12px 0px;" class="navbar-brand" href="../../../../index.html">Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../../../index.html">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Manual Installations</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../installation/A/index.html">Prerequisites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Android-terminal/index.html">Android Command-line Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Android-VisualStudio/index.html">Android Visual Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Android-Studio/index.html">Android Studio Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Android-Eclipse/index.html">Android Eclipse Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/iOS/index.html">IOS and OSX Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Linux/index.html">Linux Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Tizen/index.html">Tizen Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Windows/index.html">Windows Setup</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../installation/Windows-Phone/index.html">Windows Phone Setup</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Programmers Guide</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/about/index.html">About Cocos2d-x</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/basic_concepts/index.html">Basic Concepts</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/sprites/index.html">Sprites</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/actions/index.html">Actions</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/scenes/index.html">Scenes</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/ui_components/index.html">UI</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/other_node_types/index.html">Other Node Types</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/event_dispatch/index.html">Event Dispatch</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/3d/index.html">3D</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/scripting/index.html">Scripting</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/physics/index.html">Physics</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/audio/index.html">Audio</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/vr/index.html">VR</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../../programmers-guide/advanced_topics/index.html">Advanced Topics</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Editors & Tools</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../cocosCLTool/index.html">Command-line tool</a>
+  </li>
+  
+
+          
+              
+  
+  <li >
+      <a href="../../../creator/index.html">Cocos Creator</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+  
+  <li >
+      <a href="../../../cocos/index.html">Cocos Launcher</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Services</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../services/sdkbox/index.html">SDKBOX</a>
+  </li>
+  
+
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Tutorials</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../tutorials/javascript/javascript/index.html">Parkour Game Tutorials for Cocos2d-JS</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                            
+  
+  <li >
+      <a href="../../../../api-ref/index.html">API Reference</a>
+  </li>
+  
+
+                        
+                            
+  
+    <li class="dropdown-submenu">
+      <a tabindex="-1" class="non-link">Deprecated</a>
+      <ul class="dropdown-menu">
+          
+              
+  
+  <li >
+      <a href="../../../../deprecated/studio/index.html">Cocos Studio</a>
+  </li>
+  
+
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+      </ul>
+    </li>
+  
+
+                        
+                        </ul>
+                    </li>
+                
+                
+
+                <!-- new add for language button -->
+                <!--<li>
+                    <a href="http://sdkbox-doc.github.io/zh/">中文</a>
+                </li>-->
+
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <!-- 
+                    <li >
+                        <a rel="next" href="../web-debug-scripts/index.html">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../attributes/index.html">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                 -->
+                
+                    <li>
+                        <a href="https://github.com/chukong/cocos-docs">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+              
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+      
+        
+          <li class="main active"><a href="#javascript-quick-start">JavaScript quick start</a></li>
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#overview">Overview</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#try-when-youre-reading">Try when you're reading</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#variable">Variable</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#function">Function</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#returned-value">Returned value</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#if">If</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#ifelse">If/Else</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#javascript-array">JavaScript Array</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#javascript-object">JavaScript Object</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#anonymous-function">Anonymous function</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#chain-type-grammar">Chain-type grammar</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#this">This</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#operator">Operator</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#code-style">Code style</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#combine-the-knowledge-we-have-learnt">Combine the knowledge we have learnt</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#further-study">Further study</a></li>
+              
+
+          
+
+              <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
+              
+                <li><a href="#javascript-resources">JavaScript Resources</a></li>
+              
+
+          
+
+        
+      
+    
+    </ul>
+</div></div>
+              
+                <div class="col-md-9" role="main">
+
+<!-- bread crumb trail -->
+<ol class="breadcrumb">
+<li><a href="../../../../index.html">Docs</a></li>
+
+  
+    
+      <li>Contents</li>
+    
+  
+    
+      <li>Editors & Tools</li>
+    
+  
+
+<li>_JavaScript Primer</li>
+</ol>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../web-debug-scripts/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../attributes/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+
+
+<!-- we can put this here if we want it on all content pages, but we don't at this point -->
+<!--<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>-->
+    <!--<li><a href="#" id="tab-lua">Lua</a></li>-->
+  <!--</ul>
+</div>-->
+
+<h1 id="javascript-quick-start">JavaScript quick start</h1>
+<blockquote>
+<p>This text is adapted from <a href="https://www.discovermeteor.com/blog/javascript-for-meteor/">A JavaScript Primer For Meteor</a></p>
+</blockquote>
+<h2 id="overview">Overview</h2>
+<p>This text mainly introduces JavaScript. Beginners will have a general understanding about JavaScript and would have the right skills for Cocos Creator development after they master the contents of this text.</p>
+<p>JavaScript is a programming language full of controversy: it is named after Java, but in fact, it has nothing to do with Java. The creation of JavaScript <a href="https://www.w3.org/community/webed/wiki/A_Short_History_of_JavaScript">only took 10 days</a>, but it managed to develop into the most popular Web development language in the world in 20 years. If you are looking for the reason behind the status and popularity of JavaScript nowadays, there's no doubt it is because of its easy-to-use language features. Of course, mastering JavaScript is a tough task, but learning knowledge enough to develop Web Apps and games is easy. If you have some basic programming skills, then it won't take you too long to get familiar with JavaScript's language features.</p>
+<p>In addition, you may use some exsiting patterns while using Cocos Creator to develop a game under most circumstances. According to the Pareto principle (also known as the 80/20 principle), mastering  20% of one language is enough for you to handle more than 80% of situations. Now, let's learn enough JavaScript knowledge in the shortest time so that we can begin to develop a game with Cocos Creator.</p>
+<h2 id="try-when-youre-reading">Try when you're reading</h2>
+<p>If you can see this article, then you already have a full-featured JavaScript development environment--I am talking about the browser you are using!</p>
+<p>All the examples on this page, you can type them into your browser's console and check their running results. If you don't know how to do this, you can read <a href="http://webmasters.stackexchange.com/a/77337">Guidance of how to open the console in different browsers</a>.</p>
+<p>Are you ready? Let's start learning JavaScript!</p>
+<h2 id="variable">Variable</h2>
+<p>In JavaScript, we declare a variable like this:</p>
+<pre><code class="js">var a;
+</code></pre>
+
+<p>Following the reserved word <code>var</code> is a variable name. Then we can assign the variable:</p>
+<pre><code class="js">var a = 12;
+</code></pre>
+
+<p>When reading JavaScript code from others, you may also see variable declaration like this:</p>
+<pre><code>a = 12;
+</code></pre>
+
+<p>If you try in the browser's console, you will find JavaScript won't report an error when the variable declaration omits <code>var</code>, but in the Cocos Creator project script, <code>var</code> of variable declaration can not be omitted, otherwise the compiler will report an error.</p>
+<h2 id="function">Function</h2>
+<p>In JavaScript, we declare a function like this:</p>
+<pre><code class="js">var myAwesomeFunction = function (myArgument) {
+    // does something
+}
+</code></pre>
+
+<p>Call the function like this:</p>
+<pre><code class="js">myAwesomeFunction(something);
+</code></pre>
+
+<p>We can see that function declaration, same as variable declaration, also follows the <code>var something = somethingElse</code> pattern. Because in JavaScript, function and variable are essentially the same, we can introduce one function as a parameter into another function like this:</p>
+<pre><code class="js">square = function (a) {
+    return a * a;
+}
+applyOperation = function (f, a) {
+    return f(a);
+}
+applyOperation (square, 10); // 100
+</code></pre>
+
+<h2 id="returned-value">Returned value</h2>
+<p>The returned value of a function is defined by a sentence beginning with <code>return</code>. Here, what we need to know is that the contents after the sentence beginning <code>return</code> in the function will not be executed.</p>
+<pre><code class="js">myFunction = function (a) {
+    return a * 3;
+    explodeComputer(); // will never get executed (hopefully!)
+}
+</code></pre>
+
+<h2 id="if">If</h2>
+<p>In JavaScript, a conditional judgement statement <code>if</code> should be used like this:</p>
+<pre><code class="js">if (foo) {
+    return bar;
+}
+</code></pre>
+
+<h2 id="ifelse">If/Else</h2>
+<p>If the value after <code>if</code> is false, the statement in <code>else</code> will be executed:</p>
+<pre><code class="js">if (foo) {
+    function1();
+}
+else {
+    function2();
+}
+</code></pre>
+
+<p>An If/Else conditional judgement can also be wrote into one line like this:</p>
+<pre><code class="js">foo ? function1() : function2();
+</code></pre>
+
+<p>When the value of <code>foo</code> is true, the expression will send back the execution result of <code>function1()</code>, otherwise it will send back the execution result of <code>function2()</code>. When we need to assign variables according to the condition, writing it like this is very convenient:</p>
+<pre><code class="js">var n = foo ? 1 : 2;
+</code></pre>
+
+<p>The statement above can be expressed as "when <code>foo</code> is true, assign <code>n</code> as 1, otherwise assign it as 2".</p>
+<p>Of course, we can use <code>else if</code> to handle more judgement types:</p>
+<pre><code class="js">if (foo) {
+    function1();
+}
+else if (bar) {
+    function2();
+}
+else {
+    function3();
+}
+</code></pre>
+
+<h2 id="javascript-array">JavaScript Array</h2>
+<p>In JavaScript, declare an array like this:</p>
+<pre><code class="js">a = [123, 456, 789];
+</code></pre>
+
+<p>Access array members like this: (Start indexing from 0)</p>
+<pre><code class="js">a[1]; // 456
+</code></pre>
+
+<h2 id="javascript-object">JavaScript Object</h2>
+<p>We declare an object like this:</p>
+<pre><code class="js">myProfile = {
+    name: &quot;Jare Guo&quot;,
+    email: &quot;blabla@gmail.com&quot;,
+    'zip code': 12345,
+    isInvited: true
+}
+</code></pre>
+
+<p>In the grammar for object declaration（<code>myProfile = {...}</code>）, there is one pair of key values separated by a comma. Each pair includes one key (character string type, sometimes quoted by double quotation marks) and a value (could be any type: including string, number, boolean, variable name, array, object, and even function). We call such pairs of key values a property of the object, key is the property name and value is the property value.</p>
+<p>You can nest other objects or arrays composed by a set of objects in the value</p>
+<pre><code class="js">myProfile = {
+    name: &quot;Jare Guo&quot;,
+    email: &quot;blabla@gmail.com&quot;,
+    city: &quot;Xiamen&quot;,
+    points: 1234,
+    isInvited: true,
+    friends: [
+        {
+            name: &quot;Johnny&quot;,
+            email: &quot;blablabla@gmail.com&quot;
+        },
+        {
+            name: &quot;Nantas&quot;,
+            email: &quot;piapiapia@gmail.com&quot;
+        }
+    ]
+}
+</code></pre>
+
+<p>Accessing one property of the object is very easy, all we need to do is use dot grammar. It can also combine with the array member's access:</p>
+<pre><code class="js">myProfile.name; // Jare Guo
+myProfile.friends[1].name; // Nantas
+</code></pre>
+
+<p>Objects are being largely used in JavaScript, and so is it in the function parameter passing. For example, in Cocos Creator, we can define the FireClass object like this:</p>
+<pre><code class="js">var MyComponent = cc.Class({
+    extends: cc.Component
+});
+</code></pre>
+
+<p><code>{extends: cc.Component}</code> is an object acting as a function parameter. In most circumstances in JavaScript, we don't have to name an object when we use it and we may probably use it directly like this.</p>
+<h2 id="anonymous-function">Anonymous function</h2>
+<p>We have tried to use the grammar of the variable declaration to define functions:</p>
+<pre><code class="js">myFunction = function (myArgument) {
+    // do something
+}
+</code></pre>
+
+<p>Now let's go over the method of introducing a function as a parameter into other functions:</p>
+<pre><code class="js">square = function (a) {
+    return a * a;
+}
+applyOperation = function (f, a) {
+    return f(a);
+}
+applyOperation(square, 10); // 100
+</code></pre>
+
+<p>We have also learnt how lazy JavaScript's grammar can be, so we can use the method below to replace multiple function declarations above:</p>
+<pre><code class="js">applyOperation = function (f, a) {
+    return f(a);
+}
+applyOperation(
+    function(a){
+      return a*a;
+    },
+    10
+) // 100
+</code></pre>
+
+<p>This time, we don't declare the <code>square</code> function and pass <code>square</code> as a parameter. Instead, we write a new function body in the parameter spot. This is called anonymous function and is the most extensively used pattern in JavaScript.</p>
+<h2 id="chain-type-grammar">Chain-type grammar</h2>
+<p>Now, we will introduce a type of grammar often used in array and character string operation:</p>
+<pre><code class="js">var myArray = [123, 456];
+myArray.push(789) // 123, 456, 789
+var myString = &quot;abcdef&quot;;
+myString.replace(&quot;a&quot;, &quot;z&quot;); // &quot;zbcdef&quot;
+</code></pre>
+
+<p>The point symbol in the code above means "call <code>replace</code> a function of the <code>myString</code> character string object, and pass <code>a</code> and <code>z</code> as parameters, then get the returned value".</p>
+<p>The biggest advantage of using point symbol expression is that you can link multiple tasks into one expression, which of course is on the condition of each function being called having the proper returned value. We won't spend too much time on introducing how to define a linkable function, but it's pretty simple to use them as long as you use the following pattern: <code>something.function1().function2().function3()</code></p>
+<p>Each link in the chain will receive an original value, call a function and then pass the function execution result to the next step:</p>
+<pre><code class="js">var n = 5;
+n.double().square(); //100
+</code></pre>
+
+<h2 id="this">This</h2>
+<p><code>this</code> could be the most difficult concept to understand and master in JavaScript.</p>
+<p>In short, <code>this</code> key word can give you access to the object being processed; like a chameleon,<code>this</code> can also change according to the execution environment.</p>
+<p>It is very complicated to explain the principle of <code>this</code>, so let's use two kinds of tools to help us understand the value of <code>this</code> in practice:</p>
+<p>First of all, the most common and frequently used is <code>console.log()</code>. It can output the information of an object to the browser console. Add one <code>console.log()</code> in the beginning of each function body to make sure we know what object the current operating environment is processing.</p>
+<pre><code class="js">myFunction = function (a, b) {
+    console.log(this);
+    // do something
+}
+</code></pre>
+
+<p>The other method is to assign <code>this</code> to another variable:</p>
+<pre><code class="js">myFunction = function (a, b) {
+    var myObject = this;
+    // do something
+}
+</code></pre>
+
+<p>At first sight, it may seem to have no effect, but it actually allows you to use the variable <code>myObject</code> to imply the initial execution function object safely without being concerned about <code>this</code> maybe turning into other stuff in the code after. </p>
+<h2 id="operator">Operator</h2>
+<p><code>=</code> is the assigning operator, <code>a = 12</code> means to assign“12” to the variable <code>a</code>.</p>
+<p>If you need to compare two values, you can use <code>==</code>, for example, <code>a == 12</code>.</p>
+<p><code>===</code> is a unique operator in JavaScript, it can tell whether the value and type in both ends are all exactly the same (type refers to string, number and so on). </p>
+<pre><code class="js">a = &quot;12&quot;;
+a == 12; // true
+a === 12; // false
+</code></pre>
+
+<p>In most cases, we recommend you to use the operator <code>===</code> to compare the two values, because the situation that tries to compare two different types with the same value is very rare.</p>
+<p>Following is the comparison operator where JavaScript judges whether the two values are equal or not:</p>
+<pre><code class="js">a = 12;
+a !== 11; // true
+</code></pre>
+
+<p>Operator <code>!</code> can also be used alone to negate a boolean value:</p>
+<pre><code class="js">a = true;
+!a; // false
+</code></pre>
+
+<p>Operator <code>!</code> will always get a boolean type value, so it can be used to transform a non-boolean type value into a boolean type:</p>
+<pre><code class="js">a = 12;
+!a; // false
+!!a; // true
+</code></pre>
+
+<p>Or：</p>
+<pre><code class="js">a = 0;
+!a; // true
+!!a; // false
+</code></pre>
+
+<h2 id="code-style">Code style</h2>
+<p>At last, the following rules on code style can help us write more specific code:</p>
+<ul>
+<li>Use camel-case naming: define the variable name like <code>myRandomVariable</code>, but not <code>my_random_variable</code></li>
+<li>Type one <code>;</code> at each end of the line, although <code>;</code> in the end of a line can be ignored in JavaScript</li>
+<li>Put spacing before and after each keyword, such as <code>a = b + 1</code> rather than <code>a=b+1</code></li>
+</ul>
+<h2 id="combine-the-knowledge-we-have-learnt">Combine the knowledge we have learnt</h2>
+<p>The basic JavaScript grammar knowledge introduction has finished, now let's see whether we can understand an actual Cocos Creator script code:</p>
+<pre><code class="js">var Comp = cc.Class({
+    extends: cc.Component,
+
+    properties: {
+        target: {
+            default: null,
+            type: cc.Entity
+        }
+    },
+
+    onStart: function () {
+        this.target = cc.Entity.find('/Main Player/Bip/Head');
+    },
+
+    update: function () {
+        this.transform.worldPosition = this.target.transform.worldPosition;
+    }
+});
+</code></pre>
+
+<p>This piece of code defines a new component to the engine. This component has a <code>target</code> parameter, and it will be initialized into a specified object during execution and set itself to the same coordinate as the <code>target</code> in every frame during the execution process.</p>
+<p>Let's go through the function of each sentence (I will highlight useful grammar patterns):</p>
+<p><code>var Comp = cc.Class({</code>：Here we use the object <code>cc</code> , call object's <code>Class()</code> method (this method is one property of the <code>cc</code> object) by <strong>dot syntax </strong>, the parameter passing during the call is an anonymous <strong>JavaScript object</strong> （<code>{}</code>）.</p>
+<p><code>target: { default: null, type: cc.Entity }</code>：This pair of key values declare a property named <code>target</code> and its value is another JavaScript anonymous object which defines the default value and value type of the target.</p>
+<p><code>extends: cc.Component</code>：This pair of key values declare that the parent of this Class is cc.Component. cc.Component is Cocos Creator's built-in type.</p>
+<p><code>onStart: function () {</code>：This pair of key value defines a member method called <code>onStart</code> whose value is an anonymous function.</p>
+<p><code>this.target = cc.Entity.find('</code>：In the context of this sentence, <code>this</code> stands for the component being created, here we access the <code>target</code> property by <code>this.target</code>.</p>
+<h2 id="further-study">Further study</h2>
+<p>This brief course cannot replace systematic JavaScript learning from any angle, however the grammar patterns introduced in here can help you understand the vast majority of code in Cocos Creator files and courses, at least from a grammar perspective.</p>
+<p>If you prefer learning by practice like I do, then you may start to learn how to develop a game in Cocos Creator now following the course and files!</p>
+<h2 id="javascript-resources">JavaScript Resources</h2>
+<p>Here are some JavaScript primers:</p>
+<ul>
+<li><a href="http://javascript.ruanyifeng.com/">JavaScript standard reference tutorial</a></li>
+<li><a href="http://bonsaiden.github.io/JavaScript-Garden/zh/">JavaScript secret garden</a></li>
+</ul>
+
+<!-- previous/next buttons for everything but the home page -->
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li >
+            <a rel="next" href="../web-debug-scripts/index.html">
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li >
+            <a rel="prev" href="../attributes/index.html">
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    
+</ul>
+</div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <p style="text-align:center">Copyright (c) 2014-2016 Chukong Technologies Inc.</p>
+            
+           <!-- <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>-->
+        </footer>
+
+        <script src="../../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../../js/highlight.pack.js"></script>
+        <script>var base_url = '../../../..';</script>
+
+        <!-- PG languages -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script>
+        $(function() {
+          var key = "Cocos2d-x_pg_lang";
+          var switch_lang = function(l) {
+              $('.langs li a').removeClass('selected');
+              $('#'+l).addClass('selected');
+              $('.tab_content').hide();
+              $('.'+l).show();
+              $.cookie(key, l);
+          }
+          $('.langs li a').click(function() {switch_lang(this.id);return false;});
+          var c = $.cookie(key);
+          if (typeof c == 'undefined') c='tab-cpp';
+          switch_lang(c);
+        });
+        </script>
+
+        <script data-main="../../../../mkdocs/js/search.js" src="../../../../mkdocs/js/require.js"></script>
+        <script src="../../../../js/base.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/Cocos2d-html5-min.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chipmunk.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d-jsb.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/cocos2d.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/main.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/AnimationLayer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/BackgroundLayer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Coin.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/GameOverLayer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/PlayScene.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/Rock.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/SimpleRecognizer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/StatusLayer.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/globals.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/myApp.js"></script>
+        <script src="../../../../tutorials/javascript/parkour-game-with-javascript/chapter10/code/src/resource.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
